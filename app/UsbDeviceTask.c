@@ -25,19 +25,36 @@ SemaphoreHandle_t xSemaphore = NULL;
 static uint8_t inputHidReport[200];
 //static uint8_t outputHidReport[200];
 
-#define SIZE_PACKET      (512)
-#define NUMBER_OF_PACKET (32)
+#define SIZE_PACKET      (128)
+#define NUMBER_OF_PACKET ((32768 + SIZE_PACKET)/SIZE_PACKET + 1)
 #define SIZE_RX_BUFFER   (SIZE_PACKET * NUMBER_OF_PACKET)
-static   uint8_t  rxPacets[SIZE_RX_BUFFER] = {[0 ... (SIZE_RX_BUFFER - 1)] = 0};
-static   uint32_t cntRx = 0;
-uint32_t rezTime;
-uint32_t packetCnt;
-
+/* user timer variable*/
 static CTIMER_Type *TIMER_CNT = CTIMER4;
-struct{
-    uint32_t time[NUMBER_OF_PACKET];
-    uint16_t cnt;
-}rxPacketTime;
+
+typedef struct
+{
+    uint16_t quantityPacket;
+    uint16_t packetNumber;
+    uint16_t rest;
+    uint8_t  payload[];
+}packetT;
+
+struct
+{
+    uint16_t nextPacketNumber;
+    uint32_t rxTime;
+}rxPacketState =
+{
+    .nextPacketNumber = 0,
+    .rxTime = 0,
+};
+
+const uint16_t packetPayloadSize = SIZE_PACKET - sizeof(packetT);
+
+static uint8_t  rxCommandBuffer[SIZE_RX_BUFFER] = {[0 ... (SIZE_RX_BUFFER - 1)] = 0};
+
+uint16_t rxTime_[300];
+
 
 
 static inline uint32_t getTimerCNT(void)
@@ -45,7 +62,7 @@ static inline uint32_t getTimerCNT(void)
     return (uint32_t)TIMER_CNT->TC;
 }
 
-static inline void resrtTimerCNT(void)
+static inline void resetTimerCNT(void)
 {
     TIMER_CNT->TC = 0;
 }
@@ -58,12 +75,54 @@ void initTimerForMeTime(void)
     SYSCON->ASYNCAPBCTRL = SYSCON_ASYNCAPBCTRL_ENABLE(1);
     initStruct.prescale  = CLOCK_GetAsyncApbClkFreq()/1000000; // 1 us
     CTIMER_Init(TIMER_CNT, &initStruct);
+    CTIMER_StartTimer(TIMER_CNT);
 }
+
+
+static inline void rxPacketProcessing(const uint8_t buffer[], uint16_t bufferSize)
+{
+    static BaseType_t xHigherPriorityTaskWoken;
+    packetT *rxPacket = (packetT*)buffer;
+    if(rxPacket->packetNumber != rxPacketState.nextPacketNumber)
+    {
+        rxPacketState.nextPacketNumber = 0;
+        return;
+    }
+    if(rxPacketState.nextPacketNumber == 0)
+    {
+        rxPacketState.rxTime = getTimerCNT();
+    }
+    rxTime_[rxPacketState.nextPacketNumber] =  getTimerCNT() - rxPacketState.rxTime;
+    rxPacketState.rxTime = getTimerCNT();
+
+    memcpy(&rxCommandBuffer[rxPacket->packetNumber * packetPayloadSize], rxPacket->payload, ((rxPacket->quantityPacket - 1) == rxPacket->packetNumber) ?
+                                                 (rxPacket->rest):
+                                                 (packetPayloadSize));
+    if(rxPacket->packetNumber == (rxPacket->quantityPacket - 1))
+    {
+        //rxComplite, start processing command layer
+        rxPacketState.rxTime = getTimerCNT() - rxPacketState.rxTime;
+        rxPacketState.nextPacketNumber = 0;
+        // unblock USB task
+        xHigherPriorityTaskWoken = pdFALSE;
+        xSemaphoreGiveFromISR(xSemaphore, &xHigherPriorityTaskWoken);
+        if (xHigherPriorityTaskWoken != pdFALSE)
+        {
+            portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+        }
+        return;
+    }
+    rxPacketState.nextPacketNumber++;
+}
+
+
 
 
 void hidIntOutputReport(const uint8_t reportData[], size_t reportSize)
 {
-    static BaseType_t xHigherPriorityTaskWoken;
+
+    rxPacketProcessing(reportData, reportSize);
+    /*
     static uint32_t lastTime;
     if(packetCnt)
     {
@@ -92,12 +151,7 @@ void hidIntOutputReport(const uint8_t reportData[], size_t reportSize)
         packetCnt = 0;
     }
 
-
-    xSemaphoreGiveFromISR(xSemaphore, &xHigherPriorityTaskWoken);
-
-    if (xHigherPriorityTaskWoken != pdFALSE) {
-        portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
-    }
+*/
 }
 
 void hidIntInputReport(void)
@@ -111,10 +165,13 @@ static void usbDeviceTaskFunction(void *pvParameters)
 
     for (;;) {
         if (xSemaphoreTake(xSemaphore, REASONABLE_LONG_TIME) == pdTRUE) {
-            //HID_ProcessReport(outputHidReport, inputHidReport);
+
+
+            /*HID_ProcessReport(outputHidReport, inputHidReport);
             while (!usbHidDeviceSendReport(inputHidReport)) {
 
             }
+            */
         }
     }
 }
@@ -122,6 +179,7 @@ static void usbDeviceTaskFunction(void *pvParameters)
 void usbDeviceTaskCreate(void)
 {
     initTimerForMeTime();
+    while(getTimerCNT() <= 5000000){}
     usbHidDeviceSetCallbacks(hidIntInputReport, hidIntOutputReport);
     xTaskCreate(usbDeviceTaskFunction,   "UsbComm", USB_DEVICE_TASK_STACK_SIZE, NULL, USB_DEVICE_TASK_PRIORITY, NULL);
     xTaskCreate(usbHidDeviceTaskFunction, "UsbDrv", USB_DEVICE_TASK_STACK_SIZE, NULL, USB_DEVICE_TASK_PRIORITY, NULL);

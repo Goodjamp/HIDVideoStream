@@ -118,7 +118,8 @@ uint8_t g_UsbDeviceHidGenericReportDescriptor[] = {
     0x15U, 0x80U, /* logical Minimum (-128) */
     0x25U, 0x7FU, /* logical Maximum (127) */
     0x75U, 0x08U, /* Report Size (8U) */
-    0x95U, HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE, /* Report Count (8U) */
+    0x96U, USB_SHORT_GET_LOW(HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE),
+           USB_SHORT_GET_HIGH(HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE), /* Report Count */
     0x91U, 0x02U, /* Input(Data, Variable, Absolute) */
     0xC0U,        /* end collection */
 };
@@ -220,7 +221,7 @@ uint8_t g_UsbDeviceConfigurationDescriptor[] = {
     /* The address of the endpoint on the USB device
        described by this descriptor. */
     USB_ENDPOINT_INTERRUPT, /* This field describes the endpoint's attributes */
-     USB_SHORT_GET_LOW(HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE),
+    USB_SHORT_GET_LOW(HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE),
     USB_SHORT_GET_HIGH(HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE),
     /* Maximum packet size this endpoint is capable of
        sending or receiving when this configuration is

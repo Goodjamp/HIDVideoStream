@@ -1,4 +1,5 @@
 #include "UsbDeviceTask.h"
+#include "LcdTask.h"
 
 #include "FreeRTOS.h"
 #include "task.h"
@@ -22,15 +23,15 @@
 
 SemaphoreHandle_t xSemaphore = NULL;
 
-static uint8_t inputHidReport[200];
 //static uint8_t outputHidReport[200];
 
-#define SIZE_PACKET      (128)
+#define SIZE_PACKET      (512)
 #define NUMBER_OF_PACKET ((32768 + SIZE_PACKET)/SIZE_PACKET + 1)
 #define SIZE_RX_BUFFER   (SIZE_PACKET * NUMBER_OF_PACKET)
 /* user timer variable*/
 static CTIMER_Type *TIMER_CNT = CTIMER4;
 
+#pragma pack(puah,1)
 typedef struct
 {
     uint16_t quantityPacket;
@@ -38,6 +39,8 @@ typedef struct
     uint16_t rest;
     uint8_t  payload[];
 }packetT;
+#pragma pack(pop)
+
 
 struct
 {
@@ -162,10 +165,12 @@ void hidIntInputReport(void)
 static void usbDeviceTaskFunction(void *pvParameters)
 {
     xSemaphore = xSemaphoreCreateBinary();
+    //xSemaphoreTake(xSemaphore, REASONABLE_LONG_TIME);
 
     for (;;) {
-        if (xSemaphoreTake(xSemaphore, REASONABLE_LONG_TIME) == pdTRUE) {
-
+        if (xSemaphoreTake(xSemaphore, REASONABLE_LONG_TIME) == pdTRUE)
+        {
+            setNewFrame(rxCommandBuffer);
 
             /*HID_ProcessReport(outputHidReport, inputHidReport);
             while (!usbHidDeviceSendReport(inputHidReport)) {

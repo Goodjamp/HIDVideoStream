@@ -1,5 +1,5 @@
-cscope 15 $HOME\Desktop\CheddarFirmware-feature-gpio"               0001645251
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
+cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001644938
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
 
 28 
 	~"F»eRTOS.h
@@ -803,7 +803,7 @@ xR‘uº
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\event_groups.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\event_groups.c
 
 29 
 	~<¡dlib.h
@@ -2613,7 +2613,7 @@ uxEv’tGroupNumb”
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\FreeRTOS.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\FreeRTOS.h
 
 28 #iâdeà
 INC_FREERTOS_H
@@ -5999,7 +5999,7 @@ SticSŒ—mBufãr_t
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\StackMacros.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\StackMacros.h
 
 28 #iâdeà
 STACK_MACROS_H
@@ -6279,7 +6279,7 @@ pcTaskName
 
 	)
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\croutine.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\croutine.h
 
 28 #iâdeà
 CO_ROUTINE_H
@@ -6647,7 +6647,7 @@ pxEv’tLi¡
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\deprecated_definitions.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\deprecated_definitions.h
 
 28 #iâdeà
 DEPRECATED_DEFINITIONS_H
@@ -7153,7 +7153,7 @@ __IAR_78K0R_Kx3L__
 	~"../../Sourû/pÜbË/IAR/78K0R/pÜtmaüo.h
 "
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\event_groups.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\event_groups.h
 
 28 #iâdeà
 EVENT_GROUPS_H
@@ -7465,7 +7465,7 @@ PRIVILEGED_FUNCTION
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\list.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\list.h
 
 56 #iâdeà
 INC_FREERTOS_H
@@ -8119,7 +8119,7 @@ pxI‹mToRemove
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\message_buffer.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\message_buffer.h
 
 62 #iâdeà
 FREERTOS_MESSAGE_BUFFER_H
@@ -8345,7 +8345,7 @@ defšed
 __ılu¥lus
  )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_prototypes.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_prototypes.h
 
 37 #iâdeà
 MPU_PROTOTYPES_H
@@ -9581,7 +9581,7 @@ SticSŒ—mBufãr_t
 pxSticSŒ—mBufãr
  );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_wrappers.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_wrappers.h
 
 28 #iâdeà
 MPU_WRAPPERS_H
@@ -10403,7 +10403,7 @@ MPU_xSŒ—mBufãrG’”icC»©eStic
 
 	)
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\portable.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\portable.h
 
 32 #iâdeà
 PORTABLE_H
@@ -10673,7 +10673,7 @@ __ılu¥lus
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\projdefs.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\projdefs.h
 
 28 #iâdeà
 PROJDEFS_H
@@ -11065,7 +11065,7 @@ pdFREERTOS_BIG_ENDIAN
 
 	)
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\queue.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\queue.h
 
 29 #iâdeà
 QUEUE_H
@@ -11973,7 +11973,7 @@ PRIVILEGED_FUNCTION
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\semphr.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\semphr.h
 
 28 #iâdeà
 SEMAPHORE_H
@@ -12347,7 +12347,7 @@ QueueHªdË_t
 
 	)
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stack_macros.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stack_macros.h
 
 28 #iâdeà
 STACK_MACROS_H
@@ -12569,7 +12569,7 @@ pcTaskName
 
 	)
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stream_buffer.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stream_buffer.h
 
 51 #iâdeà
 STREAM_BUFFER_H
@@ -12957,7 +12957,7 @@ defšed
 __ılu¥lus
  )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\task.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\task.h
 
 29 #iâdeà
 INC_TASK_H
@@ -14271,7 +14271,7 @@ PRIVILEGED_FUNCTION
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\timers.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\timers.h
 
 29 #iâdeà
 TIMERS_H
@@ -14825,7 +14825,7 @@ PRIVILEGED_FUNCTION
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\list.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\list.c
 
 29 
 	~<¡dlib.h
@@ -15239,7 +15239,7 @@ uxNumb”OfI‹ms
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
 
 33 
 	~"F»eRTOS.h
@@ -16543,7 +16543,7 @@ ulMaxPRIGROUPV®ue
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h
 
 29 #iâdeà
 PORTMACRO_H
@@ -17155,7 +17155,7 @@ ulNewMaskV®ue
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\MemMang\heap_4.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\MemMang\heap_4.c
 
 36 
 	~<¡dlib.h
@@ -18137,7 +18137,7 @@ pxBlockToIn£¹
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\queue.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\queue.c
 
 28 
 	~<¡dlib.h
@@ -24631,7 +24631,7 @@ xR‘uº
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\stream_buffer.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\stream_buffer.c
 
 29 
 	~<¡dšt.h
@@ -27977,7 +27977,7 @@ sbFLAGS_IS_MESSAGE_BUFFER
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\tasks.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\tasks.c
 
 29 
 	~<¡dlib.h
@@ -38419,7 +38419,7 @@ FREERTOS_TASKS_C_ADDITIONS_INIT
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\timers.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\timers.c
 
 29 
 	~<¡dlib.h
@@ -41209,7 +41209,7 @@ uxTim”Numb”
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.c
 
 1 
 	~<¡ddef.h
@@ -42337,7 +42337,7 @@ gAdcResuÉInfoSŒuù
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.h
 
 1 #iâdeà
 __ANALOG_MEASUREMENT_H__
@@ -42433,7 +42433,7 @@ AÇlogM—su»m’tTy³
 ª®ogM—su»m’t
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.c
 
 1 
 	~<¡ddef.h
@@ -44017,7 +44017,7 @@ FAN_CONTROLLER_CHANNEL_NONE
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.h
 
 1 #iâdeà
 __FAN_CONTROLLER_H__
@@ -44157,7 +44157,7 @@ ušt32_t
 chªÃlCouÁ
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.c
 
 1 
 	~"H®Adc.h
@@ -44677,7 +44677,7 @@ gAdcResuÉInfoSŒuù
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.h
 
 1 #iâdeà
 __HAL_ADC_H__
@@ -44757,7 +44757,7 @@ H®AdcChªÃl
 chªÃl
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.c
 
 1 
 	~"H®CommÚ.h
@@ -44843,7 +44843,7 @@ kCLOCK_Gpio5
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.h
 
 1 #iâdeà
 __HAL_COMMON_H__
@@ -44859,7 +44859,7 @@ __HAL_COMMON_H__
 h®CommÚIn™
 ();
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.c
 
 1 
 	~"H®Gpio.h
@@ -46341,7 +46341,7 @@ pÜt
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.h
 
 1 #iâdeà
 __HAL_GPIO_H__
@@ -46651,7 +46651,7 @@ H®GpioPš
 pš
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.c
 
 1 
 	~"H®I2c.h
@@ -47527,7 +47527,7 @@ I2C_MASTER_1
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.h
 
 1 #iâdeà
 __HAL_I2C_H__
@@ -47635,7 +47635,7 @@ h®I2cEv’tCb
 	`h®I2cDeš™
 ();
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.c
 
 1 
 	~"f¦_sùim”.h
@@ -48085,7 +48085,7 @@ kSCTIMER_CouÁ”_L
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.h
 
 1 #iâdeà
 __HAL_PWM_H__
@@ -48169,7 +48169,7 @@ ušt8_t
 dutyCyşe
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.c
 
 1 
 	~"H®¥i.h
@@ -48509,7 +48509,7 @@ ma¡”Xãr
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.h
 
 1 #iâdeà
 __HAL_SPI_H__
@@ -48561,7 +48561,7 @@ H®SpiT¿nsãrDÚeC®lback
 ÿÎback
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.c
 
 1 
 	~"H®¥i.h
@@ -49837,7 +49837,7 @@ G¿y_SÿË_TB1
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.h
 
 1 #iâdeà
 __HAL_SPI_H__
@@ -49869,7 +49869,7 @@ ušt8_t
 d©a
 []);
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.c
 
 1 
 	~<¡ddef.h
@@ -50883,7 +50883,7 @@ DMA0_IRQn
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.h
 
 1 #iâdeà
 __LED_CONTROLLER_H__
@@ -50949,7 +50949,7 @@ rgbA¼ay
 rgbA¼ayËngth
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.c
 
 1 
 	~"PmBusH®.h
@@ -51691,7 +51691,7 @@ d©aL’gth
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.h
 
 1 #iâdeà
 __PM_BUS_HAL_H__
@@ -51759,7 +51759,7 @@ d©a
 d©aL’gth
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\LinkerScript\LinkerScript.ld
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\LinkerScript\LinkerScript.ld
 
 2 
 	gMEMORY
@@ -52257,7 +52257,7 @@ USB
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.c
 
 1 
 	~"AÇlogM—su»m’tSy¡em.h
@@ -52715,7 +52715,7 @@ Th”mi¡Ü_SCALE
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.h
 
 1 #iâdeà
 __ANALOG_MEASUREMENT_SYTEM_H__
@@ -52783,7 +52783,7 @@ ušt32_t
 »sT
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.c
 
 1 
 	~"FªSy¡em.h
@@ -54655,7 +54655,7 @@ isFªD‘eùiÚTaskRuÂšg
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.h
 
 1 #iâdeà
 __FAN_SYSTEM_H__
@@ -54915,7 +54915,7 @@ chªÃlCouÁ
 	`çnSy¡emS¹FªD‘eùiÚ
 ();
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.c
 
 1 
 	~"Ëd.h
@@ -59673,7 +59673,7 @@ LED_STRIP_2_MAX_LED_COUNT
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.h
 
 1 #iâdeà
 LED_H
@@ -60297,7 +60297,7 @@ LedGroup
 ËdGroup
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\PidController\PidController.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\PidController\PidController.c
 
 1 
 	~"PidCÚŒŞËr.h
@@ -60591,7 +60591,7 @@ pidCÚŒŞËr
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\PidController\PidController.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\PidController\PidController.h
 
 1 #iâdeà
 __PID_CONTROLLER_H__
@@ -60717,7 +60717,7 @@ PidCÚŒŞËr
 pidCÚŒŞËr
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.c
 
 1 
 	~"SpiFÏsh.h
@@ -60869,7 +60869,7 @@ sfdpId
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.h
 
 1 #iâdeà
 __SPI_FLASH_H__
@@ -60899,7 +60899,7 @@ boŞ
 ¥iFÏshIsD‘eùed
 ();
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.c
 
 35 
 	~"UsbHidDeviû.h
@@ -62467,7 +62467,7 @@ deviûHªdË
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.h
 
 1 #iâdeà
 __USB_HID_DEVICE_H__
@@ -62523,7 +62523,7 @@ ušt8_t
 »pÜtD©a
 []);
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.c
 
 35 
 	~"usb_deviû_cÚfig.h
@@ -65805,7 +65805,7 @@ kStus_USB_Sucûss
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.h
 
 35 #iâdeà
 __USB_DEVICE_CH9_H__
@@ -65909,7 +65909,7 @@ defšed
 __ılu¥lus
 )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.c
 
 35 
 	~"usb_deviû_cÚfig.h
@@ -67457,7 +67457,7 @@ kUSB_DeviûStusS³ed
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.h
 
 35 #iâdeà
 __USB_DEVICE_CLASS_H__
@@ -68325,7 +68325,7 @@ __ılu¥lus
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_config.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_config.h
 
 35 #iâdeà
 _USB_DEVICE_CONFIG_H_
@@ -68583,7 +68583,7 @@ USB_DEVICE_CONFIG_LOW_POWER_MODE
 
 	)
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.c
 
 35 
 	~"usb_deviû_cÚfig.h
@@ -68743,103 +68743,111 @@ ušt8_t
 g_UsbDeviûHidG’”icR•ÜtDesütÜ
 [] = {
 
-121 0x95U, 
+121 0x96U, 
+	`USB_SHORT_GET_LOW
+(
 HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE
-,
+),
 
-124 
+122 
+	`USB_SHORT_GET_HIGH
+(
+HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE
+),
+
+125 
 	}
 };
 
-126 
+127 
 	$USB_DMA_INIT_DATA_ALIGN
 (
 USB_DATA_ALIGN_SIZE
 )
 
-127 
+128 
 ušt8_t
  
 g_UsbDeviûDesütÜ
 [] = {
 
-128 
+129 
 USB_DESCRIPTOR_LENGTH_DEVICE
 ,
 
-129 
+130 
 USB_DESCRIPTOR_TYPE_DEVICE
 ,
 
-130 
+131 
 	`USB_SHORT_GET_LOW
 (
 USB_DEVICE_SPECIFIC_BCD_VERSION
 ),
 
-131 
+132 
 	`USB_SHORT_GET_HIGH
 (
 USB_DEVICE_SPECIFIC_BCD_VERSION
 ),
 
-133 
+134 
 USB_DEVICE_CLASS
 ,
 
-134 
+135 
 USB_DEVICE_SUBCLASS
 ,
 
-135 
+136 
 USB_DEVICE_PROTOCOL
 ,
 
-136 
+137 
 USB_CONTROL_MAX_PACKET_SIZE
 ,
 
-140 
+141 
 	`USB_SHORT_GET_LOW
 (
 USB_DEVICE_DEMO_BCD_VERSION
 ),
 
-141 
+142 
 	`USB_SHORT_GET_HIGH
 (
 USB_DEVICE_DEMO_BCD_VERSION
 ),
 
-146 
+147 
 USB_DEVICE_CONFIGURATION_COUNT
 ,
 
-147 
+148 
 	}
 };
 
-149 
+150 
 	$USB_DMA_INIT_DATA_ALIGN
 (
 USB_DATA_ALIGN_SIZE
 )
 
-150 
+151 
 ušt8_t
  
 g_UsbDeviûCÚfigu¿tiÚDesütÜ
 [] = {
 
-151 
+152 
 USB_DESCRIPTOR_LENGTH_CONFIGURE
 ,
 
-152 
+153 
 USB_DESCRIPTOR_TYPE_CONFIGURE
 ,
 
-153 
+154 
 	`USB_SHORT_GET_LOW
 (
 USB_DESCRIPTOR_LENGTH_CONFIGURE
@@ -68849,11 +68857,11 @@ USB_DESCRIPTOR_LENGTH_INTERFACE
 USB_DESCRIPTOR_LENGTH_HID
  +
 
-154 
+155 
 USB_DESCRIPTOR_LENGTH_ENDPOINT
  + USB_DESCRIPTOR_LENGTH_ENDPOINT),
 
-155 
+156 
 	`USB_SHORT_GET_HIGH
 (
 USB_DESCRIPTOR_LENGTH_CONFIGURE
@@ -68863,103 +68871,103 @@ USB_DESCRIPTOR_LENGTH_INTERFACE
 USB_DESCRIPTOR_LENGTH_HID
  +
 
-156 
+157 
 USB_DESCRIPTOR_LENGTH_ENDPOINT
  +
 
-157 
+158 
 USB_DESCRIPTOR_LENGTH_ENDPOINT
 ),
 
-158 
+159 
 USB_HID_GENERIC_INTERFACE_COUNT
 ,
 
-159 
+160 
 USB_HID_GENERIC_CONFIGURE_INDEX
 ,
 
-162 (
+163 (
 USB_DESCRIPTOR_CONFIGURE_ATTRIBUTE_D7_MASK
 ) |
 
-163 (
+164 (
 USB_DEVICE_CONFIG_SELF_POWER
  << 
 USB_DESCRIPTOR_CONFIGURE_ATTRIBUTE_SELF_POWERED_SHIFT
 ) |
 
-164 (
+165 (
 USB_DEVICE_CONFIG_REMOTE_WAKEUP
  << 
 USB_DESCRIPTOR_CONFIGURE_ATTRIBUTE_REMOTE_WAKEUP_SHIFT
 ),
 
-171 
+172 
 USB_DEVICE_MAX_POWER
 ,
 
-177 
+178 
 USB_DESCRIPTOR_LENGTH_INTERFACE
 ,
 
-178 
+179 
 USB_DESCRIPTOR_TYPE_INTERFACE
 ,
 
-179 
+180 
 USB_HID_GENERIC_INTERFACE_INDEX
 ,
 
-182 
+183 
 USB_HID_GENERIC_ENDPOINT_COUNT
 ,
 
-184 
+185 
 USB_HID_GENERIC_CLASS
 ,
 
-185 
+186 
 USB_HID_GENERIC_SUBCLASS
 ,
 
-186 
+187 
 USB_HID_GENERIC_PROTOCOL
 ,
 
-189 
+190 
 USB_DESCRIPTOR_LENGTH_HID
 ,
 
-191 
+192 
 USB_DESCRIPTOR_TYPE_HID
 ,
 
-199 
+200 
 USB_DESCRIPTOR_TYPE_HID_REPORT
 ,
 
-200 
+201 
 	`USB_SHORT_GET_LOW
 (
 USB_DESCRIPTOR_LENGTH_HID_GENERIC_REPORT
 ),
 
-201 
+202 
 	`USB_SHORT_GET_HIGH
 (
 USB_DESCRIPTOR_LENGTH_HID_GENERIC_REPORT
 ),
 
-204 
+205 
 USB_DESCRIPTOR_LENGTH_ENDPOINT
 ,
 
-205 
+206 
 USB_DESCRIPTOR_TYPE_ENDPOINT
 ,
 
-206 
+207 
 USB_HID_GENERIC_ENDPOINT_IN
  | (
 USB_IN
@@ -68967,35 +68975,35 @@ USB_IN
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT
 ),
 
-209 
+210 
 USB_ENDPOINT_INTERRUPT
 ,
 
-210 
+211 
 	`USB_SHORT_GET_LOW
 (
 FS_HID_GENERIC_INTERRUPT_IN_PACKET_SIZE
 ),
 
-211 
+212 
 	`USB_SHORT_GET_HIGH
 (
 FS_HID_GENERIC_INTERRUPT_IN_PACKET_SIZE
 ),
 
-215 
+216 
 HS_HID_GENERIC_INTERRUPT_IN_INTERVAL
 ,
 
-217 
+218 
 USB_DESCRIPTOR_LENGTH_ENDPOINT
 ,
 
-218 
+219 
 USB_DESCRIPTOR_TYPE_ENDPOINT
 ,
 
-219 
+220 
 USB_HID_GENERIC_ENDPOINT_OUT
  | (
 USB_OUT
@@ -69003,169 +69011,169 @@ USB_OUT
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_SHIFT
 ),
 
-222 
+223 
 USB_ENDPOINT_INTERRUPT
 ,
 
-223 
+224 
 	`USB_SHORT_GET_LOW
 (
 HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE
 ),
 
-224 
+225 
 	`USB_SHORT_GET_HIGH
 (
 HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE
 ),
 
-228 
+229 
 HS_HID_GENERIC_INTERRUPT_OUT_INTERVAL
 ,
 
-229 
+230 
 	}
 };
 
-231 #ià(
+232 #ià(
 defšed
 (
 USB_DEVICE_CONFIG_CV_TEST
 ) && (USB_DEVICE_CONFIG_CV_TEST > 0U))
 
-232 
+233 
 	$USB_DMA_INIT_DATA_ALIGN
 (
 USB_DATA_ALIGN_SIZE
 )
 
-233 
+234 
 ušt8_t
  
 g_UsbDeviûQu®if›rDesütÜ
 [] = {
 
-234 
+235 
 USB_DESCRIPTOR_LENGTH_DEVICE_QUALITIER
 ,
 
-235 
+236 
 USB_DESCRIPTOR_TYPE_DEVICE_QUALITIER
 ,
 
-236 
+237 
 	`USB_SHORT_GET_LOW
 (
 USB_DEVICE_SPECIFIC_BCD_VERSION
 ),
 
-237 
+238 
 	`USB_SHORT_GET_HIGH
 (
 USB_DEVICE_SPECIFIC_BCD_VERSION
 ),
 
-239 
+240 
 USB_DEVICE_CLASS
 ,
 
-240 
+241 
 USB_DEVICE_SUBCLASS
 ,
 
-241 
+242 
 USB_DEVICE_PROTOCOL
 ,
 
-242 
+243 
 USB_CONTROL_MAX_PACKET_SIZE
 ,
 
-246 
+247 
 	}
 };
 
-248 
+249 
 	$USB_DMA_INIT_DATA_ALIGN
 (
 USB_DATA_ALIGN_SIZE
 )
 
-249 
+250 
 ušt8_t
  
 g_UsbDeviûSŒšg0
 [] = {
 
-250 2U + 2U, 
+251 2U + 2U, 
 USB_DESCRIPTOR_TYPE_STRING
 , 0x09U, 0x04U,
 
-251 
+252 
 	}
 };
 
-253 
+254 
 	$USB_DMA_INIT_DATA_ALIGN
 (
 USB_DATA_ALIGN_SIZE
 )
 
-254 
+255 
 ušt8_t
  
 g_UsbDeviûSŒšg1
 [] = {
 
-255 2U + 2U * 7U, 
+256 2U + 2U * 7U, 
 USB_DESCRIPTOR_TYPE_STRING
 ,
 
-263 
+264 
 	}
 };
 
-265 
+266 
 	$USB_DMA_INIT_DATA_ALIGN
 (
 USB_DATA_ALIGN_SIZE
 )
 
-266 
+267 
 ušt8_t
  
 g_UsbDeviûSŒšg2
 [] = {
 
-267 2U + 2U * 13U, 
+268 2U + 2U * 13U, 
 USB_DESCRIPTOR_TYPE_STRING
 ,
 
-281 
+282 
 	}
 };
 
-283 
+284 
 ušt8_t
  
 	gg_UsbDeviûSŒšg3
 [] = {
 
-284 2U + 2U * 3U, 
+285 2U + 2U * 3U, 
 USB_DESCRIPTOR_TYPE_STRING
 ,
 
-290 
+291 
 ušt8_t
  
 	gg_UsbDeviûSŒšg4
 [] = {
 
-291 2U + 2U * 3U, 
+292 2U + 2U * 3U, 
 USB_DESCRIPTOR_TYPE_STRING
 ,
 
-297 
+298 
 ušt32_t
  
 	gg_UsbDeviûSŒšgDesütÜL’gth
@@ -69173,7 +69181,7 @@ ušt32_t
 USB_DEVICE_STRING_COUNT
 ] = {
 
-298 (
+299 (
 g_UsbDeviûSŒšg0
 ), (
 g_UsbDeviûSŒšg1
@@ -69185,7 +69193,7 @@ g_UsbDeviûSŒšg3
 g_UsbDeviûSŒšg4
 )
 
-301 
+302 
 ušt8_t
  *
 	gg_UsbDeviûSŒšgDesütÜA¼ay
@@ -69193,7 +69201,7 @@ ušt8_t
 USB_DEVICE_STRING_COUNT
 ] = {
 
-302 
+303 
 g_UsbDeviûSŒšg0
 , 
 g_UsbDeviûSŒšg1
@@ -69205,7 +69213,7 @@ g_UsbDeviûSŒšg3
 g_UsbDeviûSŒšg4
 ,
 
-305 
+306 
 usb_Ïnguage_t
  
 	gg_UsbDeviûLªguage
@@ -69213,7 +69221,7 @@ usb_Ïnguage_t
 USB_DEVICE_LANGUAGE_COUNT
 ] = {{
 
-306 
+307 
 g_UsbDeviûSŒšgDesütÜA¼ay
 , 
 g_UsbDeviûSŒšgDesütÜL’gth
@@ -69221,13 +69229,13 @@ g_UsbDeviûSŒšgDesütÜL’gth
 ušt16_t
 )0x0409U,
 
-309 
+310 
 usb_Ïnguage_li¡_t
  
 	gg_UsbDeviûLªguageLi¡
  = {
 
-310 
+311 
 g_UsbDeviûSŒšg0
 , (g_UsbDeviûSŒšg0), 
 g_UsbDeviûLªguage
@@ -69235,7 +69243,7 @@ g_UsbDeviûLªguage
 USB_DEVICE_LANGUAGE_COUNT
 ,
 
-318 
+319 
 usb_¡©us_t
  
 	$USB_DeviûG‘DeviûDesütÜ
@@ -69245,13 +69253,13 @@ usb_deviû_hªdË
 hªdË
 ,
 
-319 
+320 
 usb_deviû_g‘_deviû_desütÜ_¡ruù_t
  *
 deviûDesütÜ
 )
 
-321 
+322 
 deviûDesütÜ
 ->
 bufãr
@@ -69259,7 +69267,7 @@ bufãr
 g_UsbDeviûDesütÜ
 ;
 
-322 
+323 
 deviûDesütÜ
 ->
 Ëngth
@@ -69267,27 +69275,27 @@ deviûDesütÜ
 USB_DESCRIPTOR_LENGTH_DEVICE
 ;
 
-323  
+324  
 kStus_USB_Sucûss
 ;
 
-324 
+325 
 	}
 }
 
-325 #ià(
+326 #ià(
 defšed
 (
 USB_DEVICE_CONFIG_CV_TEST
 ) && (USB_DEVICE_CONFIG_CV_TEST > 0U))
 
-327 
+328 
 usb_¡©us_t
  
 	$USB_DeviûG‘DeviûQu®if›rDesütÜ
 (
 
-328 
+329 
 usb_deviû_hªdË
  
 hªdË
@@ -69297,7 +69305,7 @@ usb_deviû_g‘_deviû_qu®if›r_desütÜ_¡ruù_t
 deviûQu®if›rDesütÜ
 )
 
-330 
+331 
 deviûQu®if›rDesütÜ
 ->
 bufãr
@@ -69305,7 +69313,7 @@ bufãr
 g_UsbDeviûQu®if›rDesütÜ
 ;
 
-331 
+332 
 deviûQu®if›rDesütÜ
 ->
 Ëngth
@@ -69313,21 +69321,21 @@ deviûQu®if›rDesütÜ
 USB_DESCRIPTOR_LENGTH_DEVICE_QUALITIER
 ;
 
-332  
+333  
 kStus_USB_Sucûss
 ;
 
-333 
+334 
 	}
 }
 
-336 
+337 
 usb_¡©us_t
  
 	$USB_DeviûG‘CÚfigu¿tiÚDesütÜ
 (
 
-337 
+338 
 usb_deviû_hªdË
  
 hªdË
@@ -69337,7 +69345,7 @@ usb_deviû_g‘_cÚfigu¿tiÚ_desütÜ_¡ruù_t
 cÚfigu¿tiÚDesütÜ
 )
 
-339 ià(
+340 ià(
 USB_HID_GENERIC_CONFIGURE_INDEX
  > 
 cÚfigu¿tiÚDesütÜ
@@ -69345,7 +69353,7 @@ cÚfigu¿tiÚDesütÜ
 cÚfigu¿tiÚ
 )
 
-341 
+342 
 cÚfigu¿tiÚDesütÜ
 ->
 bufãr
@@ -69353,7 +69361,7 @@ bufãr
 g_UsbDeviûCÚfigu¿tiÚDesütÜ
 ;
 
-342 
+343 
 cÚfigu¿tiÚDesütÜ
 ->
 Ëngth
@@ -69361,19 +69369,19 @@ cÚfigu¿tiÚDesütÜ
 USB_DESCRIPTOR_LENGTH_CONFIGURATION_ALL
 ;
 
-343  
+344  
 kStus_USB_Sucûss
 ;
 
-345  
+346  
 kStus_USB_Inv®idReque¡
 ;
 
-346 
+347 
 	}
 }
 
-349 
+350 
 usb_¡©us_t
  
 	$USB_DeviûG‘SŒšgDesütÜ
@@ -69383,19 +69391,19 @@ usb_deviû_hªdË
 hªdË
 ,
 
-350 
+351 
 usb_deviû_g‘_¡ršg_desütÜ_¡ruù_t
  *
 ¡ršgDesütÜ
 )
 
-352 ià(
+353 ià(
 ¡ršgDesütÜ
 ->
 ¡ršgIndex
  == 0U)
 
-354 
+355 
 ¡ršgDesütÜ
 ->
 bufãr
@@ -69407,7 +69415,7 @@ g_UsbDeviûLªguageLi¡
 ÏnguageSŒšg
 ;
 
-355 
+356 
 ¡ršgDesütÜ
 ->
 Ëngth
@@ -69417,13 +69425,13 @@ g_UsbDeviûLªguageLi¡
 ¡ršgL’gth
 ;
 
-359 
+360 
 ušt8_t
  
 ÏnguageId
  = 0U;
 
-360 
+361 
 ušt8_t
  
 ÏnguageIndex
@@ -69431,13 +69439,13 @@ ušt8_t
 USB_DEVICE_STRING_COUNT
 ;
 
-362 ; 
+363 ; 
 ÏnguageId
  < 
 USB_DEVICE_LANGUAGE_COUNT
 ;†anguageId++)
 
-364 ià(
+365 ià(
 ¡ršgDesütÜ
 ->
 ÏnguageId
@@ -69447,7 +69455,7 @@ g_UsbDeviûLªguageLi¡
 ÏnguageLi¡
 [languageId].languageId)
 
-366 ià(
+367 ià(
 ¡ršgDesütÜ
 ->
 ¡ršgIndex
@@ -69455,7 +69463,7 @@ g_UsbDeviûLªguageLi¡
 USB_DEVICE_STRING_COUNT
 )
 
-368 
+369 
 ÏnguageIndex
  = 
 ¡ršgDesütÜ
@@ -69463,17 +69471,17 @@ USB_DEVICE_STRING_COUNT
 ¡ršgIndex
 ;
 
-374 ià(
+375 ià(
 USB_DEVICE_STRING_COUNT
  =ğ
 ÏnguageIndex
 )
 
-376  
+377  
 kStus_USB_Inv®idReque¡
 ;
 
-378 
+379 
 ¡ršgDesütÜ
 ->
 bufãr
@@ -69491,7 +69499,7 @@ g_UsbDeviûLªguageLi¡
 ÏnguageIndex
 ];
 
-379 
+380 
 ¡ršgDesütÜ
 ->
 Ëngth
@@ -69505,15 +69513,15 @@ g_UsbDeviûLªguageLi¡
 ÏnguageIndex
 ];
 
-381  
+382  
 kStus_USB_Sucûss
 ;
 
-382 
+383 
 	}
 }
 
-385 
+386 
 usb_¡©us_t
  
 	$USB_DeviûG‘HidDesütÜ
@@ -69527,15 +69535,15 @@ usb_deviû_g‘_hid_desütÜ_¡ruù_t
 hidDesütÜ
 )
 
-387  
+388  
 kStus_USB_Inv®idReque¡
 ;
 
-388 
+389 
 	}
 }
 
-391 
+392 
 usb_¡©us_t
  
 	$USB_DeviûG‘HidR•ÜtDesütÜ
@@ -69545,13 +69553,13 @@ usb_deviû_hªdË
 hªdË
 ,
 
-392 
+393 
 usb_deviû_g‘_hid_»pÜt_desütÜ_¡ruù_t
  *
 hidR•ÜtDesütÜ
 )
 
-394 ià(
+395 ià(
 USB_HID_GENERIC_INTERFACE_INDEX
  =ğ
 hidR•ÜtDesütÜ
@@ -69559,7 +69567,7 @@ hidR•ÜtDesütÜ
 š‹rçûNumb”
 )
 
-396 
+397 
 hidR•ÜtDesütÜ
 ->
 bufãr
@@ -69567,7 +69575,7 @@ bufãr
 g_UsbDeviûHidG’”icR•ÜtDesütÜ
 ;
 
-397 
+398 
 hidR•ÜtDesütÜ
 ->
 Ëngth
@@ -69575,19 +69583,19 @@ hidR•ÜtDesütÜ
 USB_DESCRIPTOR_LENGTH_HID_GENERIC_REPORT
 ;
 
-401  
+402  
 kStus_USB_Inv®idReque¡
 ;
 
-403  
+404  
 kStus_USB_Sucûss
 ;
 
-404 
+405 
 	}
 }
 
-407 
+408 
 usb_¡©us_t
  
 	$USB_DeviûG‘HidPhysiÿlDesütÜ
@@ -69597,21 +69605,21 @@ usb_deviû_hªdË
 hªdË
 ,
 
-408 
+409 
 usb_deviû_g‘_hid_physiÿl_desütÜ_¡ruù_t
  *
 hidPhysiÿlDesütÜ
 )
 
-410  
+411  
 kStus_USB_Inv®idReque¡
 ;
 
-411 
+412 
 	}
 }
 
-419 
+420 
 usb_¡©us_t
  
 	$USB_DeviûS‘S³ed
@@ -69625,19 +69633,19 @@ ušt8_t
 ¥“d
 )
 
-421 
+422 
 usb_desütÜ_uniÚ_t
  *
 desütÜH—d
 ;
 
-422 
+423 
 usb_desütÜ_uniÚ_t
  *
 desütÜTa
 ;
 
-424 
+425 
 desütÜH—d
  = (
 usb_desütÜ_uniÚ_t
@@ -69645,11 +69653,11 @@ usb_desütÜ_uniÚ_t
 g_UsbDeviûCÚfigu¿tiÚDesütÜ
 [0];
 
-425 
+426 
 desütÜTa
  =
 
-426 (
+427 (
 usb_desütÜ_uniÚ_t
  *)(&
 g_UsbDeviûCÚfigu¿tiÚDesütÜ
@@ -69657,13 +69665,13 @@ g_UsbDeviûCÚfigu¿tiÚDesütÜ
 USB_DESCRIPTOR_LENGTH_CONFIGURATION_ALL
  - 1U]);
 
-428 
+429 
 desütÜH—d
  < 
 desütÜTa
 )
 
-430 ià(
+431 ià(
 desütÜH—d
 ->
 commÚ
@@ -69673,13 +69681,13 @@ bDesütÜTy³
 USB_DESCRIPTOR_TYPE_ENDPOINT
 )
 
-432 ià(
+433 ià(
 USB_SPEED_HIGH
  =ğ
 ¥“d
 )
 
-434 ià(((
+435 ià(((
 desütÜH—d
 ->
 ’dpošt
@@ -69689,15 +69697,15 @@ bEndpoštAdd»ss
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_IN
 ) ==
 
-435 
+436 
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_IN
 ) &&
 
-436 (
+437 (
 USB_HID_GENERIC_ENDPOINT_IN
  ==
 
-437 (
+438 (
 desütÜH—d
 ->
 ’dpošt
@@ -69707,7 +69715,7 @@ bEndpoštAdd»ss
 USB_ENDPOINT_NUMBER_MASK
 )))
 
-439 
+440 
 desütÜH—d
 ->
 ’dpošt
@@ -69717,13 +69725,13 @@ bIÁ”v®
 HS_HID_GENERIC_INTERRUPT_IN_INTERVAL
 ;
 
-440 
+441 
 	`USB_SHORT_TO_LITTLE_ENDIAN_ADDRESS
 (
 HS_HID_GENERIC_INTERRUPT_IN_PACKET_SIZE
 ,
 
-441 
+442 
 desütÜH—d
 ->
 ’dpošt
@@ -69731,7 +69739,7 @@ desütÜH—d
 wMaxPack‘Size
 );
 
-443 ià(((
+444 ià(((
 desütÜH—d
 ->
 ’dpošt
@@ -69741,15 +69749,15 @@ bEndpoštAdd»ss
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_OUT
 ) ==
 
-444 
+445 
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_OUT
 ) &&
 
-445 (
+446 (
 USB_HID_GENERIC_ENDPOINT_OUT
  ==
 
-446 (
+447 (
 desütÜH—d
 ->
 ’dpošt
@@ -69759,7 +69767,7 @@ bEndpoštAdd»ss
 USB_ENDPOINT_NUMBER_MASK
 )))
 
-448 
+449 
 desütÜH—d
 ->
 ’dpošt
@@ -69769,13 +69777,13 @@ bIÁ”v®
 HS_HID_GENERIC_INTERRUPT_OUT_INTERVAL
 ;
 
-449 
+450 
 	`USB_SHORT_TO_LITTLE_ENDIAN_ADDRESS
 (
 HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE
 ,
 
-450 
+451 
 desütÜH—d
 ->
 ’dpošt
@@ -69783,7 +69791,7 @@ desütÜH—d
 wMaxPack‘Size
 );
 
-458 ià(((
+459 ià(((
 desütÜH—d
 ->
 ’dpošt
@@ -69793,15 +69801,15 @@ bEndpoštAdd»ss
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_IN
 ) ==
 
-459 
+460 
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_IN
 ) &&
 
-460 (
+461 (
 USB_HID_GENERIC_ENDPOINT_IN
  ==
 
-461 (
+462 (
 desütÜH—d
 ->
 ’dpošt
@@ -69811,7 +69819,7 @@ bEndpoštAdd»ss
 USB_ENDPOINT_NUMBER_MASK
 )))
 
-463 
+464 
 desütÜH—d
 ->
 ’dpošt
@@ -69821,13 +69829,13 @@ bIÁ”v®
 FS_HID_GENERIC_INTERRUPT_IN_INTERVAL
 ;
 
-464 
+465 
 	`USB_SHORT_TO_LITTLE_ENDIAN_ADDRESS
 (
 FS_HID_GENERIC_INTERRUPT_IN_PACKET_SIZE
 ,
 
-465 
+466 
 desütÜH—d
 ->
 ’dpošt
@@ -69835,7 +69843,7 @@ desütÜH—d
 wMaxPack‘Size
 );
 
-467 ià(((
+468 ià(((
 desütÜH—d
 ->
 ’dpošt
@@ -69845,15 +69853,15 @@ bEndpoštAdd»ss
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_OUT
 ) ==
 
-468 
+469 
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_OUT
 ) &&
 
-469 (
+470 (
 USB_HID_GENERIC_ENDPOINT_OUT
  ==
 
-470 (
+471 (
 desütÜH—d
 ->
 ’dpošt
@@ -69863,7 +69871,7 @@ bEndpoštAdd»ss
 USB_ENDPOINT_NUMBER_MASK
 )))
 
-472 
+473 
 desütÜH—d
 ->
 ’dpošt
@@ -69873,13 +69881,13 @@ bIÁ”v®
 FS_HID_GENERIC_INTERRUPT_OUT_INTERVAL
 ;
 
-473 
+474 
 	`USB_SHORT_TO_LITTLE_ENDIAN_ADDRESS
 (
 FS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE
 ,
 
-474 
+475 
 desütÜH—d
 ->
 ’dpošt
@@ -69887,7 +69895,7 @@ desütÜH—d
 wMaxPack‘Size
 );
 
-481 
+482 
 desütÜH—d
  = (
 usb_desütÜ_uniÚ_t
@@ -69899,19 +69907,19 @@ commÚ
 bL’gth
 );
 
-484 
+485 
 i
  = 0U; i < 
 USB_HID_GENERIC_ENDPOINT_COUNT
 ; i++)
 
-486 ià(
+487 ià(
 USB_SPEED_HIGH
  =ğ
 ¥“d
 )
 
-488 ià(
+489 ià(
 g_UsbDeviûHidG’”icEndpošts
 [
 i
@@ -69921,7 +69929,7 @@ i
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_IN
 )
 
-490 
+491 
 g_UsbDeviûHidG’”icEndpošts
 [
 i
@@ -69931,7 +69939,7 @@ maxPack‘Size
 HS_HID_GENERIC_INTERRUPT_IN_PACKET_SIZE
 ;
 
-494 
+495 
 g_UsbDeviûHidG’”icEndpošts
 [
 i
@@ -69941,7 +69949,7 @@ maxPack‘Size
 HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE
 ;
 
-499 ià(
+500 ià(
 g_UsbDeviûHidG’”icEndpošts
 [
 i
@@ -69951,7 +69959,7 @@ i
 USB_DESCRIPTOR_ENDPOINT_ADDRESS_DIRECTION_IN
 )
 
-501 
+502 
 g_UsbDeviûHidG’”icEndpošts
 [
 i
@@ -69961,7 +69969,7 @@ maxPack‘Size
 FS_HID_GENERIC_INTERRUPT_IN_PACKET_SIZE
 ;
 
-505 
+506 
 g_UsbDeviûHidG’”icEndpošts
 [
 i
@@ -69971,15 +69979,15 @@ maxPack‘Size
 FS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE
 ;
 
-510  
+511  
 kStus_USB_Sucûss
 ;
 
-511 
+512 
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.h
 
 35 #iâdeà
 __USB_DEVICE_DESCRIPTOR_H__
@@ -70111,7 +70119,7 @@ g_UsbDeviûSŒšg2
 
 66 
 	#USB_HID_GENERIC_OUT_BUFFER_LENGTH
- (63U)
+ (512U)
 
 	)
 
@@ -70159,7 +70167,7 @@ g_UsbDeviûSŒšg2
 
 76 
 	#HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE
- (70U)
+ (512U)
 
 	)
 
@@ -70171,7 +70179,7 @@ g_UsbDeviûSŒšg2
 
 78 
 	#HS_HID_GENERIC_INTERRUPT_OUT_INTERVAL
- (0x04Uè
+ (0x01Uè
 
 	)
 
@@ -70195,7 +70203,7 @@ g_UsbDeviûSŒšg2
 
 83 
 	#HS_HID_GENERIC_INTERRUPT_IN_INTERVAL
- (0x04Uè
+ (0x01Uè
 
 	)
 
@@ -70337,7 +70345,7 @@ usb_deviû_g‘_hid_physiÿl_desütÜ_¡ruù_t
 hidPhysiÿlDesütÜ
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.c
 
 35 
 	~"usb_deviû_cÚfig.h
@@ -72231,7 +72239,7 @@ hidHªdË
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.h
 
 35 #iâdeà
 __USB_DEVICE_HID_H__
@@ -72649,7 +72657,7 @@ defšed
 __ılu¥lus
 )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.c
 
 1 
 	~"UsbPrÙocŞ.h
@@ -75039,7 +75047,7 @@ STATUS_INVALID_COMMAND
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.h
 
 1 #iâdeà
 __USB_PROTOCOL_H__
@@ -75065,7 +75073,7 @@ outR•Üt
 šR•Üt
 []);
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.c
 
 1 
 	~"AÇlogM—su»m’tSy¡em.h
@@ -75153,7 +75161,7 @@ ANALOG_MEASUREMENT_TASK_PRIORITY
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.h
 
 1 #iâdeà
 __ANALOG_MEASUREMENT_TASK_H__
@@ -75173,7 +75181,7 @@ __ANALOG_MEASUREMENT_TASK_H__
 ª®ogM—su»m’tTaskC»©e
 ();
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\Anim.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\Anim.c
 
 1 
 	~"äame_00.c
@@ -75419,7 +75427,7 @@ __ANALOG_MEASUREMENT_TASK_H__
 	~"äame_60.c
 "
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_00.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_00.c
 
 27 
 	~<¡dšt.h
@@ -75431,7 +75439,7 @@ ušt8_t
 	gimage_d©a_imagesimage_d©a_images
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_01.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_01.c
 
 27 
 	~<¡dšt.h
@@ -75443,7 +75451,7 @@ ušt8_t
 	gimage_d©a_01_0015_Lay”2
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_02.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_02.c
 
 27 
 	~<¡dšt.h
@@ -75455,7 +75463,7 @@ ušt8_t
 	gimage_d©a_01_0014_Lay”3
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_03.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_03.c
 
 27 
 	~<¡dšt.h
@@ -75467,7 +75475,7 @@ ušt8_t
 	gimage_d©a_01_0013_Lay”4
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_04.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_04.c
 
 27 
 	~<¡dšt.h
@@ -75479,7 +75487,7 @@ ušt8_t
 	gimage_d©a_01_0012_Lay”5
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_05.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_05.c
 
 27 
 	~<¡dšt.h
@@ -75491,7 +75499,7 @@ ušt8_t
 	gimage_d©a_01_0011_Lay”6
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_06.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_06.c
 
 27 
 	~<¡dšt.h
@@ -75503,7 +75511,7 @@ ušt8_t
 	gimage_d©a_01_0010_Lay”7
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_07.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_07.c
 
 27 
 	~<¡dšt.h
@@ -75515,7 +75523,7 @@ ušt8_t
 	gimage_d©a_01_0009_Lay”8
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_08.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_08.c
 
 27 
 	~<¡dšt.h
@@ -75527,7 +75535,7 @@ ušt8_t
 	gimage_d©a_01_0008_Lay”9
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_09.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_09.c
 
 27 
 	~<¡dšt.h
@@ -75539,7 +75547,7 @@ ušt8_t
 	gimage_d©a_01_0007_Lay”10
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_10.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_10.c
 
 27 
 	~<¡dšt.h
@@ -75551,7 +75559,7 @@ ušt8_t
 	gimage_d©a_01_0006_Lay”11
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_11.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_11.c
 
 27 
 	~<¡dšt.h
@@ -75563,7 +75571,7 @@ ušt8_t
 	gimage_d©a_01_0005_Lay”12
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_12.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_12.c
 
 27 
 	~<¡dšt.h
@@ -75575,7 +75583,7 @@ ušt8_t
 	gimage_d©a_01_0004_Lay”13
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_13.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_13.c
 
 27 
 	~<¡dšt.h
@@ -75587,7 +75595,7 @@ ušt8_t
 	gimage_d©a_01_0003_Lay”14
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_14.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_14.c
 
 27 
 	~<¡dšt.h
@@ -75599,7 +75607,7 @@ ušt8_t
 	gimage_d©a_01_0002_Lay”15
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_15.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_15.c
 
 27 
 	~<¡dšt.h
@@ -75611,7 +75619,7 @@ ušt8_t
 	gimage_d©a_01_0001_Lay”16
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_16.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_16.c
 
 27 
 	~<¡dšt.h
@@ -75623,7 +75631,7 @@ ušt8_t
 	gimage_d©a_01_0000_Lay”17
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_17.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_17.c
 
 27 
 	~<¡dšt.h
@@ -75635,7 +75643,7 @@ ušt8_t
 	gimage_d©a_02_0009_Lay”1
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_18.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_18.c
 
 27 
 	~<¡dšt.h
@@ -75647,7 +75655,7 @@ ušt8_t
 	gimage_d©a_02_0008_Lay”2
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_19.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_19.c
 
 27 
 	~<¡dšt.h
@@ -75659,7 +75667,7 @@ ušt8_t
 	gimage_d©a_02_0007_Lay”3
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_20.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_20.c
 
 27 
 	~<¡dšt.h
@@ -75671,7 +75679,7 @@ ušt8_t
 	gimage_d©a_02_0006_Lay”4
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_21.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_21.c
 
 27 
 	~<¡dšt.h
@@ -75683,7 +75691,7 @@ ušt8_t
 	gimage_d©a_02_0005_Lay”5
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_22.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_22.c
 
 27 
 	~<¡dšt.h
@@ -75695,7 +75703,7 @@ ušt8_t
 	gimage_d©a_02_0004_Lay”6
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_23.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_23.c
 
 27 
 	~<¡dšt.h
@@ -75707,7 +75715,7 @@ ušt8_t
 	gimage_d©a_02_0003_Lay”7
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_24.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_24.c
 
 27 
 	~<¡dšt.h
@@ -75719,7 +75727,7 @@ ušt8_t
 	gimage_d©a_02_0002_Lay”8
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_25.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_25.c
 
 27 
 	~<¡dšt.h
@@ -75731,7 +75739,7 @@ ušt8_t
 	gimage_d©a_02_0001_Lay”9
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_26.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_26.c
 
 27 
 	~<¡dšt.h
@@ -75743,7 +75751,7 @@ ušt8_t
 	gimage_d©a_02_0000_Lay”10
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_27.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_27.c
 
 27 
 	~<¡dšt.h
@@ -75755,7 +75763,7 @@ ušt8_t
 	gimage_d©a_03_0017_Lay”1
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_28.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_28.c
 
 27 
 	~<¡dšt.h
@@ -75767,7 +75775,7 @@ ušt8_t
 	gimage_d©a_03_0016_Lay”2
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_29.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_29.c
 
 27 
 	~<¡dšt.h
@@ -75779,7 +75787,7 @@ ušt8_t
 	gimage_d©a_03_0015_Lay”3
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_30.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_30.c
 
 27 
 	~<¡dšt.h
@@ -75791,7 +75799,7 @@ ušt8_t
 	gimage_d©a_03_0014_Lay”4
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_31.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_31.c
 
 27 
 	~<¡dšt.h
@@ -75803,7 +75811,7 @@ ušt8_t
 	gimage_d©a_03_0013_Lay”5
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_32.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_32.c
 
 27 
 	~<¡dšt.h
@@ -75815,7 +75823,7 @@ ušt8_t
 	gimage_d©a_03_0012_Lay”6
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_33.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_33.c
 
 27 
 	~<¡dšt.h
@@ -75827,7 +75835,7 @@ ušt8_t
 	gimage_d©a_03_0011_Lay”7
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_34.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_34.c
 
 27 
 	~<¡dšt.h
@@ -75839,7 +75847,7 @@ ušt8_t
 	gimage_d©a_03_0010_Lay”8
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_35.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_35.c
 
 27 
 	~<¡dšt.h
@@ -75851,7 +75859,7 @@ ušt8_t
 	gimage_d©a_03_0009_Lay”9
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_36.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_36.c
 
 27 
 	~<¡dšt.h
@@ -75863,7 +75871,7 @@ ušt8_t
 	gimage_d©a_03_0008_Lay”10
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_37.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_37.c
 
 27 
 	~<¡dšt.h
@@ -75875,7 +75883,7 @@ ušt8_t
 	gimage_d©a_03_0007_Lay”11
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_38.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_38.c
 
 27 
 	~<¡dšt.h
@@ -75887,7 +75895,7 @@ ušt8_t
 	gimage_d©a_03_0006_Lay”12
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_39.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_39.c
 
 27 
 	~<¡dšt.h
@@ -75899,7 +75907,7 @@ ušt8_t
 	gimage_d©a_03_0005_Lay”13
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_40.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_40.c
 
 27 
 	~<¡dšt.h
@@ -75911,7 +75919,7 @@ ušt8_t
 	gimage_d©a_03_0004_Lay”14
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_41.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_41.c
 
 27 
 	~<¡dšt.h
@@ -75923,7 +75931,7 @@ ušt8_t
 	gimage_d©a_03_0003_Lay”15
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_42.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_42.c
 
 27 
 	~<¡dšt.h
@@ -75935,7 +75943,7 @@ ušt8_t
 	gimage_d©a_03_0002_Lay”16
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_43.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_43.c
 
 27 
 	~<¡dšt.h
@@ -75947,7 +75955,7 @@ ušt8_t
 	gimage_d©a_03_0001_Lay”17
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_44.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_44.c
 
 27 
 	~<¡dšt.h
@@ -75959,7 +75967,7 @@ ušt8_t
 	gimage_d©a_03_0000_Lay”18
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_45.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_45.c
 
 29 
 	~<¡dšt.h
@@ -75971,7 +75979,7 @@ ušt8_t
 	gimage_d©a_äame_45_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_46.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_46.c
 
 29 
 	~<¡dšt.h
@@ -75983,7 +75991,7 @@ ušt8_t
 	gimage_d©a_äame_46_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_47.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_47.c
 
 29 
 	~<¡dšt.h
@@ -75995,7 +76003,7 @@ ušt8_t
 	gimage_d©a_äame_47_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_48.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_48.c
 
 29 
 	~<¡dšt.h
@@ -76007,7 +76015,7 @@ ušt8_t
 	gimage_d©a_äame_48_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_49.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_49.c
 
 29 
 	~<¡dšt.h
@@ -76019,7 +76027,7 @@ ušt8_t
 	gimage_d©a_äame_49_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_50.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_50.c
 
 29 
 	~<¡dšt.h
@@ -76031,7 +76039,7 @@ ušt8_t
 	gimage_d©a_äame_50_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_51.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_51.c
 
 29 
 	~<¡dšt.h
@@ -76043,7 +76051,7 @@ ušt8_t
 	gimage_d©a_äame_51_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_52.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_52.c
 
 29 
 	~<¡dšt.h
@@ -76055,7 +76063,7 @@ ušt8_t
 	gimage_d©a_äame_52_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_53.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_53.c
 
 29 
 	~<¡dšt.h
@@ -76067,7 +76075,7 @@ ušt8_t
 	gimage_d©a_äame_53_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_54.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_54.c
 
 29 
 	~<¡dšt.h
@@ -76079,7 +76087,7 @@ ušt8_t
 	gimage_d©a_äame_54_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_55.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_55.c
 
 29 
 	~<¡dšt.h
@@ -76091,7 +76099,7 @@ ušt8_t
 	gimage_d©a_äame_55_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_56.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_56.c
 
 29 
 	~<¡dšt.h
@@ -76103,7 +76111,7 @@ ušt8_t
 	gimage_d©a_äame_56_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_57.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_57.c
 
 29 
 	~<¡dšt.h
@@ -76115,7 +76123,7 @@ ušt8_t
 	gimage_d©a_äame_57_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_58.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_58.c
 
 29 
 	~<¡dšt.h
@@ -76127,7 +76135,7 @@ ušt8_t
 	gimage_d©a_äame_58_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_59.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_59.c
 
 29 
 	~<¡dšt.h
@@ -76139,7 +76147,7 @@ ušt8_t
 	gimage_d©a_äame_59_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_60.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_60.c
 
 29 
 	~<¡dšt.h
@@ -76151,7 +76159,7 @@ ušt8_t
 	gimage_d©a_äame_60_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_61.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_61.c
 
 29 
 	~<¡dšt.h
@@ -76163,7 +76171,7 @@ ušt8_t
 	gimage_d©a_äame_61_d–ay0
 [32768] = {
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\FanTask.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FanTask.c
 
 1 
 	~"FªTask.h
@@ -76337,7 +76345,7 @@ FAN_TASK_PRIORITY
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\FanTask.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FanTask.h
 
 1 #iâdeà
 __FAN_TASK_H__
@@ -76357,7 +76365,7 @@ __FAN_TASK_H__
 çnTaskC»©e
 ();
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\FreeRTOSConfig.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FreeRTOSConfig.h
 
 30 #iâdeà
 FREERTOS_CONFIG_H
@@ -76765,7 +76773,23 @@ SysTick_HªdËr
 
 	)
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\LcdTask.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdInterface.h
+
+5 #iâdeà
+LCDINTERFACE_H_
+
+
+6 
+	#LCDINTERFACE_H_
+
+
+	)
+
+8 
+	$lcdS’dF¿me
+()
+
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdTask.c
 
 1 
 	~"F»eRTOS.h
@@ -76775,293 +76799,193 @@ SysTick_HªdËr
 	~"sk.h
 "
 
-4 
+3 
+	~"£mphr.h
+"
+
+5 
 	~"Lcd.h
 "
 
-6 
+7 
 	~<¡dšt.h
 >
 
-8 
+9 
 	~"Anim/Anim.c
 "
 
-10 
+11 
 	#LCD_TASK_PRIORITY
  2
 
 	)
 
-11 
+12 
 	#LCD_TASK_STACK_SIZE
  200
 
 	)
 
 13 
-	#ANIME_3
-
+	#START_IND_SUMBOL
+ "START"
 
 	)
 
-15 #ifdeà
-ANIME_1
-
-
-16 
-ušt8_t
- cÚ¡ *
-	gªime_1
-[] =
+15 #´agm¨
+·ck
+(
+push
+,1)
 
 18 
-image_d©a_01_0016_Lay”1
-,
+ušt8_t
+ 
+	mcommªdM¬k”
+[(
+START_IND_SUMBOL
+) - 1];
 
 19 
-image_d©a_01_0015_Lay”2
-,
-
-20 
-image_d©a_01_0014_Lay”3
-,
-
-21 
-image_d©a_01_0013_Lay”4
-,
-
-22 
-image_d©a_01_0012_Lay”5
-,
-
-23 
-image_d©a_01_0011_Lay”6
-,
-
-24 
-image_d©a_01_0010_Lay”7
-,
-
-26 
-image_d©a_01_0008_Lay”9
-,
-
-28 
-image_d©a_01_0006_Lay”11
-,
-
-30 
-image_d©a_01_0004_Lay”13
-,
-
-32 
-image_d©a_01_0002_Lay”15
-,
-
-33 
-image_d©a_01_0001_Lay”16
-,
-
-34 
-image_d©a_01_0000_Lay”17
-,
-
-36 
-ušt8_t
+ušt32_t
  
-	gnumF¿me
- = (
-ªime_1
-) / (anime_1[0]);
-
-39 #ifdeà
-ANIME_2
-
-
-40 
-ušt8_t
- cÚ¡ *
-	gªime_2
-[] =
-
-42 
-image_d©a_02_0009_Lay”1
-,
-
-43 
-image_d©a_02_0008_Lay”2
-,
-
-44 
-image_d©a_02_0007_Lay”3
-,
-
-45 
-image_d©a_02_0006_Lay”4
-,
-
-46 
-image_d©a_02_0005_Lay”5
-,
-
-47 
-image_d©a_02_0004_Lay”6
-,
-
-48 
-image_d©a_02_0003_Lay”7
-,
-
-49 
-image_d©a_02_0002_Lay”8
-,
-
-50 
-image_d©a_02_0001_Lay”9
-,
-
-51 
-image_d©a_02_0000_Lay”10
-,
-
-53 
-ušt8_t
- 
-	gnumF¿me
- = (
-ªime_2
-) / (anime_2[0]);
-
-56 #ifdeà
-ANIME_3
-
-
-57 
-ušt8_t
- cÚ¡ *
-	gªime_3
-[] =
-
-59 
-image_d©a_03_0017_Lay”1
-,
-
-61 
-image_d©a_03_0015_Lay”3
-,
-
-63 
-image_d©a_03_0013_Lay”5
-,
-
-64 
-image_d©a_03_0012_Lay”6
-,
-
-65 
-image_d©a_03_0011_Lay”7
-,
-
-66 
-image_d©a_03_0010_Lay”8
-,
-
-67 
-image_d©a_03_0009_Lay”9
-,
-
-69 
-image_d©a_03_0007_Lay”11
-,
-
-71 
-image_d©a_03_0005_Lay”13
-,
-
-73 
-image_d©a_03_0003_Lay”15
-,
-
-75 
-image_d©a_03_0001_Lay”17
-,
-
-76 
-image_d©a_03_0000_Lay”18
-,
-
-78 
-ušt8_t
- 
-	gnumF¿me
- = (
-ªime_3
-) / (anime_3[0]);
-
-81 
-ušt8_t
- 
-	gäameCÁ
+	msize
 ;
 
-83 cÚ¡ 
+20 
 ušt8_t
  
-	gz”roA¼ay
-[32768] = {[0 ... (32768-1)] = 0};
+	m·ylßd
+[];
 
-86 
+21 } 
+	t£ndF¿meCommªdT
+;
+
+22 #´agm¨
+·ck
+(
+pİ
+)
+
+25 
+Sem­hÜeHªdË_t
+ 
+	glcdSem­hÜe
+ = 
+NULL
+;
+
+29 
+ušt8_t
+ *
+	mäameBuff
+;
+
+30 }
+	gäameProûssšg
+;
+
+33 
+	$£tNewF¿me
+(
+ušt8_t
+ 
+äameBuff
+[])
+
+35 
+Ba£Ty³_t
+ 
+xHigh”PriÜ™yTaskWok’
+;
+
+36 
+£ndF¿meCommªdT
+ *
+äameCommªd
+ = (£ndF¿meCommªdT*)
+äameBuff
+;
+
+37 
+äameProûssšg
+.
+äameBuff
+ = 
+äameCommªd
+->
+·ylßd
+;
+
+38 
+xHigh”PriÜ™yTaskWok’
+ = 
+pdFALSE
+;
+
+39 
+	`xSem­hÜeGiveFromISR
+(
+lcdSem­hÜe
+, &
+xHigh”PriÜ™yTaskWok’
+);
+
+40 
+	}
+}
+
+43 
 	$lcdTaskFunùiÚ
 (*
 pvP¬am‘”s
 )
 
-89 
+46 
 	`lcdIn™
 ();
 
-93 #ifdeà
-ANIME_1
+47 
+lcdSem­hÜe
+ = 
+	`xSem­hÜeC»©eBš¬y
+();
 
-
-96 #ifdeà
-ANIME_2
-
-
-99 #ifdeà
-ANIME_3
-
-
-105 
+48 
 	`putPiùu»
 (
-image_d©a_imagesimage_d©a_images
+image_d©a_02_0000_Lay”10
 );
 
-106 
-	`vTaskD–ay
-(1000);
+50 ià(
+	`xSem­hÜeTake
+(
+lcdSem­hÜe
+, 
+pÜtMAX_DELAY
+ ) =ğ
+pdTRUE
+) {
 
-107 
+52 
 	`putPiùu»
 (
-z”roA¼ay
+äameProûssšg
+.
+äameBuff
 );
 
-108 
-	`vTaskD–ay
-(1);
-
-135 
+56 
 	}
 }
 
-137 
+59 
 	$lcdTaskC»©e
 ()
 
-139 
+61 
 	`xTaskC»©e
 (
 lcdTaskFunùiÚ
@@ -77073,11 +76997,11 @@ NULL
 LCD_TASK_PRIORITY
 , NULL);
 
-140 
+62 
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\LcdTask.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdTask.h
 
 1 #iâdeà
 __LCD_TASK_H__
@@ -77089,11 +77013,23 @@ __LCD_TASK_H__
 
 	)
 
-4 
+4 
+	~"¡dšt.h
+"
+
+6 
 lcdTaskC»©e
 ();
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\LightingTask.c
+7 
+£tNewF¿me
+(
+ušt8_t
+ 
+äameBuff
+[]);
+
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LightingTask.c
 
 1 
 	~"LightšgTask.h
@@ -77243,7 +77179,7 @@ LIGHTING_TASK_PRIORITY
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\LightingTask.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LightingTask.h
 
 1 #iâdeà
 __LIGHTING_TASK_H__
@@ -77259,7 +77195,7 @@ __LIGHTING_TASK_H__
 lightšgTaskC»©e
 ();
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.c
 
 1 
 	~"PmBusH®.h
@@ -77409,7 +77345,7 @@ PM_BUS_COMMUNICATION_TASK_PRIORITY
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.h
 
 1 #iâdeà
 __PM_BUS_COMMUNICATION_TASK_H__
@@ -77429,7 +77365,7 @@ __PM_BUS_COMMUNICATION_TASK_H__
 pmBusCommuniÿtiÚTaskC»©e
 ();
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Rtos.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Rtos.c
 
 1 
 	~"Rtos.h
@@ -77513,7 +77449,7 @@ pxTask
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Rtos.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Rtos.h
 
 1 #iâdeà
 __RTOS_H__
@@ -77529,59 +77465,75 @@ __RTOS_H__
 ¹osS¹ScheduËr
 ();
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\UsbDeviceTask.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\UsbDeviceTask.c
 
 1 
 	~"UsbDeviûTask.h
 "
 
-3 
-	~"F»eRTOS.h
+2 
+	~"LcdTask.h
 "
 
 4 
-	~"sk.h
+	~"F»eRTOS.h
 "
 
 5 
+	~"sk.h
+"
+
+6 
 	~"£mphr.h
 "
 
-7 
+8 
 	~"UsbHidDeviû.h
 "
 
-9 
+10 
 	~"UsbPrÙocŞ.h
 "
 
-11 
+12 
+	~"LPC54608.h
+"
+
+13 
+	~"f¦_ùim”.h
+"
+
+14 
+	~"f¦_şock.h
+"
+
+16 
 	~<¡dšt.h
 >
 
-12 
+17 
 	~<¡ršg.h
 >
 
-14 
+19 
 	#REASONABLE_LONG_TIME
  0xFFFF
 
 	)
 
-16 
+21 
 	#USB_DEVICE_TASK_PRIORITY
  3
 
 	)
 
-17 
+22 
 	#USB_DEVICE_TASK_STACK_SIZE
  256
 
 	)
 
-19 
+24 
 Sem­hÜeHªdË_t
  
 	gxSem­hÜe
@@ -77589,19 +77541,377 @@ Sem­hÜeHªdË_t
 NULL
 ;
 
-21 
+28 
+	#SIZE_PACKET
+ (512)
+
+	)
+
+29 
+	#NUMBER_OF_PACKET
+ ((32768 + 
+SIZE_PACKET
+)/SIZE_PACKET + 1)
+
+	)
+
+30 
+	#SIZE_RX_BUFFER
+ (
+SIZE_PACKET
+ * 
+NUMBER_OF_PACKET
+)
+
+	)
+
+32 
+CTIMER_Ty³
+ *
+	gTIMER_CNT
+ = 
+CTIMER4
+;
+
+34 #´agm¨
+·ck
+(
+puah
+,1)
+
+37 
+ušt16_t
+ 
+	mquªt™yPack‘
+;
+
+38 
+ušt16_t
+ 
+	m·ck‘Numb”
+;
+
+39 
+ušt16_t
+ 
+	m»¡
+;
+
+40 
 ušt8_t
  
-	gšputHidR•Üt
-[200];
+	m·ylßd
+[];
 
-22 
+41 }
+	t·ck‘T
+;
+
+42 #´agm¨
+·ck
+(
+pİ
+)
+
+47 
+ušt16_t
+ 
+	mÃxtPack‘Numb”
+;
+
+48 
+ušt32_t
+ 
+	mrxTime
+;
+
+49 }
+	grxPack‘S‹
+ =
+
+51 .
+ÃxtPack‘Numb”
+ = 0,
+
+52 .
+	grxTime
+ = 0,
+
+55 cÚ¡ 
+ušt16_t
+ 
+	g·ck‘PaylßdSize
+ = 
+SIZE_PACKET
+ - (
+·ck‘T
+);
+
+57 
 ušt8_t
  
-	gouutHidR•Üt
-[200];
+	grxCommªdBufãr
+[
+SIZE_RX_BUFFER
+] = {[0 ... (SIZE_RX_BUFFER - 1)] = 0};
 
-24 
+59 
+ušt16_t
+ 
+	grxTime_
+[300];
+
+63 
+šlše
+ 
+ušt32_t
+ 
+	$g‘Tim”CNT
+()
+
+65  (
+ušt32_t
+)
+TIMER_CNT
+->
+TC
+;
+
+66 
+	}
+}
+
+68 
+šlše
+ 
+	$»£tTim”CNT
+()
+
+70 
+TIMER_CNT
+->
+TC
+ = 0;
+
+71 
+	}
+}
+
+73 
+	$š™Tim”FÜMeTime
+()
+
+75 
+ùim”_cÚfig_t
+ 
+š™SŒuù
+;
+
+77 
+š™SŒuù
+.
+mode
+ = 
+kCTIMER_Tim”Mode
+;
+
+78 
+SYSCON
+->
+ASYNCAPBCTRL
+ = 
+	`SYSCON_ASYNCAPBCTRL_ENABLE
+(1);
+
+79 
+š™SŒuù
+.
+´esÿË
+ = 
+	`CLOCK_G‘AsyncApbClkF»q
+()/1000000;
+
+80 
+	`CTIMER_In™
+(
+TIMER_CNT
+, &
+š™SŒuù
+);
+
+81 
+	`CTIMER_S¹Tim”
+(
+TIMER_CNT
+);
+
+82 
+	}
+}
+
+85 
+šlše
+ 
+	$rxPack‘Proûssšg
+(cÚ¡ 
+ušt8_t
+ 
+bufãr
+[], 
+ušt16_t
+ 
+bufãrSize
+)
+
+87 
+Ba£Ty³_t
+ 
+xHigh”PriÜ™yTaskWok’
+;
+
+88 
+·ck‘T
+ *
+rxPack‘
+ = (·ck‘T*)
+bufãr
+;
+
+89 if(
+rxPack‘
+->
+·ck‘Numb”
+ !ğ
+rxPack‘S‹
+.
+ÃxtPack‘Numb”
+)
+
+91 
+rxPack‘S‹
+.
+ÃxtPack‘Numb”
+ = 0;
+
+94 if(
+rxPack‘S‹
+.
+ÃxtPack‘Numb”
+ == 0)
+
+96 
+rxPack‘S‹
+.
+rxTime
+ = 
+	`g‘Tim”CNT
+();
+
+98 
+rxTime_
+[
+rxPack‘S‹
+.
+ÃxtPack‘Numb”
+] = 
+	`g‘Tim”CNT
+(è-„xPack‘S‹.
+rxTime
+;
+
+99 
+rxPack‘S‹
+.
+rxTime
+ = 
+	`g‘Tim”CNT
+();
+
+101 
+	`memıy
+(&
+rxCommªdBufãr
+[
+rxPack‘
+->
+·ck‘Numb”
+ * 
+·ck‘PaylßdSize
+],„xPack‘->
+·ylßd
+, (ÔxPack‘->
+quªt™yPack‘
+ - 1) ==„xPacket->packetNumber) ?
+
+102 (
+rxPack‘
+->
+»¡
+):
+
+103 (
+·ck‘PaylßdSize
+));
+
+104 if(
+rxPack‘
+->
+·ck‘Numb”
+ =ğÔxPack‘->
+quªt™yPack‘
+ - 1))
+
+107 
+rxPack‘S‹
+.
+rxTime
+ = 
+	`g‘Tim”CNT
+() -„xPacketState.rxTime;
+
+108 
+rxPack‘S‹
+.
+ÃxtPack‘Numb”
+ = 0;
+
+110 
+xHigh”PriÜ™yTaskWok’
+ = 
+pdFALSE
+;
+
+111 
+	`xSem­hÜeGiveFromISR
+(
+xSem­hÜe
+, &
+xHigh”PriÜ™yTaskWok’
+);
+
+112 ià(
+xHigh”PriÜ™yTaskWok’
+ !ğ
+pdFALSE
+)
+
+114 
+	`pÜtYIELD_FROM_ISR
+(
+xHigh”PriÜ™yTaskWok’
+);
+
+118 
+rxPack‘S‹
+.
+ÃxtPack‘Numb”
+++;
+
+119 
+	}
+}
+
+124 
 	$hidIÁOuutR•Üt
 (cÚ¡ 
 ušt8_t
@@ -77613,73 +77923,39 @@ size_t
 »pÜtSize
 )
 
-26 
-Ba£Ty³_t
- 
-xHigh”PriÜ™yTaskWok’
-;
-
-27 
-xHigh”PriÜ™yTaskWok’
- = 
-pdFALSE
-;
-
-28 
-	`memıy
+127 
+	`rxPack‘Proûssšg
 (
-ouutHidR•Üt
-, 
 »pÜtD©a
 , 
 »pÜtSize
 );
 
-29 
-	`xSem­hÜeGiveFromISR
-(
-xSem­hÜe
-, &
-xHigh”PriÜ™yTaskWok’
-);
-
-31 ià(
-xHigh”PriÜ™yTaskWok’
- !ğ
-pdFALSE
-) {
-
-32 
-	`pÜtYIELD_FROM_ISR
-(
-xHigh”PriÜ™yTaskWok’
-);
-
-34 
+158 
 	}
 }
 
-36 
+160 
 	$hidIÁIÅutR•Üt
 ()
 
-39 
+163 
 	}
 }
 
-41 
+165 
 	$usbDeviûTaskFunùiÚ
 (*
 pvP¬am‘”s
 )
 
-43 
+167 
 xSem­hÜe
  = 
 	`xSem­hÜeC»©eBš¬y
 ();
 
-46 ià(
+171 ià(
 	`xSem­hÜeTake
 (
 xSem­hÜe
@@ -77687,31 +77963,27 @@ xSem­hÜe
 REASONABLE_LONG_TIME
 è=ğ
 pdTRUE
-) {
+)
 
-47 
-	`HID_ProûssR•Üt
+173 
+	`£tNewF¿me
 (
-ouutHidR•Üt
-, 
-šputHidR•Üt
+rxCommªdBufãr
 );
 
-48 !
-	`usbHidDeviûS’dR•Üt
-(
-šputHidR•Üt
-)) {
-
-53 
+182 
 	}
 }
 
-55 
+184 
 	$usbDeviûTaskC»©e
 ()
 
-57 
+186 
+	`š™Tim”FÜMeTime
+();
+
+187 
 	`usbHidDeviûS‘C®lbacks
 (
 hidIÁIÅutR•Üt
@@ -77719,7 +77991,7 @@ hidIÁIÅutR•Üt
 hidIÁOuutR•Üt
 );
 
-58 
+188 
 	`xTaskC»©e
 (
 usbDeviûTaskFunùiÚ
@@ -77731,7 +78003,7 @@ NULL
 USB_DEVICE_TASK_PRIORITY
 , NULL);
 
-59 
+189 
 	`xTaskC»©e
 (
 usbHidDeviûTaskFunùiÚ
@@ -77743,11 +78015,11 @@ NULL
 USB_DEVICE_TASK_PRIORITY
 , NULL);
 
-60 
+190 
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\UsbDeviceTask.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\UsbDeviceTask.h
 
 1 #iâdeà
 __USB_DEVICE_TASK_H__
@@ -77763,7 +78035,7 @@ __USB_DEVICE_TASK_H__
 usbDeviûTaskC»©e
 ();
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\clock_config.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\clock_config.c
 
 59 
 	~"f¦_pow”.h
@@ -78053,7 +78325,7 @@ BOARD_BOOTCLOCKPLL180M_CORE_CLOCK
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\clock_config.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\clock_config.h
 
 35 #iâdeà
 _CLOCK_CONFIG_H_
@@ -78177,7 +78449,7 @@ defšed
 __ılu¥lus
 )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\main.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\main.c
 
 1 
 	~"Rtos.h
@@ -78389,7 +78661,7 @@ asm
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\CMSIS\Include\core_cm4.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\CMSIS\Include\core_cm4.h
 
 25 #ià 
 defšed
@@ -85089,7 +85361,7 @@ ITM_RXBUFFER_EMPTY
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\LPC54608.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\LPC54608.h
 
 67 #iâdeà
 _LPC54608_H_
@@ -161519,7 +161791,7 @@ ROM_API
 
 	)
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.c
 
 35 
 	~"f¦_adc.h
@@ -162509,7 +162781,7 @@ ADC_DAT_OVERRUN_MASK
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.h
 
 35 #iâdeà
 __FSL_ADC_H__
@@ -163587,7 +163859,7 @@ defšed
 __ılu¥lus
 )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.c
 
 36 
 	~"f¦_commÚ.h
@@ -170837,7 +171109,7 @@ kPDRUNCFG_PD_USB1_PHY
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.h
 
 36 #iâdeà
 _FSL_CLOCK_H_
@@ -175155,7 +175427,7 @@ defšed
 __ılu¥lus
 )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.c
 
 35 
 	~"f¦_ùim”.h
@@ -176365,7 +176637,7 @@ __CORTEX_M
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.h
 
 34 #iâdeà
 _FSL_CTIMER_H_
@@ -177157,7 +177429,7 @@ __ılu¥lus
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.c
 
 35 
 	~"f¦_dma.h
@@ -178773,7 +179045,7 @@ __CORTEX_M
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.h
 
 35 #iâdeà
 _FSL_DMA_H_
@@ -179863,7 +180135,7 @@ __ılu¥lus
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.c
 
 35 
 	~"f¦_commÚ.h
@@ -180609,7 +180881,7 @@ __CORTEX_M
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.h
 
 34 #iâdeà
 _FSL_FLEXCOMM_H_
@@ -180707,7 +180979,7 @@ hªdËr
 hªdË
 );
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.c
 
 35 
 	~"f¦_gpio.h
@@ -180843,7 +181115,7 @@ pš
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.h
 
 35 #iâdeà
 _LPC_GPIO_H_
@@ -181437,7 +181709,7 @@ defšed
 __ılu¥lus
 )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.c
 
 35 
 	~"f¦_šputmux.h
@@ -181553,7 +181825,7 @@ kCLOCK_IÅutMux
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.h
 
 35 #iâdeà
 _FSL_INPUTMUX_H_
@@ -181621,7 +181893,7 @@ ba£
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux_connections.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux_connections.h
 
 36 #iâdeà
 _FSL_INPUTMUX_CONNECTIONS_
@@ -182837,7 +183109,7 @@ PMUX_SHIFT
 	tšputmux_cÚÃùiÚ_t
 ;
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_iocon.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_iocon.h
 
 35 #iâdeà
 _FSL_IOCON_H_
@@ -183395,7 +183667,7 @@ defšed
 __ılu¥lus
 )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.c
 
 35 
 	~"f¦_commÚ.h
@@ -183405,7 +183677,7 @@ __ılu¥lus
 	~"f¦_pow”.h
 "
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.h
 
 35 #iâdeà
 _FSL_POWER_H_
@@ -183879,7 +184151,7 @@ POWER_G‘LibV”siÚ
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.c
 
 36 
 	~"f¦_commÚ.h
@@ -184095,7 +184367,7 @@ PRESETCTRL
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.h
 
 36 #iâdeà
 _FSL_RESET_H_
@@ -184823,7 +185095,7 @@ defšed
 __ılu¥lus
 )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.c
 
 35 
 	~"f¦_sùim”.h
@@ -186549,7 +186821,7 @@ __CORTEX_M
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.h
 
 34 #iâdeà
 _FSL_SCTIMER_H_
@@ -188167,7 +188439,7 @@ __ılu¥lus
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.c
 
 35 
 	~"f¦_¥i.h
@@ -191515,7 +191787,7 @@ u£rD©a
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.h
 
 34 #iâdeà
 _FSL_SPI_H_
@@ -193037,7 +193309,7 @@ __ılu¥lus
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.c
 
 35 
 	~"f¦_¥i_dma.h
@@ -195239,7 +195511,7 @@ kStus_Sucûss
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.h
 
 34 #iâdeà
 _FSL_SPI_DMA_H_
@@ -195597,7 +195869,7 @@ __ılu¥lus
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\fsl_device_registers.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\fsl_device_registers.h
 
 36 #iâdeà
 __FSL_DEVICE_REGISTERS_H__
@@ -195631,7 +195903,7 @@ CPU_LPC54608J512ET180
 	~"LPC54608_ã©u»s.h
 "
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\libpower_hardabi.a
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\libpower_hardabi.a
 
 1 !<
 	g¬ch
@@ -195643,7 +195915,7 @@ CPU_LPC54608J512ET180
 	gELF
           (                 4     ( & % -é÷Cïó†r¶VJğğ€BOô›~Òø6ÒøÜ ¿@ğ€PÄC$ğ"ğ*êğ€BÂø ÍCğ¯=CÂøÅø@àOğ€Âø á0¿ôx4ÛCôx3Âø@áÂøÂø
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\startup_LPC54608.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\startup_LPC54608.c
 
 35 
 	~<¡dšt.h
@@ -197661,7 +197933,7 @@ ulCu¼’tIÁ”ru±
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.c
 
 71 
 	~<¡dšt.h
@@ -198461,7 +198733,7 @@ AHBCLKDIV
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.h
 
 71 #iâdeà
 _SYSTEM_LPC54608_H_
@@ -198535,7 +198807,7 @@ Sy¡emCÜeClockUpd©e
 __ılu¥lus
 
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device.h
 
 35 #iâdeà
 __USB_DEVICE_H__
@@ -199487,7 +199759,7 @@ __ılu¥lus
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_dci.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_dci.c
 
 35 
 	~"usb_deviû_cÚfig.h
@@ -203475,7 +203747,7 @@ tick
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_lpcip3511.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_lpcip3511.c
 
 35 
 	~"usb_deviû_cÚfig.h
@@ -210085,7 +210357,7 @@ USB_INTSTAT_FRAME_INT_MASK
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\include\usb.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\include\usb.h
 
 35 #iâdeà
 __USB_H__
@@ -210329,7 +210601,7 @@ ušt8_t
 	tusb_v”siÚ_t
 ;
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa.h
 
 35 #iâdeà
 __USB_OSA_H__
@@ -210799,7 +211071,7 @@ defšed
 __ılu¥lus
 )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.c
 
 34 
 	~"¡dšt.h
@@ -212597,7 +212869,7 @@ kStus_USB_OSA_E¼Ü
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.h
 
 35 #iâdeà
 __USB_OSA_BM_H__
@@ -212667,7 +212939,7 @@ defšed
 __ılu¥lus
 )
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.c
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.c
 
 35 
 	~"¡dšt.h
@@ -215249,7 +215521,7 @@ kStus_USB_OSA_E¼Ü
 	}
 }
 
-	@C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.h
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.h
 
 35 #iâdeà
 __USB_OSA_FREERTOS_H__
@@ -215415,201 +215687,202 @@ __ılu¥lus
 1
 .
 0
-196
-18257
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\event_groups.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\FreeRTOS.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\StackMacros.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\croutine.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\deprecated_definitions.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\event_groups.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\list.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\message_buffer.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_prototypes.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_wrappers.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\portable.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\projdefs.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\queue.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\semphr.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stack_macros.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stream_buffer.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\task.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\timers.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\list.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\MemMang\heap_4.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\queue.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\stream_buffer.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\tasks.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\FreeRTOS\Source\timers.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\LinkerScript\LinkerScript.ld
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\PidController\PidController.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\PidController\PidController.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_config.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\Anim.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_00.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_01.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_02.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_03.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_04.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_05.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_06.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_07.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_08.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_09.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_10.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_11.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_12.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_13.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_14.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_15.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_16.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_17.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_18.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_19.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_20.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_21.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_22.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_23.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_24.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_25.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_26.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_27.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_28.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_29.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_30.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_31.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_32.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_33.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_34.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_35.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_36.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_37.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_38.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_39.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_40.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_41.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_42.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_43.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_44.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_45.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_46.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_47.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_48.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_49.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_50.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_51.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_52.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_53.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_54.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_55.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_56.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_57.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_58.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_59.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_60.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Anim\frame_61.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\FanTask.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\FanTask.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\FreeRTOSConfig.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\LcdTask.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\LcdTask.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\LightingTask.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\LightingTask.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Rtos.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\Rtos.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\UsbDeviceTask.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\UsbDeviceTask.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\clock_config.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\clock_config.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\app\main.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\CMSIS\Include\core_cm4.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\LPC54608.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux_connections.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_iocon.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\fsl_device_registers.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\libpower_hardabi.a
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\startup_LPC54608.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_dci.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_lpcip3511.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\include\usb.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.h
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.c
-C:\Users\aleks.gerasimchuk\Desktop\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.h
+197
+16567
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\event_groups.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\FreeRTOS.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\StackMacros.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\croutine.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\deprecated_definitions.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\event_groups.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\list.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\message_buffer.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_prototypes.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_wrappers.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\portable.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\projdefs.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\queue.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\semphr.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stack_macros.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stream_buffer.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\task.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\timers.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\list.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\MemMang\heap_4.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\queue.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\stream_buffer.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\tasks.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\timers.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\LinkerScript\LinkerScript.ld
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\PidController\PidController.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\PidController\PidController.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_config.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\Anim.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_00.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_01.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_02.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_03.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_04.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_05.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_06.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_07.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_08.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_09.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_10.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_11.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_12.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_13.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_14.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_15.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_16.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_17.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_18.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_19.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_20.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_21.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_22.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_23.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_24.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_25.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_26.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_27.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_28.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_29.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_30.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_31.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_32.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_33.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_34.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_35.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_36.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_37.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_38.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_39.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_40.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_41.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_42.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_43.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_44.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_45.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_46.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_47.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_48.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_49.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_50.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_51.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_52.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_53.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_54.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_55.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_56.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_57.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_58.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_59.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_60.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_61.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FanTask.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FanTask.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FreeRTOSConfig.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdInterface.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdTask.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdTask.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LightingTask.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LightingTask.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Rtos.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Rtos.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\UsbDeviceTask.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\UsbDeviceTask.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\clock_config.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\clock_config.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\main.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\CMSIS\Include\core_cm4.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\LPC54608.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux_connections.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_iocon.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\fsl_device_registers.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\libpower_hardabi.a
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\startup_LPC54608.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_dci.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_lpcip3511.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\include\usb.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.h

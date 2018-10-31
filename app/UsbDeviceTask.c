@@ -25,13 +25,13 @@ SemaphoreHandle_t xSemaphore = NULL;
 
 //static uint8_t outputHidReport[200];
 
-#define SIZE_PACKET      (512)
+#define SIZE_PACKET      (1024)
 #define NUMBER_OF_PACKET ((32768 + SIZE_PACKET)/SIZE_PACKET + 1)
 #define SIZE_RX_BUFFER   (SIZE_PACKET * NUMBER_OF_PACKET)
 /* user timer variable*/
 static CTIMER_Type *TIMER_CNT = CTIMER4;
 
-#pragma pack(puah,1)
+#pragma pack(push,1)
 typedef struct
 {
     uint16_t quantityPacket;
@@ -184,7 +184,6 @@ static void usbDeviceTaskFunction(void *pvParameters)
 void usbDeviceTaskCreate(void)
 {
     initTimerForMeTime();
-    while(getTimerCNT() <= 5000000){}
     usbHidDeviceSetCallbacks(hidIntInputReport, hidIntOutputReport);
     xTaskCreate(usbDeviceTaskFunction,   "UsbComm", USB_DEVICE_TASK_STACK_SIZE, NULL, USB_DEVICE_TASK_PRIORITY, NULL);
     xTaskCreate(usbHidDeviceTaskFunction, "UsbDrv", USB_DEVICE_TASK_STACK_SIZE, NULL, USB_DEVICE_TASK_PRIORITY, NULL);

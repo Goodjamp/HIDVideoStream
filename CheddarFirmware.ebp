@@ -371,6 +371,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Hal\HalI2c\HalI2c.h" />
+		<Unit filename="Hal\HalIFlash\HalIFlash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Hal\HalIFlash\HalIFlash.h" />
 		<Unit filename="Hal\HalPwm\HalPwm.c">
 			<Option compilerVar="CC" />
 		</Unit>

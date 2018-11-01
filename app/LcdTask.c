@@ -30,14 +30,6 @@ struct
 }frameProcessing;
 
 
-void setNewFrame(uint8_t frameBuff[])
-{
-    static BaseType_t xHigherPriorityTaskWoken;
-    sendFrameCommandT *frameCommand =  (sendFrameCommandT*)frameBuff;
-    frameProcessing.frameBuff = frameCommand->payload;
-    xHigherPriorityTaskWoken = pdFALSE;
-    xSemaphoreGiveFromISR(lcdSemaphore, &xHigherPriorityTaskWoken);
-}
 
 /*
 static void lcdTaskFunction(void *pvParameters)
@@ -93,7 +85,23 @@ struct
     playerStateT            playerState;
     struct playFlashStateT  playFlashState;
     struct playDirectStateT playDirectState;
-}playerH;
+}playerH =
+{
+    .playSource  = PLAY_DIRECT,
+    .playerState = PLAYER_STOP,
+};
+
+
+void setNewFrame(uint8_t frameBuff[])
+{
+    static BaseType_t xHigherPriorityTaskWoken;
+    sendFrameCommandT *frameCommand =  (sendFrameCommandT*)frameBuff;
+    frameProcessing.frameBuff = frameCommand->payload;
+    xHigherPriorityTaskWoken = pdFALSE;
+    playerH.playerState = PLAYER_PLAY;
+    xSemaphoreGiveFromISR(lcdSemaphore, &xHigherPriorityTaskWoken);
+}
+
 
 
 void playFlashProcessing(void)

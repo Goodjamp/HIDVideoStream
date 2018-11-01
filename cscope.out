@@ -1,4 +1,4 @@
-cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001644938
+cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001646432
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
 
 28 
@@ -47635,6 +47635,112 @@ h®I2cEv’tCb
 	`h®I2cDeš™
 ();
 
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalIFlash\HalIFlash.c
+
+1 
+	~"¡dšt.h
+"
+
+3 
+	~"LPC54608.H
+"
+
+5 
+	~"f¦_dma.h
+"
+
+6 
+	~"f¦_¥i.h
+"
+
+7 
+	~"f¦_¥i_dma.h
+"
+
+15 
+	#DMA_SPIF_LASH_RX_CHANEL
+ 14
+
+	)
+
+16 
+	#DMA_SPIF_LASH_TX_CHANEL
+ 15
+
+	)
+
+20 
+	$š™SPIFÏsh
+()
+
+22 
+	`DMA_In™
+(
+DMA0
+);
+
+24 
+	`DMA_EÇbËChªÃlIÁ”ru±s
+(
+DMA0
+, 
+DMA_SPIF_LASH_RX_CHANEL
+);
+
+25 
+	`DMA_EÇbËChªÃlIÁ”ru±s
+(
+DMA0
+, 
+DMA_SPIF_LASH_TX_CHANEL
+);
+
+27 
+	`DMA_EÇbËChªÃl
+(
+DMA0
+, 
+DMA_SPIF_LASH_RX_CHANEL
+);
+
+28 
+	`DMA_EÇbËChªÃl
+(
+DMA0
+, 
+DMA_SPIF_LASH_TX_CHANEL
+);
+
+30 
+	`DMA_EÇbËChªÃlP”hRq
+(
+DMA0
+, 
+DMA_SPIF_LASH_RX_CHANEL
+);
+
+31 
+	`DMA_EÇbËChªÃlP”hRq
+(
+DMA0
+, 
+DMA_SPIF_LASH_TX_CHANEL
+);
+
+32 
+	}
+}
+
+34 
+	$š™SPIDMAFÏsh
+()
+
+37 
+	}
+}
+
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalIFlash\HalIFlash.h
+
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.c
 
 1 
@@ -70119,7 +70225,7 @@ g_UsbDeviûSŒšg2
 
 66 
 	#USB_HID_GENERIC_OUT_BUFFER_LENGTH
- (512U)
+ (1024U)
 
 	)
 
@@ -70167,7 +70273,7 @@ g_UsbDeviûSŒšg2
 
 76 
 	#HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE
- (512U)
+ (1024U)
 
 	)
 
@@ -76937,39 +77043,101 @@ xHigh”PriÜ™yTaskWok’
 	}
 }
 
-43 
-	$lcdTaskFunùiÚ
-(*
-pvP¬am‘”s
-)
-
-46 
-	`lcdIn™
-();
-
-47 
-lcdSem­hÜe
- = 
-	`xSem­hÜeC»©eBš¬y
-();
-
-48 
-	`putPiùu»
+61 
+»adFÏshF¿me
 (
-image_d©a_02_0000_Lay”10
+ušt16_t
+ 
+videoIndex
+, ušt16_ˆ
+videoF¿meCÁ
 );
 
-50 ià(
-	`xSem­hÜeTake
-(
-lcdSem­hÜe
-, 
-pÜtMAX_DELAY
- ) =ğ
-pdTRUE
-) {
+66 
+	mPLAY_FLASH
+,
 
-52 
+67 
+	mPLAY_DIRECT
+,
+
+68 }
+	t¶aySourûT
+;
+
+73 
+	mPLAYER_PLAY
+,
+
+74 
+	mPLAYER_STOP
+,
+
+75 }
+	t¶ay”S‹T
+;
+
+78 
+	s¶ayFÏshS‹T
+
+
+80 
+ušt16_t
+ 
+	mäameCÁ
+;
+
+84 
+	s¶ayDœeùS‹T
+
+
+86 
+ušt16_t
+ 
+	m»£rved
+;
+
+92 
+¶aySourûT
+ 
+	m¶aySourû
+;
+
+93 
+¶ay”S‹T
+ 
+	m¶ay”S‹
+;
+
+94 
+¶ayFÏshS‹T
+ 
+	m¶ayFÏshS‹
+;
+
+95 
+¶ayDœeùS‹T
+ 
+	m¶ayDœeùS‹
+;
+
+96 }
+	g¶ay”H
+;
+
+99 
+	$¶ayFÏshProûssšg
+()
+
+102 
+	}
+}
+
+105 
+	$¶ayDœeùProûssšg
+()
+
+107 
 	`putPiùu»
 (
 äameProûssšg
@@ -76977,15 +77145,81 @@ pdTRUE
 äameBuff
 );
 
-56 
+108 
 	}
 }
 
-59 
+112 
+	$lcdTaskFunùiÚ
+(*
+pvP¬am‘”s
+)
+
+115 
+	`lcdIn™
+();
+
+116 
+lcdSem­hÜe
+ = 
+	`xSem­hÜeC»©eBš¬y
+();
+
+117 
+	`putPiùu»
+(
+image_d©a_02_0000_Lay”10
+);
+
+119 ià(
+	`xSem­hÜeTake
+(
+lcdSem­hÜe
+, 
+pÜtMAX_DELAY
+ ) !ğ
+pdTRUE
+)
+
+123 if(
+¶ay”H
+.
+¶ay”S‹
+ !ğ
+PLAYER_PLAY
+)
+
+128 
+¶ay”H
+.
+¶aySourû
+)
+
+130 
+PLAY_FLASH
+:
+
+131 
+	`¶ayFÏshProûssšg
+();
+
+133 
+PLAY_DIRECT
+:
+
+134 
+	`¶ayDœeùProûssšg
+();
+
+139 
+	}
+}
+
+147 
 	$lcdTaskC»©e
 ()
 
-61 
+149 
 	`xTaskC»©e
 (
 lcdTaskFunùiÚ
@@ -76997,7 +77231,7 @@ NULL
 LCD_TASK_PRIORITY
 , NULL);
 
-62 
+150 
 	}
 }
 
@@ -77543,7 +77777,7 @@ NULL
 
 28 
 	#SIZE_PACKET
- (512)
+ (1024)
 
 	)
 
@@ -77576,7 +77810,7 @@ CTIMER4
 34 #´agm¨
 ·ck
 (
-puah
+push
 ,1)
 
 37 
@@ -215687,8 +215921,8 @@ __ılu¥lus
 1
 .
 0
-197
-16567
+199
+16729
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\event_groups.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\FreeRTOS.h
@@ -215728,6 +215962,8 @@ C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.h
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalIFlash\HalIFlash.c
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalIFlash\HalIFlash.h
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.h
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.c

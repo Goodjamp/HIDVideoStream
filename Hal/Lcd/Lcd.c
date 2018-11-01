@@ -1,4 +1,4 @@
-#include "Halspi.h"
+//#include "Halspi.h"
 #include "fsl_gpio.h"
 #include "fsl_iocon.h"
 #include "fsl_spi_dma.h"
@@ -19,6 +19,8 @@
 
 #define DIGITAL_WITH_PULLUP (IOCON_MODE_PULLUP | IOCON_DIGITAL_EN | IOCON_INPFILT_OFF)
 
+
+typedef void(*HalSpiTransferDoneCallback)(bool isOk);
 
 typedef struct HalGpioPinStruct {
     iocon_group_t iocon;

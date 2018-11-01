@@ -119,6 +119,8 @@
 "C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.h"
 "C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.c"
 "C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.h"
+"C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalIFlash\HalIFlash.c"
+"C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalIFlash\HalIFlash.h"
 "C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.c"
 "C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.h"
 "C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.c"

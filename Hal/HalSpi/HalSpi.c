@@ -69,3 +69,4 @@ bool halSpiTransfer(uint8_t txData[], uint8_t rxData[], uint32_t transferDataLen
 
     return (kStatus_Success == SPI_MasterTransferDMA(EXAMPLE_SPI_MASTER, &masterHandle, &masterXfer));
 }
+

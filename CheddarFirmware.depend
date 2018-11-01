@@ -721,7 +721,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1540891932 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.c
+1541085793 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.c
 	"FreeRTOS.h"
 	"task.h"
 	"semphr.h"
@@ -1034,8 +1034,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1531911800 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\lcd\lcd.c
-	"Halspi.h"
+1541085457 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\lcd\lcd.c
 	"fsl_gpio.h"
 	"fsl_iocon.h"
 	"fsl_spi_dma.h"
@@ -1284,5 +1283,10 @@
 	"usb.h"
 	"usb_osa.h"
 
-1540994680 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\haliflash\haliflash.c
+1541085265 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\haliflash\haliflash.c
+	"stdint.h"
+	"LPC54608.H"
+	"fsl_dma.h"
+	"fsl_spi.h"
+	"fsl_spi_dma.h"
 

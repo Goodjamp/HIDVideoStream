@@ -1,4 +1,4 @@
-cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001646432
+cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001646783
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
 
 28 
@@ -47658,84 +47658,116 @@ h®I2cEv’tCb
 "
 
 15 
-	#DMA_SPIF_LASH_RX_CHANEL
+	#DMA_SPIF_FLASH_RX_CHANEL
  14
 
 	)
 
 16 
-	#DMA_SPIF_LASH_TX_CHANEL
+	#DMA_SPIF_FLASH_TX_CHANEL
  15
 
 	)
 
-20 
+18 
+dma_hªdË_t
+ 
+	gdmaDmaSpiFÏshRx
+;
+
+19 
+dma_hªdË_t
+ 
+	gdmaDmaSpiFÏshTx
+;
+
+23 
 	$š™SPIFÏsh
 ()
 
-22 
+25 
 	`DMA_In™
 (
 DMA0
 );
 
-24 
-	`DMA_EÇbËChªÃlIÁ”ru±s
-(
-DMA0
-, 
-DMA_SPIF_LASH_RX_CHANEL
-);
-
-25 
-	`DMA_EÇbËChªÃlIÁ”ru±s
-(
-DMA0
-, 
-DMA_SPIF_LASH_TX_CHANEL
-);
-
 27 
-	`DMA_EÇbËChªÃl
+	`DMA_EÇbËChªÃlIÁ”ru±s
 (
 DMA0
 , 
-DMA_SPIF_LASH_RX_CHANEL
+DMA_SPIF_FLASH_RX_CHANEL
 );
 
 28 
+	`DMA_EÇbËChªÃlIÁ”ru±s
+(
+DMA0
+, 
+DMA_SPIF_FLASH_TX_CHANEL
+);
+
+30 
 	`DMA_EÇbËChªÃl
 (
 DMA0
 , 
-DMA_SPIF_LASH_TX_CHANEL
-);
-
-30 
-	`DMA_EÇbËChªÃlP”hRq
-(
-DMA0
-, 
-DMA_SPIF_LASH_RX_CHANEL
+DMA_SPIF_FLASH_RX_CHANEL
 );
 
 31 
+	`DMA_EÇbËChªÃl
+(
+DMA0
+, 
+DMA_SPIF_FLASH_TX_CHANEL
+);
+
+33 
 	`DMA_EÇbËChªÃlP”hRq
 (
 DMA0
 , 
-DMA_SPIF_LASH_TX_CHANEL
+DMA_SPIF_FLASH_RX_CHANEL
 );
 
-32 
+34 
+	`DMA_EÇbËChªÃlP”hRq
+(
+DMA0
+, 
+DMA_SPIF_FLASH_TX_CHANEL
+);
+
+36 
+	`DMA_S‘ChªÃlPriÜ™y
+(
+DMA0
+, 
+DMA_SPIF_FLASH_RX_CHANEL
+, 
+kDMA_ChªÃlPriÜ™y2
+);
+
+37 
+	`DMA_S‘ChªÃlPriÜ™y
+(
+DMA0
+, 
+DMA_SPIF_FLASH_TX_CHANEL
+, 
+kDMA_ChªÃlPriÜ™y2
+);
+
+38 
 	}
 }
 
-34 
+40 
 	$š™SPIDMAFÏsh
 ()
 
-37 
+43 
 	}
 }
 
@@ -48669,10 +48701,6 @@ H®SpiT¿nsãrDÚeC®lback
 
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.c
 
-1 
-	~"H®¥i.h
-"
-
 2 
 	~"f¦_gpio.h
 "
@@ -48785,120 +48813,128 @@ IOCON_INPFILT_OFF
 
 	)
 
-23 
+23 (*
+	tH®SpiT¿nsãrDÚeC®lback
+)(
+	tboÞ
+ 
+	tisOk
+);
+
+25 
 	sH®GpioPšSŒuù
  {
 
-24 
+26 
 iocÚ_group_t
  
-	miocÚ
+iocÚ
 ;
 
-25 
+27 
 gpio_pš_cÚfig_t
  
-	mcÚfig
+cÚfig
 ;
 
-26 } 
+28 } 
 	tH®GpioPšSŒuù
 ;
 
-28 
+30 
 dma_hªdË_t
  
-	gma¡”TxHªdË
-;
-
-29 
-dma_hªdË_t
- 
-	gma¡”RxHªdË
+ma¡”TxHªdË
 ;
 
 31 
-¥i_dma_hªdË_t
+dma_hªdË_t
  
-	gma¡”HªdË
+ma¡”RxHªdË
 ;
 
 33 
-¥i_Œªsãr_t
+¥i_dma_hªdË_t
  
-	gma¡”Xãr
+ma¡”HªdË
 ;
 
 35 
+¥i_Œªsãr_t
+ 
+ma¡”Xãr
+;
+
+37 
 H®SpiT¿nsãrDÚeC®lback
  
-	gh®SpiT¿nsãrDÚeC®lback
+h®SpiT¿nsãrDÚeC®lback
  = 
 NULL
 ;
 
-37 vÞ©ž
+39 vÞ©ž
 boÞ
  
-	gisTxDÚe
+isTxDÚe
  = 
 çl£
 ;
 
-39 
+41 
 H®GpioPšSŒuù
  * 
 	tH®GpioPš
 ;
 
-41 
+43 
 	sH®Gpio
  {
-
-42 
-H®GpioPš
- 
-	m¥iOËdDc
-;
-
-43 
-H®GpioPš
- 
-	m¥iOËdMosi
-;
 
 44 
 H®GpioPš
  
-	m¥iOËdSck
+¥iOËdDc
 ;
 
 45 
 H®GpioPš
  
-	m¥iOËdCs
+¥iOËdMosi
 ;
 
 46 
 H®GpioPš
  
-	m¥iOËdR¡
+¥iOËdSck
 ;
 
-47 } 
+47 
+H®GpioPš
+ 
+¥iOËdCs
+;
+
+48 
+H®GpioPš
+ 
+¥iOËdR¡
+;
+
+49 } 
 	tH®Gpio
 ;
 
-49 
-h®GpioPšIn™
+51 
+	`h®GpioPšIn™
 (
 H®GpioPš
  
 pš
 );
 
-50 
-h®GpioS‘Pš
+52 
+	`h®GpioS‘Pš
 (
 H®GpioPš
  
@@ -48909,173 +48945,177 @@ boÞ
 v®ue
 );
 
-52 cÚ¡ 
+54 cÚ¡ 
 H®Gpio
  
-	gh®GpioPš
+h®GpioPš
  = {
 
-53 .
+55 .
 ¥iOËdDc
  = &(
 H®GpioPšSŒuù
 ) {
 
-54 .
+56 .
 iocÚ
  = {
 
-55 .
+57 .
 pÜt
  = 2,
 
-56 .
-	gpš
+58 .
+pš
  = 20,
 
-57 .
-	gmodefunc
+59 .
+modefunc
  = 
 IOCON_FUNC0
  | 
 DIGITAL_WITH_PULLUP
 
 
-59 .
-	gcÚfig
+61 .
+cÚfig
  = 
 GPIO_CONFIG_OUT_LOGIC_1
 
 
-61 .
-	g¥iOËdMosi
+63 .
+¥iOËdMosi
  = &(
 H®GpioPšSŒuù
 ) {
 
-62 .
+64 .
 iocÚ
  = {
 
-63 .
+65 .
 pÜt
  = 2,
 
-64 .
-	gpš
+66 .
+pš
  = 18,
 
-65 .
-	gmodefunc
+67 .
+modefunc
  = 
 IOCON_FUNC2
  | 
 DIGITAL_WITH_PULLUP
 
 
-67 .
-	gcÚfig
+69 .
+cÚfig
  = 
 GPIO_CONFIG_OUT_LOGIC_0
 
 
-69 .
-	g¥iOËdSck
+71 .
+¥iOËdSck
  = &(
 H®GpioPšSŒuù
 ) {
 
-70 .
+72 .
 iocÚ
  = {
 
-71 .
+73 .
 pÜt
  = 2,
 
-72 .
-	gpš
+74 .
+pš
  = 26,
 
-73 .
-	gmodefunc
+75 .
+modefunc
  = 
 IOCON_FUNC3
  | 
 DIGITAL_WITH_PULLUP
 
 
-75 .
-	gcÚfig
+77 .
+cÚfig
  = 
 GPIO_CONFIG_OUT_LOGIC_0
 
 
-77 .
-	g¥iOËdCs
+79 .
+¥iOËdCs
  = &(
 H®GpioPšSŒuù
 ) {
 
-78 .
+80 .
 iocÚ
  = {
 
-79 .
+81 .
 pÜt
  = 2,
 
-80 .
-	gpš
+82 .
+pš
  = 21,
 
-81 .
-	gmodefunc
+83 .
+modefunc
  = 
 IOCON_FUNC2
  | 
 DIGITAL_WITH_PULLUP
 
 
-83 .
-	gcÚfig
+85 .
+cÚfig
  = 
 GPIO_CONFIG_OUT_LOGIC_1
 
 
-85 .
-	g¥iOËdR¡
+87 .
+¥iOËdR¡
  = &(
 H®GpioPšSŒuù
 ) {
 
-86 .
+88 .
 iocÚ
  = {
 
-87 .
+89 .
 pÜt
  = 2,
 
-88 .
-	gpš
+90 .
+pš
  = 19,
 
-89 .
-	gmodefunc
+91 .
+modefunc
  = 
 IOCON_FUNC0
  | 
 DIGITAL_WITH_PULLUP
 
 
-91 .
-	gcÚfig
+93 .
+cÚfig
  = 
 GPIO_CONFIG_OUT_LOGIC_0
 
 
-95 
+95 
+	}
+};
+
+97 
 	$h®GpioPšIn™
 (
 H®GpioPš
@@ -49083,7 +49123,7 @@ H®GpioPš
 pš
 )
 
-97 
+99 
 	`IOCON_PšMuxS‘
 (
 IOCON
@@ -49097,7 +49137,7 @@ pÜt
 modefunc
 );
 
-98 
+100 
 	`GPIO_PšIn™
 (
 GPIO
@@ -49111,11 +49151,11 @@ pÜt
 cÚfig
 );
 
-99 
+101 
 	}
 }
 
-101 
+103 
 	$h®GpioS‘Pš
 (
 H®GpioPš
@@ -49127,7 +49167,7 @@ boÞ
 v®ue
 )
 
-103 
+105 
 	`GPIO_Wr™ePšOuut
 (
 GPIO
@@ -49141,11 +49181,11 @@ pÜt
 v®ue
 );
 
-104 
+106 
 	}
 }
 
-106 
+108 
 	$SPI_Ma¡”U£rC®lback
 (
 SPI_Ty³
@@ -49163,19 +49203,19 @@ hªdË
 u£rD©a
 )
 
-108 
+110 
 isTxDÚe
  = 
 Œue
 ;
 
-109 ià(
+111 ià(
 h®SpiT¿nsãrDÚeC®lback
  !ð
 NULL
 ) {
 
-110 
+112 
 	`h®SpiT¿nsãrDÚeC®lback
 (
 ¡©us
@@ -49183,11 +49223,11 @@ NULL
 kStus_Sucûss
 );
 
-112 
+114 
 	}
 }
 
-114 
+116 
 boÞ
  
 	$h®SpiT¿nsãr
@@ -49207,13 +49247,13 @@ H®SpiT¿nsãrDÚeC®lback
 ÿÎback
 )
 
-116 
+118 
 h®SpiT¿nsãrDÚeC®lback
  = 
 ÿÎback
 ;
 
-118 
+120 
 	`DMA_C»©eHªdË
 (&
 ma¡”TxHªdË
@@ -49223,7 +49263,7 @@ SPI_DMA
 EXAMPLE_SPI_MASTER_TX_CHANNEL
 );
 
-119 
+121 
 	`DMA_C»©eHªdË
 (&
 ma¡”RxHªdË
@@ -49233,7 +49273,7 @@ SPI_DMA
 EXAMPLE_SPI_MASTER_RX_CHANNEL
 );
 
-122 
+124 
 	`SPI_Ma¡”T¿nsãrC»©eHªdËDMA
 (
 EXAMPLE_SPI_MASTER
@@ -49249,7 +49289,7 @@ ma¡”TxHªdË
 ma¡”RxHªdË
 );
 
-125 
+127 
 ma¡”Xãr
 .
 txD©a
@@ -49257,13 +49297,13 @@ txD©a
 ušt8_t
  *)xData;
 
-126 
+128 
 ma¡”Xãr
 .
 rxD©a
  =„xData;
 
-127 
+129 
 ma¡”Xãr
 .
 d©aSize
@@ -49271,7 +49311,7 @@ d©aSize
 ŒªsãrD©aL’gth
 ;
 
-128 
+130 
 ma¡”Xãr
 .
 cÚfigFÏgs
@@ -49279,7 +49319,7 @@ cÚfigFÏgs
 kSPI_F¿meAs£¹
 ;
 
-130  (
+132  (
 kStus_Sucûss
  =ð
 	`SPI_Ma¡”T¿nsãrDMA
@@ -49291,11 +49331,11 @@ ma¡”HªdË
 ma¡”Xãr
 ));
 
-131 
+133 
 	}
 }
 
-133 
+135 
 	$£ndCommªd
 (
 ušt8_t
@@ -49303,13 +49343,13 @@ ušt8_t
 d©a
 )
 
-135 
+137 
 ušt8_t
  
 »ûiveD©a
 ;
 
-136 
+138 
 	`h®GpioS‘Pš
 (
 h®GpioPš
@@ -49319,13 +49359,13 @@ h®GpioPš
 çl£
 );
 
-137 
+139 
 isTxDÚe
  = 
 çl£
 ;
 
-138 
+140 
 	`h®SpiT¿nsãr
 (&
 d©a
@@ -49335,17 +49375,17 @@ d©a
 NULL
 );
 
-139 
+141 
 isTxDÚe
  =ð
 çl£
 ) {
 
-142 
+144 
 	}
 }
 
-144 
+146 
 	$£ndD©a
 (
 ušt8_t
@@ -49353,19 +49393,19 @@ ušt8_t
 d©a
 )
 
-146 
+148 
 isTxDÚe
  =ð
 çl£
 ) {
 
-150 
+152 
 ušt8_t
  
 »ûiveD©a
 ;
 
-151 
+153 
 	`h®GpioS‘Pš
 (
 h®GpioPš
@@ -49375,13 +49415,13 @@ h®GpioPš
 Œue
 );
 
-152 
+154 
 isTxDÚe
  = 
 çl£
 ;
 
-153 
+155 
 	`h®SpiT¿nsãr
 (&
 d©a
@@ -49391,11 +49431,11 @@ d©a
 NULL
 );
 
-154 
+156 
 	}
 }
 
-156 
+158 
 	$putPiùu»
 (cÚ¡ 
 ušt8_t
@@ -49403,11 +49443,11 @@ ušt8_t
 d©a
 [])
 
-158 
+160 
 	`£ndCommªd
 (0x0C);
 
-159 
+161 
 	`h®GpioS‘Pš
 (
 h®GpioPš
@@ -49417,23 +49457,23 @@ h®GpioPš
 Œue
 );
 
-160 
+162 
 ušt32_t
  
 a
  = 0;
 
-161 
+163 
 a
  = 0;‡ < 32;‡++) {
 
-162 
+164 
 isTxDÚe
  = 
 çl£
 ;
 
-163 
+165 
 	`h®SpiT¿nsãr
 (
 d©a
@@ -49443,40 +49483,24 @@ a
 NULL
 , 1024, NULL);
 
-164 
+166 
 isTxDÚe
  =ð
 çl£
 ) {
 
-168 
+170 
 	}
 }
 
-170 
+172 
 	$lcdIn™
 ()
 
-172 
+174 
 	`DMA_In™
 (
 DMA0
-);
-
-173 
-	`h®GpioPšIn™
-(
-h®GpioPš
-.
-¥iOËdR¡
-);
-
-174 
-	`h®GpioPšIn™
-(
-h®GpioPš
-.
-¥iOËdCs
 );
 
 175 
@@ -49484,7 +49508,7 @@ h®GpioPš
 (
 h®GpioPš
 .
-¥iOËdDc
+¥iOËdR¡
 );
 
 176 
@@ -49492,7 +49516,7 @@ h®GpioPš
 (
 h®GpioPš
 .
-¥iOËdMosi
+¥iOËdCs
 );
 
 177 
@@ -49500,40 +49524,56 @@ h®GpioPš
 (
 h®GpioPš
 .
-¥iOËdSck
+¥iOËdDc
+);
+
+178 
+	`h®GpioPšIn™
+(
+h®GpioPš
+.
+¥iOËdMosi
 );
 
 179 
+	`h®GpioPšIn™
+(
+h®GpioPš
+.
+¥iOËdSck
+);
+
+181 
 	`CLOCK_A‰achClk
 (
 kFRO_HF_to_FLEXCOMM3
 );
 
-181 
+183 
 ušt32_t
  
 ¤cClock_Hz
 ;
 
-182 
+184 
 ¥i_ma¡”_cÚfig_t
  
 ma¡”CÚfig
 ;
 
-184 
+186 
 ¤cClock_Hz
  = 
 EXAMPLE_SPI_MASTER_CLK_FREQ
 ;
 
-186 
+188 
 	`SPI_Ma¡”G‘DeçuÉCÚfig
 (&
 ma¡”CÚfig
 );
 
-187 
+189 
 ma¡”CÚfig
 .
 s£lNum
@@ -49543,7 +49583,7 @@ s£lNum
 EXAMPLE_SPI_SSEL
 ;
 
-188 
+190 
 ma¡”CÚfig
 .
 s£lPÞ
@@ -49553,13 +49593,13 @@ s£lPÞ
 EXAMPLE_MASTER_SPI_SPOL
 ;
 
-189 
+191 
 ma¡”CÚfig
 .
 baudR©e_Bps
  = 24000000;
 
-190 
+192 
 	`SPI_Ma¡”In™
 (
 EXAMPLE_SPI_MASTER
@@ -49569,7 +49609,7 @@ ma¡”CÚfig
 ¤cClock_Hz
 );
 
-192 
+194 
 	`DMA_EÇbËChªÃl
 (
 SPI_DMA
@@ -49577,7 +49617,7 @@ SPI_DMA
 EXAMPLE_SPI_MASTER_TX_CHANNEL
 );
 
-193 
+195 
 	`DMA_EÇbËChªÃl
 (
 SPI_DMA
@@ -49585,7 +49625,7 @@ SPI_DMA
 EXAMPLE_SPI_MASTER_RX_CHANNEL
 );
 
-194 
+196 
 	`DMA_S‘ChªÃlPriÜ™y
 (
 SPI_DMA
@@ -49595,7 +49635,7 @@ EXAMPLE_SPI_MASTER_TX_CHANNEL
 kDMA_ChªÃlPriÜ™y3
 );
 
-195 
+197 
 	`DMA_S‘ChªÃlPriÜ™y
 (
 SPI_DMA
@@ -49605,17 +49645,17 @@ EXAMPLE_SPI_MASTER_RX_CHANNEL
 kDMA_ChªÃlPriÜ™y2
 );
 
-196 vÞ©ž
+198 vÞ©ž
 ušt32_t
  
 d–ayCÁr
  = 0;
 
-197 
+199 
 d–ayCÁr
  = 0; delayCntr < 1000000; delayCntr++) {
 
-201 
+203 
 	`h®GpioS‘Pš
 (
 h®GpioPš
@@ -49625,145 +49665,137 @@ h®GpioPš
 Œue
 );
 
-203 
+205 
 d–ayCÁr
  = 0; delayCntr < 1000000; delayCntr++) {
 
-207 
+209 
 	`£ndCommªd
 (0x01);
 
-209 
+211 
 	`£ndCommªd
 (0x03);
 
-210 
+212 
 	`£ndD©a
 (0x00);
 
-212 
+214 
 	`£ndCommªd
-(0x04);
-
-213 
-	`£ndD©a
 (0x04);
 
 215 
+	`£ndD©a
+(0x04);
+
+217 
 	`£ndCommªd
 (0x05);
 
-216 
+218 
 	`£ndD©a
 (0x00);
 
-218 
+220 
 	`£ndCommªd
 (0x06);
 
-219 
-	`£ndD©a
-(0x00);
-
 221 
-	`£ndCommªd
-(0x07);
-
-222 
 	`£ndD©a
 (0x00);
 
 223 
-	`£ndD©a
-(0x00);
+	`£ndCommªd
+(0x07);
 
 224 
 	`£ndD©a
-(0x07);
+(0x00);
 
 225 
 	`£ndD©a
-(0x0F);
+(0x00);
 
 226 
 	`£ndD©a
-(0x00);
+(0x07);
 
 227 
 	`£ndD©a
-(0x00);
+(0x0F);
 
 228 
 	`£ndD©a
-(0x07);
+(0x00);
 
 229 
 	`£ndD©a
-(0x0F);
+(0x00);
+
+230 
+	`£ndD©a
+(0x07);
 
 231 
+	`£ndD©a
+(0x0F);
+
+233 
 	`£ndCommªd
 (0x08);
 
-232 
+234 
 	`£ndD©a
 (0x01);
 
-234 
+236 
 	`£ndCommªd
 (0x09);
 
-235 
+237 
 	`£ndD©a
 (0x07);
 
-237 
+239 
 	`£ndCommªd
 (0x0A);
 
-238 
-	`£ndD©a
-(0x00);
-
-239 
-	`£ndD©a
-(0x00);
-
 240 
 	`£ndD©a
-(0x07);
+(0x00);
 
 241 
 	`£ndD©a
-(0x0F);
+(0x00);
 
 242 
 	`£ndD©a
-(0x00);
+(0x07);
 
 243 
 	`£ndD©a
-(0x00);
+(0x0F);
 
 244 
 	`£ndD©a
-(0x07);
+(0x00);
 
 245 
 	`£ndD©a
-(0x0F);
+(0x00);
+
+246 
+	`£ndD©a
+(0x07);
 
 247 
-	`£ndCommªd
-(0x0B);
-
-248 
 	`£ndD©a
-(0x00);
+(0x0F);
 
 249 
-	`£ndD©a
-(0x00);
+	`£ndCommªd
+(0x0B);
 
 250 
 	`£ndD©a
@@ -49773,17 +49805,17 @@ d–ayCÁr
 	`£ndD©a
 (0x00);
 
-253 
-	`£ndCommªd
-(0x0E);
-
-254 
+252 
 	`£ndD©a
-(0x03);
+(0x00);
+
+253 
+	`£ndD©a
+(0x00);
 
 255 
-	`£ndD©a
-(0x0A);
+	`£ndCommªd
+(0x0E);
 
 256 
 	`£ndD©a
@@ -49801,113 +49833,121 @@ d–ayCÁr
 	`£ndD©a
 (0x0A);
 
-261 
-	`£ndCommªd
-(0x0F);
-
-262 
+260 
 	`£ndD©a
-(0x14);
+(0x03);
+
+261 
+	`£ndD©a
+(0x0A);
 
 263 
-	`£ndD©a
-(0x14);
+	`£ndCommªd
+(0x0F);
 
 264 
 	`£ndD©a
 (0x14);
 
+265 
+	`£ndD©a
+(0x14);
+
 266 
+	`£ndD©a
+(0x14);
+
+268 
 	`£ndCommªd
 (0x1C);
 
-267 
+269 
 	`£ndD©a
 (0x08);
 
-269 
+271 
 	`£ndCommªd
 (0x1D);
-
-270 
-	`£ndD©a
-(0x0A);
-
-271 
-	`£ndD©a
-(0x0A);
 
 272 
 	`£ndD©a
 (0x0A);
 
+273 
+	`£ndD©a
+(0x0A);
+
 274 
+	`£ndD©a
+(0x0A);
+
+276 
 	`£ndCommªd
 (0x1E);
 
-275 
+277 
 	`£ndD©a
 (0x00);
 
-277 
+279 
 	`£ndCommªd
 (0x1F);
 
-278 
+280 
 	`£ndD©a
 (0x00);
 
-280 
+282 
 	`£ndCommªd
 (0x30);
 
-281 
+283 
 	`£ndD©a
 (0x12);
 
-283 
+285 
 	`£ndCommªd
 (0x02);
 
-284 
+286 
 	`£ndD©a
 (0x01);
 
-286 
+288 
 	`£ndCommªd
 (0x3C);
 
-287 
+289 
 	`£ndD©a
 (0x01);
 
-289 
+291 
 	`£ndCommªd
 (0x3A);
 
-291 cÚ¡ 
+293 cÚ¡ 
 ušt8_t
  
 G¿y_SÿË_TB1
 [64] = {
 
-297 cÚ¡ 
+299 cÚ¡ 
 ušt8_t
  
 G¿y_SÿË_TB2
 [128] = {
 
-307 
+309 
 ušt32_t
  
 úŒ
  = 0;
 
-308 
+310 
 úŒ
  = 0; cntr < 64; cntr++) {
 
-309 
+311 
 	`£ndD©a
 (
 G¿y_SÿË_TB1
@@ -49915,11 +49955,11 @@ G¿y_SÿË_TB1
 úŒ
 ]);
 
-312 
+314 
 úŒ
  = 0; cntr < 128; cntr++) {
 
-313 
+315 
 	`£ndD©a
 (
 G¿y_SÿË_TB2
@@ -49927,11 +49967,11 @@ G¿y_SÿË_TB2
 úŒ
 ]);
 
-316 
+318 
 úŒ
  = 0; cntr < 64; cntr++) {
 
-317 
+319 
 	`£ndD©a
 (
 G¿y_SÿË_TB1
@@ -49939,7 +49979,7 @@ G¿y_SÿË_TB1
 úŒ
 ]);
 
-319 
+321 
 	}
 }
 
@@ -76993,57 +77033,7 @@ ušt8_t
 	gäameProûssšg
 ;
 
-33 
-	$£tNewF¿me
-(
-ušt8_t
- 
-äameBuff
-[])
-
-35 
-Ba£Ty³_t
- 
-xHigh”PriÜ™yTaskWok’
-;
-
-36 
-£ndF¿meCommªdT
- *
-äameCommªd
- = (£ndF¿meCommªdT*)
-äameBuff
-;
-
-37 
-äameProûssšg
-.
-äameBuff
- = 
-äameCommªd
-->
-·ylßd
-;
-
-38 
-xHigh”PriÜ™yTaskWok’
- = 
-pdFALSE
-;
-
-39 
-	`xSem­hÜeGiveFromISR
-(
-lcdSem­hÜe
-, &
-xHigh”PriÜ™yTaskWok’
-);
-
-40 
-	}
-}
-
-61 
+53 
 »adFÏshF¿me
 (
 ušt16_t
@@ -77053,91 +77043,161 @@ videoIndex
 videoF¿meCÁ
 );
 
-66 
+58 
 	mPLAY_FLASH
 ,
 
-67 
+59 
 	mPLAY_DIRECT
 ,
 
-68 }
+60 }
 	t¶aySourûT
 ;
 
-73 
+65 
 	mPLAYER_PLAY
 ,
 
-74 
+66 
 	mPLAYER_STOP
 ,
 
-75 }
+67 }
 	t¶ay”S‹T
 ;
 
-78 
+70 
 	s¶ayFÏshS‹T
 
 
-80 
+72 
 ušt16_t
  
 	mäameCÁ
 ;
 
-84 
+76 
 	s¶ayDœeùS‹T
 
 
-86 
+78 
 ušt16_t
  
 	m»£rved
 ;
 
-92 
+84 
 ¶aySourûT
  
 	m¶aySourû
 ;
 
-93 
+85 
 ¶ay”S‹T
  
 	m¶ay”S‹
 ;
 
-94 
+86 
 ¶ayFÏshS‹T
  
 	m¶ayFÏshS‹
 ;
 
-95 
+87 
 ¶ayDœeùS‹T
  
 	m¶ayDœeùS‹
 ;
 
-96 }
+88 }
 	g¶ay”H
+ =
+
+90 .
+¶aySourû
+ = 
+PLAY_DIRECT
+,
+
+91 .
+	g¶ay”S‹
+ = 
+PLAYER_STOP
+,
+
+95 
+	$£tNewF¿me
+(
+ušt8_t
+ 
+äameBuff
+[])
+
+97 
+Ba£Ty³_t
+ 
+xHigh”PriÜ™yTaskWok’
 ;
 
-99 
-	$¶ayFÏshProûssšg
-()
+98 
+£ndF¿meCommªdT
+ *
+äameCommªd
+ = (£ndF¿meCommªdT*)
+äameBuff
+;
+
+99 
+äameProûssšg
+.
+äameBuff
+ = 
+äameCommªd
+->
+·ylßd
+;
+
+100 
+xHigh”PriÜ™yTaskWok’
+ = 
+pdFALSE
+;
+
+101 
+¶ay”H
+.
+¶ay”S‹
+ = 
+PLAYER_PLAY
+;
 
 102 
+	`xSem­hÜeGiveFromISR
+(
+lcdSem­hÜe
+, &
+xHigh”PriÜ™yTaskWok’
+);
+
+103 
 	}
 }
 
-105 
+107 
+	$¶ayFÏshProûssšg
+()
+
+110 
+	}
+}
+
+113 
 	$¶ayDœeùProûssšg
 ()
 
-107 
+115 
 	`putPiùu»
 (
 äameProûssšg
@@ -77145,33 +77205,33 @@ ušt16_t
 äameBuff
 );
 
-108 
+116 
 	}
 }
 
-112 
+120 
 	$lcdTaskFunùiÚ
 (*
 pvP¬am‘”s
 )
 
-115 
+123 
 	`lcdIn™
 ();
 
-116 
+124 
 lcdSem­hÜe
  = 
 	`xSem­hÜeC»©eBš¬y
 ();
 
-117 
+125 
 	`putPiùu»
 (
 image_d©a_02_0000_Lay”10
 );
 
-119 ià(
+127 ià(
 	`xSem­hÜeTake
 (
 lcdSem­hÜe
@@ -77181,7 +77241,7 @@ pÜtMAX_DELAY
 pdTRUE
 )
 
-123 if(
+131 if(
 ¶ay”H
 .
 ¶ay”S‹
@@ -77189,37 +77249,37 @@ pdTRUE
 PLAYER_PLAY
 )
 
-128 
+136 
 ¶ay”H
 .
 ¶aySourû
 )
 
-130 
+138 
 PLAY_FLASH
 :
 
-131 
+139 
 	`¶ayFÏshProûssšg
 ();
 
-133 
+141 
 PLAY_DIRECT
 :
 
-134 
+142 
 	`¶ayDœeùProûssšg
 ();
 
-139 
+147 
 	}
 }
 
-147 
+155 
 	$lcdTaskC»©e
 ()
 
-149 
+157 
 	`xTaskC»©e
 (
 lcdTaskFunùiÚ
@@ -77231,7 +77291,7 @@ NULL
 LCD_TASK_PRIORITY
 , NULL);
 
-150 
+158 
 	}
 }
 

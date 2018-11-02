@@ -1,4 +1,4 @@
-cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001646783
+cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001647415
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
 
 28 
@@ -47658,88 +47658,84 @@ h®I2cEv’tCb
 "
 
 15 
+	#SPI_FLASH
+ 
+SPI7
+
+
+	)
+
+16 
+	#DMA_SPI_FLASH
+ 
+DMA0
+
+
+	)
+
+19 
 	#DMA_SPIF_FLASH_RX_CHANEL
  14
 
 	)
 
-16 
+20 
 	#DMA_SPIF_FLASH_TX_CHANEL
  15
 
 	)
 
-18 
+22 
 dma_hªdË_t
  
-	gdmaDmaSpiFÏshRx
+	gdmaSpiFÏshRxHªdË
 ;
 
-19 
+23 
 dma_hªdË_t
  
-	gdmaDmaSpiFÏshTx
+	gdmaSpiFÏshTxHªdË
 ;
 
-23 
+25 
+dma_desütÜ_t
+ 
+	gdmaSpiFÏshRxDesütÜ
+;
+
+26 
+dma_desütÜ_t
+ 
+	gdmaSpiFÏshTxDesütÜ
+;
+
+28 
 	$š™SPIFÏsh
 ()
 
-25 
+30 
 	`DMA_In™
 (
 DMA0
 );
 
-27 
-	`DMA_EÇbËChªÃlIÁ”ru±s
-(
-DMA0
-, 
-DMA_SPIF_FLASH_RX_CHANEL
-);
-
-28 
-	`DMA_EÇbËChªÃlIÁ”ru±s
-(
-DMA0
-, 
-DMA_SPIF_FLASH_TX_CHANEL
-);
-
-30 
+32 
 	`DMA_EÇbËChªÃl
 (
 DMA0
 , 
 DMA_SPIF_FLASH_RX_CHANEL
-);
-
-31 
-	`DMA_EÇbËChªÃl
-(
-DMA0
-, 
-DMA_SPIF_FLASH_TX_CHANEL
 );
 
 33 
-	`DMA_EÇbËChªÃlP”hRq
-(
-DMA0
-, 
-DMA_SPIF_FLASH_RX_CHANEL
-);
-
-34 
-	`DMA_EÇbËChªÃlP”hRq
+	`DMA_EÇbËChªÃl
 (
 DMA0
 , 
 DMA_SPIF_FLASH_TX_CHANEL
 );
 
-36 
+35 
 	`DMA_S‘ChªÃlPriÜ™y
 (
 DMA0
@@ -47749,7 +47745,7 @@ DMA_SPIF_FLASH_RX_CHANEL
 kDMA_ChªÃlPriÜ™y2
 );
 
-37 
+36 
 	`DMA_S‘ChªÃlPriÜ™y
 (
 DMA0
@@ -47763,11 +47759,125 @@ kDMA_ChªÃlPriÜ™y2
 	}
 }
 
-40 
+41 
+	$£ndCommªd
+()
+
+44 
+	$»adD©a
+(
+ušt32_t
+ 
+add»ss
+, 
+ušt8_t
+ *
+bufãr
+, ušt32_ˆ
+d©aSize
+)
+
+51 
+h®SpiT¿nsãrDÚeC®lback
+ = 
+ÿÎback
+;
+
+53 
+	`DMA_C»©eHªdË
+(&
+ma¡”TxHªdË
+, 
+SPI_DMA
+, 
+EXAMPLE_SPI_MASTER_TX_CHANNEL
+);
+
+54 
+	`DMA_C»©eHªdË
+(&
+ma¡”RxHªdË
+, 
+SPI_DMA
+, 
+EXAMPLE_SPI_MASTER_RX_CHANNEL
+);
+
+57 
+	`SPI_Ma¡”T¿nsãrC»©eHªdËDMA
+(
+EXAMPLE_SPI_MASTER
+, &
+ma¡”HªdË
+, 
+SPI_Ma¡”U£rC®lback
+, 
+NULL
+, &
+ma¡”TxHªdË
+, &
+ma¡”RxHªdË
+);
+
+60 
+ma¡”Xãr
+.
+txD©a
+ = (
+ušt8_t
+ *)xData;
+
+61 
+ma¡”Xãr
+.
+rxD©a
+ =„xData;
+
+62 
+ma¡”Xãr
+.
+d©aSize
+ = 
+ŒªsãrD©aL’gth
+;
+
+63 
+ma¡”Xãr
+.
+cÚfigFÏgs
+ |ð
+kSPI_F¿meAs£¹
+;
+
+65  (
+kStus_Sucûss
+ =ð
+	`SPI_Ma¡”T¿nsãrDMA
+(
+EXAMPLE_SPI_MASTER
+, &
+ma¡”HªdË
+, &
+ma¡”Xãr
+));
+
+66 
+	}
+}
+
+73 
+	$¥iFÏshT¿nsãrCom¶™eCB
+()
+
+76 
+	}
+}
+
+79 
 	$š™SPIDMAFÏsh
 ()
 
-43 
+82 
 	}
 }
 

@@ -28,7 +28,7 @@ const HalGpio halGpio = {
         .iocon = {
             .port = 5,
             .pin = 1,
-            .modefunc = IOCON_FUNC0 | DIGITAL_WITH_PULLUP
+            .modefunc = IOCON_FUNC4 | DIGITAL_WITH_PULLUP
         },
         .config	= GPIO_CONFIG_INPUT
     },
@@ -36,7 +36,7 @@ const HalGpio halGpio = {
         .iocon = {
             .port = 5,
             .pin = 0,
-            .modefunc = IOCON_FUNC0 | DIGITAL_WITH_PULLUP
+            .modefunc = IOCON_FUNC4 | DIGITAL_WITH_PULLUP
         },
         .config	= GPIO_CONFIG_INPUT
     },
@@ -44,7 +44,7 @@ const HalGpio halGpio = {
         .iocon = {
             .port = 4,
             .pin = 31,
-            .modefunc = IOCON_FUNC1 | DIGITAL_WITH_PULLUP
+            .modefunc = IOCON_FUNC4 | DIGITAL_WITH_PULLUP
         },
         .config	= GPIO_CONFIG_INPUT
     },
@@ -52,7 +52,7 @@ const HalGpio halGpio = {
         .iocon = {
             .port = 5,
             .pin = 2,
-            .modefunc = IOCON_FUNC1 | DIGITAL_WITH_PULLUP
+            .modefunc = IOCON_FUNC0 | DIGITAL_WITH_PULLUP
         },
         .config = GPIO_CONFIG_OUT_LOGIC_0
     },
@@ -60,7 +60,7 @@ const HalGpio halGpio = {
         .iocon = {
             .port = 5,
             .pin = 3,
-            .modefunc = IOCON_FUNC2 | DIGITAL_WITH_PULLUP
+            .modefunc = IOCON_FUNC0 | DIGITAL_WITH_PULLUP
         },
         .config = GPIO_CONFIG_OUT_LOGIC_1
     },
@@ -68,7 +68,7 @@ const HalGpio halGpio = {
         .iocon = {
             .port = 5,
             .pin = 4,
-            .modefunc = IOCON_FUNC1 | DIGITAL_WITH_PULLUP
+            .modefunc = IOCON_FUNC0 | DIGITAL_WITH_PULLUP
         },
         .config = GPIO_CONFIG_OUT_LOGIC_1
     },

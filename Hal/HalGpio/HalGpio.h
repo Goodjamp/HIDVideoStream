@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-typedef struct HalGpioPinStruct * HalGpioPin;
+typedef struct HalGpioPinStruct *HalGpioPin;
 
 typedef struct HalGpio {
     HalGpioPin usbVbus;

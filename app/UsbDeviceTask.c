@@ -16,6 +16,8 @@
 #include <stdint.h>
 #include <string.h>
 
+
+
 #define REASONABLE_LONG_TIME            0xFFFF
 
 #define USB_DEVICE_TASK_PRIORITY        3
@@ -181,8 +183,10 @@ static void usbDeviceTaskFunction(void *pvParameters)
     }
 }
 
+#include "HalIFlash.h"
 void usbDeviceTaskCreate(void)
 {
+    halSpiFlashInit();
     initTimerForMeTime();
     usbHidDeviceSetCallbacks(hidIntInputReport, hidIntOutputReport);
     xTaskCreate(usbDeviceTaskFunction,   "UsbComm", USB_DEVICE_TASK_STACK_SIZE, NULL, USB_DEVICE_TASK_PRIORITY, NULL);

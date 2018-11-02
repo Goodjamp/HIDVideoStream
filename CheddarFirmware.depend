@@ -852,7 +852,7 @@
 	"task.h"
 	<string.h>
 
-1540901279 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\usbdevicetask.c
+1541182578 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\usbdevicetask.c
 	"UsbDeviceTask.h"
 	"LcdTask.h"
 	"FreeRTOS.h"
@@ -865,6 +865,7 @@
 	"fsl_clock.h"
 	<stdint.h>
 	<string.h>
+	"HalIFlash.h"
 
 1531911800 c:\private\programing\lpc\cheddarfirmware-feature-gpio\modules\usbdevice\usbhiddevice.h
 	"stdint.h"
@@ -984,7 +985,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1531911800 c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\halgpio\halgpio.h
+1541176972 c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\halgpio\halgpio.h
 	<stdint.h>
 	<stdbool.h>
 
@@ -998,7 +999,7 @@
 	"fsl_gpio.h"
 	"fsl_inputmux.h"
 
-1531911800 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\halgpio\halgpio.c
+1541176816 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\halgpio\halgpio.c
 	"HalGpio.h"
 	"fsl_gpio.h"
 	"fsl_iocon.h"
@@ -1283,10 +1284,14 @@
 	"usb.h"
 	"usb_osa.h"
 
-1541085265 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\haliflash\haliflash.c
+1541185854 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\haliflash\haliflash.c
 	"stdint.h"
+	"stdbool.h"
 	"LPC54608.H"
 	"fsl_dma.h"
 	"fsl_spi.h"
 	"fsl_spi_dma.h"
+	"HalGpio.h"
+
+1541182535 c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\haliflash\haliflash.h
 

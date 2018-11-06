@@ -7,6 +7,8 @@
 #include "fsl_spi.h"
 #include "fsl_spi_dma.h"
 
+#include "HalIFlash.h"
+
 #include "HalGpio.h"
 
 /*
@@ -84,11 +86,10 @@ void spiDmaCB(SPI_Type *base, spi_dma_handle_t *handle, status_t status, void *u
 {
     bool *inDtat = userData;
     halGpioSetPin(halGpio.spiFlashCs, (*inDtat) ? (true) : (false));
-    readData(0, buffTx, buffRx, sizeof(buffTx));
 }
 
 
-status_t readData(uint32_t address, uint8_t *bufferTx, uint8_t *bufferRx, uint32_t dataSize)
+static status_t flashTxRxProcessing(uint8_t *bufferTx, uint8_t *bufferRx, uint32_t dataSize, uint32_t address)
 {
     /*pull down CS*/
     /*start send command*/
@@ -107,14 +108,12 @@ status_t readData(uint32_t address, uint8_t *bufferTx, uint8_t *bufferRx, uint32
                                            void *userData,
                                            dma_handle_t *txHandle,
                                            dma_handle_t *rxHandle);
-
     */
     csSet = true;
     SPI_MasterTransferCreateHandleDMA(SPI_FLASH, &spiDmaFlashHandl, spiDmaCB, &csSet, &dmaSpiFlashTxHandle, &dmaSpiFlashRxHandle);
-
     // Start master transfer
-    masterXfer.txData   = bufferTx;
-    masterXfer.rxData   = bufferRx;
+    masterXfer.txData   = bufferTx; // if Rx only transfer - txData pointer be NULL
+    masterXfer.rxData   = bufferRx; // if Rx only transfer - rxData pointer be NULL
     masterXfer.dataSize = dataSize;
     masterXfer.configFlags |= kSPI_FrameAssert;
 
@@ -122,13 +121,14 @@ status_t readData(uint32_t address, uint8_t *bufferTx, uint8_t *bufferRx, uint32
 }
 
 
-void spiFlashTransferCompliteCB(void)
+void flashReadData(uint8_t *buff,uint32_t dataSize, uint32_t address)
 {
-
+    flashTxRxProcessing(address, NULL, buff, uint32_t dataSize)
 }
 
 
-void initSPIDMAFlash(void)
+flashStatT flashGetState(void)
 {
-    //
+    return FLASH_BUSSY;
 }
+

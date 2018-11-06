@@ -3,6 +3,8 @@
 #include "fsl_iocon.h"
 #include "fsl_spi_dma.h"
 
+#include  "lcd.h"
+
 #define SPI_DMA DMA0
 
 #define EXAMPLE_SPI_MASTER SPI3
@@ -19,8 +21,6 @@
 
 #define DIGITAL_WITH_PULLUP (IOCON_MODE_PULLUP | IOCON_DIGITAL_EN | IOCON_INPFILT_OFF)
 
-
-typedef void(*HalSpiTransferDoneCallback)(bool isOk);
 
 typedef struct HalGpioPinStruct {
     iocon_group_t iocon;
@@ -318,4 +318,18 @@ void lcdInit(void)
     for(cntr = 0; cntr < 64; cntr++) {
         sendData(Gray_Scale_TB1[cntr]);
     } //Blue
+}
+
+
+void lcdSendFirstSubFrame(uint8_t *buff, uint16_t buffSize, HalSpiTransferDoneCallback callback)
+{
+    sendCommand(0x0C);
+    halGpioSetPin(halGpioPin.spiOledDc, true);
+    halSpiTransfer(buff, NULL, buffSize, callback);
+}
+
+
+void lcdSendNextSubFrame(uint8_t *buff, uint16_t buffSize, HalSpiTransferDoneCallback callback)
+{
+    halSpiTransfer(buff, NULL, buffSize, callback);
 }

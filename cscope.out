@@ -1,4 +1,4 @@
-cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001647415
+cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001649851
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
 
 28 
@@ -45000,7 +45000,7 @@ pÜt
 31 .
 	gmodefunc
  = 
-IOCON_FUNC0
+IOCON_FUNC4
  | 
 DIGITAL_WITH_PULLUP
 
@@ -45032,7 +45032,7 @@ pÜt
 39 .
 	gmodefunc
  = 
-IOCON_FUNC0
+IOCON_FUNC4
  | 
 DIGITAL_WITH_PULLUP
 
@@ -45064,7 +45064,7 @@ pÜt
 47 .
 	gmodefunc
  = 
-IOCON_FUNC1
+IOCON_FUNC4
  | 
 DIGITAL_WITH_PULLUP
 
@@ -45096,7 +45096,7 @@ pÜt
 55 .
 	gmodefunc
  = 
-IOCON_FUNC1
+IOCON_FUNC0
  | 
 DIGITAL_WITH_PULLUP
 
@@ -45128,7 +45128,7 @@ pÜt
 63 .
 	gmodefunc
  = 
-IOCON_FUNC2
+IOCON_FUNC0
  | 
 DIGITAL_WITH_PULLUP
 
@@ -45160,7 +45160,7 @@ pÜt
 71 .
 	gmodefunc
  = 
-IOCON_FUNC1
+IOCON_FUNC0
  | 
 DIGITAL_WITH_PULLUP
 
@@ -46363,7 +46363,7 @@ __HAL_GPIO_H__
 
 7 
 H®GpioPšSŒuù
- * 
+ *
 	tH®GpioPš
 ;
 
@@ -47641,31 +47641,217 @@ h®I2cEv’tCb
 	~"¡dšt.h
 "
 
+2 
+	~"¡dboŞ.h
+"
+
 3 
-	~"LPC54608.H
+	~"¡ddef.h
 "
 
 5 
-	~"f¦_dma.h
-"
-
-6 
-	~"f¦_¥i.h
+	~"LPC54608.H
 "
 
 7 
+	~"f¦_dma.h
+"
+
+8 
+	~"f¦_¥i.h
+"
+
+9 
 	~"f¦_¥i_dma.h
 "
 
-15 
+11 
+	~"H®IFÏsh.h
+"
+
+13 
+	~"H®Gpio.h
+"
+
+21 
+	#WRITE_ENABLE
+ 0x6
+
+	)
+
+22 
+	#V_WRITE_ENABLE
+ 0x50
+
+	)
+
+23 
+	#READ_STATUS_REG1
+ 0x5
+
+	)
+
+24 
+	#READ_STATUS_REG2
+ 0x35
+
+	)
+
+25 
+	#READ_STATUS_REG3
+ 0x15
+
+	)
+
+26 
+	#WRITE_STATUS_REG1
+ 0x1
+
+	)
+
+27 
+	#WRITE_STATUS_REG2
+ 0x31
+
+	)
+
+28 
+	#WRITE_STATUS_REG3
+ 0x11
+
+	)
+
+29 
+	#READ_DATA
+ 0x3
+
+	)
+
+30 
+	#PROGRAM_PAGE
+ 0x2
+
+	)
+
+31 
+	#SECTOR_ERASE
+ 0x20
+
+	)
+
+32 
+	#BLOCK_ERASE32
+ 0x52
+
+	)
+
+33 
+	#BLOCK_ERASE64
+ 0xD8
+
+	)
+
+35 #´agm¨
+·ck
+(
+push
+, 1)
+
+38 
+ušt8_t
+ 
+	mcommªd
+;
+
+39 
+ušt8_t
+ 
+	m·ylßd
+[];
+
+40 }
+	tcommªDesütiÚT
+;
+
+41 #´agm¨
+·ck
+(
+pİ
+)
+
+43 #´agm¨
+·ck
+(
+push
+, 1)
+
+46 
+ušt8_t
+ 
+	mBUSY
+:1;
+
+47 
+ušt8_t
+ 
+	mWEL
+:1;
+
+48 
+ušt8_t
+ 
+	mBP0
+:1;
+
+49 
+ušt8_t
+ 
+	mBP1
+:1;
+
+50 
+ušt8_t
+ 
+	mBP2
+:1;
+
+51 
+ušt8_t
+ 
+	mTB
+:1;
+
+52 
+ušt8_t
+ 
+	mSEC
+:1;
+
+53 
+ušt8_t
+ 
+	mSPR0
+:1;
+
+54 }
+	tæashStusReg1T
+;
+
+55 #´agm¨
+·ck
+(
+pİ
+)
+
+58 
 	#SPI_FLASH
  
-SPI7
+SPI4
 
 
 	)
 
-16 
+59 
 	#DMA_SPI_FLASH
  
 DMA0
@@ -47673,175 +47859,449 @@ DMA0
 
 	)
 
-19 
-	#DMA_SPIF_FLASH_RX_CHANEL
- 14
+60 
+	#SPI_FLASH_FRQ
+ 48000000
 
 	)
 
-20 
-	#DMA_SPIF_FLASH_TX_CHANEL
- 15
+61 
+	#COMMAND_BUFF_SIZE
+ 6
 
 	)
 
-22 
+62 
+	#DMA_SPI_FLASH_RX_CHANEL
+ 8
+
+	)
+
+63 
+	#DMA_SPI_FLASH_TX_CHANEL
+ 9
+
+	)
+
+65 vŞ©
+	sæashProûssšgT
+
+
+67 
+boŞ
+ 
+	mcsS‘
+;
+
+68 
+boŞ
+ 
+	mæashBussy
+;
+
+69 }
+	gæashProûssšg
+;
+
+72 
 dma_hªdË_t
  
 	gdmaSpiFÏshRxHªdË
 ;
 
-23 
+73 
 dma_hªdË_t
  
 	gdmaSpiFÏshTxHªdË
 ;
 
-25 
+75 
 dma_desütÜ_t
  
 	gdmaSpiFÏshRxDesütÜ
 ;
 
-26 
+76 
 dma_desütÜ_t
  
 	gdmaSpiFÏshTxDesütÜ
 ;
 
-28 
-	$š™SPIFÏsh
+79 
+¥i_dma_hªdË_t
+ 
+	g¥iDmaFÏshHªdl
+;
+
+80 
+¥i_Œªsãr_t
+ 
+	gma¡”Xãr
+;
+
+82 cÚ¡ 
+H®Gpio
+ 
+h®Gpio
+;
+
+85 
+ušt8_t
+ 
+	gcommªdBuffTx
+[
+COMMAND_BUFF_SIZE
+];
+
+86 
+ušt8_t
+ 
+	gcommªdBuffRx
+[
+COMMAND_BUFF_SIZE
+];
+
+88 
+	$h®SpiFÏshIn™
 ()
 
-30 
+90 
 	`DMA_In™
 (
 DMA0
 );
 
-32 
+92 
+	`h®GpioPšIn™
+(
+h®Gpio
+.
+¥iFÏshWp
+);
+
+93 
+	`h®GpioPšIn™
+(
+h®Gpio
+.
+¥iFÏshHŞd
+);
+
+94 
+	`h®GpioPšIn™
+(
+h®Gpio
+.
+¥iFÏshMosi
+);
+
+95 
+	`h®GpioPšIn™
+(
+h®Gpio
+.
+¥iFÏshMiso
+);
+
+96 
+	`h®GpioPšIn™
+(
+h®Gpio
+.
+¥iFÏshSck
+);
+
+97 
+	`h®GpioPšIn™
+(
+h®Gpio
+.
+¥iFÏshCs
+);
+
+99 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshCs
+, 
+Œue
+);
+
+100 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshHŞd
+, 
+Œue
+);
+
+101 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshWp
+, 
+Œue
+);
+
+104 
+	`CLOCK_A‰achClk
+(
+kFRO_HF_to_FLEXCOMM4
+);
+
+106 
+ušt32_t
+ 
+¤cClock_Hz
+;
+
+107 
+¥i_ma¡”_cÚfig_t
+ 
+ma¡”CÚfig
+;
+
+109 
+¤cClock_Hz
+ = 
+	`CLOCK_G‘F»q
+(
+kCLOCK_FËxcomm4
+);
+
+111 
+	`SPI_Ma¡”G‘DeçuÉCÚfig
+(&
+ma¡”CÚfig
+);
+
+112 
+ma¡”CÚfig
+.
+s£lNum
+ = (
+¥i_s£l_t
+)0;
+
+113 
+ma¡”CÚfig
+.
+s£lPŞ
+ = (
+¥i_¥Ş_t
+)
+kSPI_SpŞAùiveAÎLow
+;
+
+114 
+ma¡”CÚfig
+.
+baudR©e_Bps
+ = 
+SPI_FLASH_FRQ
+;
+
+115 
+	`SPI_Ma¡”In™
+(
+SPI_FLASH
+, &
+ma¡”CÚfig
+, 
+¤cClock_Hz
+);
+
+117 
 	`DMA_EÇbËChªÃl
 (
 DMA0
 , 
-DMA_SPIF_FLASH_RX_CHANEL
+DMA_SPI_FLASH_RX_CHANEL
 );
 
-33 
+118 
 	`DMA_EÇbËChªÃl
 (
 DMA0
 , 
-DMA_SPIF_FLASH_TX_CHANEL
+DMA_SPI_FLASH_TX_CHANEL
 );
 
-35 
+119 
 	`DMA_S‘ChªÃlPriÜ™y
 (
 DMA0
 , 
-DMA_SPIF_FLASH_RX_CHANEL
+DMA_SPI_FLASH_RX_CHANEL
 , 
 kDMA_ChªÃlPriÜ™y2
 );
 
-36 
+120 
 	`DMA_S‘ChªÃlPriÜ™y
 (
 DMA0
 , 
-DMA_SPIF_FLASH_TX_CHANEL
+DMA_SPI_FLASH_TX_CHANEL
 , 
 kDMA_ChªÃlPriÜ™y2
 );
 
-38 
+121 
 	}
 }
 
-41 
-	$£ndCommªd
-()
-
-44 
-	$»adD©a
+124 
+	$¥iDmaCB
 (
-ušt32_t
- 
-add»ss
+SPI_Ty³
+ *
+ba£
 , 
+¥i_dma_hªdË_t
+ *
+hªdË
+, 
+¡©us_t
+ 
+¡©us
+, *
+u£rD©a
+)
+
+126 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshCs
+,
+
+127 (((
+æashProûssšgT
+*)
+u£rD©a
+)->
+csS‘
+è? (
+Œue
+è: (
+çl£
+));
+
+128 ((
+æashProûssšgT
+*)
+u£rD©a
+)->
+æashBussy
+ = 
+çl£
+;
+
+129 
+	}
+}
+
+132 
+¡©us_t
+ 
+	$æashTxRxProûssšg
+(
 ušt8_t
  *
-bufãr
-, ušt32_ˆ
+bufãrTx
+, ušt8_ˆ*
+bufãrRx
+, 
+ušt32_t
+ 
 d©aSize
 )
 
-51 
-h®SpiT¿nsãrDÚeC®lback
+138 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshCs
+, 
+çl£
+);
+
+140 
+	`DMA_C»©eHªdË
+(&
+dmaSpiFÏshRxHªdË
+, 
+DMA0
+, 
+DMA_SPI_FLASH_RX_CHANEL
+);
+
+141 
+	`DMA_C»©eHªdË
+(&
+dmaSpiFÏshTxHªdË
+, 
+DMA0
+, 
+DMA_SPI_FLASH_TX_CHANEL
+);
+
+152 
+æashProûssšg
+.
+æashBussy
  = 
-ÿÎback
+Œue
 ;
 
-53 
-	`DMA_C»©eHªdË
-(&
-ma¡”TxHªdË
-, 
-SPI_DMA
-, 
-EXAMPLE_SPI_MASTER_TX_CHANNEL
-);
-
-54 
-	`DMA_C»©eHªdË
-(&
-ma¡”RxHªdË
-, 
-SPI_DMA
-, 
-EXAMPLE_SPI_MASTER_RX_CHANNEL
-);
-
-57 
+153 
 	`SPI_Ma¡”T¿nsãrC»©eHªdËDMA
 (
-EXAMPLE_SPI_MASTER
+SPI_FLASH
 , &
-ma¡”HªdË
+¥iDmaFÏshHªdl
 , 
-SPI_Ma¡”U£rC®lback
-, 
-NULL
+¥iDmaCB
 , &
-ma¡”TxHªdË
+æashProûssšg
 , &
-ma¡”RxHªdË
+dmaSpiFÏshTxHªdË
+, &
+dmaSpiFÏshRxHªdË
 );
 
-60 
+155 
 ma¡”Xãr
 .
 txD©a
- = (
-ušt8_t
- *)xData;
+ = 
+bufãrTx
+;
 
-61 
+156 
 ma¡”Xãr
 .
 rxD©a
- =„xData;
+ = 
+bufãrRx
+;
 
-62 
+157 
 ma¡”Xãr
 .
 d©aSize
- = 
-ŒªsãrD©aL’gth
-;
+ = dataSize;
 
-63 
+158 
 ma¡”Xãr
 .
 cÚfigFÏgs
@@ -47849,39 +48309,835 @@ cÚfigFÏgs
 kSPI_F¿meAs£¹
 ;
 
-65  (
-kStus_Sucûss
- =ğ
+160  
 	`SPI_Ma¡”T¿nsãrDMA
 (
-EXAMPLE_SPI_MASTER
+SPI_FLASH
 , &
-ma¡”HªdË
+¥iDmaFÏshHªdl
 , &
 ma¡”Xãr
-));
+);
 
-66 
+161 
 	}
 }
 
-73 
-	$¥iFÏshT¿nsãrCom¶™eCB
+164 
+æashStT
+ 
+	$æashG‘S‹
 ()
 
-76 
+166 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+commªd
+ = 
+READ_STATUS_REG1
+;
+
+168 
+æashProûssšg
+.
+csS‘
+ = 
+çl£
+;
+
+169 
+æashProûssšg
+.
+æashBussy
+ = 
+Œue
+;
+
+170 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshCs
+, 
+çl£
+);
+
+171 
+	`æashTxRxProûssšg
+(
+commªdBuffTx
+, 
+NULL
+, 1);
+
+172 
+æashProûssšg
+.
+æashBussy
+){}
+
+174 
+æashProûssšg
+.
+csS‘
+ = 
+Œue
+;
+
+175 
+æashProûssšg
+.
+æashBussy
+ = 
+Œue
+;
+
+176 
+	`æashTxRxProûssšg
+(
+NULL
+, 
+commªdBuffRx
+, 1);
+
+177 
+æashProûssšg
+.
+æashBussy
+){};
+
+179  (((
+æashStusReg1T
+*)
+commªdBuffRx
+)->
+BUSY
+è? (
+FLASH_BUSSY
+è: (
+FLASH_OK
+);
+
+180 
 	}
 }
 
-79 
-	$š™SPIDMAFÏsh
+183 
+æashStT
+ 
+	$æashG‘Wr™e
 ()
 
-82 
+185 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+commªd
+ = 
+READ_STATUS_REG1
+;
+
+187 
+æashProûssšg
+.
+csS‘
+ = 
+çl£
+;
+
+188 
+æashProûssšg
+.
+æashBussy
+ = 
+Œue
+;
+
+189 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshCs
+, 
+çl£
+);
+
+190 
+	`æashTxRxProûssšg
+(
+commªdBuffTx
+, 
+NULL
+, 1);
+
+191 
+æashProûssšg
+.
+æashBussy
+){}
+
+193 
+æashProûssšg
+.
+csS‘
+ = 
+Œue
+;
+
+194 
+æashProûssšg
+.
+æashBussy
+ = 
+Œue
+;
+
+195 
+	`æashTxRxProûssšg
+(
+NULL
+, 
+commªdBuffRx
+, 1);
+
+196 
+æashProûssšg
+.
+æashBussy
+){};
+
+198  (((
+æashStusReg1T
+*)
+commªdBuffRx
+)->
+WEL
+è? (
+FLASH_OK
+è: (
+FLASH_BUSSY
+);
+
+199 
+	}
+}
+
+201 
+boŞ
+ 
+	$isFÏshBussy
+()
+
+203  
+æashProûssšg
+.
+æashBussy
+;
+
+204 
+	}
+}
+
+207 
+æashStT
+ 
+	$æashR—dD©a
+(
+ušt8_t
+ *
+buff
+, 
+ušt32_t
+ 
+d©aSize
+, ušt32_ˆ
+add»ss
+)
+
+209 
+	`æashG‘S‹
+(è=ğ
+FLASH_BUSSY
+) {};
+
+211 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+commªd
+ = 
+READ_DATA
+;
+
+212 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+·ylßd
+[2] = 
+add»ss
+ & 0xFF;
+
+213 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+·ylßd
+[1] = (
+add»ss
+ >> 8) & 0xFF;
+
+214 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+·ylßd
+[0] = (
+add»ss
+ >> 16) & 0xFF;
+
+216 
+æashProûssšg
+.
+csS‘
+ = 
+çl£
+;
+
+217 
+æashProûssšg
+.
+æashBussy
+ = 
+Œue
+;
+
+218 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshCs
+, 
+çl£
+);
+
+219 
+	`æashTxRxProûssšg
+(
+commªdBuffTx
+, 
+NULL
+, 4);
+
+220 
+æashProûssšg
+.
+æashBussy
+) {}
+
+222 
+æashProûssšg
+.
+csS‘
+ = 
+Œue
+;
+
+223 
+æashProûssšg
+.
+æashBussy
+ = 
+Œue
+;
+
+224 
+	`æashTxRxProûssšg
+(
+NULL
+, 
+buff
+, 
+d©aSize
+);
+
+227  
+FLASH_OK
+;
+
+228 
+	}
+}
+
+231 
+æashStT
+ 
+	$æashWr™eBlock
+(
+ušt8_t
+ *
+buff
+, 
+ušt32_t
+ 
+d©aSize
+, ušt32_ˆ
+add»ss
+)
+
+233 
+ušt32_t
+ 
+wr™eBlockSize
+ = (
+d©aSize
+ % 256 == 0) ? (dataSize/256) : (dataSize/256 + 1);
+
+236 
+ušt16_t
+ 
+út
+ = 0; cÁ < 
+wr™eBlockSize
+; cnt++)
+
+238 
+	`æashG‘S‹
+(è=ğ
+FLASH_BUSSY
+) {};
+
+239 
+	`æashWr™eEÇbË
+();
+
+240 
+	`æashG‘Wr™e
+(è=ğ
+FLASH_BUSSY
+) {};
+
+242 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshCs
+, 
+çl£
+);
+
+244 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+commªd
+ = 
+PROGRAM_PAGE
+;
+
+245 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+·ylßd
+[2] = 
+add»ss
+ & 0xFF;
+
+246 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+·ylßd
+[1] = (
+add»ss
+ >> 8) & 0xFF;
+
+247 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+·ylßd
+[0] = (
+add»ss
+ >> 16) & 0xFF;
+
+248 
+add»ss
+ += 256;
+
+250 
+æashProûssšg
+.
+csS‘
+ = 
+çl£
+;
+
+251 
+æashProûssšg
+.
+æashBussy
+ = 
+Œue
+;
+
+253 
+	`æashTxRxProûssšg
+(
+commªdBuffTx
+, 
+NULL
+, 4);
+
+254 
+æashProûssšg
+.
+æashBussy
+) {}
+
+256 
+æashProûssšg
+.
+csS‘
+ = 
+çl£
+;
+
+257 
+æashProûssšg
+.
+æashBussy
+ = 
+Œue
+;
+
+258 
+	`æashTxRxProûssšg
+(
+buff
+ + 256 * 
+út
+, 
+NULL
+, 256);
+
+259 
+æashProûssšg
+.
+æashBussy
+) {}
+
+261 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshCs
+, 
+Œue
+);
+
+264  
+FLASH_OK
+;
+
+265 
+	}
+}
+
+268 
+æashStT
+ 
+	$æashE¿£Block32
+(
+ušt32_t
+ 
+blockNumb”
+)
+
+270 
+	`æashWr™eEÇbË
+();
+
+271 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+commªd
+ = 
+BLOCK_ERASE32
+;
+
+272 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+·ylßd
+[2] = 
+blockNumb”
+ & 0xFF;
+
+273 
+blockNumb”
+ >>= 8;
+
+274 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+·ylßd
+[1] = 
+blockNumb”
+ & 0xFF;
+
+275 
+blockNumb”
+ >>= 8;
+
+276 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+·ylßd
+[0] = 
+blockNumb”
+ & 0xFF;
+
+278 
+æashProûssšg
+.
+csS‘
+ = 
+Œue
+;
+
+279 
+æashProûssšg
+.
+æashBussy
+ = 
+Œue
+;
+
+280 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshCs
+, 
+çl£
+);
+
+281 
+	`æashTxRxProûssšg
+(
+commªdBuffTx
+, 
+NULL
+, 4);
+
+282 
+æashProûssšg
+.
+æashBussy
+){}
+
+284 
+	`æashG‘S‹
+(è=ğ
+FLASH_BUSSY
+){}
+
+285  
+FLASH_OK
+;
+
+286 
+	}
+}
+
+289 
+æashStT
+ 
+	$æashWr™eEÇbË
+()
+
+291 ((
+commªDesütiÚT
+*)
+commªdBuffTx
+)->
+commªd
+ = 
+WRITE_ENABLE
+;
+
+293 
+æashProûssšg
+.
+csS‘
+ = 
+Œue
+;
+
+294 
+æashProûssšg
+.
+æashBussy
+ = 
+Œue
+;
+
+295 
+	`h®GpioS‘Pš
+(
+h®Gpio
+.
+¥iFÏshCs
+, 
+çl£
+);
+
+296 
+	`æashTxRxProûssšg
+(
+commªdBuffTx
+, 
+NULL
+, 1);
+
+297 
+æashProûssšg
+.
+æashBussy
+){}
+
+299  
+FLASH_OK
+;
+
+300 
 	}
 }
 
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalIFlash\HalIFlash.h
+
+1 #iâdeà
+HALFLASH_H_
+
+
+2 
+	#HALFLASH_H_
+
+
+	)
+
+5 
+	mFLASH_OK
+,
+
+6 
+	mFLASH_BUSSY
+,
+
+7 
+	mFLASH_ERROR
+,
+
+8 }
+	tæashStT
+;
+
+11 
+h®SpiFÏshIn™
+();
+
+12 
+æashStT
+ 
+æashG‘S‹
+();
+
+13 
+æashStT
+ 
+æashG‘Wr™e
+();
+
+14 
+æashStT
+ 
+æashE¿£Block32
+(
+ušt32_t
+ 
+blockNumb”
+);
+
+15 
+æashStT
+ 
+æashWr™eEÇbË
+();
+
+16 
+æashStT
+ 
+æashWr™eBlock
+(
+ušt8_t
+ *
+buff
+, 
+ušt32_t
+ 
+d©aSize
+, ušt32_ˆ
+add»ss
+);
+
+17 
+æashStT
+ 
+æashR—dD©a
+(
+ušt8_t
+ *
+buff
+, 
+ušt32_t
+ 
+d©aSize
+, ušt32_ˆ
+add»ss
+);
+
+18 
+boŞ
+ 
+isFÏshBussy
+();
 
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.c
 
@@ -48823,7 +50079,11 @@ H®SpiT¿nsãrDÚeC®lback
 	~"f¦_¥i_dma.h
 "
 
-6 
+6 
+	~"lcd.h
+"
+
+8 
 	#SPI_DMA
  
 DMA0
@@ -48831,7 +50091,7 @@ DMA0
 
 	)
 
-8 
+10 
 	#EXAMPLE_SPI_MASTER
  
 SPI3
@@ -48839,13 +50099,13 @@ SPI3
 
 	)
 
-9 
+11 
 	#EXAMPLE_SPI_SSEL
  0
 
 	)
 
-10 
+12 
 	#EXAMPLE_SPI_MASTER_CLK_FREQ
  
 	`CLOCK_G‘F»q
@@ -48855,7 +50115,7 @@ kCLOCK_FËxcomm3
 
 	)
 
-11 
+13 
 	#EXAMPLE_MASTER_SPI_SPOL
  
 kSPI_SpŞAùiveAÎLow
@@ -48863,19 +50123,19 @@ kSPI_SpŞAùiveAÎLow
 
 	)
 
-13 
+15 
 	#EXAMPLE_SPI_MASTER_RX_CHANNEL
  6
 
 	)
 
-14 
+16 
 	#EXAMPLE_SPI_MASTER_TX_CHANNEL
  7
 
 	)
 
-16 
+18 
 	#GPIO_CONFIG_OUT_LOGIC_0
  { .
 pšDœeùiÚ
@@ -48887,7 +50147,7 @@ ouutLogic
 
 	)
 
-17 
+19 
 	#GPIO_CONFIG_OUT_LOGIC_1
  { .
 pšDœeùiÚ
@@ -48899,7 +50159,7 @@ ouutLogic
 
 	)
 
-18 
+20 
 	#GPIO_CONFIG_INPUT
  { .
 pšDœeùiÚ
@@ -48911,7 +50171,7 @@ ouutLogic
 
 	)
 
-20 
+22 
 	#DIGITAL_WITH_PULLUP
  (
 IOCON_MODE_PULLUP
@@ -48923,14 +50183,6 @@ IOCON_INPFILT_OFF
 
 	)
 
-23 (*
-	tH®SpiT¿nsãrDÚeC®lback
-)(
-	tboŞ
- 
-	tisOk
-);
-
 25 
 	sH®GpioPšSŒuù
  {
@@ -48938,13 +50190,13 @@ IOCON_INPFILT_OFF
 26 
 iocÚ_group_t
  
-iocÚ
+	miocÚ
 ;
 
 27 
 gpio_pš_cÚfig_t
  
-cÚfig
+	mcÚfig
 ;
 
 28 } 
@@ -48954,31 +50206,31 @@ cÚfig
 30 
 dma_hªdË_t
  
-ma¡”TxHªdË
+	gma¡”TxHªdË
 ;
 
 31 
 dma_hªdË_t
  
-ma¡”RxHªdË
+	gma¡”RxHªdË
 ;
 
 33 
 ¥i_dma_hªdË_t
  
-ma¡”HªdË
+	gma¡”HªdË
 ;
 
 35 
 ¥i_Œªsãr_t
  
-ma¡”Xãr
+	gma¡”Xãr
 ;
 
 37 
 H®SpiT¿nsãrDÚeC®lback
  
-h®SpiT¿nsãrDÚeC®lback
+	gh®SpiT¿nsãrDÚeC®lback
  = 
 NULL
 ;
@@ -48986,7 +50238,7 @@ NULL
 39 vŞ©
 boŞ
  
-isTxDÚe
+	gisTxDÚe
  = 
 çl£
 ;
@@ -49004,31 +50256,31 @@ H®GpioPšSŒuù
 44 
 H®GpioPš
  
-¥iOËdDc
+	m¥iOËdDc
 ;
 
 45 
 H®GpioPš
  
-¥iOËdMosi
+	m¥iOËdMosi
 ;
 
 46 
 H®GpioPš
  
-¥iOËdSck
+	m¥iOËdSck
 ;
 
 47 
 H®GpioPš
  
-¥iOËdCs
+	m¥iOËdCs
 ;
 
 48 
 H®GpioPš
  
-¥iOËdR¡
+	m¥iOËdR¡
 ;
 
 49 } 
@@ -49036,7 +50288,7 @@ H®GpioPš
 ;
 
 51 
-	`h®GpioPšIn™
+h®GpioPšIn™
 (
 H®GpioPš
  
@@ -49044,7 +50296,7 @@ pš
 );
 
 52 
-	`h®GpioS‘Pš
+h®GpioS‘Pš
 (
 H®GpioPš
  
@@ -49058,7 +50310,7 @@ v®ue
 54 cÚ¡ 
 H®Gpio
  
-h®GpioPš
+	gh®GpioPš
  = {
 
 55 .
@@ -49076,11 +50328,11 @@ pÜt
  = 2,
 
 58 .
-pš
+	gpš
  = 20,
 
 59 .
-modefunc
+	gmodefunc
  = 
 IOCON_FUNC0
  | 
@@ -49088,13 +50340,13 @@ DIGITAL_WITH_PULLUP
 
 
 61 .
-cÚfig
+	gcÚfig
  = 
 GPIO_CONFIG_OUT_LOGIC_1
 
 
 63 .
-¥iOËdMosi
+	g¥iOËdMosi
  = &(
 H®GpioPšSŒuù
 ) {
@@ -49108,11 +50360,11 @@ pÜt
  = 2,
 
 66 .
-pš
+	gpš
  = 18,
 
 67 .
-modefunc
+	gmodefunc
  = 
 IOCON_FUNC2
  | 
@@ -49120,13 +50372,13 @@ DIGITAL_WITH_PULLUP
 
 
 69 .
-cÚfig
+	gcÚfig
  = 
 GPIO_CONFIG_OUT_LOGIC_0
 
 
 71 .
-¥iOËdSck
+	g¥iOËdSck
  = &(
 H®GpioPšSŒuù
 ) {
@@ -49140,11 +50392,11 @@ pÜt
  = 2,
 
 74 .
-pš
+	gpš
  = 26,
 
 75 .
-modefunc
+	gmodefunc
  = 
 IOCON_FUNC3
  | 
@@ -49152,13 +50404,13 @@ DIGITAL_WITH_PULLUP
 
 
 77 .
-cÚfig
+	gcÚfig
  = 
 GPIO_CONFIG_OUT_LOGIC_0
 
 
 79 .
-¥iOËdCs
+	g¥iOËdCs
  = &(
 H®GpioPšSŒuù
 ) {
@@ -49172,11 +50424,11 @@ pÜt
  = 2,
 
 82 .
-pš
+	gpš
  = 21,
 
 83 .
-modefunc
+	gmodefunc
  = 
 IOCON_FUNC2
  | 
@@ -49184,13 +50436,13 @@ DIGITAL_WITH_PULLUP
 
 
 85 .
-cÚfig
+	gcÚfig
  = 
 GPIO_CONFIG_OUT_LOGIC_1
 
 
 87 .
-¥iOËdR¡
+	g¥iOËdR¡
  = &(
 H®GpioPšSŒuù
 ) {
@@ -49204,11 +50456,11 @@ pÜt
  = 2,
 
 90 .
-pš
+	gpš
  = 19,
 
 91 .
-modefunc
+	gmodefunc
  = 
 IOCON_FUNC0
  | 
@@ -49216,14 +50468,10 @@ DIGITAL_WITH_PULLUP
 
 
 93 .
-cÚfig
+	gcÚfig
  = 
 GPIO_CONFIG_OUT_LOGIC_0
 
-
-95 
-	}
-};
 
 97 
 	$h®GpioPšIn™
@@ -49489,13 +50737,13 @@ NULL
 isTxDÚe
  =ğ
 çl£
-) {
+) { }
 
-144 
+142 
 	}
 }
 
-146 
+144 
 	$£ndD©a
 (
 ušt8_t
@@ -49503,19 +50751,19 @@ ušt8_t
 d©a
 )
 
-148 
+146 
 isTxDÚe
  =ğ
 çl£
 ) {
 
-152 
+150 
 ušt8_t
  
 »ûiveD©a
 ;
 
-153 
+151 
 	`h®GpioS‘Pš
 (
 h®GpioPš
@@ -49525,13 +50773,13 @@ h®GpioPš
 Œue
 );
 
-154 
+152 
 isTxDÚe
  = 
 çl£
 ;
 
-155 
+153 
 	`h®SpiT¿nsãr
 (&
 d©a
@@ -49541,11 +50789,11 @@ d©a
 NULL
 );
 
-156 
+154 
 	}
 }
 
-158 
+156 
 	$putPiùu»
 (cÚ¡ 
 ušt8_t
@@ -49553,11 +50801,11 @@ ušt8_t
 d©a
 [])
 
-160 
+158 
 	`£ndCommªd
 (0x0C);
 
-161 
+159 
 	`h®GpioS‘Pš
 (
 h®GpioPš
@@ -49567,23 +50815,23 @@ h®GpioPš
 Œue
 );
 
-162 
+160 
 ušt32_t
  
 a
  = 0;
 
-163 
+161 
 a
  = 0;‡ < 32;‡++) {
 
-164 
+162 
 isTxDÚe
  = 
 çl£
 ;
 
-165 
+163 
 	`h®SpiT¿nsãr
 (
 d©a
@@ -49593,27 +50841,117 @@ a
 NULL
 , 1024, NULL);
 
-166 
+164 
 isTxDÚe
  =ğ
 çl£
 ) {
 
-170 
+168 
 	}
 }
 
 172 
+	$putSubF¿meS¹
+(cÚ¡ 
+ušt8_t
+ 
+d©a
+[], 
+ušt16_t
+ 
+buffSize
+, 
+H®SpiT¿nsãrDÚeC®lback
+ 
+ÿÎback
+)
+
+174 
+	`£ndCommªd
+(0x0C);
+
+175 
+	`h®GpioS‘Pš
+(
+h®GpioPš
+.
+¥iOËdDc
+, 
+Œue
+);
+
+176 
+isTxDÚe
+ = 
+çl£
+;
+
+177 
+	`h®SpiT¿nsãr
+(
+d©a
+, 
+NULL
+, 
+buffSize
+, 
+ÿÎback
+);
+
+178 
+	}
+}
+
+181 
+	$putSubF¿meNext
+(cÚ¡ 
+ušt8_t
+ 
+d©a
+[], 
+ušt16_t
+ 
+buffSize
+, 
+H®SpiT¿nsãrDÚeC®lback
+ 
+ÿÎback
+)
+
+183 
+isTxDÚe
+ = 
+çl£
+;
+
+184 
+	`h®SpiT¿nsãr
+(
+d©a
+, 
+NULL
+, 
+buffSize
+, 
+ÿÎback
+);
+
+185 
+	}
+}
+
+188 
 	$lcdIn™
 ()
 
-174 
+190 
 	`DMA_In™
 (
 DMA0
 );
 
-175 
+191 
 	`h®GpioPšIn™
 (
 h®GpioPš
@@ -49621,7 +50959,7 @@ h®GpioPš
 ¥iOËdR¡
 );
 
-176 
+192 
 	`h®GpioPšIn™
 (
 h®GpioPš
@@ -49629,7 +50967,7 @@ h®GpioPš
 ¥iOËdCs
 );
 
-177 
+193 
 	`h®GpioPšIn™
 (
 h®GpioPš
@@ -49637,7 +50975,7 @@ h®GpioPš
 ¥iOËdDc
 );
 
-178 
+194 
 	`h®GpioPšIn™
 (
 h®GpioPš
@@ -49645,7 +50983,7 @@ h®GpioPš
 ¥iOËdMosi
 );
 
-179 
+195 
 	`h®GpioPšIn™
 (
 h®GpioPš
@@ -49653,37 +50991,37 @@ h®GpioPš
 ¥iOËdSck
 );
 
-181 
+197 
 	`CLOCK_A‰achClk
 (
 kFRO_HF_to_FLEXCOMM3
 );
 
-183 
+199 
 ušt32_t
  
 ¤cClock_Hz
 ;
 
-184 
+200 
 ¥i_ma¡”_cÚfig_t
  
 ma¡”CÚfig
 ;
 
-186 
+202 
 ¤cClock_Hz
  = 
 EXAMPLE_SPI_MASTER_CLK_FREQ
 ;
 
-188 
+204 
 	`SPI_Ma¡”G‘DeçuÉCÚfig
 (&
 ma¡”CÚfig
 );
 
-189 
+205 
 ma¡”CÚfig
 .
 s£lNum
@@ -49693,7 +51031,7 @@ s£lNum
 EXAMPLE_SPI_SSEL
 ;
 
-190 
+206 
 ma¡”CÚfig
 .
 s£lPŞ
@@ -49703,13 +51041,13 @@ s£lPŞ
 EXAMPLE_MASTER_SPI_SPOL
 ;
 
-191 
+207 
 ma¡”CÚfig
 .
 baudR©e_Bps
  = 24000000;
 
-192 
+208 
 	`SPI_Ma¡”In™
 (
 EXAMPLE_SPI_MASTER
@@ -49719,7 +51057,7 @@ ma¡”CÚfig
 ¤cClock_Hz
 );
 
-194 
+210 
 	`DMA_EÇbËChªÃl
 (
 SPI_DMA
@@ -49727,7 +51065,7 @@ SPI_DMA
 EXAMPLE_SPI_MASTER_TX_CHANNEL
 );
 
-195 
+211 
 	`DMA_EÇbËChªÃl
 (
 SPI_DMA
@@ -49735,7 +51073,7 @@ SPI_DMA
 EXAMPLE_SPI_MASTER_RX_CHANNEL
 );
 
-196 
+212 
 	`DMA_S‘ChªÃlPriÜ™y
 (
 SPI_DMA
@@ -49745,7 +51083,7 @@ EXAMPLE_SPI_MASTER_TX_CHANNEL
 kDMA_ChªÃlPriÜ™y3
 );
 
-197 
+213 
 	`DMA_S‘ChªÃlPriÜ™y
 (
 SPI_DMA
@@ -49755,17 +51093,17 @@ EXAMPLE_SPI_MASTER_RX_CHANNEL
 kDMA_ChªÃlPriÜ™y2
 );
 
-198 vŞ©
+214 vŞ©
 ušt32_t
  
 d–ayCÁr
  = 0;
 
-199 
+215 
 d–ayCÁr
  = 0; delayCntr < 1000000; delayCntr++) {
 
-203 
+219 
 	`h®GpioS‘Pš
 (
 h®GpioPš
@@ -49775,101 +51113,49 @@ h®GpioPš
 Œue
 );
 
-205 
+221 
 d–ayCÁr
  = 0; delayCntr < 1000000; delayCntr++) {
 
-209 
+225 
 	`£ndCommªd
 (0x01);
 
-211 
+227 
 	`£ndCommªd
 (0x03);
-
-212 
-	`£ndD©a
-(0x00);
-
-214 
-	`£ndCommªd
-(0x04);
-
-215 
-	`£ndD©a
-(0x04);
-
-217 
-	`£ndCommªd
-(0x05);
-
-218 
-	`£ndD©a
-(0x00);
-
-220 
-	`£ndCommªd
-(0x06);
-
-221 
-	`£ndD©a
-(0x00);
-
-223 
-	`£ndCommªd
-(0x07);
-
-224 
-	`£ndD©a
-(0x00);
-
-225 
-	`£ndD©a
-(0x00);
-
-226 
-	`£ndD©a
-(0x07);
-
-227 
-	`£ndD©a
-(0x0F);
 
 228 
 	`£ndD©a
 (0x00);
 
-229 
-	`£ndD©a
-(0x00);
-
 230 
-	`£ndD©a
-(0x07);
+	`£ndCommªd
+(0x04);
 
 231 
 	`£ndD©a
-(0x0F);
+(0x04);
 
 233 
 	`£ndCommªd
-(0x08);
+(0x05);
 
 234 
 	`£ndD©a
-(0x01);
+(0x00);
 
 236 
 	`£ndCommªd
-(0x09);
+(0x06);
 
 237 
 	`£ndD©a
-(0x07);
+(0x00);
 
 239 
 	`£ndCommªd
-(0x0A);
+(0x07);
 
 240 
 	`£ndD©a
@@ -49905,83 +51191,83 @@ d–ayCÁr
 
 249 
 	`£ndCommªd
-(0x0B);
+(0x08);
 
 250 
 	`£ndD©a
-(0x00);
-
-251 
-	`£ndD©a
-(0x00);
+(0x01);
 
 252 
-	`£ndD©a
-(0x00);
+	`£ndCommªd
+(0x09);
 
 253 
 	`£ndD©a
-(0x00);
+(0x07);
 
 255 
 	`£ndCommªd
-(0x0E);
+(0x0A);
 
 256 
 	`£ndD©a
-(0x03);
+(0x00);
 
 257 
 	`£ndD©a
-(0x0A);
+(0x00);
 
 258 
 	`£ndD©a
-(0x03);
+(0x07);
 
 259 
 	`£ndD©a
-(0x0A);
+(0x0F);
 
 260 
 	`£ndD©a
-(0x03);
+(0x00);
 
 261 
 	`£ndD©a
-(0x0A);
+(0x00);
+
+262 
+	`£ndD©a
+(0x07);
 
 263 
-	`£ndCommªd
+	`£ndD©a
 (0x0F);
 
-264 
-	`£ndD©a
-(0x14);
-
 265 
-	`£ndD©a
-(0x14);
+	`£ndCommªd
+(0x0B);
 
 266 
 	`£ndD©a
-(0x14);
+(0x00);
+
+267 
+	`£ndD©a
+(0x00);
 
 268 
-	`£ndCommªd
-(0x1C);
+	`£ndD©a
+(0x00);
 
 269 
 	`£ndD©a
-(0x08);
+(0x00);
 
 271 
 	`£ndCommªd
-(0x1D);
+(0x0E);
 
 272 
 	`£ndD©a
-(0x0A);
+(0x03);
 
 273 
 	`£ndD©a
@@ -49989,75 +51275,127 @@ d–ayCÁr
 
 274 
 	`£ndD©a
+(0x03);
+
+275 
+	`£ndD©a
 (0x0A);
 
 276 
-	`£ndCommªd
-(0x1E);
+	`£ndD©a
+(0x03);
 
 277 
 	`£ndD©a
-(0x00);
+(0x0A);
 
 279 
 	`£ndCommªd
-(0x1F);
+(0x0F);
 
 280 
 	`£ndD©a
-(0x00);
+(0x14);
+
+281 
+	`£ndD©a
+(0x14);
 
 282 
-	`£ndCommªd
-(0x30);
-
-283 
 	`£ndD©a
-(0x12);
+(0x14);
+
+284 
+	`£ndCommªd
+(0x1C);
 
 285 
-	`£ndCommªd
-(0x02);
-
-286 
 	`£ndD©a
-(0x01);
+(0x08);
+
+287 
+	`£ndCommªd
+(0x1D);
 
 288 
-	`£ndCommªd
-(0x3C);
+	`£ndD©a
+(0x0A);
 
 289 
 	`£ndD©a
+(0x0A);
+
+290 
+	`£ndD©a
+(0x0A);
+
+292 
+	`£ndCommªd
+(0x1E);
+
+293 
+	`£ndD©a
+(0x00);
+
+295 
+	`£ndCommªd
+(0x1F);
+
+296 
+	`£ndD©a
+(0x00);
+
+298 
+	`£ndCommªd
+(0x30);
+
+299 
+	`£ndD©a
+(0x12);
+
+301 
+	`£ndCommªd
+(0x02);
+
+302 
+	`£ndD©a
 (0x01);
 
-291 
+304 
+	`£ndCommªd
+(0x3C);
+
+305 
+	`£ndD©a
+(0x01);
+
+307 
 	`£ndCommªd
 (0x3A);
 
-293 cÚ¡ 
+309 cÚ¡ 
 ušt8_t
  
 G¿y_SÿË_TB1
 [64] = {
 
-299 cÚ¡ 
+315 cÚ¡ 
 ušt8_t
  
 G¿y_SÿË_TB2
 [128] = {
 
-309 
+325 
 ušt32_t
  
 úŒ
  = 0;
 
-310 
+326 
 úŒ
  = 0; cntr < 64; cntr++) {
 
-311 
+327 
 	`£ndD©a
 (
 G¿y_SÿË_TB1
@@ -50065,11 +51403,11 @@ G¿y_SÿË_TB1
 úŒ
 ]);
 
-314 
+330 
 úŒ
  = 0; cntr < 128; cntr++) {
 
-315 
+331 
 	`£ndD©a
 (
 G¿y_SÿË_TB2
@@ -50077,11 +51415,11 @@ G¿y_SÿË_TB2
 úŒ
 ]);
 
-318 
+334 
 úŒ
  = 0; cntr < 64; cntr++) {
 
-319 
+335 
 	`£ndD©a
 (
 G¿y_SÿË_TB1
@@ -50089,7 +51427,7 @@ G¿y_SÿË_TB1
 úŒ
 ]);
 
-321 
+337 
 	}
 }
 
@@ -50113,17 +51451,89 @@ __HAL_SPI_H__
 	~<¡dboŞ.h
 >
 
-7 
-lcdIn™
+7 (*
+	tH®SpiT¿nsãrDÚeC®lback
+)(
+	tboŞ
+ 
+	tisOk
+);
+
+10 
+	`lcdIn™
 ();
 
-8 
-putPiùu»
+11 
+	`putPiùu»
 (cÚ¡ 
 ušt8_t
  
 d©a
 []);
+
+12 
+	`lcdS’dFœ¡SubF¿me
+(
+ušt8_t
+ *
+buff
+, 
+ušt16_t
+ 
+buffSize
+, 
+H®SpiT¿nsãrDÚeC®lback
+ 
+ÿÎback
+);
+
+13 
+	`lcdS’dNextSubF¿me
+(
+ušt8_t
+ *
+buff
+, 
+ušt16_t
+ 
+buffSize
+, 
+H®SpiT¿nsãrDÚeC®lback
+ 
+ÿÎback
+);
+
+14 
+	`putSubF¿meS¹
+(cÚ¡ 
+ušt8_t
+ 
+d©a
+[], 
+ušt16_t
+ 
+buffSize
+, 
+H®SpiT¿nsãrDÚeC®lback
+ 
+ÿÎback
+);
+
+15 
+	`putSubF¿meNext
+(cÚ¡ 
+ušt8_t
+ 
+d©a
+[], 
+ušt16_t
+ 
+buffSize
+, 
+H®SpiT¿nsãrDÚeC®lback
+ 
+ÿÎback
+);
 
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.c
 
@@ -75815,618 +77225,6 @@ ušt8_t
 	gimage_d©a_01_0006_Lay”11
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_11.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_01_0005_Lay”12
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_12.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_01_0004_Lay”13
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_13.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_01_0003_Lay”14
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_14.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_01_0002_Lay”15
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_15.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_01_0001_Lay”16
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_16.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_01_0000_Lay”17
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_17.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_02_0009_Lay”1
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_18.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_02_0008_Lay”2
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_19.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_02_0007_Lay”3
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_20.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_02_0006_Lay”4
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_21.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_02_0005_Lay”5
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_22.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_02_0004_Lay”6
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_23.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_02_0003_Lay”7
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_24.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_02_0002_Lay”8
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_25.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_02_0001_Lay”9
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_26.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_02_0000_Lay”10
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_27.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0017_Lay”1
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_28.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0016_Lay”2
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_29.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0015_Lay”3
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_30.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0014_Lay”4
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_31.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0013_Lay”5
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_32.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0012_Lay”6
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_33.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0011_Lay”7
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_34.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0010_Lay”8
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_35.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0009_Lay”9
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_36.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0008_Lay”10
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_37.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0007_Lay”11
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_38.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0006_Lay”12
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_39.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0005_Lay”13
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_40.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0004_Lay”14
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_41.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0003_Lay”15
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_42.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0002_Lay”16
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_43.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0001_Lay”17
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_44.c
-
-27 
-	~<¡dšt.h
->
-
-31 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_03_0000_Lay”18
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_45.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_45_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_46.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_46_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_47.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_47_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_48.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_48_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_49.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_49_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_50.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_50_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_51.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_51_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_52.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_52_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_53.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_53_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_54.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_54_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_55.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_55_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_56.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_56_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_57.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_57_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_58.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_58_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_59.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_59_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_60.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_60_d–ay0
-[32768] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_61.c
-
-29 
-	~<¡dšt.h
->
-
-33 cÚ¡ 
-ušt8_t
- 
-	gimage_d©a_äame_61_d–ay0
-[32768] = {
-
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FanTask.c
 
 1 
@@ -77063,39 +77861,79 @@ LCDINTERFACE_H_
 	~"Lcd.h
 "
 
-7 
+6 
+	~"H®IFÏsh.h
+"
+
+8 
 	~<¡dšt.h
 >
 
-9 
+10 
 	~"Anim/Anim.c
 "
 
-11 
+12 
 	#LCD_TASK_PRIORITY
  2
 
 	)
 
-12 
+13 
 	#LCD_TASK_STACK_SIZE
  200
 
 	)
 
-13 
+14 
 	#START_IND_SUMBOL
  "START"
 
 	)
 
-15 #´agm¨
+16 
+	#SUB_BUFF_SIZE
+ 1024
+
+	)
+
+17 
+	#SUB_FRAME_QUANTITY
+ 32
+
+	)
+
+18 
+	#SUB_BUFF_QUANTITY
+ 2
+
+	)
+
+19 
+	#VIDEO_BLOCK_ADDRESS
+ 5
+
+	)
+
+20 
+	#FLASH_BLOCK_SIZE
+ 32768
+
+	)
+
+21 
+	#VIDEO_FRAME_SIZE
+ 32768
+
+	)
+
+23 #´agm¨
 ·ck
 (
 push
 ,1)
 
-18 
+26 
 ušt8_t
  
 	mcommªdM¬k”
@@ -77103,29 +77941,29 @@ ušt8_t
 START_IND_SUMBOL
 ) - 1];
 
-19 
+27 
 ušt32_t
  
 	msize
 ;
 
-20 
+28 
 ušt8_t
  
 	m·ylßd
 [];
 
-21 } 
+29 } 
 	t£ndF¿meCommªdT
 ;
 
-22 #´agm¨
+30 #´agm¨
 ·ck
 (
 pİ
 )
 
-25 
+33 
 Sem­hÜeHªdË_t
  
 	glcdSem­hÜe
@@ -77133,111 +77971,149 @@ Sem­hÜeHªdË_t
 NULL
 ;
 
-29 
+37 
 ušt8_t
  *
 	mäameBuff
 ;
 
-30 }
+38 }
 	gäameProûssšg
 ;
 
-53 
-»adFÏshF¿me
+40 
+lcdProûssšgCB
 (
-ušt16_t
+boŞ
  
-videoIndex
-, ušt16_ˆ
-videoF¿meCÁ
+¡©e
 );
 
-58 
+42 
+ušt8_t
+ 
+	g¶ayFÏshSubBuff
+[
+SUB_BUFF_QUANTITY
+][
+SUB_BUFF_SIZE
+];
+
+46 
 	mPLAY_FLASH
 ,
 
-59 
+47 
 	mPLAY_DIRECT
 ,
 
-60 }
+48 }
 	t¶aySourûT
 ;
 
-65 
+53 
 	mPLAYER_PLAY
 ,
 
-66 
+54 
 	mPLAYER_STOP
 ,
 
-67 }
+55 }
 	t¶ay”S‹T
 ;
 
-70 
+58 
 	s¶ayFÏshS‹T
 
 
-72 
+60 
 ušt16_t
  
-	mäameCÁ
+	mäameNumb”
 ;
 
-76 
+61 
+ušt16_t
+ 
+	msubF¿meNumb”
+;
+
+62 
+ušt16_t
+ 
+	msubBuffNumb”
+;
+
+65 
 	s¶ayDœeùS‹T
 
 
-78 
+67 
 ušt16_t
  
 	m»£rved
 ;
 
-84 
+72 
 ¶aySourûT
  
 	m¶aySourû
 ;
 
-85 
+73 
 ¶ay”S‹T
  
 	m¶ay”S‹
 ;
 
-86 
+74 
 ¶ayFÏshS‹T
  
 	m¶ayFÏshS‹
 ;
 
-87 
+75 
 ¶ayDœeùS‹T
  
 	m¶ayDœeùS‹
 ;
 
-88 }
+76 }
 	g¶ay”H
  =
 
-90 .
+78 .
 ¶aySourû
  = 
 PLAY_DIRECT
 ,
 
-91 .
+79 .
 	g¶ay”S‹
  = 
 PLAYER_STOP
 ,
 
-95 
+80 .
+	g¶ayFÏshS‹
+.
+	gsubF¿meNumb”
+ = 0,
+
+81 .
+	g¶ayFÏshS‹
+.
+	gäameNumb”
+ = 0,
+
+82 .
+	g¶ayFÏshS‹
+.
+	gsubBuffNumb”
+ = 0,
+
+86 
 	$£tNewF¿me
 (
 ušt8_t
@@ -77245,13 +78121,13 @@ ušt8_t
 äameBuff
 [])
 
-97 
+88 
 Ba£Ty³_t
  
 xHigh”PriÜ™yTaskWok’
 ;
 
-98 
+89 
 £ndF¿meCommªdT
  *
 äameCommªd
@@ -77259,7 +78135,7 @@ xHigh”PriÜ™yTaskWok’
 äameBuff
 ;
 
-99 
+90 
 äameProûssšg
 .
 äameBuff
@@ -77269,13 +78145,13 @@ xHigh”PriÜ™yTaskWok’
 ·ylßd
 ;
 
-100 
+91 
 xHigh”PriÜ™yTaskWok’
  = 
 pdFALSE
 ;
 
-101 
+92 
 ¶ay”H
 .
 ¶ay”S‹
@@ -77283,7 +78159,7 @@ pdFALSE
 PLAYER_PLAY
 ;
 
-102 
+93 
 	`xSem­hÜeGiveFromISR
 (
 lcdSem­hÜe
@@ -77291,23 +78167,225 @@ lcdSem­hÜe
 xHigh”PriÜ™yTaskWok’
 );
 
-103 
+94 
 	}
 }
 
-107 
+97 
+	$lcdProûssšgCB
+(
+boŞ
+ 
+¡©e
+)
+
+100 
+	`putSubF¿meNext
+(
+¶ayFÏshSubBuff
+[
+¶ay”H
+.
+¶ayFÏshS‹
+.
+subBuffNumb”
+], 
+SUB_BUFF_SIZE
+, 
+lcdProûssšgCB
+);
+
+101 if(
+¶ay”H
+.
+¶ayFÏshS‹
+.
+subBuffNumb”
+ >ğ(
+SUB_FRAME_QUANTITY
+ - 1))
+
+106 
+¶ay”H
+.
+¶ayFÏshS‹
+.
+subBuffNumb”
+++;
+
+107 
+¶ay”H
+.
+¶ayFÏshS‹
+.
+subBuffNumb”
+ =…Ïy”H.¶ayFÏshS‹.subBuffNumb” & (
+SUB_BUFF_QUANTITY
+ - 1);
+
+109 
+	`æashR—dD©a
+(
+¶ayFÏshSubBuff
+[
+¶ay”H
+.
+¶ayFÏshS‹
+.
+subBuffNumb”
+],
+
+110 
+SUB_BUFF_SIZE
+,
+
+111 
+VIDEO_BLOCK_ADDRESS
+*
+FLASH_BLOCK_SIZE
+ + 
+¶ay”H
+.
+¶ayFÏshS‹
+.
+äameNumb”
+ * 
+VIDEO_FRAME_SIZE
+ +…Ïy”H.¶ayFÏshS‹.
+subBuffNumb”
+ * 
+SUB_BUFF_SIZE
+);
+
+112 
+	}
+}
+
+115 
 	$¶ayFÏshProûssšg
 ()
 
-110 
+118 
+	`æashR—dD©a
+(
+¶ayFÏshSubBuff
+[
+¶ay”H
+.
+¶ayFÏshS‹
+.
+subBuffNumb”
+],
+
+119 
+SUB_BUFF_SIZE
+,
+
+120 
+VIDEO_BLOCK_ADDRESS
+*
+FLASH_BLOCK_SIZE
+ + 
+¶ay”H
+.
+¶ayFÏshS‹
+.
+äameNumb”
+ * 
+VIDEO_FRAME_SIZE
+ +…Ïy”H.¶ayFÏshS‹.
+subBuffNumb”
+ * 
+SUB_BUFF_SIZE
+);
+
+122 
+	`isFÏshBussy
+()){}
+
+123 if(
+	`æashG‘S‹
+(è!ğ
+FLASH_OK
+)
+
+127 
+	`putSubF¿meS¹
+(
+¶ayFÏshSubBuff
+[
+¶ay”H
+.
+¶ayFÏshS‹
+.
+subBuffNumb”
+], 
+SUB_BUFF_SIZE
+, 
+lcdProûssšgCB
+);
+
+129 
+¶ay”H
+.
+¶ayFÏshS‹
+.
+subBuffNumb”
+++;
+
+130 
+¶ay”H
+.
+¶ayFÏshS‹
+.
+subBuffNumb”
+ =…Ïy”H.¶ayFÏshS‹.subBuffNumb” & (
+SUB_BUFF_QUANTITY
+ - 1);
+
+132 
+	`æashR—dD©a
+(
+¶ayFÏshSubBuff
+[
+¶ay”H
+.
+¶ayFÏshS‹
+.
+subBuffNumb”
+],
+
+133 
+SUB_BUFF_SIZE
+,
+
+134 
+VIDEO_BLOCK_ADDRESS
+*
+FLASH_BLOCK_SIZE
+ + 
+¶ay”H
+.
+¶ayFÏshS‹
+.
+äameNumb”
+ * 
+VIDEO_FRAME_SIZE
+ +…Ïy”H.¶ayFÏshS‹.
+subBuffNumb”
+ * 
+SUB_BUFF_SIZE
+);
+
+135 
 	}
 }
 
-113 
+138 
 	$¶ayDœeùProûssšg
 ()
 
-115 
+140 
 	`putPiùu»
 (
 äameProûssšg
@@ -77315,33 +78393,65 @@ xHigh”PriÜ™yTaskWok’
 äameBuff
 );
 
-116 
+141 
 	}
 }
 
-120 
+144 
+	#BLOCK_ADDRESS
+ 5
+
+	)
+
+145 
+	#IMAGE_ADDRESS
+ (
+BLOCK_ADDRESS
+*32768)
+
+	)
+
+148 
 	$lcdTaskFunùiÚ
 (*
 pvP¬am‘”s
 )
 
-123 
+151 
 	`lcdIn™
 ();
 
-124 
+152 
 lcdSem­hÜe
  = 
 	`xSem­hÜeC»©eBš¬y
 ();
 
-125 
+153 
 	`putPiùu»
 (
 image_d©a_02_0000_Lay”10
 );
 
-127 ià(
+155 
+	`æashE¿£Block32
+(
+IMAGE_ADDRESS
+);
+
+156 
+	`æashWr™eBlock
+(
+image_d©a_imagesimage_d©a_images
+, (image_d©a_imagesimage_d©a_images), 
+IMAGE_ADDRESS
+);
+
+170 
+	`¶ayFÏshProûssšg
+();
+
+173 ià(
 	`xSem­hÜeTake
 (
 lcdSem­hÜe
@@ -77351,7 +78461,7 @@ pÜtMAX_DELAY
 pdTRUE
 )
 
-131 if(
+177 if(
 ¶ay”H
 .
 ¶ay”S‹
@@ -77359,37 +78469,37 @@ pdTRUE
 PLAYER_PLAY
 )
 
-136 
+182 
 ¶ay”H
 .
 ¶aySourû
 )
 
-138 
+184 
 PLAY_FLASH
 :
 
-139 
+185 
 	`¶ayFÏshProûssšg
 ();
 
-141 
+187 
 PLAY_DIRECT
 :
 
-142 
+188 
 	`¶ayDœeùProûssšg
 ();
 
-147 
+193 
 	}
 }
 
-155 
+196 
 	$lcdTaskC»©e
 ()
 
-157 
+198 
 	`xTaskC»©e
 (
 lcdTaskFunùiÚ
@@ -77401,7 +78511,7 @@ NULL
 LCD_TASK_PRIORITY
 , NULL);
 
-158 
+199 
 	}
 }
 
@@ -77919,25 +79029,25 @@ __RTOS_H__
 	~<¡ršg.h
 >
 
-19 
+21 
 	#REASONABLE_LONG_TIME
  0xFFFF
 
 	)
 
-21 
+23 
 	#USB_DEVICE_TASK_PRIORITY
  3
 
 	)
 
-22 
+24 
 	#USB_DEVICE_TASK_STACK_SIZE
  256
 
 	)
 
-24 
+26 
 Sem­hÜeHªdË_t
  
 	gxSem­hÜe
@@ -77945,13 +79055,13 @@ Sem­hÜeHªdË_t
 NULL
 ;
 
-28 
+30 
 	#SIZE_PACKET
  (1024)
 
 	)
 
-29 
+31 
 	#NUMBER_OF_PACKET
  ((32768 + 
 SIZE_PACKET
@@ -77959,7 +79069,7 @@ SIZE_PACKET
 
 	)
 
-30 
+32 
 	#SIZE_RX_BUFFER
  (
 SIZE_PACKET
@@ -77969,7 +79079,7 @@ NUMBER_OF_PACKET
 
 	)
 
-32 
+34 
 CTIMER_Ty³
  *
 	gTIMER_CNT
@@ -77977,71 +79087,71 @@ CTIMER_Ty³
 CTIMER4
 ;
 
-34 #´agm¨
+36 #´agm¨
 ·ck
 (
 push
 ,1)
 
-37 
+39 
 ušt16_t
  
 	mquªt™yPack‘
 ;
 
-38 
+40 
 ušt16_t
  
 	m·ck‘Numb”
 ;
 
-39 
+41 
 ušt16_t
  
 	m»¡
 ;
 
-40 
+42 
 ušt8_t
  
 	m·ylßd
 [];
 
-41 }
+43 }
 	t·ck‘T
 ;
 
-42 #´agm¨
+44 #´agm¨
 ·ck
 (
 pİ
 )
 
-47 
+49 
 ušt16_t
  
 	mÃxtPack‘Numb”
 ;
 
-48 
+50 
 ušt32_t
  
 	mrxTime
 ;
 
-49 }
+51 }
 	grxPack‘S‹
  =
 
-51 .
+53 .
 ÃxtPack‘Numb”
  = 0,
 
-52 .
+54 .
 	grxTime
  = 0,
 
-55 cÚ¡ 
+57 cÚ¡ 
 ušt16_t
  
 	g·ck‘PaylßdSize
@@ -78051,7 +79161,7 @@ SIZE_PACKET
 ·ck‘T
 );
 
-57 
+59 
 ušt8_t
  
 	grxCommªdBufãr
@@ -78059,13 +79169,13 @@ ušt8_t
 SIZE_RX_BUFFER
 ] = {[0 ... (SIZE_RX_BUFFER - 1)] = 0};
 
-59 
+61 
 ušt16_t
  
 	grxTime_
 [300];
 
-63 
+65 
 šlše
  
 ušt32_t
@@ -78073,7 +79183,7 @@ ušt32_t
 	$g‘Tim”CNT
 ()
 
-65  (
+67  (
 ušt32_t
 )
 TIMER_CNT
@@ -78081,37 +79191,37 @@ TIMER_CNT
 TC
 ;
 
-66 
+68 
 	}
 }
 
-68 
+70 
 šlše
  
 	$»£tTim”CNT
 ()
 
-70 
+72 
 TIMER_CNT
 ->
 TC
  = 0;
 
-71 
+73 
 	}
 }
 
-73 
+75 
 	$š™Tim”FÜMeTime
 ()
 
-75 
+77 
 ùim”_cÚfig_t
  
 š™SŒuù
 ;
 
-77 
+79 
 š™SŒuù
 .
 mode
@@ -78119,7 +79229,7 @@ mode
 kCTIMER_Tim”Mode
 ;
 
-78 
+80 
 SYSCON
 ->
 ASYNCAPBCTRL
@@ -78127,7 +79237,7 @@ ASYNCAPBCTRL
 	`SYSCON_ASYNCAPBCTRL_ENABLE
 (1);
 
-79 
+81 
 š™SŒuù
 .
 ´esÿË
@@ -78135,7 +79245,7 @@ ASYNCAPBCTRL
 	`CLOCK_G‘AsyncApbClkF»q
 ()/1000000;
 
-80 
+82 
 	`CTIMER_In™
 (
 TIMER_CNT
@@ -78143,17 +79253,17 @@ TIMER_CNT
 š™SŒuù
 );
 
-81 
+83 
 	`CTIMER_S¹Tim”
 (
 TIMER_CNT
 );
 
-82 
+84 
 	}
 }
 
-85 
+87 
 šlše
  
 	$rxPack‘Proûssšg
@@ -78167,13 +79277,13 @@ ušt16_t
 bufãrSize
 )
 
-87 
+89 
 Ba£Ty³_t
  
 xHigh”PriÜ™yTaskWok’
 ;
 
-88 
+90 
 ·ck‘T
  *
 rxPack‘
@@ -78181,7 +79291,7 @@ rxPack‘
 bufãr
 ;
 
-89 if(
+91 if(
 rxPack‘
 ->
 ·ck‘Numb”
@@ -78191,19 +79301,19 @@ rxPack‘S‹
 ÃxtPack‘Numb”
 )
 
-91 
+93 
 rxPack‘S‹
 .
 ÃxtPack‘Numb”
  = 0;
 
-94 if(
+96 if(
 rxPack‘S‹
 .
 ÃxtPack‘Numb”
  == 0)
 
-96 
+98 
 rxPack‘S‹
 .
 rxTime
@@ -78211,7 +79321,7 @@ rxTime
 	`g‘Tim”CNT
 ();
 
-98 
+100 
 rxTime_
 [
 rxPack‘S‹
@@ -78223,7 +79333,7 @@ rxPack‘S‹
 rxTime
 ;
 
-99 
+101 
 rxPack‘S‹
 .
 rxTime
@@ -78231,7 +79341,7 @@ rxTime
 	`g‘Tim”CNT
 ();
 
-101 
+103 
 	`memıy
 (&
 rxCommªdBufãr
@@ -78247,17 +79357,17 @@ rxPack‘
 quªt™yPack‘
  - 1) ==„xPacket->packetNumber) ?
 
-102 (
+104 (
 rxPack‘
 ->
 »¡
 ):
 
-103 (
+105 (
 ·ck‘PaylßdSize
 ));
 
-104 if(
+106 if(
 rxPack‘
 ->
 ·ck‘Numb”
@@ -78265,7 +79375,7 @@ rxPack‘
 quªt™yPack‘
  - 1))
 
-107 
+109 
 rxPack‘S‹
 .
 rxTime
@@ -78273,19 +79383,19 @@ rxTime
 	`g‘Tim”CNT
 () -„xPacketState.rxTime;
 
-108 
+110 
 rxPack‘S‹
 .
 ÃxtPack‘Numb”
  = 0;
 
-110 
+112 
 xHigh”PriÜ™yTaskWok’
  = 
 pdFALSE
 ;
 
-111 
+113 
 	`xSem­hÜeGiveFromISR
 (
 xSem­hÜe
@@ -78293,29 +79403,29 @@ xSem­hÜe
 xHigh”PriÜ™yTaskWok’
 );
 
-112 ià(
+114 ià(
 xHigh”PriÜ™yTaskWok’
  !ğ
 pdFALSE
 )
 
-114 
+116 
 	`pÜtYIELD_FROM_ISR
 (
 xHigh”PriÜ™yTaskWok’
 );
 
-118 
+120 
 rxPack‘S‹
 .
 ÃxtPack‘Numb”
 ++;
 
-119 
+121 
 	}
 }
 
-124 
+126 
 	$hidIÁOuutR•Üt
 (cÚ¡ 
 ušt8_t
@@ -78327,7 +79437,7 @@ size_t
 »pÜtSize
 )
 
-127 
+129 
 	`rxPack‘Proûssšg
 (
 »pÜtD©a
@@ -78335,31 +79445,31 @@ size_t
 »pÜtSize
 );
 
-158 
+160 
 	}
 }
 
-160 
+162 
 	$hidIÁIÅutR•Üt
 ()
 
-163 
+165 
 	}
 }
 
-165 
+167 
 	$usbDeviûTaskFunùiÚ
 (*
 pvP¬am‘”s
 )
 
-167 
+169 
 xSem­hÜe
  = 
 	`xSem­hÜeC»©eBš¬y
 ();
 
-171 ià(
+173 ià(
 	`xSem­hÜeTake
 (
 xSem­hÜe
@@ -78369,25 +79479,33 @@ REASONABLE_LONG_TIME
 pdTRUE
 )
 
-173 
+175 
 	`£tNewF¿me
 (
 rxCommªdBufãr
 );
 
-182 
+184 
 	}
 }
 
-184 
+186 
+	~"H®IFÏsh.h
+"
+
+187 
 	$usbDeviûTaskC»©e
 ()
 
-186 
+189 
+	`h®SpiFÏshIn™
+();
+
+190 
 	`š™Tim”FÜMeTime
 ();
 
-187 
+191 
 	`usbHidDeviûS‘C®lbacks
 (
 hidIÁIÅutR•Üt
@@ -78395,7 +79513,7 @@ hidIÁIÅutR•Üt
 hidIÁOuutR•Üt
 );
 
-188 
+192 
 	`xTaskC»©e
 (
 usbDeviûTaskFunùiÚ
@@ -78407,7 +79525,7 @@ NULL
 USB_DEVICE_TASK_PRIORITY
 , NULL);
 
-189 
+193 
 	`xTaskC»©e
 (
 usbHidDeviûTaskFunùiÚ
@@ -78419,7 +79537,7 @@ NULL
 USB_DEVICE_TASK_PRIORITY
 , NULL);
 
-190 
+194 
 	}
 }
 
@@ -216091,8 +217209,8 @@ __ılu¥lus
 1
 .
 0
-199
-16729
+148
+12904
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\event_groups.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\FreeRTOS.h
@@ -216182,57 +217300,6 @@ C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_07.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_08.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_09.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_10.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_11.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_12.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_13.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_14.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_15.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_16.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_17.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_18.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_19.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_20.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_21.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_22.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_23.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_24.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_25.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_26.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_27.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_28.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_29.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_30.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_31.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_32.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_33.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_34.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_35.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_36.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_37.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_38.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_39.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_40.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_41.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_42.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_43.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_44.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_45.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_46.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_47.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_48.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_49.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_50.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_51.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_52.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_53.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_54.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_55.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_56.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_57.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_58.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_59.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_60.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_61.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FanTask.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FanTask.h
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FreeRTOSConfig.h

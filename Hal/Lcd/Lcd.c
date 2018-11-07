@@ -138,9 +138,7 @@ void sendCommand(uint8_t data)
     halGpioSetPin(halGpioPin.spiOledDc, false);
     isTxDone = false;
     halSpiTransfer(&data, &receiveData, sizeof(data), NULL);
-    while (isTxDone == false) {
-
-    }
+    while (isTxDone == false) { }
 }
 
 void sendData(uint8_t data)
@@ -168,6 +166,24 @@ void putPicture(const uint8_t data[])
         }
     }
 }
+
+
+
+void putSubFrameStart(const uint8_t data[], uint16_t buffSize, HalSpiTransferDoneCallback callback)
+{
+    sendCommand(0x0C);
+    halGpioSetPin(halGpioPin.spiOledDc, true);
+    isTxDone = false;
+    halSpiTransfer(data, NULL, buffSize, callback);
+}
+
+
+void putSubFrameNext(const uint8_t data[], uint16_t buffSize, HalSpiTransferDoneCallback callback)
+{
+    isTxDone = false;
+    halSpiTransfer(data, NULL, buffSize, callback);
+}
+
 
 void lcdInit(void)
 {
@@ -320,16 +336,3 @@ void lcdInit(void)
     } //Blue
 }
 
-
-void lcdSendFirstSubFrame(uint8_t *buff, uint16_t buffSize, HalSpiTransferDoneCallback callback)
-{
-    sendCommand(0x0C);
-    halGpioSetPin(halGpioPin.spiOledDc, true);
-    halSpiTransfer(buff, NULL, buffSize, callback);
-}
-
-
-void lcdSendNextSubFrame(uint8_t *buff, uint16_t buffSize, HalSpiTransferDoneCallback callback)
-{
-    halSpiTransfer(buff, NULL, buffSize, callback);
-}

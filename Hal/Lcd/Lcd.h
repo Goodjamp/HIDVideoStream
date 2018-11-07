@@ -11,5 +11,7 @@ void lcdInit(void);
 void putPicture(const uint8_t data[]);
 void lcdSendFirstSubFrame(uint8_t *buff, uint16_t buffSize, HalSpiTransferDoneCallback callback);
 void lcdSendNextSubFrame(uint8_t *buff,  uint16_t buffSize, HalSpiTransferDoneCallback callback);
+void putSubFrameStart(const uint8_t data[], uint16_t buffSize, HalSpiTransferDoneCallback callback);
+void putSubFrameNext(const uint8_t data[], uint16_t buffSize, HalSpiTransferDoneCallback callback);
 
 #endif

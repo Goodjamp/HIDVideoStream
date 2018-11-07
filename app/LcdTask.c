@@ -16,13 +16,14 @@
 #define SUB_BUFF_SIZE          1024
 #define SUB_FRAME_QUANTITY     32
 #define SUB_BUFF_QUANTITY      2
-#define VIDEO_BASE_ADDRESS     4096
+#define VIDEO_BLOCK_ADDRESS    5
+#define FLASH_BLOCK_SIZE       32768
 #define VIDEO_FRAME_SIZE       32768
 
 #pragma pack(push,1)
 typedef struct
 {
-    uint8_t commandMarker[sizeof(START_IND_SUMBOL) - 1];
+    uint8_t commandMarker[sizeof(START_IND_SUMBOL)];
     uint32_t size;
     uint8_t payload[];
 } sendFrameCommandT;
@@ -36,28 +37,9 @@ struct
     uint8_t *frameBuff;
 }frameProcessing;
 
-
-
-/*
-static void lcdTaskFunction(void *pvParameters)
-{
-
-    lcdInit();
-    lcdSemaphore = xSemaphoreCreateBinary();
-    putPicture(image_data_02_0000_Layer10);
-    for (;;) {
-        if (xSemaphoreTake(lcdSemaphore, portMAX_DELAY ) == pdTRUE) {
-            //putPicture(image_data_imagesimage_data_images);
-            putPicture(frameProcessing.frameBuff);
-        }
-    }
-
-}
-*/
-
 void lcdProcessingCB(bool state);
 
-uint8_t playFlashSubBuff[SUB_BUFF_QUANTITY][SUB_BUFF_SIZE];
+uint8_t playFlashSubBuff[SUB_BUFF_QUANTITY][SUB_BUFF_SIZE + 4];
 
 typedef enum
 {
@@ -80,12 +62,10 @@ struct playFlashStateT
     uint16_t subBuffNumber;
 };
 
-
 struct playDirectStateT
 {
     uint16_t reserved;
 };
-
 
 struct
 {
@@ -117,41 +97,52 @@ void setNewFrame(uint8_t frameBuff[])
 void lcdProcessingCB(bool state)
 {
     //send Current Sub Frame
-    lcdSendNextSubFrame(playFlashSubBuff[playerH.playFlashState.subBuffNumber], SUB_BUFF_SIZE, lcdProcessingCB);
-    if(playerH.playFlashState.subBuffNumber >= (SUB_FRAME_QUANTITY - 1))
+    if(playerH.playFlashState.subFrameNumber >= SUB_FRAME_QUANTITY )
     {
+        return; // sending full frame was completing
+    }
+    putSubFrameNext(&playFlashSubBuff[playerH.playFlashState.subBuffNumber], SUB_BUFF_SIZE, lcdProcessingCB);
+    if(playerH.playFlashState.subFrameNumber >= (SUB_FRAME_QUANTITY - 1) )
+    {
+        playerH.playFlashState.subFrameNumber++;
         return; // sending full frame was completing
     }
     //calculate next buff number
     playerH.playFlashState.subBuffNumber++;
     playerH.playFlashState.subBuffNumber = playerH.playFlashState.subBuffNumber & (SUB_BUFF_QUANTITY - 1);
     //start read next sub frame (should be complete before complete send current buff in LCD !!)
-    flashReadData(playFlashSubBuff[playerH.playFlashState.subBuffNumber],
-                                   SUB_BUFF_SIZE,
-                                   VIDEO_BASE_ADDRESS + playerH.playFlashState.frameNumber * VIDEO_FRAME_SIZE + playerH.playFlashState.subBuffNumber * SUB_BUFF_SIZE);
+    if(playerH.playFlashState.subFrameNumber == (SUB_FRAME_QUANTITY - 2))
+    {
+        flashReadSubFrameLast(playFlashSubBuff[playerH.playFlashState.subBuffNumber],
+                              SUB_BUFF_SIZE,
+                              VIDEO_BLOCK_ADDRESS*FLASH_BLOCK_SIZE + playerH.playFlashState.frameNumber * VIDEO_FRAME_SIZE + playerH.playFlashState.subBuffNumber * SUB_BUFF_SIZE);
+    }
+    else
+    {
+        flashReadSubFrameNext(playFlashSubBuff[playerH.playFlashState.subBuffNumber],
+                              SUB_BUFF_SIZE,
+                              VIDEO_BLOCK_ADDRESS*FLASH_BLOCK_SIZE + playerH.playFlashState.frameNumber * VIDEO_FRAME_SIZE + playerH.playFlashState.subBuffNumber * SUB_BUFF_SIZE);
+    }
+    playerH.playFlashState.subFrameNumber++;
 }
 
 
 static void playFlashProcessing(void)
 {
     //read first sub frame with blocking
-    flashReadData(playFlashSubBuff[playerH.playFlashState.subBuffNumber],
+    flashReadSubFrameStart(playFlashSubBuff[playerH.playFlashState.subBuffNumber],
                      SUB_BUFF_SIZE,
-                     VIDEO_BASE_ADDRESS + playerH.playFlashState.frameNumber * VIDEO_FRAME_SIZE + playerH.playFlashState.subBuffNumber * SUB_BUFF_SIZE);
-    // wait for read complete
-    while(flashGetState() == FLASH_BUSSY){}
-    if(flashGetState() != FLASH_OK)
-    {
-        return;
-    }
-    lcdSendFirstSubFrame(playFlashSubBuff[playerH.playFlashState.subBuffNumber], SUB_BUFF_SIZE, lcdProcessingCB);
+                     VIDEO_BLOCK_ADDRESS*FLASH_BLOCK_SIZE + playerH.playFlashState.frameNumber * VIDEO_FRAME_SIZE + playerH.playFlashState.subBuffNumber * SUB_BUFF_SIZE);
+
+    putSubFrameStart(playFlashSubBuff[playerH.playFlashState.subBuffNumber], SUB_BUFF_SIZE, lcdProcessingCB);
     //calculate next buff number
     playerH.playFlashState.subBuffNumber++;
     playerH.playFlashState.subBuffNumber = playerH.playFlashState.subBuffNumber & (SUB_BUFF_QUANTITY - 1);
     //start read next sub frame (should be complete before complete send current buff in LCD !!)
-    flashReadData(playFlashSubBuff[playerH.playFlashState.subBuffNumber],
+    flashReadSubFrameNext(playFlashSubBuff[playerH.playFlashState.subBuffNumber],
                                    SUB_BUFF_SIZE,
-                                   VIDEO_BASE_ADDRESS + playerH.playFlashState.frameNumber * VIDEO_FRAME_SIZE + playerH.playFlashState.subBuffNumber * SUB_BUFF_SIZE);
+                                   VIDEO_BLOCK_ADDRESS*FLASH_BLOCK_SIZE + playerH.playFlashState.frameNumber * VIDEO_FRAME_SIZE + playerH.playFlashState.subBuffNumber * SUB_BUFF_SIZE);
+     playerH.playFlashState.subFrameNumber++;
 }
 
 
@@ -161,13 +152,23 @@ void playDirectProcessing(void)
 }
 
 
+#define BLOCK_ADDRESS    5
+#define IMAGE_ADDRESS   (BLOCK_ADDRESS*32768)
+
+
 static void lcdTaskFunction(void *pvParameters)
 {
 
     lcdInit();
     lcdSemaphore = xSemaphoreCreateBinary();
-    putPicture(image_data_02_0000_Layer10);
+    putPicture(image_data_01_0006_Layer11);
+
+    flashEraseBlock32(IMAGE_ADDRESS);
+    flashWriteBlock(image_data_imagesimage_data_images, sizeof(image_data_imagesimage_data_images), IMAGE_ADDRESS);
+
+    playFlashProcessing();
     for (;;) {
+
        if (xSemaphoreTake(lcdSemaphore, portMAX_DELAY ) != pdTRUE)
        {
            continue;

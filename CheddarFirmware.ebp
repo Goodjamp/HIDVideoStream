@@ -112,159 +112,6 @@
 		<Unit filename="app\Anim\frame_10.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="app\Anim\frame_11.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_12.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_13.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_14.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_15.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_16.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_17.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_18.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_19.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_20.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_21.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_22.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_23.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_24.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_25.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_26.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_27.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_28.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_29.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_30.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_31.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_32.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_33.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_34.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_35.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_36.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_37.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_38.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_39.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_40.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_41.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_42.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_43.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_44.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_45.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_46.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_47.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_48.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_49.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_50.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_51.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_52.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_53.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_54.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_55.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_56.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_57.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_58.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_59.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_60.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="app\Anim\frame_61.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="app\clock_config.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -530,7 +377,6 @@
 		<Extensions>
 			<code_completion />
 			<debugger>
-				<target_debugging_settings target="Release" active_interface="" />
 				<target_debugging_settings target="Debug" active_interface="J-link">
 					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="%Software\SEGGER\J-Link:InstallPath%" executable="JLinkGDBServer.exe" description="" dont_start_server="false" backoff_time="5000" options="0" reg_filter="0" active_family="Generic" gdb_before_conn="" gdb_after_conn="">
 						<family_options family_id="Generic">
@@ -559,6 +405,7 @@
 						</family_options>
 					</debug_interface>
 				</target_debugging_settings>
+				<target_debugging_settings target="Release" active_interface="" />
 			</debugger>
 			<envvars />
 		</Extensions>

@@ -274,10 +274,16 @@ flashStatT flashReadSubFrameLast(uint8_t *buff, uint32_t dataSize, uint32_t addr
 
 flashStatT flashWriteBlock(uint8_t *buff, uint32_t dataSize, uint32_t address)
 {
-    uint32_t writeBlockSize = (dataSize % 256 == 0) ? (dataSize/256) : (dataSize/256 + 1);
+    if(dataSize == 0)
+    {
+        return FLASH_OK;
+    }
+    uint16_t lastBlockQuantity  = dataSize % 256;
+    uint16_t writeBlockQuantity = (lastBlockQuantity == 0) ? (dataSize/256 - 1) : (dataSize/256 );
+    lastBlockQuantity           = (lastBlockQuantity == 0) ? (256) : (lastBlockQuantity);
     // prepare command buff
 
-    for(uint16_t cnt = 0; cnt < writeBlockSize; cnt++)
+    for(uint16_t cnt = 0; cnt <= writeBlockQuantity; cnt++)
     {
         while(flashGetState() == FLASH_BUSSY) {};
         flashWriteEnable();
@@ -291,13 +297,12 @@ flashStatT flashWriteBlock(uint8_t *buff, uint32_t dataSize, uint32_t address)
         ((commanDescriptionT*)commandBuffTx)->payload[0] = (address >> 16) & 0xFF;
         address += 256;
         // send command
-        flashProcessing.csSet      = false;
-
+        flashProcessing.csSet = false;
         flashTxRxProcessing(commandBuffTx, NULL, 4);
         while(flashProcessing.flashBussy) {}
         // send data
-        flashProcessing.csSet      = true;
-        flashTxRxProcessing(buff + 256 * cnt, NULL, 256);
+        flashProcessing.csSet = true;
+        flashTxRxProcessing(buff + 256 * cnt, NULL, (writeBlockQuantity == cnt) ? (lastBlockQuantity) : (256));
         while(flashProcessing.flashBussy) {}
     }
 

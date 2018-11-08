@@ -4,6 +4,6 @@
 #include "stdint.h"
 
 void lcdTaskCreate(void);
-void setNewFrame(uint8_t frameBuff[]);
+void videoCommandProcessing(uint8_t frameBuff[]);
 
 #endif

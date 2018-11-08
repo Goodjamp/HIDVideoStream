@@ -568,13 +568,15 @@
 	<stdint.h>
 	<stdbool.h>
 
-1541604894 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.c
+1541689598 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.c
 	"FreeRTOS.h"
 	"task.h"
 	"semphr.h"
+	"timers.h"
 	"Lcd.h"
 	"HalIFlash.h"
 	<stdint.h>
+	<string.h>
 	"./Anim/Anim.c"
 
 1541580456 c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\lcd\lcd.h
@@ -693,7 +695,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1540807336 c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.h
+1541685073 c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.h
 	"stdint.h"
 
 1531911800 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\rtos.c
@@ -702,7 +704,7 @@
 	"task.h"
 	<string.h>
 
-1541523235 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\usbdevicetask.c
+1541685073 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\usbdevicetask.c
 	"UsbDeviceTask.h"
 	"LcdTask.h"
 	"FreeRTOS.h"
@@ -877,7 +879,7 @@
 1531911800 c:\private\programing\lpc\cheddarfirmware-feature-gpio\sdk\devices\lpc54608\drivers\fsl_dma.h
 	"fsl_common.h"
 
-1541590372 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\haliflash\haliflash.c
+1541664415 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\haliflash\haliflash.c
 	"stdint.h"
 	"stdbool.h"
 	"stddef.h"

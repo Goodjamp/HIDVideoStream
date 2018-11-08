@@ -172,7 +172,7 @@ static void usbDeviceTaskFunction(void *pvParameters)
     for (;;) {
         if (xSemaphoreTake(xSemaphore, REASONABLE_LONG_TIME) == pdTRUE)
         {
-            setNewFrame(rxCommandBuffer);
+            videoCommandProcessing(rxCommandBuffer);
 
             /*HID_ProcessReport(outputHidReport, inputHidReport);
             while (!usbHidDeviceSendReport(inputHidReport)) {

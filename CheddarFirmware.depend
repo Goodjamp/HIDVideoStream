@@ -568,7 +568,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1541689598 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.c
+1542034252 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.c
 	"FreeRTOS.h"
 	"task.h"
 	"semphr.h"
@@ -578,6 +578,7 @@
 	<stdint.h>
 	<string.h>
 	"./Anim/Anim.c"
+	"math.h"
 
 1541580456 c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\lcd\lcd.h
 	<stdint.h>
@@ -704,7 +705,7 @@
 	"task.h"
 	<string.h>
 
-1541685073 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\usbdevicetask.c
+1542014071 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\usbdevicetask.c
 	"UsbDeviceTask.h"
 	"LcdTask.h"
 	"FreeRTOS.h"

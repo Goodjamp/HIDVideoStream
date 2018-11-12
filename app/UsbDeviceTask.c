@@ -30,6 +30,7 @@ SemaphoreHandle_t xSemaphore = NULL;
 #define SIZE_PACKET      (1024)
 #define NUMBER_OF_PACKET ((32768 + SIZE_PACKET)/SIZE_PACKET + 1)
 #define SIZE_RX_BUFFER   (SIZE_PACKET * NUMBER_OF_PACKET)
+
 /* user timer variable*/
 static CTIMER_Type *TIMER_CNT = CTIMER4;
 
@@ -56,7 +57,8 @@ struct
 
 const uint16_t packetPayloadSize = SIZE_PACKET - sizeof(packetT);
 
-static uint8_t  rxCommandBuffer[SIZE_RX_BUFFER] = {[0 ... (SIZE_RX_BUFFER - 1)] = 0};
+//static uint8_t  rxCommandBuffer[SIZE_RX_BUFFER] = {[0 ... (SIZE_RX_BUFFER - 1)] = 0};
+uint8_t  rxCommandBuffer[SIZE_RX_BUFFER] = {[0 ... (SIZE_RX_BUFFER - 1)] = 0};
 
 uint16_t rxTime_[300];
 

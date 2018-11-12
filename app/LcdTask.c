@@ -239,7 +239,130 @@ void videoCommandProcessing(uint8_t frameBuff[])
     xHigherPriorityTaskWoken = pdFALSE;
     playerH.playerState = PLAYER_PLAY;
     xSemaphoreGiveFromISR(lcdSemaphore, &xHigherPriorityTaskWoken);
+
 }
+
+
+#include "math.h"
+extern uint8_t  rxCommandBuffer[34816];
+#define FRAME_LEN  4
+#define R_0        20.0F
+#define R_1        18.0F
+#define R_2        14.0F
+#define R_3        12.0F
+#define X0_1       18.0F
+#define Y0_1       18.0F
+#define X0_2       (128.0F-18.0F)
+#define Y0_2       18.0F
+
+#define COLOR      0X1f1b
+
+
+static inline float cyrc_(float xIn, float rIn, float x0, float y0)
+{
+    return  y0 - sqrt(pow(rIn,2) - pow((xIn - X0_1), 2));
+}
+
+
+typedef struct{
+    uint8_t x;
+    uint8_t y;
+    uint8_t alfa;
+}pixelDescrT;
+
+struct{
+    uint16_t size;
+    pixelDescrT borderDescr[R_0*R_0];
+}enflDescription;
+
+void createAngle(void)
+{
+    uint8_t x,  y;
+    float   xF, yF;
+
+    for(x = 0; x < R_OUT; x++)
+    {
+        xF = x + 0.5F;
+        for(y = 0; y < R_OUT; y++)
+        {
+            yF = y + 0.5F;
+            d = sqrt(pow((xF - X0_1), 2) + pow((yF - Y0_1), 2));
+            if(d > R_0 && d < R_3)
+            {
+                continue;
+            }
+            else if(d < R_0 && d > R_1)
+            {
+                enflDescription.borderDescr[enflDescription.size].alfa = 50
+            }
+            else if(d < R_1 && d > R_2)
+            {
+                enflDescription.borderDescr[enflDescription.size].alfa = 100
+            }
+            else if(d < R_2 && d > R_3)
+            {
+                enflDescription.borderDescr[enflDescription.size].alfa = 50
+            }
+            enflDescription.borderDescr[enflDescription.size].x = x;
+            enflDescription.borderDescr[enflDescription.size].y = y;
+        }
+    }
+    enflDescription.size++;
+}
+
+
+void createCyrcle(void)
+{
+    uint16_t (*frame)[128][128] = rxCommandBuffer;
+    memset(rxCommandBuffer, 0, sizeof(rxCommandBuffer));
+}
+
+
+/*
+void createCyrcle(void)
+{
+
+    uint16_t (*frame)[128][128] = rxCommandBuffer;
+    memset(rxCommandBuffer, 0, sizeof(rxCommandBuffer));
+    uint16_t yUp, yDown, x;
+    float xF;
+    for(x = 0; x < FRAME_LEN; x++)
+    {
+        xF = x;// + 0.5F;
+        yUp = cyrc_(xF, R_OUT, X0_1, Y0_1);
+        for(; yUp < R_OUT; yUp++)
+        {
+           (*frame)[yUp][x] = COLOR;
+        }
+    }
+
+    for(x = 0; x < R_OUT; x++)
+    {
+        xF = x;// + 0.5F;
+        yUp = cyrc_(xF, R_OUT, X0_1, Y0_1);
+        yDown = cyrc_(xF, R_IN, X0_1, Y0_1);
+        for(; yUp < yDown; yUp++)
+        {
+           (*frame)[yUp][x] = COLOR;
+        }
+    }
+
+
+    for(uint16_t cnt = 0; cnt < FRAME_LEN; cnt++)
+    {
+        R -= cnt;
+        for(x = cnt; x < R1; x++ )
+        {
+
+            y = Y0_1 - sqrt(R*R - (x - X0_1)*(x - X0_1));
+            (*frame)[y][x] = COLOR;
+        }
+
+    }
+
+ putPicture(rxCommandBuffer);
+}
+*/
 
 
 static void lcdTaskFunction(void *pvParameters)
@@ -253,7 +376,9 @@ static void lcdTaskFunction(void *pvParameters)
                                        NULL,
                                        flashVideoTimerCB);
     // demo after power on
-    flashVideoPlay();
+    createCyrcle();
+    //flashVideoPlay();
+    putPicture(rxCommandBuffer);
     for (;;)
     {
         if (xSemaphoreTake(lcdSemaphore, portMAX_DELAY ) != pdTRUE)

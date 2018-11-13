@@ -243,25 +243,52 @@ void videoCommandProcessing(uint8_t frameBuff[])
 }
 
 
+
 #include "math.h"
+
+extern const uint8_t image_data_logo_small[4050];
 extern uint8_t  rxCommandBuffer[34816];
-#define FRAME_LEN  4
-#define R_0        20.0F
-#define R_1        18.0F
-#define R_2        14.0F
-#define R_3        11.0F
-#define X0_1       20.0F
-#define Y0_1       20.0F
-#define X0_2       (128.0F-18.0F)
-#define Y0_2       18.0F
+
+/***********************************BORDER CREATION CONFIGURATION*****/
+#define R_0        18.0F
+#define R_1        17.0F
+#define R_2        15.0F
+#define R_3        14.0F
 
 #define MAX_ALFA   255.0F
 #define K1         (MAX_ALFA/(R_1 - R_0))
 #define B1         (-K1*R_0)
 #define K2         (MAX_ALFA/(R_2 - R_3))
 #define B2         (-K2*R_3)
+/********************************************************************/
 
+/*************************TOTAL PLAY CONFIGURATION***************/
+#define SCRREN_SAVER_PERIOD_MS   7000
+/*************************BORDER PLAY CONFIGURATION**************/
+#define COLOR_QYANTITY            6
+#define COLOR_1                   {91,  161,  87}
+#define COLOR_2                   {249, 237,  56}
+#define COLOR_3                   {200,  38,  43}
+#define COLOR_4                   {198,  18, 132}
+#define COLOR_5                   {67,   67, 146}
+#define COLOR_5                   {95,  167, 229}
 
+struct
+{
+    uint8_t  color[3];
+    float    lineKoef[2];
+    uint32_t stopTime;
+}logoPlayDescription[] =
+{
+    {.color = COLOR_1},
+    {.color = COLOR_2},
+    {.color = COLOR_3},
+    {.color = COLOR_4},
+    {.color = COLOR_5},
+    {.color = COLOR_6},
+};
+
+/********************************************************************/
 
 #define GET_BLUE(X)   ((X & 0b1111100000000) >> 8)
 #define GET_GREEN(X)  (((X & 0b111)>>10) | (X & 0b111))
@@ -273,14 +300,8 @@ extern uint8_t  rxCommandBuffer[34816];
 
 // color format: RGB565: LSB0...4 - R, MSB0..2 LSB5...7 - G. MSB3...7 - B
 
-#define COLOR      0b1111100000000
+#define COLOR      0b11111000
 #define COLOR_B    0X1b
-
-
-static inline float cyrc_(float xIn, float rIn, float x0, float y0)
-{
-    return  y0 - sqrt(pow(rIn,2) - pow((xIn - X0_1), 2));
-}
 
 
 typedef struct{
@@ -291,133 +312,146 @@ typedef struct{
 
 struct{
     uint16_t size;
-    pixelDescrT borderDescr[50*50];
-}enflDescription;
+    pixelDescrT pixel[100*100];
+}border;
 
-void createAngle(void)
+
+void createLine(uint16_t x0, uint16_t y0, uint16_t xStart, uint16_t xStop, uint16_t yStart, uint16_t yStop, bool isHorizontal)
 {
-    uint8_t x,  y;
+    uint16_t x, y;
     float   xF, yF;
-    float d, REZ;
-    for(x = 0; x < R_0; x++)
+    float d;
+    x = xStart;
+    for(; x < xStop; x++)
     {
         xF = x + 0.5F;
-        for(y = 0; y < R_0; y++)
+        y = yStart;
+        for(; y < yStop; y++)
         {
             yF = y + 0.5F;
-            d = sqrt(pow((xF - X0_1), 2) + pow((yF - Y0_1), 2));
+            d = (isHorizontal) ? (sqrt(pow(y0 - yF, 2))):(sqrt(pow(x0 - xF, 2)));
+            //d = sqrt(pow((xF - x), 2) + pow((yF - Y0_1), 2));
             if(d > R_0 || d < R_3)
             {
                 continue;
             }
             else if(d < R_0 && d > R_1)
             {
-                float k1 = K1;
-                float b1 = B1;
-                REZ = d * K1 + B1;
-                enflDescription.borderDescr[enflDescription.size].alfa = d * K1 + B1;
+                border.pixel[border.size].alfa = d * K1 + B1;
             }
             else if(d < R_1 && d > R_2)
             {
-                enflDescription.borderDescr[enflDescription.size].alfa = 255;
+                border.pixel[border.size].alfa = MAX_ALFA;
             }
             else if(d < R_2 && d > R_3)
             {
-                enflDescription.borderDescr[enflDescription.size].alfa = d * K2 + B2;;
+                border.pixel[border.size].alfa = d * K2 + B2;;
             }
-            enflDescription.borderDescr[enflDescription.size].x = x;
-            enflDescription.borderDescr[enflDescription.size].y = y;
-            enflDescription.size++;
+            border.pixel[border.size].x = x;
+            border.pixel[border.size].y = y;
+            border.size++;
+        }
+    }
+}
+
+void createAngle(uint16_t x0In, uint16_t y0In, uint16_t xStart, uint16_t xStop, uint16_t yStart, uint16_t yStop)
+{
+    uint16_t x, y;
+    float   xF, yF;
+    float d;
+    x = xStart;
+    for(; x < xStop; x++)
+    {
+        xF = x + 0.5F;
+        y = yStart;
+        for(; y < yStop; y++)
+        {
+            yF = y + 0.5F;
+            d = sqrt(pow((xF - x0In), 2) + pow((yF - y0In), 2));
+            if(d > R_0 || d < R_3)
+            {
+                continue;
+            }
+            else if(d < R_0 && d > R_1)
+            {
+                border.pixel[border.size].alfa = d * K1 + B1;
+            }
+            else if(d < R_1 && d > R_2)
+            {
+                border.pixel[border.size].alfa = MAX_ALFA;
+            }
+            else if(d < R_2 && d > R_3)
+            {
+                border.pixel[border.size].alfa = d * K2 + B2;;
+            }
+            border.pixel[border.size].x = x;
+            border.pixel[border.size].y = y;
+            border.size++;
         }
     }
 
 }
-// 237 245 71
 
-void createCyrcle(void)
+void createBorder(void)
+{
+    createAngle(R_0, R_0, 0, R_0, 0, R_0);
+    createAngle(128 - R_0, R_0, 128 - R_0, 128, 0, R_0);
+    createAngle(128 - R_0, 128 - R_0, 128 - R_0, 128, 128 - R_0, 128);
+    createAngle(R_0, 128 - R_0, 0, R_0, 128 - R_0, 128);
+    createLine(R_0, R_0, R_0, 128 - R_0, 0, R_0, true);
+    createLine(R_0, 128 - R_0, R_0, 128 - R_0, 128 - R_0, 128, true);
+    createLine(R_0, R_0, 0, R_0, R_0, 128 - R_0, false);
+    createLine(128 - R_0, R_0, 128 - R_0, 128, R_0, 128 - R_0, false);
+}
+
+
+void updateBorder(uint32_t cntMs)
 {
     uint16_t red1, green1, blue1;
     uint16_t red2, green2, blue2;
-    uint16_t red3, green3, blue3, alfa, rez;
     uint16_t cnt = 0;
-
     uint16_t (*frame)[128][128] = rxCommandBuffer;
 
-    memset(rxCommandBuffer, 0x00, sizeof(rxCommandBuffer));
-    for(;cnt < enflDescription.size; cnt++)
+    for(;cnt < border.size; cnt++)
     {
 
-        red1   = GET_RED(  (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x]);
-        green1 = GET_GREEN((*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x]);
-        blue1  = GET_BLUE( (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x]);
+        red1   = GET_RED(  (*frame)[border.pixel[cnt].y][border.pixel[cnt].x]);
+        green1 = GET_GREEN((*frame)[border.pixel[cnt].y][border.pixel[cnt].x]);
+        blue1  = GET_BLUE( (*frame)[border.pixel[cnt].y][border.pixel[cnt].x]);
 
         red2   = GET_RED(  COLOR);
         green2 = GET_GREEN(COLOR);
         blue2  = GET_BLUE( COLOR);
-        alfa   = enflDescription.borderDescr[cnt].alfa;
 
-        red3   = ((255 - enflDescription.borderDescr[cnt].alfa)*red1   + (enflDescription.borderDescr[cnt].alfa)*red2)/255;
-        green3 = ((255 - enflDescription.borderDescr[cnt].alfa)*green1 + (enflDescription.borderDescr[cnt].alfa)*green2)/255;
-        blue3  = ((255 - enflDescription.borderDescr[cnt].alfa)*blue1  + (enflDescription.borderDescr[cnt].alfa)*blue2)/255;
-
-
-        (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x] =  SET_RED(((255 - enflDescription.borderDescr[cnt].alfa)*red1   + (enflDescription.borderDescr[cnt].alfa)*red2)/255);
-        (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x] |= SET_GREEN(((255 - enflDescription.borderDescr[cnt].alfa)*green1 + (enflDescription.borderDescr[cnt].alfa)*green2)/255);
-        (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x] |= SET_BLUE(((255 - enflDescription.borderDescr[cnt].alfa)*blue1  + (enflDescription.borderDescr[cnt].alfa)*blue2)/255);
-
-        rez = (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x];
-        alfa++;
-        alfa--;
+        (*frame)[border.pixel[cnt].y][border.pixel[cnt].x] =  SET_RED(((255 - border.pixel[cnt].alfa)*red1   + (border.pixel[cnt].alfa)*red2)/255);
+        (*frame)[border.pixel[cnt].y][border.pixel[cnt].x] |= SET_GREEN(((255 - border.pixel[cnt].alfa)*green1 + (border.pixel[cnt].alfa)*green2)/255);
+        (*frame)[border.pixel[cnt].y][border.pixel[cnt].x] |= SET_BLUE(((255 - border.pixel[cnt].alfa)*blue1  + (border.pixel[cnt].alfa)*blue2)/255);
     }
+}
+
+
+void updateLogo(uint32_t cntMs)
+{
+    uint16_t (*frame)[128][128] = rxCommandBuffer;
+    uint16_t (*logo)[45][45] =  image_data_logo_small;
+    uint16_t imageShift = 128/2 - 45/2;
+    for(uint16_t x = imageShift, xLogo = 0; xLogo < 45; x++, xLogo++ )
+    {
+        for(uint16_t y = imageShift, yLogo = 0; yLogo < 45; y++, yLogo++ )
+        {
+            (*frame)[y][x] = (*logo)[yLogo][xLogo];
+        }
+    }
+}
+
+
+void updateScreenSaver(uint32_t cntMs)
+{
+    memset(rxCommandBuffer, 0x00, sizeof(rxCommandBuffer));
+    updateLogo(cntMs);
+    updateBorder(cntMs);
     putPicture(rxCommandBuffer);
 }
-
-
-/*
-void createCyrcle(void)
-{
-
-    uint16_t (*frame)[128][128] = rxCommandBuffer;
-    memset(rxCommandBuffer, 0, sizeof(rxCommandBuffer));
-    uint16_t yUp, yDown, x;
-    float xF;
-    for(x = 0; x < FRAME_LEN; x++)
-    {
-        xF = x;// + 0.5F;
-        yUp = cyrc_(xF, R_OUT, X0_1, Y0_1);
-        for(; yUp < R_OUT; yUp++)
-        {
-           (*frame)[yUp][x] = COLOR;
-        }
-    }
-
-    for(x = 0; x < R_OUT; x++)
-    {
-        xF = x;// + 0.5F;
-        yUp = cyrc_(xF, R_OUT, X0_1, Y0_1);
-        yDown = cyrc_(xF, R_IN, X0_1, Y0_1);
-        for(; yUp < yDown; yUp++)
-        {
-           (*frame)[yUp][x] = COLOR;
-        }
-    }
-
-
-    for(uint16_t cnt = 0; cnt < FRAME_LEN; cnt++)
-    {
-        R -= cnt;
-        for(x = cnt; x < R1; x++ )
-        {
-
-            y = Y0_1 - sqrt(R*R - (x - X0_1)*(x - X0_1));
-            (*frame)[y][x] = COLOR;
-        }
-
-    }
-
- putPicture(rxCommandBuffer);
-}
-*/
 
 
 static void lcdTaskFunction(void *pvParameters)
@@ -430,11 +464,13 @@ static void lcdTaskFunction(void *pvParameters)
                                        pdTRUE,
                                        NULL,
                                        flashVideoTimerCB);
-    // demo after power on
-    createAngle();
-    createCyrcle();
-    //flashVideoPlay();
+    //create border
+    createBorder();
+    //screen saver
+    updateScreenSaver(0);
     putPicture(rxCommandBuffer);
+
+    //flashVideoPlay();
     for (;;)
     {
         if (xSemaphoreTake(lcdSemaphore, portMAX_DELAY ) != pdTRUE)

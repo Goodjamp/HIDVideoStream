@@ -568,7 +568,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1542034252 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.c
+1542134441 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.c
 	"FreeRTOS.h"
 	"task.h"
 	"semphr.h"
@@ -2298,4 +2298,7 @@
 	"frame_58.c"
 	"frame_59.c"
 	"frame_60.c"
+
+1542132828 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\logoimage\logo_smoll.c
+	<stdint.h>
 

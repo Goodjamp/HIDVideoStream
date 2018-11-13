@@ -249,13 +249,32 @@ extern uint8_t  rxCommandBuffer[34816];
 #define R_0        20.0F
 #define R_1        18.0F
 #define R_2        14.0F
-#define R_3        12.0F
-#define X0_1       18.0F
-#define Y0_1       18.0F
+#define R_3        11.0F
+#define X0_1       20.0F
+#define Y0_1       20.0F
 #define X0_2       (128.0F-18.0F)
 #define Y0_2       18.0F
 
-#define COLOR      0X1f1b
+#define MAX_ALFA   255.0F
+#define K1         (MAX_ALFA/(R_1 - R_0))
+#define B1         (-K1*R_0)
+#define K2         (MAX_ALFA/(R_2 - R_3))
+#define B2         (-K2*R_3)
+
+
+
+#define GET_BLUE(X)   ((X & 0b1111100000000) >> 8)
+#define GET_GREEN(X)  (((X & 0b111)>>10) | (X & 0b111))
+#define GET_RED(X)    ((X & 0b11111000) >> 3)
+
+#define SET_BLUE(X)   ( X << 8)
+#define SET_GREEN(X)  (((X & 0b111000)<<10) | (X & 0b111))
+#define SET_RED(X)    (X << 3)
+
+// color format: RGB565: LSB0...4 - R, MSB0..2 LSB5...7 - G. MSB3...7 - B
+
+#define COLOR      0b1111100000000
+#define COLOR_B    0X1b
 
 
 static inline float cyrc_(float xIn, float rIn, float x0, float y0)
@@ -267,54 +286,90 @@ static inline float cyrc_(float xIn, float rIn, float x0, float y0)
 typedef struct{
     uint8_t x;
     uint8_t y;
-    uint8_t alfa;
+    uint16_t alfa;
 }pixelDescrT;
 
 struct{
     uint16_t size;
-    pixelDescrT borderDescr[R_0*R_0];
+    pixelDescrT borderDescr[50*50];
 }enflDescription;
 
 void createAngle(void)
 {
     uint8_t x,  y;
     float   xF, yF;
-
-    for(x = 0; x < R_OUT; x++)
+    float d, REZ;
+    for(x = 0; x < R_0; x++)
     {
         xF = x + 0.5F;
-        for(y = 0; y < R_OUT; y++)
+        for(y = 0; y < R_0; y++)
         {
             yF = y + 0.5F;
             d = sqrt(pow((xF - X0_1), 2) + pow((yF - Y0_1), 2));
-            if(d > R_0 && d < R_3)
+            if(d > R_0 || d < R_3)
             {
                 continue;
             }
             else if(d < R_0 && d > R_1)
             {
-                enflDescription.borderDescr[enflDescription.size].alfa = 50
+                float k1 = K1;
+                float b1 = B1;
+                REZ = d * K1 + B1;
+                enflDescription.borderDescr[enflDescription.size].alfa = d * K1 + B1;
             }
             else if(d < R_1 && d > R_2)
             {
-                enflDescription.borderDescr[enflDescription.size].alfa = 100
+                enflDescription.borderDescr[enflDescription.size].alfa = 255;
             }
             else if(d < R_2 && d > R_3)
             {
-                enflDescription.borderDescr[enflDescription.size].alfa = 50
+                enflDescription.borderDescr[enflDescription.size].alfa = d * K2 + B2;;
             }
             enflDescription.borderDescr[enflDescription.size].x = x;
             enflDescription.borderDescr[enflDescription.size].y = y;
+            enflDescription.size++;
         }
     }
-    enflDescription.size++;
-}
 
+}
+// 237 245 71
 
 void createCyrcle(void)
 {
+    uint16_t red1, green1, blue1;
+    uint16_t red2, green2, blue2;
+    uint16_t red3, green3, blue3, alfa, rez;
+    uint16_t cnt = 0;
+
     uint16_t (*frame)[128][128] = rxCommandBuffer;
-    memset(rxCommandBuffer, 0, sizeof(rxCommandBuffer));
+
+    memset(rxCommandBuffer, 0x00, sizeof(rxCommandBuffer));
+    for(;cnt < enflDescription.size; cnt++)
+    {
+
+        red1   = GET_RED(  (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x]);
+        green1 = GET_GREEN((*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x]);
+        blue1  = GET_BLUE( (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x]);
+
+        red2   = GET_RED(  COLOR);
+        green2 = GET_GREEN(COLOR);
+        blue2  = GET_BLUE( COLOR);
+        alfa   = enflDescription.borderDescr[cnt].alfa;
+
+        red3   = ((255 - enflDescription.borderDescr[cnt].alfa)*red1   + (enflDescription.borderDescr[cnt].alfa)*red2)/255;
+        green3 = ((255 - enflDescription.borderDescr[cnt].alfa)*green1 + (enflDescription.borderDescr[cnt].alfa)*green2)/255;
+        blue3  = ((255 - enflDescription.borderDescr[cnt].alfa)*blue1  + (enflDescription.borderDescr[cnt].alfa)*blue2)/255;
+
+
+        (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x] =  SET_RED(((255 - enflDescription.borderDescr[cnt].alfa)*red1   + (enflDescription.borderDescr[cnt].alfa)*red2)/255);
+        (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x] |= SET_GREEN(((255 - enflDescription.borderDescr[cnt].alfa)*green1 + (enflDescription.borderDescr[cnt].alfa)*green2)/255);
+        (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x] |= SET_BLUE(((255 - enflDescription.borderDescr[cnt].alfa)*blue1  + (enflDescription.borderDescr[cnt].alfa)*blue2)/255);
+
+        rez = (*frame)[enflDescription.borderDescr[cnt].y][enflDescription.borderDescr[cnt].x];
+        alfa++;
+        alfa--;
+    }
+    putPicture(rxCommandBuffer);
 }
 
 
@@ -376,6 +431,7 @@ static void lcdTaskFunction(void *pvParameters)
                                        NULL,
                                        flashVideoTimerCB);
     // demo after power on
+    createAngle();
     createCyrcle();
     //flashVideoPlay();
     putPicture(rxCommandBuffer);

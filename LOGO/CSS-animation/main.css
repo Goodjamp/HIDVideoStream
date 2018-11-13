@@ -1,0 +1,123 @@
+html, body { height: 100%; }
+body {
+    overflow: hidden;
+    background: #5d5d5d;
+}
+.box-border{
+    height: 128px;
+    width: 128px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    /* border: solid 12px red; */
+    border-radius: 15%;
+    background: #000000;
+    animation: rgb 7s linear infinite;
+}
+.box { 
+    height: 120px;
+    width: 120px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: black;
+    overflow: hidden;  
+    border-radius: 15%
+}
+.ui{
+    height: 128px;
+    width: 128px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    /* border: solid 12px red; */
+    border-radius: 15%;
+}
+#b1, #b2, #b3, #b4{
+    display: none;
+    position: absolute;
+    transition-duration: 2s;
+}
+.wave {
+    background: url(image/wave.svg) repeat-x; 
+    position: absolute;
+    top: 0px;
+    width: 6400px;
+    height: 198px;
+    transform: translate3d(0, 0, 0);
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transition-duration: 2s;
+}
+.wave:nth-of-type(2) {
+    top: 15px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+    transition-duration: 2s;
+}
+.logo{
+    width: 37%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: fadeIn 7s cubic-bezier( 0.75, 0.45, 0.63, 0.53) infinite;
+}
+.panel{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+@keyframes swell {
+    0%, 100% {
+        transform: translate3d(0,-25px,0);
+    }
+    50% {
+        transform: translate3d(0,5px,0);
+    }
+}
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;  
+    }
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes rgb{
+    0%, 100%{
+        background: #5ba157;
+    }
+    16%{
+        background: #f9ed38;
+    }
+    32%{
+        background: #c8262b;
+    }
+    48%{
+        background: #c61284;
+    }
+    64%{
+        background: #434392;
+    }
+    80%{
+        background: #5fa7e5;
+    }
+}

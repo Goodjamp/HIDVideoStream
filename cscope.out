@@ -1,4 +1,4 @@
-cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001649851
+cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001661971
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
 
 28 
@@ -48664,25 +48664,31 @@ csSë
 224 
 	`ÊashTxRxPro˚ssög
 (
-NULL
+comm™dBuffTx
 , 
 buff
 , 
 d©aSize
-);
+ );
 
-227  
+225 
+ÊashPro˚ssög
+.
+ÊashBussy
+) {}
+
+226  
 FLASH_OK
 ;
 
-228 
+227 
 	}
 }
 
-231 
+230 
 ÊashSètT
  
-	$ÊashWrôeBlock
+	$ÊashRódSubFømeSèπ
 (
 uöt8_t
  *
@@ -48695,59 +48701,23 @@ d©aSize
 addªss
 )
 
-233 
-uöt32_t
- 
-wrôeBlockSize
- = (
-d©aSize
- % 256 == 0) ? (dataSize/256) : (dataSize/256 + 1);
-
-236 
-uöt16_t
- 
-˙t
- = 0; c¡ < 
-wrôeBlockSize
-; cnt++)
-
-238 
+232 
 	`ÊashGëSèã
 (Ë=
 FLASH_BUSSY
 ) {};
 
-239 
-	`ÊashWrôeE«bÀ
-();
-
-240 
-	`ÊashGëWrôe
-(Ë=
-FLASH_BUSSY
-) {};
-
-242 
-	`hÆGpioSëPö
-(
-hÆGpio
-.
-•iFœshCs
-, 
-Ál£
-);
-
-244 ((
+234 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
 )->
 comm™d
  = 
-PROGRAM_PAGE
+READ_DATA
 ;
 
-245 ((
+235 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -48757,7 +48727,7 @@ comm™dBuffTx
 addªss
  & 0xFF;
 
-246 ((
+236 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -48767,7 +48737,7 @@ comm™dBuffTx
 addªss
  >> 8) & 0xFF;
 
-247 ((
+237 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -48777,11 +48747,7 @@ comm™dBuffTx
 addªss
  >> 16) & 0xFF;
 
-248 
-addªss
- += 256;
-
-250 
+239 
 ÊashPro˚ssög
 .
 csSë
@@ -48789,7 +48755,7 @@ csSë
 Ál£
 ;
 
-251 
+240 
 ÊashPro˚ssög
 .
 ÊashBussy
@@ -48797,7 +48763,17 @@ csSë
 åue
 ;
 
-253 
+241 
+	`hÆGpioSëPö
+(
+hÆGpio
+.
+•iFœshCs
+, 
+Ál£
+);
+
+242 
 	`ÊashTxRxPro˚ssög
 (
 comm™dBuffTx
@@ -48805,11 +48781,67 @@ comm™dBuffTx
 NULL
 , 4);
 
-254 
+243 
 ÊashPro˚ssög
 .
 ÊashBussy
 ) {}
+
+245 
+ÊashPro˚ssög
+.
+csSë
+ = 
+Ál£
+;
+
+246 
+ÊashPro˚ssög
+.
+ÊashBussy
+ = 
+åue
+;
+
+247 
+	`ÊashTxRxPro˚ssög
+(
+NULL
+, 
+buff
+, 
+d©aSize
+ );
+
+248 
+ÊashPro˚ssög
+.
+ÊashBussy
+) {}
+
+249  
+FLASH_OK
+;
+
+250 
+	}
+}
+
+253 
+ÊashSètT
+ 
+	$ÊashRódSubFømeNext
+(
+uöt8_t
+ *
+buff
+, 
+uöt32_t
+ 
+d©aSize
+, uöt32_à
+addªss
+)
 
 256 
 ÊashPro˚ssög
@@ -48830,38 +48862,254 @@ csSë
 258 
 	`ÊashTxRxPro˚ssög
 (
-buff
- + 256 * 
-˙t
-, 
 NULL
-, 256);
+, 
+buff
+, 
+d©aSize
+ );
 
-259 
+259  
+FLASH_OK
+;
+
+260 
+	}
+}
+
+262 
+ÊashSètT
+ 
+	$ÊashRódSubFømeLa°
+(
+uöt8_t
+ *
+buff
+, 
+uöt32_t
+ 
+d©aSize
+, uöt32_à
+addªss
+)
+
+265 
+ÊashPro˚ssög
+.
+csSë
+ = 
+åue
+;
+
+266 
 ÊashPro˚ssög
 .
 ÊashBussy
-) {}
+ = 
+åue
+;
 
-261 
+267 
+	`ÊashTxRxPro˚ssög
+(
+NULL
+, 
+buff
+, 
+d©aSize
+ );
+
+268  
+FLASH_OK
+;
+
+269 
+	}
+}
+
+275 
+ÊashSètT
+ 
+	$ÊashWrôeBlock
+(
+uöt8_t
+ *
+buff
+, 
+uöt32_t
+ 
+d©aSize
+, uöt32_à
+addªss
+)
+
+277 if(
+d©aSize
+ == 0)
+
+279  
+FLASH_OK
+;
+
+281 
+uöt16_t
+ 
+œ°BlockQu™tôy
+ = 
+d©aSize
+ % 256;
+
+282 
+uöt16_t
+ 
+wrôeBlockQu™tôy
+ = (
+œ°BlockQu™tôy
+ =0Ë? (
+d©aSize
+/256 - 1) : (dataSize/256 );
+
+283 
+œ°BlockQu™tôy
+ = (lastBlockQuantity == 0) ? (256) : (lastBlockQuantity);
+
+286 
+uöt16_t
+ 
+˙t
+ = 0; c¡ <
+wrôeBlockQu™tôy
+; cnt++)
+
+288 
+	`ÊashGëSèã
+(Ë=
+FLASH_BUSSY
+) {};
+
+289 
+	`ÊashWrôeE«bÀ
+();
+
+290 
+	`ÊashGëWrôe
+(Ë=
+FLASH_BUSSY
+) {};
+
+292 
 	`hÆGpioSëPö
 (
 hÆGpio
 .
 •iFœshCs
 , 
-åue
+Ál£
 );
 
-264  
+294 ((
+comm™Des¸ùti⁄T
+*)
+comm™dBuffTx
+)->
+comm™d
+ = 
+PROGRAM_PAGE
+;
+
+295 ((
+comm™Des¸ùti⁄T
+*)
+comm™dBuffTx
+)->
+∑ylﬂd
+[2] = 
+addªss
+ & 0xFF;
+
+296 ((
+comm™Des¸ùti⁄T
+*)
+comm™dBuffTx
+)->
+∑ylﬂd
+[1] = (
+addªss
+ >> 8) & 0xFF;
+
+297 ((
+comm™Des¸ùti⁄T
+*)
+comm™dBuffTx
+)->
+∑ylﬂd
+[0] = (
+addªss
+ >> 16) & 0xFF;
+
+298 
+addªss
+ += 256;
+
+300 
+ÊashPro˚ssög
+.
+csSë
+ = 
+Ál£
+;
+
+301 
+	`ÊashTxRxPro˚ssög
+(
+comm™dBuffTx
+, 
+NULL
+, 4);
+
+302 
+ÊashPro˚ssög
+.
+ÊashBussy
+) {}
+
+304 
+ÊashPro˚ssög
+.
+csSë
+ = 
+åue
+;
+
+305 
+	`ÊashTxRxPro˚ssög
+(
+buff
+ + 256 * 
+˙t
+, 
+NULL
+, (
+wrôeBlockQu™tôy
+ =˙tË? (
+œ°BlockQu™tôy
+) : (256));
+
+306 
+ÊashPro˚ssög
+.
+ÊashBussy
+) {}
+
+309  
 FLASH_OK
 ;
 
-265 
+310 
 	}
 }
 
-268 
+313 
 ÊashSètT
  
 	$ÊashEø£Block32
@@ -48871,11 +49119,11 @@ uöt32_t
 blockNumbî
 )
 
-270 
+315 
 	`ÊashWrôeE«bÀ
 ();
 
-271 ((
+316 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -48885,7 +49133,7 @@ comm™d
 BLOCK_ERASE32
 ;
 
-272 ((
+317 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -48895,11 +49143,11 @@ comm™dBuffTx
 blockNumbî
  & 0xFF;
 
-273 
+318 
 blockNumbî
  >>= 8;
 
-274 ((
+319 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -48909,11 +49157,11 @@ comm™dBuffTx
 blockNumbî
  & 0xFF;
 
-275 
+320 
 blockNumbî
  >>= 8;
 
-276 ((
+321 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -48923,7 +49171,7 @@ comm™dBuffTx
 blockNumbî
  & 0xFF;
 
-278 
+323 
 ÊashPro˚ssög
 .
 csSë
@@ -48931,7 +49179,7 @@ csSë
 åue
 ;
 
-279 
+324 
 ÊashPro˚ssög
 .
 ÊashBussy
@@ -48939,7 +49187,7 @@ csSë
 åue
 ;
 
-280 
+325 
 	`hÆGpioSëPö
 (
 hÆGpio
@@ -48949,7 +49197,7 @@ hÆGpio
 Ál£
 );
 
-281 
+326 
 	`ÊashTxRxPro˚ssög
 (
 comm™dBuffTx
@@ -48957,33 +49205,33 @@ comm™dBuffTx
 NULL
 , 4);
 
-282 
+327 
 ÊashPro˚ssög
 .
 ÊashBussy
 ){}
 
-284 
+329 
 	`ÊashGëSèã
 (Ë=
 FLASH_BUSSY
 ){}
 
-285  
+330  
 FLASH_OK
 ;
 
-286 
+331 
 	}
 }
 
-289 
+334 
 ÊashSètT
  
 	$ÊashWrôeE«bÀ
 ()
 
-291 ((
+336 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -48993,7 +49241,7 @@ comm™d
 WRITE_ENABLE
 ;
 
-293 
+338 
 ÊashPro˚ssög
 .
 csSë
@@ -49001,7 +49249,7 @@ csSë
 åue
 ;
 
-294 
+339 
 ÊashPro˚ssög
 .
 ÊashBussy
@@ -49009,7 +49257,7 @@ csSë
 åue
 ;
 
-295 
+340 
 	`hÆGpioSëPö
 (
 hÆGpio
@@ -49019,7 +49267,7 @@ hÆGpio
 Ál£
 );
 
-296 
+341 
 	`ÊashTxRxPro˚ssög
 (
 comm™dBuffTx
@@ -49027,17 +49275,17 @@ comm™dBuffTx
 NULL
 , 1);
 
-297 
+342 
 ÊashPro˚ssög
 .
 ÊashBussy
 ){}
 
-299  
+344  
 FLASH_OK
 ;
 
-300 
+345 
 	}
 }
 
@@ -49138,6 +49386,54 @@ boﬁ
  
 isFœshBussy
 ();
+
+21 
+ÊashSètT
+ 
+ÊashRódSubFømeSèπ
+(
+uöt8_t
+ *
+buff
+, 
+uöt32_t
+ 
+d©aSize
+, uöt32_à
+addªss
+);
+
+22 
+ÊashSètT
+ 
+ÊashRódSubFømeNext
+(
+uöt8_t
+ *
+buff
+, 
+uöt32_t
+ 
+d©aSize
+, uöt32_à
+addªss
+);
+
+23 
+ÊashSètT
+ 
+ÊashRódSubFømeLa°
+(
+uöt8_t
+ *
+buff
+, 
+uöt32_t
+ 
+d©aSize
+, uöt32_à
+addªss
+);
 
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.c
 
@@ -77857,113 +78153,243 @@ LCDINTERFACE_H_
 	~"£mphr.h
 "
 
-5 
-	~"Lcd.h
+4 
+	~"timîs.h
 "
 
 6 
+	~"Lcd.h
+"
+
+7 
 	~"HÆIFœsh.h
 "
 
-8 
+9 
 	~<°döt.h
 >
 
 10 
+	~<°rög.h
+>
+
+12 
 	~"Anim/Anim.c
 "
 
-12 
+14 
 	#LCD_TASK_PRIORITY
  2
 
 	)
 
-13 
+15 
 	#LCD_TASK_STACK_SIZE
  200
 
 	)
 
-14 
-	#START_IND_SUMBOL
- "START"
+16 
+	#PROTECT_STR
+ "VIDEO_IS_PRESSENT"
 
 	)
 
-16 
+18 
 	#SUB_BUFF_SIZE
  1024
 
 	)
 
-17 
-	#SUB_FRAME_QUANTITY
- 32
-
-	)
-
-18 
+19 
 	#SUB_BUFF_QUANTITY
  2
 
 	)
 
-19 
+20 
+	#SUB_FRAME_QUANTITY
+ 32
+
+	)
+
+21 
+	#INFORM_BLOCK_ADDRESS
+ 4
+
+	)
+
+22 
 	#VIDEO_BLOCK_ADDRESS
  5
 
 	)
 
-20 
+23 
 	#FLASH_BLOCK_SIZE
  32768
 
 	)
 
-21 
-	#VIDEO_FRAME_SIZE
+24 
+	#FRAME_SIZE
  32768
 
 	)
 
-23 #¥agm®
+25 
+	#FLASH_VIDEO_FPS
+ 33
+
+	)
+
+27 
+	#FRAME_ADDRESS
+(
+X
+Ë((
+VIDEO_BLOCK_ADDRESS
+ + XË* 32768)
+
+	)
+
+28 
+	#INFO_ADDRESS
+ (
+INFORM_BLOCK_ADDRESS
+ * 32768)
+
+	)
+
+31 
+ÊashVideoPœyPro˚ssögCB
+(
+boﬁ
+ 
+°©e
+);
+
+36 
+	mDIRECT
+ = (
+uöt8_t
+)0,
+
+37 
+	mFLASH
+ = (
+uöt8_t
+)1,
+
+38 } 
+	tfõldT¨gëT
+;
+
+42 
+	mFLASH_WRITE
+ = (
+uöt8_t
+)0,
+
+43 
+	mFLASH_PLAY
+ = (
+uöt8_t
+)1,
+
+44 
+	mFLASH_STOP
+ = (
+uöt8_t
+)2,
+
+45 } 
+	tfõldSubT¨gëT
+;
+
+47 #¥agm®
 ∑ck
 (
 push
 ,1)
 
-26 
+50 
 uöt8_t
  
-	mcomm™dM¨kî
-[(
-START_IND_SUMBOL
-) - 1];
+	mèrgë
+;
 
-27 
+51 
+uöt8_t
+ 
+	msubT¨gë
+;
+
+52 
+uöt16_t
+ 
+	m‰ameNumbî
+;
+
+53 
+uöt16_t
+ 
+	m‰ameQu™tôy
+;
+
+54 
 uöt32_t
  
 	msize
 ;
 
-28 
+55 
 uöt8_t
  
 	m∑ylﬂd
 [];
 
-29 } 
-	t£ndFømeComm™dT
+56 } 
+	tcomm™dDes¸ùti⁄T
 ;
 
-30 #¥agm®
+57 #¥agm®
 ∑ck
 (
 p›
 )
 
-33 
+61 #¥agm®
+∑ck
+(
+push
+, 1)
+
+64 
+uöt8_t
+ 
+	m¥Ÿe˘Så
+[(
+PROTECT_STR
+)];
+
+65 
+uöt16_t
+ 
+	m‰ameQu™tôy
+;
+
+66 }
+	gvideoD©a
+;
+
+67 #¥agm®
+∑ck
+(
+p›
+)
+
+70 
 Sem≠h‹eH™dÀ_t
  
 	glcdSem≠h‹e
@@ -77971,25 +78397,19 @@ Sem≠h‹eH™dÀ_t
 NULL
 ;
 
-37 
-uöt8_t
- *
-	m‰ameBuff
-;
-
-38 }
-	g‰amePro˚ssög
-;
-
-40 
-lcdPro˚ssögCB
-(
-boﬁ
+71 
+TimîH™dÀ_t
  
-°©e
-);
+	gÊashVideoTimî
+;
 
-42 
+72 
+comm™dDes¸ùti⁄T
+ *
+	grxComm™d
+;
+
+73 
 uöt8_t
  
 	g∂ayFœshSubBuff
@@ -77997,191 +78417,309 @@ uöt8_t
 SUB_BUFF_QUANTITY
 ][
 SUB_BUFF_SIZE
-];
+ + 4];
 
-46 
+76 
 	mPLAY_FLASH
 ,
 
-47 
+77 
 	mPLAY_DIRECT
 ,
 
-48 }
+78 }
 	t∂aySour˚T
 ;
 
-53 
+81 
 	mPLAYER_PLAY
 ,
 
-54 
+82 
 	mPLAYER_STOP
 ,
 
-55 }
+83 }
 	t∂ayîSèãT
 ;
 
-58 
+84 
 	s∂ayFœshSèãT
 
 
-60 
+86 
 uöt16_t
  
 	m‰ameNumbî
 ;
 
-61 
+87 
+uöt16_t
+ 
+	mtŸÆFømeNumbî
+;
+
+88 
 uöt16_t
  
 	msubFømeNumbî
 ;
 
-62 
+89 
 uöt16_t
  
 	msubBuffNumbî
 ;
 
-65 
+91 
 	s∂ayDúe˘SèãT
 
 
-67 
+93 
 uöt16_t
  
 	mª£rved
 ;
 
-72 
+97 
 ∂aySour˚T
  
 	m∂aySour˚
 ;
 
-73 
+98 
 ∂ayîSèãT
  
 	m∂ayîSèã
 ;
 
-74 
+99 
 ∂ayFœshSèãT
  
 	m∂ayFœshSèã
 ;
 
-75 
+100 
 ∂ayDúe˘SèãT
  
 	m∂ayDúe˘Sèã
 ;
 
-76 }
+101 }
 	g∂ayîH
  =
 
-78 .
+103 .
 ∂aySour˚
  = 
 PLAY_DIRECT
 ,
 
-79 .
+104 .
 	g∂ayîSèã
  = 
 PLAYER_STOP
 ,
 
-80 .
+105 .
 	g∂ayFœshSèã
 .
 	gsubFømeNumbî
  = 0,
 
-81 .
+106 .
 	g∂ayFœshSèã
 .
 	g‰ameNumbî
  = 0,
 
-82 .
+107 .
 	g∂ayFœshSèã
 .
 	gsubBuffNumbî
  = 0,
 
-86 
-	$£tNewFøme
+111 
+	$ÊashVideoUpd©eInfo
 (
-uöt8_t
+uöt16_t
  
-‰ameBuff
-[])
+tŸÆQu™tôy
+)
 
-88 
-Ba£Ty≥_t
- 
-xHighîPri‹ôyTaskWokí
-;
-
-89 
-£ndFømeComm™dT
- *
-‰ameComm™d
- = (£ndFømeComm™dT*)
-‰ameBuff
-;
-
-90 
-‰amePro˚ssög
-.
-‰ameBuff
- = 
-‰ameComm™d
-->
-∑ylﬂd
-;
-
-91 
-xHighîPri‹ôyTaskWokí
- = 
-pdFALSE
-;
-
-92 
-∂ayîH
-.
-∂ayîSèã
- = 
-PLAYER_PLAY
-;
-
-93 
-	`xSem≠h‹eGiveFromISR
+113 
+	`mem˝y
 (
-lcdSem≠h‹e
-, &
-xHighîPri‹ôyTaskWokí
+videoD©a
+.
+¥Ÿe˘Så
+, 
+PROTECT_STR
+, (videoData.protectStr));
+
+114 
+videoD©a
+.
+‰ameQu™tôy
+ = 
+tŸÆQu™tôy
+;
+
+115 
+	`ÊashEø£Block32
+(
+INFO_ADDRESS
 );
 
-94 
+116 
+	`ÊashWrôeBlock
+((
+uöt8_t
+*)&
+videoD©a
+, (videoD©a), 
+INFO_ADDRESS
+);
+
+117 
 	}
 }
 
-97 
-	$lcdPro˚ssögCB
+120 
+boﬁ
+ 
+	$ÊashVideoRódInfo
+(
+uöt16_t
+ *
+tŸÆQu™tôy
+)
+
+122 
+	`mem£t
+((
+uöt8_t
+*)&
+videoD©a
+, (uint8_t)0, (videoData));
+
+123 
+	`ÊashRódD©a
+((
+uöt8_t
+*)&
+videoD©a
+, (videoD©a), 
+INFO_ADDRESS
+);
+
+124 if(
+	`memcmp
+(
+videoD©a
+.
+¥Ÿe˘Så
+, 
+PROTECT_STR
+, (PROTECT_STR)) == 0)
+
+126 *
+tŸÆQu™tôy
+ = 
+videoD©a
+.
+‰ameQu™tôy
+;
+
+127  
+åue
+;
+
+129  
+Ál£
+;
+
+130 
+	}
+}
+
+133 
+	$ÊashVideoWrôeFøme
+(
+uöt8_t
+ *
+‰ame
+, 
+uöt16_t
+ 
+numbî
+, uöt16_à
+tŸÆQu™tôy
+)
+
+135 if(
+numbî
+ == 0)
+
+137 
+	`ÊashVideoUpd©eInfo
+(
+tŸÆQu™tôy
+);
+
+139 
+	`ÊashEø£Block32
+(
+	`FRAME_ADDRESS
+(
+numbî
+));
+
+140 
+	`ÊashWrôeBlock
+(
+‰ame
+, 
+FRAME_SIZE
+, 
+	`FRAME_ADDRESS
+(
+numbî
+));
+
+141 
+	}
+}
+
+143 
+	$ÊashVideoPœyPro˚ssögCB
 (
 boﬁ
  
 °©e
 )
 
-100 
+146 if(
+∂ayîH
+.
+∂ayFœshSèã
+.
+subFømeNumbî
+ >
+SUB_FRAME_QUANTITY
+ )
+
+148 
+∂ayîH
+.
+∂ayFœshSèã
+.
+‰ameNumbî
+++;
+
+151 
 	`putSubFømeNext
-(
+(&
 ∂ayFœshSubBuff
 [
 ∂ayîH
@@ -78192,20 +78730,28 @@ subBuffNumbî
 ], 
 SUB_BUFF_SIZE
 , 
-lcdPro˚ssögCB
+ÊashVideoPœyPro˚ssögCB
 );
 
-101 if(
+152 if(
 ∂ayîH
 .
 ∂ayFœshSèã
 .
-subBuffNumbî
+subFømeNumbî
  >(
 SUB_FRAME_QUANTITY
- - 1))
+ - 1) )
 
-106 
+154 
+∂ayîH
+.
+∂ayFœshSèã
+.
+subFømeNumbî
+++;
+
+158 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78213,7 +78759,7 @@ SUB_FRAME_QUANTITY
 subBuffNumbî
 ++;
 
-107 
+159 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78223,8 +78769,18 @@ subBuffNumbî
 SUB_BUFF_QUANTITY
  - 1);
 
-109 
-	`ÊashRódD©a
+161 if(
+∂ayîH
+.
+∂ayFœshSèã
+.
+subFømeNumbî
+ =(
+SUB_FRAME_QUANTITY
+ - 2))
+
+163 
+	`ÊashRódSubFømeLa°
 (
 ∂ayFœshSubBuff
 [
@@ -78235,38 +78791,88 @@ SUB_BUFF_QUANTITY
 subBuffNumbî
 ],
 
-110 
+164 
 SUB_BUFF_SIZE
 ,
 
-111 
-VIDEO_BLOCK_ADDRESS
-*
-FLASH_BLOCK_SIZE
- + 
+165 
+	`FRAME_ADDRESS
+(
 ∂ayîH
 .
 ∂ayFœshSèã
 .
 ‰ameNumbî
- * 
-VIDEO_FRAME_SIZE
- +ÖœyîH.∂ayFœshSèã.
+Ë+ÖœyîH.∂ayFœshSèã.
 subBuffNumbî
  * 
 SUB_BUFF_SIZE
 );
 
-112 
+169 
+	`ÊashRódSubFømeNext
+(
+∂ayFœshSubBuff
+[
+∂ayîH
+.
+∂ayFœshSèã
+.
+subBuffNumbî
+],
+
+170 
+SUB_BUFF_SIZE
+,
+
+171 
+	`FRAME_ADDRESS
+(
+∂ayîH
+.
+∂ayFœshSèã
+.
+‰ameNumbî
+Ë+ÖœyîH.∂ayFœshSèã.
+subBuffNumbî
+ * 
+SUB_BUFF_SIZE
+);
+
+173 
+∂ayîH
+.
+∂ayFœshSèã
+.
+subFømeNumbî
+++;
+
+174 
 	}
 }
 
-115 
-	$∂ayFœshPro˚ssög
+177 
+	$ÊashVideoPœyPro˚ssög
 ()
 
-118 
-	`ÊashRódD©a
+179 
+∂ayîH
+.
+∂ayFœshSèã
+.
+subBuffNumbî
+ = 0;
+
+180 
+∂ayîH
+.
+∂ayFœshSèã
+.
+subFømeNumbî
+ = 0;
+
+182 
+	`ÊashRódSubFømeSèπ
 (
 ∂ayFœshSubBuff
 [
@@ -78277,39 +78883,25 @@ SUB_BUFF_SIZE
 subBuffNumbî
 ],
 
-119 
+183 
 SUB_BUFF_SIZE
 ,
 
-120 
-VIDEO_BLOCK_ADDRESS
-*
-FLASH_BLOCK_SIZE
- + 
+184 
+	`FRAME_ADDRESS
+(
 ∂ayîH
 .
 ∂ayFœshSèã
 .
 ‰ameNumbî
- * 
-VIDEO_FRAME_SIZE
- +ÖœyîH.∂ayFœshSèã.
+Ë+ÖœyîH.∂ayFœshSèã.
 subBuffNumbî
  * 
 SUB_BUFF_SIZE
 );
 
-122 
-	`isFœshBussy
-()){}
-
-123 if(
-	`ÊashGëSèã
-(Ë!
-FLASH_OK
-)
-
-127 
+186 
 	`putSubFømeSèπ
 (
 ∂ayFœshSubBuff
@@ -78322,10 +78914,10 @@ subBuffNumbî
 ], 
 SUB_BUFF_SIZE
 , 
-lcdPro˚ssögCB
+ÊashVideoPœyPro˚ssögCB
 );
 
-129 
+188 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78333,7 +78925,7 @@ lcdPro˚ssögCB
 subBuffNumbî
 ++;
 
-130 
+189 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78343,8 +78935,8 @@ subBuffNumbî
 SUB_BUFF_QUANTITY
  - 1);
 
-132 
-	`ÊashRódD©a
+191 
+	`ÊashRódSubFømeNext
 (
 ∂ayFœshSubBuff
 [
@@ -78355,103 +78947,1713 @@ SUB_BUFF_QUANTITY
 subBuffNumbî
 ],
 
-133 
+192 
 SUB_BUFF_SIZE
 ,
 
-134 
-VIDEO_BLOCK_ADDRESS
-*
-FLASH_BLOCK_SIZE
- + 
+193 
+	`FRAME_ADDRESS
+(
 ∂ayîH
 .
 ∂ayFœshSèã
 .
 ‰ameNumbî
- * 
-VIDEO_FRAME_SIZE
- +ÖœyîH.∂ayFœshSèã.
+Ë+ÖœyîH.∂ayFœshSèã.
 subBuffNumbî
  * 
 SUB_BUFF_SIZE
 );
 
-135 
+194 
+∂ayîH
+.
+∂ayFœshSèã
+.
+subFømeNumbî
+++;
+
+195 
 	}
 }
 
-138 
-	$∂ayDúe˘Pro˚ssög
+198 
+	$ÊashVideoTimîCB
+–
+TimîH™dÀ_t
+ 
+xTimî
+ )
+
+200 if(
+∂ayîH
+.
+∂ayFœshSèã
+.
+‰ameNumbî
+ >∂ayîH.∂ayFœshSèã.
+tŸÆFømeNumbî
+)
+
+202 
+	`xTimîSt›
+(
+ÊashVideoTimî
+, 2);
+
+205 
+	`ÊashVideoPœyPro˚ssög
+();
+
+206 
+	}
+}
+
+209 
+boﬁ
+ 
+	$ÊashVideoPœy
 ()
 
-140 
-	`putPi˘uª
-(
-‰amePro˚ssög
+211 if(!
+	`ÊashVideoRódInfo
+(&
+∂ayîH
 .
-‰ameBuff
-);
+∂ayFœshSèã
+.
+tŸÆFømeNumbî
+))
 
-141 
+213  
+Ál£
+;
+
+215 
+∂ayîH
+.
+∂ayFœshSèã
+.
+‰ameNumbî
+ = 0;
+
+216 
+	`ÊashVideoPœyPro˚ssög
+();
+
+217 
+	`xTimîSèπ
+(
+ÊashVideoTimî
+, 2);
+
+218  
+åue
+;
+
+219 
 	}
 }
 
-144 
-	#BLOCK_ADDRESS
- 5
+222 
+boﬁ
+ 
+	$ÊashVideoSt›
+()
+
+224 
+	`xTimîSt›
+(
+ÊashVideoTimî
+, 2);
+
+225  
+åue
+;
+
+226 
+	}
+}
+
+229 
+	$dúe˘VideoPœyFøme
+()
+
+231 
+	`putPi˘uª
+(
+rxComm™d
+->
+∑ylﬂd
+);
+
+232 
+	}
+}
+
+234 
+	$videoComm™dPro˚ssög
+(
+uöt8_t
+ 
+‰ameBuff
+[])
+
+236 
+Ba£Ty≥_t
+ 
+xHighîPri‹ôyTaskWokí
+;
+
+238 
+rxComm™d
+ = (
+comm™dDes¸ùti⁄T
+*)
+‰ameBuff
+;
+
+239 
+xHighîPri‹ôyTaskWokí
+ = 
+pdFALSE
+;
+
+240 
+∂ayîH
+.
+∂ayîSèã
+ = 
+PLAYER_PLAY
+;
+
+241 
+	`xSem≠h‹eGiveFromISR
+(
+lcdSem≠h‹e
+, &
+xHighîPri‹ôyTaskWokí
+);
+
+243 
+	}
+}
+
+247 
+	~"m©h.h
+"
+
+249 c⁄° 
+uöt8_t
+ 
+image_d©a_logo_smÆl
+[4050];
+
+250 
+uöt8_t
+ 
+rxComm™dBuf„r
+[34816];
+
+253 
+	#R_0
+ 18.0F
 
 	)
 
-145 
-	#IMAGE_ADDRESS
+254 
+	#R_1
+ 17.0F
+
+	)
+
+255 
+	#R_2
+ 15.0F
+
+	)
+
+256 
+	#R_3
+ 14.0F
+
+	)
+
+258 
+	#MAX_ALFA
+ 255.0F
+
+	)
+
+259 
+	#K1
  (
-BLOCK_ADDRESS
-*32768)
+MAX_ALFA
+/(
+R_1
+ - 
+R_0
+))
 
 	)
 
-148 
+260 
+	#B1
+ (-
+K1
+*
+R_0
+)
+
+	)
+
+261 
+	#K2
+ (
+MAX_ALFA
+/(
+R_2
+ - 
+R_3
+))
+
+	)
+
+262 
+	#B2
+ (-
+K2
+*
+R_3
+)
+
+	)
+
+266 
+	#SCRREN_SAVER_DURATION_MS
+ 7000
+
+	)
+
+268 
+	#COLOR_QYANTITY
+ 7
+
+	)
+
+269 
+	#COLOR_1
+ {0, 255, 0}
+
+	)
+
+270 
+	#COLOR_2
+ {0, 255, 0}
+
+	)
+
+271 
+	#COLOR_3
+ {200, 38, 43}
+
+	)
+
+272 
+	#COLOR_4
+ {198, 18, 132}
+
+	)
+
+273 
+	#COLOR_5
+ {67, 67, 146}
+
+	)
+
+274 
+	#COLOR_6
+ {95, 167, 229}
+
+	)
+
+275 
+	#COLOR_7
+ {95, 167, 229}
+
+	)
+
+279 
+	mRED
+,
+
+280 
+	mGREEN
+,
+
+281 
+	mBLUE
+
+
+282 }
+	tcﬁ‹T
+;
+
+284 c⁄° 
+uöt8_t
+ 
+	gb‹dîCﬁ‹
+[][3] =
+
+286 
+COLOR_1
+,
+
+287 
+COLOR_2
+,
+
+288 
+COLOR_3
+,
+
+289 
+COLOR_4
+,
+
+290 
+COLOR_5
+,
+
+291 
+COLOR_6
+,
+
+292 
+COLOR_7
+,
+
+297 
+	mlöeK€f
+[3][2];
+
+298 
+uöt32_t
+ 
+	m°›Time
+;
+
+299 }
+	gb‹dîLayîDes¸ùti⁄
+[
+COLOR_QYANTITY
+];
+
+303 
+	#RED_TO_565
+(
+X
+Ë((XË>> 3)
+
+	)
+
+304 
+	#GREEN_TO_565
+(
+X
+Ë((XË>> 2)
+
+	)
+
+305 
+	#BLUE_TO_565
+(
+X
+Ë((XË>> 3)
+
+	)
+
+307 
+	#GET_BLUE
+(
+X
+Ë((X & 0b1111100000000Ë>> 8)
+
+	)
+
+308 
+	#GET_GREEN
+(
+X
+Ë(((X & 0b111)>>10Ë| (X & 0b111))
+
+	)
+
+309 
+	#GET_RED
+(
+X
+Ë((X & 0b11111000Ë>> 3)
+
+	)
+
+311 
+	#SET_BLUE
+(
+X
+Ë–X << 8)
+
+	)
+
+312 
+	#SET_GREEN
+(
+X
+Ë(((X & 0b111)<<13Ë| (X >> 3))
+
+	)
+
+313 
+	#SET_RED
+(
+X
+Ë(X << 3)
+
+	)
+
+317 
+	#COLOR
+ 0b11111000
+
+	)
+
+318 
+	#COLOR_B
+ 0X1b
+
+	)
+
+322 
+uöt8_t
+ 
+	mx
+;
+
+323 
+uöt8_t
+ 
+	my
+;
+
+324 
+uöt16_t
+ 
+	mÆÁ
+;
+
+325 }
+	tpixñDes¸T
+;
+
+328 
+uöt16_t
+ 
+	msize
+;
+
+329 
+pixñDes¸T
+ 
+	mpixñ
+[100*100];
+
+330 }
+	gb‹dî
+;
+
+333 
+	$ˇlcLöeK€f
+(*
+k
+, *
+b
+, 
+uöt16_t
+ 
+x1
+, uöt16_à
+y1
+, uöt16_à
+x2
+, uöt16_à
+y2
+)
+
+335 *
+k
+ = (
+y1
+ - 
+y2
+)/(
+x1
+ - 
+x2
+);
+
+336 *
+b
+ = 
+y1
+ - (*
+k
+Ë* 
+x1
+;
+
+337 
+	}
+}
+
+340 
+ölöe
+ 
+	$ˇlcLöePoöt
+(
+k
+, 
+b
+, 
+x
+)
+
+342  
+k
+ * 
+x
+ + 
+b
+;
+
+343 
+	}
+}
+
+345 
+	$¸óãLöe
+(
+uöt16_t
+ 
+x0
+, uöt16_à
+y0
+, uöt16_à
+xSèπ
+, uöt16_à
+xSt›
+, uöt16_à
+ySèπ
+, uöt16_à
+ySt›
+, 
+boﬁ
+ 
+isH‹iz⁄èl
+)
+
+347 
+uöt16_t
+ 
+x
+, 
+y
+;
+
+348 
+xF
+, 
+yF
+;
+
+349 
+d
+;
+
+350 
+x
+ = 
+xSèπ
+;
+
+351 ; 
+x
+ < 
+xSt›
+; x++)
+
+353 
+xF
+ = 
+x
+ + 0.5F;
+
+354 
+y
+ = 
+ySèπ
+;
+
+355 ; 
+y
+ < 
+ySt›
+; y++)
+
+357 
+yF
+ = 
+y
+ + 0.5F;
+
+358 
+d
+ = (
+isH‹iz⁄èl
+Ë? (
+	`sqπ
+(
+	`pow
+(
+y0
+ - 
+yF
+, 2))):(sqπ’ow(
+x0
+ - 
+xF
+, 2)));
+
+360 if(
+d
+ > 
+R_0
+ || d < 
+R_3
+)
+
+364 if(
+d
+ < 
+R_0
+ && d > 
+R_1
+)
+
+366 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+d
+ * 
+K1
+ + 
+B1
+;
+
+368 if(
+d
+ < 
+R_1
+ && d > 
+R_2
+)
+
+370 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+MAX_ALFA
+;
+
+372 if(
+d
+ < 
+R_2
+ && d > 
+R_3
+)
+
+374 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+d
+ * 
+K2
+ + 
+B2
+;;
+
+376 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+x
+ = x;
+
+377 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+y
+ = y;
+
+378 
+b‹dî
+.
+size
+++;
+
+381 
+	}
+}
+
+383 
+	$¸óãAngÀ
+(
+uöt16_t
+ 
+x0In
+, uöt16_à
+y0In
+, uöt16_à
+xSèπ
+, uöt16_à
+xSt›
+, uöt16_à
+ySèπ
+, uöt16_à
+ySt›
+)
+
+385 
+uöt16_t
+ 
+x
+, 
+y
+;
+
+386 
+xF
+, 
+yF
+;
+
+387 
+d
+;
+
+388 
+x
+ = 
+xSèπ
+;
+
+389 ; 
+x
+ < 
+xSt›
+; x++)
+
+391 
+xF
+ = 
+x
+ + 0.5F;
+
+392 
+y
+ = 
+ySèπ
+;
+
+393 ; 
+y
+ < 
+ySt›
+; y++)
+
+395 
+yF
+ = 
+y
+ + 0.5F;
+
+396 
+d
+ = 
+	`sqπ
+(
+	`pow
+((
+xF
+ - 
+x0In
+), 2Ë+Öow((
+yF
+ - 
+y0In
+), 2));
+
+397 if(
+d
+ > 
+R_0
+ || d < 
+R_3
+)
+
+401 if(
+d
+ < 
+R_0
+ && d > 
+R_1
+)
+
+403 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+d
+ * 
+K1
+ + 
+B1
+;
+
+405 if(
+d
+ < 
+R_1
+ && d > 
+R_2
+)
+
+407 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+MAX_ALFA
+;
+
+409 if(
+d
+ < 
+R_2
+ && d > 
+R_3
+)
+
+411 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+d
+ * 
+K2
+ + 
+B2
+;;
+
+413 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+x
+ = x;
+
+414 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+y
+ = y;
+
+415 
+b‹dî
+.
+size
+++;
+
+419 
+	}
+}
+
+421 
+	$¸óãB‹dî
+()
+
+423 
+	`¸óãAngÀ
+(
+R_0
+, R_0, 0, R_0, 0, R_0);
+
+424 
+	`¸óãAngÀ
+(128 - 
+R_0
+, R_0, 128 - R_0, 128, 0, R_0);
+
+425 
+	`¸óãAngÀ
+(128 - 
+R_0
+, 128 - R_0, 128 - R_0, 128, 128 - R_0, 128);
+
+426 
+	`¸óãAngÀ
+(
+R_0
+, 128 - R_0, 0, R_0, 128 - R_0, 128);
+
+427 
+	`¸óãLöe
+(
+R_0
+, R_0, R_0, 128 - R_0, 0, R_0, 
+åue
+);
+
+428 
+	`¸óãLöe
+(
+R_0
+, 128 - R_0, R_0, 128 - R_0, 128 - R_0, 128, 
+åue
+);
+
+429 
+	`¸óãLöe
+(
+R_0
+, R_0, 0, R_0, R_0, 128 - R_0, 
+Ál£
+);
+
+430 
+	`¸óãLöe
+(128 - 
+R_0
+, R_0, 128 - R_0, 128, R_0, 128 - R_0, 
+Ál£
+);
+
+431 
+	}
+}
+
+434 
+	$upd©eB‹dîLayî
+(
+uöt32_t
+ 
+˙tMs
+)
+
+436 
+uöt16_t
+ 
+ªd1
+, 
+gªí1
+, 
+blue1
+;
+
+437 
+uöt16_t
+ 
+˙t
+ = 0;
+
+438 
+	`uöt16_t
+ (*
+‰ame
+)[128][128] = 
+rxComm™dBuf„r
+;
+
+440 
+˙tMs
+ = c¡M†% 
+SCRREN_SAVER_DURATION_MS
+;
+
+441 
+uöt8_t
+ 
+˙t
+ = 1; c¡ < 
+COLOR_QYANTITY
+; cnt++)
+
+443 if(
+˙tMs
+ < 
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+°›Time
+)
+
+449 
+uöt8_t
+ 
+ªd2
+ = (uöt8_t)
+	`ˇlcLöePoöt
+(
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+RED
+][0],
+
+450 
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+RED
+][1],
+
+451 
+˙t
+);
+
+452 
+uöt8_t
+ 
+gªí2
+ = (uöt8_t)
+	`ˇlcLöePoöt
+(
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+GREEN
+][0],
+
+453 
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+GREEN
+][1],
+
+454 
+˙t
+);
+
+455 
+uöt8_t
+ 
+blue2
+ = (uöt8_t)
+	`ˇlcLöePoöt
+(
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+BLUE
+][0],
+
+456 
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+BLUE
+][1],
+
+457 
+˙t
+);
+
+459 ; 
+˙t
+ < 
+b‹dî
+.
+size
+; cnt++)
+
+462 
+ªd1
+ = 
+	`GET_RED
+–(*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+]);
+
+463 
+gªí1
+ = 
+	`GET_GREEN
+((*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+]);
+
+464 
+blue1
+ = 
+	`GET_BLUE
+–(*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+]);
+
+466 (*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+] = 
+	`SET_RED
+–((255 - b‹dî.pixñ[˙t].
+ÆÁ
+)*
+ªd1
+ + (b‹dî.pixñ[˙t].ÆÁ)*
+ªd2
+ )/255);
+
+467 (*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+] |
+	`SET_GREEN
+(((255 - b‹dî.pixñ[˙t].
+ÆÁ
+)*
+gªí1
+ + (b‹dî.pixñ[˙t].ÆÁ)*
+gªí2
+)/255);
+
+468 (*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+] |
+	`SET_BLUE
+–((255 - b‹dî.pixñ[˙t].
+ÆÁ
+)*
+blue1
+ + (b‹dî.pixñ[˙t].ÆÁ)*
+blue2
+ )/255);
+
+470 
+	}
+}
+
+473 
+	$upd©eLogoLayî
+(
+uöt32_t
+ 
+˙tMs
+)
+
+475 
+	`uöt16_t
+ (*
+‰ame
+)[128][128] = 
+rxComm™dBuf„r
+;
+
+476 
+	`uöt16_t
+ (*
+logo
+)[45][45] = 
+image_d©a_logo_smÆl
+;
+
+477 
+uöt16_t
+ 
+imageShi·
+ = 128/2 - 45/2;
+
+478 
+uöt16_t
+ 
+x
+ = 
+imageShi·
+, 
+xLogo
+ = 0; xLogo < 45; x++, xLogo++ )
+
+480 
+uöt16_t
+ 
+y
+ = 
+imageShi·
+, 
+yLogo
+ = 0; yLogo < 45; y++, yLogo++ )
+
+482 (*
+‰ame
+)[
+y
+][
+x
+] = (*
+logo
+)[
+yLogo
+][
+xLogo
+];
+
+485 
+	}
+}
+
+488 
+	$öôLogoLayî
+()
+
+490 
+uöt16_t
+ 
+cﬁ‹TimeSãp
+ = 
+SCRREN_SAVER_DURATION_MS
+ / (
+COLOR_QYANTITY
+ - 1);
+
+491 
+uöt16_t
+ 
+cﬁl‹St›Time
+ = 0;
+
+492 
+uöt8_t
+ 
+˙t
+ = 0; c¡ < (
+COLOR_QYANTITY
+ - 1); cnt++ )
+
+494 
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+°›Time
+ = 
+cﬁl‹St›Time
+ + 
+cﬁ‹TimeSãp
+;
+
+496 
+	`ˇlcLöeK€f
+(&
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+RED
+][0],
+
+497 &
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+RED
+][1],
+
+498 
+cﬁl‹St›Time
+,
+
+499 
+	`RED_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+][
+RED
+]),
+
+500 
+cﬁl‹St›Time
+ + 
+cﬁ‹TimeSãp
+,
+
+501 
+	`RED_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+ + 1][
+RED
+]));
+
+503 
+	`ˇlcLöeK€f
+(&
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+GREEN
+][0],
+
+504 &
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+GREEN
+][1],
+
+505 
+cﬁl‹St›Time
+,
+
+506 
+	`GREEN_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+][
+GREEN
+]),
+
+507 
+cﬁl‹St›Time
+ + 
+cﬁ‹TimeSãp
+,
+
+508 
+	`GREEN_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+ + 1][
+GREEN
+]));
+
+510 
+	`ˇlcLöeK€f
+(&
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+BLUE
+][0],
+
+511 &
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+BLUE
+][1],
+
+512 
+cﬁl‹St›Time
+,
+
+513 
+	`BLUE_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+][
+BLUE
+]),
+
+514 
+cﬁl‹St›Time
+ + 
+cﬁ‹TimeSãp
+,
+
+515 
+	`BLUE_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+ + 1][
+BLUE
+]));
+
+516 
+cﬁl‹St›Time
+ = cﬁl‹St›Timê+ 
+cﬁ‹TimeSãp
+;
+
+518 
+	}
+}
+
+522 
+	$öôS¸ìnSavî
+()
+
+524 
+	`öôLogoLayî
+();
+
+525 
+	}
+}
+
+527 
+	$upd©eS¸ìnSavî
+(
+uöt32_t
+ 
+˙tMs
+)
+
+529 
+	`mem£t
+(
+rxComm™dBuf„r
+, 0x00, (rxCommandBuffer));
+
+530 
+	`upd©eLogoLayî
+(
+˙tMs
+);
+
+531 
+	`upd©eB‹dîLayî
+(
+˙tMs
+);
+
+532 
+	`putPi˘uª
+(
+rxComm™dBuf„r
+);
+
+533 
+	}
+}
+
+536 
 	$lcdTaskFun˘i⁄
 (*
 pvP¨amëîs
 )
 
-151 
+539 
 	`lcdInô
 ();
 
-152 
+540 
 lcdSem≠h‹e
  = 
 	`xSem≠h‹eCª©eBö¨y
 ();
 
-153 
-	`putPi˘uª
-(
-image_d©a_02_0000_Layî10
+541 
+ÊashVideoTimî
+ = 
+	`xTimîCª©e
+("flashVideoPlayTimer",
+
+542 
+FLASH_VIDEO_FPS
+,
+
+543 
+pdTRUE
+,
+
+544 
+NULL
+,
+
+545 
+ÊashVideoTimîCB
 );
 
-155 
-	`ÊashEø£Block32
-(
-IMAGE_ADDRESS
-);
-
-156 
-	`ÊashWrôeBlock
-(
-image_d©a_imagesimage_d©a_images
-, (image_d©a_imagesimage_d©a_images), 
-IMAGE_ADDRESS
-);
-
-170 
-	`∂ayFœshPro˚ssög
+547 
+	`¸óãB‹dî
 ();
 
-173 i‡(
+549 
+	`öôS¸ìnSavî
+();
+
+550 
+	`upd©eS¸ìnSavî
+(0);
+
+551 
+	`putPi˘uª
+(
+rxComm™dBuf„r
+);
+
+556 i‡(
 	`xSem≠h‹eTake
 (
 lcdSem≠h‹e
@@ -78461,45 +80663,75 @@ p‹tMAX_DELAY
 pdTRUE
 )
 
-177 if(
-∂ayîH
-.
-∂ayîSèã
- !
-PLAYER_PLAY
+561 
+rxComm™d
+->
+èrgë
 )
 
-182 
-∂ayîH
-.
-∂aySour˚
+563 
+DIRECT
+:
+
+564 
+	`dúe˘VideoPœyFøme
+();
+
+565 
+	`ÊashVideoSt›
+();
+
+567 
+FLASH
+:
+
+568 
+rxComm™d
+->
+subT¨gë
 )
 
-184 
-PLAY_FLASH
+570 
+FLASH_WRITE
 :
 
-185 
-	`∂ayFœshPro˚ssög
-();
+571 
+	`ÊashVideoWrôeFøme
+(
+rxComm™d
+->
+∑ylﬂd
+,ÑxComm™d->
+‰ameNumbî
+,ÑxComm™d->
+‰ameQu™tôy
+);
 
-187 
-PLAY_DIRECT
+573 
+FLASH_PLAY
 :
 
-188 
-	`∂ayDúe˘Pro˚ssög
+574 
+	`ÊashVideoPœy
 ();
 
-193 
+576 
+FLASH_STOP
+:
+
+577 
+	`ÊashVideoSt›
+();
+
+583 
 	}
 }
 
-196 
+586 
 	$lcdTaskCª©e
 ()
 
-198 
+588 
 	`xTaskCª©e
 (
 lcdTaskFun˘i⁄
@@ -78511,7 +80743,7 @@ NULL
 LCD_TASK_PRIORITY
 , NULL);
 
-199 
+589 
 	}
 }
 
@@ -78536,7 +80768,7 @@ lcdTaskCª©e
 ();
 
 7 
-£tNewFøme
+videoComm™dPro˚ssög
 (
 uöt8_t
  
@@ -79079,7 +81311,7 @@ NUMBER_OF_PACKET
 
 	)
 
-34 
+35 
 CTIMER_Ty≥
  *
 	gTIMER_CNT
@@ -79087,71 +81319,71 @@ CTIMER_Ty≥
 CTIMER4
 ;
 
-36 #¥agm®
+37 #¥agm®
 ∑ck
 (
 push
 ,1)
 
-39 
+40 
 uöt16_t
  
 	mqu™tôyPackë
 ;
 
-40 
+41 
 uöt16_t
  
 	m∑ckëNumbî
 ;
 
-41 
+42 
 uöt16_t
  
 	mª°
 ;
 
-42 
+43 
 uöt8_t
  
 	m∑ylﬂd
 [];
 
-43 }
+44 }
 	t∑ckëT
 ;
 
-44 #¥agm®
+45 #¥agm®
 ∑ck
 (
 p›
 )
 
-49 
+50 
 uöt16_t
  
 	m√xtPackëNumbî
 ;
 
-50 
+51 
 uöt32_t
  
 	mrxTime
 ;
 
-51 }
+52 }
 	grxPackëSèã
  =
 
-53 .
+54 .
 √xtPackëNumbî
  = 0,
 
-54 .
+55 .
 	grxTime
  = 0,
 
-57 c⁄° 
+58 c⁄° 
 uöt16_t
  
 	g∑ckëPaylﬂdSize
@@ -79161,7 +81393,7 @@ SIZE_PACKET
 ∑ckëT
 );
 
-59 
+61 
 uöt8_t
  
 	grxComm™dBuf„r
@@ -79169,13 +81401,13 @@ uöt8_t
 SIZE_RX_BUFFER
 ] = {[0 ... (SIZE_RX_BUFFER - 1)] = 0};
 
-61 
+63 
 uöt16_t
  
 	grxTime_
 [300];
 
-65 
+67 
 ölöe
  
 uöt32_t
@@ -79183,7 +81415,7 @@ uöt32_t
 	$gëTimîCNT
 ()
 
-67  (
+69  (
 uöt32_t
 )
 TIMER_CNT
@@ -79191,37 +81423,37 @@ TIMER_CNT
 TC
 ;
 
-68 
+70 
 	}
 }
 
-70 
+72 
 ölöe
  
 	$ª£tTimîCNT
 ()
 
-72 
+74 
 TIMER_CNT
 ->
 TC
  = 0;
 
-73 
+75 
 	}
 }
 
-75 
+77 
 	$öôTimîF‹MeTime
 ()
 
-77 
+79 
 ˘imî_c⁄fig_t
  
 öôSåu˘
 ;
 
-79 
+81 
 öôSåu˘
 .
 mode
@@ -79229,7 +81461,7 @@ mode
 kCTIMER_TimîMode
 ;
 
-80 
+82 
 SYSCON
 ->
 ASYNCAPBCTRL
@@ -79237,7 +81469,7 @@ ASYNCAPBCTRL
 	`SYSCON_ASYNCAPBCTRL_ENABLE
 (1);
 
-81 
+83 
 öôSåu˘
 .
 ¥esˇÀ
@@ -79245,7 +81477,7 @@ ASYNCAPBCTRL
 	`CLOCK_GëAsyncApbClkFªq
 ()/1000000;
 
-82 
+84 
 	`CTIMER_Inô
 (
 TIMER_CNT
@@ -79253,17 +81485,17 @@ TIMER_CNT
 öôSåu˘
 );
 
-83 
+85 
 	`CTIMER_SèπTimî
 (
 TIMER_CNT
 );
 
-84 
+86 
 	}
 }
 
-87 
+89 
 ölöe
  
 	$rxPackëPro˚ssög
@@ -79277,13 +81509,13 @@ uöt16_t
 buf„rSize
 )
 
-89 
+91 
 Ba£Ty≥_t
  
 xHighîPri‹ôyTaskWokí
 ;
 
-90 
+92 
 ∑ckëT
  *
 rxPackë
@@ -79291,7 +81523,7 @@ rxPackë
 buf„r
 ;
 
-91 if(
+93 if(
 rxPackë
 ->
 ∑ckëNumbî
@@ -79301,19 +81533,19 @@ rxPackëSèã
 √xtPackëNumbî
 )
 
-93 
+95 
 rxPackëSèã
 .
 √xtPackëNumbî
  = 0;
 
-96 if(
+98 if(
 rxPackëSèã
 .
 √xtPackëNumbî
  == 0)
 
-98 
+100 
 rxPackëSèã
 .
 rxTime
@@ -79321,7 +81553,7 @@ rxTime
 	`gëTimîCNT
 ();
 
-100 
+102 
 rxTime_
 [
 rxPackëSèã
@@ -79333,7 +81565,7 @@ rxPackëSèã
 rxTime
 ;
 
-101 
+103 
 rxPackëSèã
 .
 rxTime
@@ -79341,7 +81573,7 @@ rxTime
 	`gëTimîCNT
 ();
 
-103 
+105 
 	`mem˝y
 (&
 rxComm™dBuf„r
@@ -79357,17 +81589,17 @@ rxPackë
 qu™tôyPackë
  - 1) ==ÑxPacket->packetNumber) ?
 
-104 (
+106 (
 rxPackë
 ->
 ª°
 ):
 
-105 (
+107 (
 ∑ckëPaylﬂdSize
 ));
 
-106 if(
+108 if(
 rxPackë
 ->
 ∑ckëNumbî
@@ -79375,7 +81607,7 @@ rxPackë
 qu™tôyPackë
  - 1))
 
-109 
+111 
 rxPackëSèã
 .
 rxTime
@@ -79383,19 +81615,19 @@ rxTime
 	`gëTimîCNT
 () -ÑxPacketState.rxTime;
 
-110 
+112 
 rxPackëSèã
 .
 √xtPackëNumbî
  = 0;
 
-112 
+114 
 xHighîPri‹ôyTaskWokí
  = 
 pdFALSE
 ;
 
-113 
+115 
 	`xSem≠h‹eGiveFromISR
 (
 xSem≠h‹e
@@ -79403,29 +81635,29 @@ xSem≠h‹e
 xHighîPri‹ôyTaskWokí
 );
 
-114 i‡(
+116 i‡(
 xHighîPri‹ôyTaskWokí
  !
 pdFALSE
 )
 
-116 
+118 
 	`p‹tYIELD_FROM_ISR
 (
 xHighîPri‹ôyTaskWokí
 );
 
-120 
+122 
 rxPackëSèã
 .
 √xtPackëNumbî
 ++;
 
-121 
+123 
 	}
 }
 
-126 
+128 
 	$hidI¡OuçutRï‹t
 (c⁄° 
 uöt8_t
@@ -79437,7 +81669,7 @@ size_t
 ªp‹tSize
 )
 
-129 
+131 
 	`rxPackëPro˚ssög
 (
 ªp‹tD©a
@@ -79445,31 +81677,31 @@ size_t
 ªp‹tSize
 );
 
-160 
+162 
 	}
 }
 
-162 
+164 
 	$hidI¡I≈utRï‹t
 ()
 
-165 
+167 
 	}
 }
 
-167 
+169 
 	$usbDevi˚TaskFun˘i⁄
 (*
 pvP¨amëîs
 )
 
-169 
+171 
 xSem≠h‹e
  = 
 	`xSem≠h‹eCª©eBö¨y
 ();
 
-173 i‡(
+175 i‡(
 	`xSem≠h‹eTake
 (
 xSem≠h‹e
@@ -79479,33 +81711,33 @@ REASONABLE_LONG_TIME
 pdTRUE
 )
 
-175 
-	`£tNewFøme
+177 
+	`videoComm™dPro˚ssög
 (
 rxComm™dBuf„r
 );
 
-184 
+186 
 	}
 }
 
-186 
+188 
 	~"HÆIFœsh.h
 "
 
-187 
+189 
 	$usbDevi˚TaskCª©e
 ()
 
-189 
+191 
 	`hÆSpiFœshInô
 ();
 
-190 
+192 
 	`öôTimîF‹MeTime
 ();
 
-191 
+193 
 	`usbHidDevi˚SëCÆlbacks
 (
 hidI¡I≈utRï‹t
@@ -79513,7 +81745,7 @@ hidI¡I≈utRï‹t
 hidI¡OuçutRï‹t
 );
 
-192 
+194 
 	`xTaskCª©e
 (
 usbDevi˚TaskFun˘i⁄
@@ -79525,7 +81757,7 @@ NULL
 USB_DEVICE_TASK_PRIORITY
 , NULL);
 
-193 
+195 
 	`xTaskCª©e
 (
 usbHidDevi˚TaskFun˘i⁄
@@ -79537,7 +81769,7 @@ NULL
 USB_DEVICE_TASK_PRIORITY
 , NULL);
 
-194 
+196 
 	}
 }
 
@@ -79970,6 +82202,18 @@ deföed
 (
 __˝lu•lus
 )
+
+	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\logoImage\logo_smoll.c
+
+1 
+	~<°döt.h
+>
+
+3 c⁄° 
+uöt8_t
+ 
+	gimage_d©a_logo_smÆl
+[4050] = {
 
 	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\main.c
 
@@ -217209,8 +219453,8 @@ __˝lu•lus
 1
 .
 0
-148
-12904
+149
+12986
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\event_groups.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\FreeRTOS.h
@@ -217316,6 +219560,7 @@ C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\UsbDeviceTask.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\UsbDeviceTask.h
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\clock_config.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\clock_config.h
+C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\logoImage\logo_smoll.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\main.c
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\CMSIS\Include\core_cm4.h
 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\LPC54608.h

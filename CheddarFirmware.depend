@@ -568,7 +568,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1542134441 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.c
+1542227023 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\lcdtask.c
 	"FreeRTOS.h"
 	"task.h"
 	"semphr.h"
@@ -578,7 +578,7 @@
 	<stdint.h>
 	<string.h>
 	"./Anim/Anim.c"
-	"math.h"
+	"screenSaverProcessing.h"
 
 1541580456 c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\lcd\lcd.h
 	<stdint.h>
@@ -880,7 +880,7 @@
 1531911800 c:\private\programing\lpc\cheddarfirmware-feature-gpio\sdk\devices\lpc54608\drivers\fsl_dma.h
 	"fsl_common.h"
 
-1541664415 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\haliflash\haliflash.c
+1542205331 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\hal\haliflash\haliflash.c
 	"stdint.h"
 	"stdbool.h"
 	"stddef.h"
@@ -2304,4 +2304,16 @@
 
 1542141790 source:d:\private\programing\mcu\lpc\mywork\app\logoimage\logo_smoll.c
 	<stdint.h>
+
+1542132828 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\screensaverprocessing\logosmall.c
+	<stdint.h>
+
+1542229900 source:c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\screensaverprocessing\screensaverprocessing.c
+	<stdint.h>
+	<string.h>
+	<stdbool.h>
+	"math.h"
+
+1542218686 c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\screensaverprocessing\screensaverprocessing.h
+	"stdint.h"
 

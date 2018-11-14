@@ -130,9 +130,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="app\LightingTask.h" />
-		<Unit filename="app\logoImage\logo_smoll.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="app\main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -146,6 +143,13 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="app\Rtos.h" />
+		<Unit filename="app\screenSaverProcessing\logoSmall.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="app\screenSaverProcessing\screenSaverProcessing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="app\screenSaverProcessing\screenSaverProcessing.h" />
 		<Unit filename="app\UsbDeviceTask.c">
 			<Option compilerVar="CC" />
 		</Unit>

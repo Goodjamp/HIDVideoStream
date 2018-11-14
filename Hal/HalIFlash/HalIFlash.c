@@ -269,9 +269,6 @@ flashStatT flashReadSubFrameLast(uint8_t *buff, uint32_t dataSize, uint32_t addr
 }
 
 
-
-
-
 flashStatT flashWriteBlock(uint8_t *buff, uint32_t dataSize, uint32_t address)
 {
     if(dataSize == 0)

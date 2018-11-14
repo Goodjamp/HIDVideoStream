@@ -271,14 +271,21 @@ extern uint8_t  rxCommandBuffer[34816];
 #define COLOR_3                   {200,  38,  43}
 #define COLOR_4                   {198,  18, 132}
 #define COLOR_5                   {67,   67, 146}
-#define COLOR_5                   {95,  167, 229}
+#define COLOR_6                   {95,  167, 229}
 
+typedef enum
+{
+    RED,
+    GREEN,
+    BLUE
+}colorT
+`
 struct
 {
     uint8_t  color[3];
-    float    lineKoef[2];
+    float    lineKoef[3][2];
     uint32_t stopTime;
-}logoPlayDescription[] =
+}logoLayerDescription[] =
 {
     {.color = COLOR_1},
     {.color = COLOR_2},
@@ -405,7 +412,7 @@ void createBorder(void)
 }
 
 
-void updateBorder(uint32_t cntMs)
+void updateBorderLayer(uint32_t cntMs)
 {
     uint16_t red1, green1, blue1;
     uint16_t red2, green2, blue2;
@@ -430,7 +437,23 @@ void updateBorder(uint32_t cntMs)
 }
 
 
-void updateLogo(uint32_t cntMs)
+void calcLineKoef(float *k, float *b, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, )
+{
+    *k = (y1 - y2)/(x1 - x2);
+    *b = y1 - (*k) * x1;
+}
+
+
+void initLogoLayer(void)
+{
+    for(uint8_t cnt = 0; cnt < sizeof(logoLayerDescription) / sizeof(logoLayerDescription[0]); cnt++ )
+    {
+        calcLineKoef(&logoLayerDescriptionp[cnt]., float *b, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, )
+    }
+}
+
+
+void updateLogoLayer(uint32_t cntMs)
 {
     uint16_t (*frame)[128][128] = rxCommandBuffer;
     uint16_t (*logo)[45][45] =  image_data_logo_small;
@@ -448,8 +471,8 @@ void updateLogo(uint32_t cntMs)
 void updateScreenSaver(uint32_t cntMs)
 {
     memset(rxCommandBuffer, 0x00, sizeof(rxCommandBuffer));
-    updateLogo(cntMs);
-    updateBorder(cntMs);
+    updateLogoLayer(cntMs);
+    updateBorderLayer(cntMs);
     putPicture(rxCommandBuffer);
 }
 

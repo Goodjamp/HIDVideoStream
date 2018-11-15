@@ -2203,7 +2203,7 @@
 	"usb.h"
 	"usb_osa.h"
 
-1541662426 source:d:\private\programing\mcu\lpc\mywork\hal\haliflash\haliflash.c
+1542274549 source:d:\private\programing\mcu\lpc\mywork\hal\haliflash\haliflash.c
 	"stdint.h"
 	"stdbool.h"
 	"stddef.h"
@@ -2224,7 +2224,7 @@
 	<stdint.h>
 	<stdbool.h>
 
-1542071597 source:d:\private\programing\mcu\lpc\mywork\app\lcdtask.c
+1542274549 source:d:\private\programing\mcu\lpc\mywork\app\lcdtask.c
 	"FreeRTOS.h"
 	"task.h"
 	"semphr.h"
@@ -2234,7 +2234,7 @@
 	<stdint.h>
 	<string.h>
 	"./Anim/Anim.c"
-	"math.h"
+	"screenSaverProcessing.h"
 
 1538310526 d:\private\programing\mcu\lpc\mywork\app\anim\anim.c
 	"frame_00.c"
@@ -2316,4 +2316,10 @@
 
 1542218686 c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\screensaverprocessing\screensaverprocessing.h
 	"stdint.h"
+
+1542274549 d:\private\programing\mcu\lpc\mywork\app\screensaverprocessing\screensaverprocessing.h
+	"stdint.h"
+
+1542274549 source:d:\private\programing\mcu\lpc\mywork\app\screensaverprocessing\logosmall.c
+	<stdint.h>
 

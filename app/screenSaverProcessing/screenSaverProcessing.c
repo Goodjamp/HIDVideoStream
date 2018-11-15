@@ -31,8 +31,15 @@
 #define COLOR_5                   {95,  167, 229}
 // last color should be the same as first
 #define COLOR_6                   {91,  161, 87}
-
 /********************************************************************/
+
+/*************************WAVE PLAY CONFIGURATION**************/
+const uint8_t wave[] = {
+    #include "wavePoints.h"
+    };
+/********************************************************************/
+
+
 // color format: BGR565 (Big     Endians): ORIGINAL: 0...4 - B,    5...10 - G 11...15 - R
 //                       Little  Endians):           0...2 -G(MSB) 3...7 - R, 0...4 - B, 5...7 -G(LSB)
 
@@ -248,6 +255,21 @@ static void updateBorderLayer(uint32_t cntMs, uint8_t *buff)
 
 
 static void updateLogoLayer(uint32_t cntMs, uint8_t *buff)
+{
+    uint16_t imageShift      = 128/2 - 45/2;
+    uint16_t (*logo)[45][45] =  image_data_logo_small;
+    frameT   frame           = (frameT)buff;
+
+    for(uint16_t x = imageShift, xLogo = 0; xLogo < 45; x++, xLogo++ )
+    {
+        for(uint16_t y = imageShift, yLogo = 0; yLogo < 45; y++, yLogo++ )
+        {
+            (*frame)[y][x] = (*logo)[yLogo][xLogo];
+        }
+    }
+}
+
+static void updateWave1Layer(uint32_t cntMs, uint8_t *buff)
 {
     uint16_t imageShift      = 128/2 - 45/2;
     uint16_t (*logo)[45][45] =  image_data_logo_small;

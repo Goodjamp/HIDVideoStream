@@ -240,7 +240,6 @@ void videoCommandProcessing(uint8_t frameBuff[])
 void screenSaverPlayFrame(void)
 {
     playerH.playScreenSaverState.lastTimeState = xTaskGetTickCount() + SCRREN_SAVER_UPDATE_PER_MS;
-    putPicture(rxCommandBuffer);
     xSemaphoreGive(lcdSemaphore);
 }
 
@@ -302,8 +301,6 @@ static void lcdTaskFunction(void *pvParameters)
                                        NULL,
                                        videoTimerCB);
 
-    //screen saver
-
     memset(rxCommandBuffer, 0,32768);
     putPicture(rxCommandBuffer);
     vTaskDelay(500);
@@ -320,6 +317,7 @@ static void lcdTaskFunction(void *pvParameters)
 
         if(playerH.playSource = PLAY_SCREEN_SAVER )
         {
+            putPicture(rxCommandBuffer);
             calculateScreenSaverFrame(playerH.playScreenSaverState.lastTimeState, rxCommandBuffer, 32768);
             continue;
         }

@@ -6,6 +6,9 @@
 #define SCREEN_HEIGHT_PIXEL    128
 #define SCREEN_WIDTH_PIXEL     128
 
+#define RB_RANGE               0b11111
+#define G_RANGE                0b111111
+
 /***********************************BORDER CREATION CONFIGURATION*****/
 #define R_0        18.0F
 #define R_1        17.0F
@@ -37,6 +40,16 @@
 const uint8_t wave[] = {
     #include "wavePoints.h"
     };
+#define waveBezier_p0x   0.0F
+#define waveBezier_p0y   0.0F
+#define waveBezier_p1x   0.36F
+#define waveBezier_p1y   0.45F
+#define waveBezier_p2x   0.63F
+#define waveBezier_p2y   0.53F
+#define waveBezier_p3x   1.0F
+#define waveBezier_p3y   1.0F
+
+uint16_t wave1LayerColor[128];
 /********************************************************************/
 
 
@@ -92,6 +105,13 @@ struct
 
 
 struct{
+    float kRB;
+    float kG;
+    float bRB;
+    float bG;
+}wave1LayerDescription;
+
+struct{
     uint16_t size;
     pixelDescrT pixel[100*100];
 }border;
@@ -108,6 +128,13 @@ static inline float calcLinePoint(float k, float b, float x)
 {
     return k * x + b;
 }
+
+
+static inline float cubicBezier(float t, float p0, float p1, float p2, float p3)
+{
+    return pow((1.0F-t),3.0F)*p0+3.0F*pow((1.0F-t),2.0F)*t*p1+3.0F*(1.0F-t)*pow(t,2.0F)*p2+pow(t,3.0F)*p3;
+}
+
 
 static void createLine(uint16_t x0, uint16_t y0, uint16_t xStart, uint16_t xStop, uint16_t yStart, uint16_t yStop, bool isHorizontal)
 {
@@ -182,7 +209,6 @@ static void createAngle(uint16_t x0In, uint16_t y0In, uint16_t xStart, uint16_t 
             border.size++;
         }
     }
-
 }
 
 static void createBorder(void)
@@ -204,7 +230,6 @@ static void updateBorderLayer(uint32_t cntMs, uint8_t *buff)
     uint16_t index;
     frameT   frame = (frameT)buff;
 
-    cntMs = cntMs % SCRREN_SAVER_DURATION_MS;
     for(index = 0; index < COLOR_QYANTITY ; index++)
     {
         if(cntMs < borderLayerDescription[index].stopTime)
@@ -212,22 +237,6 @@ static void updateBorderLayer(uint32_t cntMs, uint8_t *buff)
             break;
         }
     }
-/*
-    static uint8_t testColor = 0;
-    uint8_t red2   = 0;
-
-    uint8_t green2 = 0;
-
-    uint8_t blue2  = testColor;
-
-    testColor++;
-    if(testColor > 31)
-    {
-        testColor = 0;
-    }
-
- */
-
 
     uint8_t red2   = (uint8_t)calcLinePoint(borderLayerDescription[index].lineKoef[RED][0],
                                             borderLayerDescription[index].lineKoef[RED][1],
@@ -239,7 +248,6 @@ static void updateBorderLayer(uint32_t cntMs, uint8_t *buff)
                                             borderLayerDescription[index].lineKoef[BLUE][1],
                                             cntMs);
 
-
     for(uint16_t cnt = 0; cnt < border.size; cnt++)
     {
 
@@ -250,6 +258,8 @@ static void updateBorderLayer(uint32_t cntMs, uint8_t *buff)
         (*frame)[border.pixel[cnt].y][border.pixel[cnt].x] =  SET_RED(  ((255 - border.pixel[cnt].alfa)*red1   + (border.pixel[cnt].alfa)*red2  )/255);
         (*frame)[border.pixel[cnt].y][border.pixel[cnt].x] |= SET_GREEN(((255 - border.pixel[cnt].alfa)*green1 + (border.pixel[cnt].alfa)*green2)/255);
         (*frame)[border.pixel[cnt].y][border.pixel[cnt].x] |= SET_BLUE( ((255 - border.pixel[cnt].alfa)*blue1  + (border.pixel[cnt].alfa)*blue2 )/255);
+
+        //(*frame)[border.pixel[cnt].y][border.pixel[cnt].x] = rezColor;
     }
 }
 
@@ -271,17 +281,88 @@ static void updateLogoLayer(uint32_t cntMs, uint8_t *buff)
 
 static void updateWave1Layer(uint32_t cntMs, uint8_t *buff)
 {
-    uint16_t imageShift      = 128/2 - 45/2;
-    uint16_t (*logo)[45][45] =  image_data_logo_small;
-    frameT   frame           = (frameT)buff;
+    float kLine;
+    const uint8_t (*wavePoints)[sizeof(wave)/2][2] =  (const uint8_t (*)[sizeof(wave)/2][2])wave;
+    frameT   frame                = (frameT)buff;
+    uint16_t kW =  1600 * cubicBezier((float)cntMs/(float)SCRREN_SAVER_DURATION_MS,
+                                      waveBezier_p0x,
+                                      waveBezier_p1x,
+                                      waveBezier_p2x,
+                                      waveBezier_p3x);
 
-    for(uint16_t x = imageShift, xLogo = 0; xLogo < 45; x++, xLogo++ )
+    uint8_t red2;
+    uint8_t green2;
+    uint8_t blue2;
+
+    for(uint16_t kF = 0; kF < 128; kF++, kW++)
     {
-        for(uint16_t y = imageShift, yLogo = 0; yLogo < 45; y++, yLogo++ )
+        if((*wavePoints)[kW][0] > 127 )
         {
-            (*frame)[y][x] = (*logo)[yLogo][xLogo];
+            continue;
         }
+        if(kW >= sizeof(wave)/2)
+        {
+            break;
+        }
+
+
+        for(uint16_t k = (*wavePoints)[kW][0]; k < 128; k++)
+        {
+/*
+            red2   = (uint8_t)calcLinePoint(wave1LayerDescription.kRB,
+                                                            wave1LayerDescription.bRB,
+                                                            k);
+            green2 = (uint8_t)calcLinePoint(wave1LayerDescription.kG,
+                                                            wave1LayerDescription.bG,
+                                                            k);
+            blue2  = (uint8_t)calcLinePoint(wave1LayerDescription.kRB,
+                                                            wave1LayerDescription.bRB,
+                                                          k);
+
+            (*frame)[k][kF]  = SET_RED(red2);
+            (*frame)[k][kF] |= SET_GREEN(green2);
+            (*frame)[k][kF] |= SET_BLUE(blue2);
+
+            (*frame)[k][kF] = SET_RED((uint8_t)calcLinePoint(wave1LayerDescription.kRB,
+                                                            wave1LayerDescription.bRB,
+                                                            k));
+            (*frame)[k][kF] |= SET_GREEN((uint8_t)calcLinePoint(wave1LayerDescription.kG,
+                                                            wave1LayerDescription.bG,
+                                                            k));
+            (*frame)[k][kF] |= SET_BLUE((uint8_t)calcLinePoint(wave1LayerDescription.kRB,
+                                                            wave1LayerDescription.bRB,
+                                                            k));
+ */
+            (*frame)[k][kF] = wave1LayerColor[k];
+        }
+
     }
+
+}
+
+
+static void initWave1Layer(void)
+{
+    float   kRB, kG;
+    float   bRB, bG;
+    uint8_t red, green, blue;
+    calcLineKoef(&kRB, &bRB,
+                 40,   RED_TO_565(53),
+                 123,  RED_TO_565(27));
+    calcLineKoef(&kG, &bG,
+                 40,   GREEN_TO_565(53),
+                 123,  GREEN_TO_565(27));
+
+
+    for(uint8_t k = 0; k < sizeof(wave1LayerColor)/sizeof(wave1LayerColor[0]); k++ )
+    {
+        red = blue = calcLinePoint(kRB, bRB, k);
+        green      = calcLinePoint(kG,  bG,  k);
+        wave1LayerColor[k]  = SET_RED(red);
+        wave1LayerColor[k] |= SET_GREEN(green);
+        wave1LayerColor[k] |= SET_BLUE(blue);
+    }
+
 }
 
 
@@ -318,9 +399,12 @@ static void initBorderLayer(void)
 }
 
 
+
 void calculateScreenSaverFrame(uint32_t cntMs, uint8_t *buff, uint32_t buffSize)
 {
+    cntMs = cntMs % SCRREN_SAVER_DURATION_MS;
     memset(buff, 0x00, buffSize);
+    updateWave1Layer(cntMs, buff);
     updateLogoLayer(cntMs, buff);
     updateBorderLayer(cntMs, buff);
 }
@@ -332,4 +416,5 @@ void initScreenSaver(void)
     createBorder();
     /*******************************************************************/
     initBorderLayer();
+    initWave1Layer();
 }

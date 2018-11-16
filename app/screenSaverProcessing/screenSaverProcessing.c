@@ -24,7 +24,7 @@
 
 /*************************TOTAL PLAY CONFIGURATION***************/
 #define SCRREN_SAVER_DURATION_MS   7000
-/*************************BORDER PLAY CONFIGURATION**************/
+/*************************BORDER LAYER CONFIGURATION**************/
 #define COLOR_QYANTITY            6
 #define COLOR_0                   {91,  161, 87}
 #define COLOR_1                   {249, 237, 56}
@@ -36,10 +36,7 @@
 #define COLOR_6                   {91,  161, 87}
 /********************************************************************/
 
-/*************************WAVE PLAY CONFIGURATION**************/
-const uint8_t wave[] = {
-    #include "wavePoints.h"
-    };
+/*************************WAVE_1 LAYER CONFIGURATION**************/
 #define waveBezier_p0x   0.0F
 #define waveBezier_p0y   0.0F
 #define waveBezier_p1x   0.36F
@@ -49,9 +46,48 @@ const uint8_t wave[] = {
 #define waveBezier_p3x   1.0F
 #define waveBezier_p3y   1.0F
 
-uint16_t wave1LayerColor[128];
 /********************************************************************/
 
+/*************************WAVE_2 LAYER CONFIGURATION**************/
+#define waveBezierVertical_p0x   0.0F
+#define waveBezierVertical_p0y   0.0F
+#define waveBezierVertical_p1x   0.36F
+#define waveBezierVertical_p1y   0.45F
+#define waveBezierVertical_p2x   0.63F
+#define waveBezierVertical_p2y   0.53F
+#define waveBezierVertical_p3x   1.0F
+#define waveBezierVertical_p3y   1.0F
+
+#define waveBezierHorizontal_p0x  0.0F
+#define waveBezierHorizontal_p0y  0.0F
+#define waveBezierHorizontal_p1x  0.25F
+#define waveBezierHorizontal_p1y  0.1F
+#define waveBezierHorizontal_p2x  0.24F
+#define waveBezierHorizontal_p2y  1.0F
+#define waveBezierHorizontal_p3x  1.0F
+#define waveBezierHorizontal_p3y  1.0F
+
+#define verticalDelayMs           -125
+#define horizontalDelayMs         -1250
+
+#define verticalShift_faze_1
+
+#define verticalShift             125
+#define horizontalShift           1250
+
+/********************************************************************/
+
+/*************************LOGO LAYER CONFIGURATION**************/
+#define logoBezier_p0x   0.0F
+#define logoBezier_p0y   0.0F
+#define logoBezier_p1x   0.75F
+#define logoBezier_p1y   0.45F
+#define logoBezier_p2x   0.63F
+#define logoBezier_p2y   0.53F
+#define logoBezier_p3x   1.0F
+#define logoBezier_p3y   1.0F
+
+/********************************************************************/
 
 // color format: BGR565 (Big     Endians): ORIGINAL: 0...4 - B,    5...10 - G 11...15 - R
 //                       Little  Endians):           0...2 -G(MSB) 3...7 - R, 0...4 - B, 5...7 -G(LSB)
@@ -71,6 +107,7 @@ uint16_t wave1LayerColor[128];
 
 typedef uint16_t (*frameT)[SCREEN_WIDTH_PIXEL][SCREEN_HEIGHT_PIXEL];
 
+/********Border layer variables***************/
 typedef enum
 {
     RED   = 0,
@@ -95,15 +132,13 @@ static const uint8_t borderColor[][3] =
     COLOR_6,
 };
 
-extern const uint8_t image_data_logo_small[4050];
-
 struct
 {
     float    lineKoef[3][2];
     uint32_t stopTime;
 }borderLayerDescription[COLOR_QYANTITY];
 
-
+//this variable should be calculate outside in future
 struct{
     float kRB;
     float kG;
@@ -111,11 +146,23 @@ struct{
     float bG;
 }wave1LayerDescription;
 
+//this variable should be calculate outside in future
 struct{
     uint16_t size;
     pixelDescrT pixel[100*100];
 }border;
+/*******************************************/
 
+/********Wave layer variables***************/
+const uint8_t wave[] = {
+    #include "wavePoints.h"
+    };
+uint16_t wave1LayerColor[128];
+/*******************************************/
+
+/********Logo layer variables***************/
+extern const uint8_t image_data_logo_small[4050];
+/*******************************************/
 
 void calcLineKoef(float *k, float *b, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2)
 {
@@ -281,48 +328,33 @@ static void updateLogoLayer(uint32_t cntMs, uint8_t *buff)
 
 static void updateWave1Layer(uint32_t cntMs, uint8_t *buff)
 {
-    float kLine;
     const uint8_t (*wavePoints)[sizeof(wave)/2][2] =  (const uint8_t (*)[sizeof(wave)/2][2])wave;
     frameT   frame                = (frameT)buff;
-    uint16_t kW =  1600 * cubicBezier((float)cntMs/(float)SCRREN_SAVER_DURATION_MS,
+    uint16_t xWave =  1600 * cubicBezier((float)cntMs/(float)SCRREN_SAVER_DURATION_MS,
                                       waveBezier_p0x,
                                       waveBezier_p1x,
                                       waveBezier_p2x,
                                       waveBezier_p3x);
-
-    uint8_t red2;
-    uint8_t green2;
-    uint8_t blue2;
-
-    for(uint16_t kF = 0; kF < 128; kF++, kW++)
+    uint8_t color;
+    uint8_t y;
+    for(uint16_t xFrame = 0; xFrame < 128; xFrame++, xWave++)
     {
-        if((*wavePoints)[kW][0] > 127 )
+        if((*wavePoints)[xWave][0] > 127 )
         {
             continue;
         }
-        if(kW >= sizeof(wave)/2)
+        if(xWave >= sizeof(wave)/2)
         {
             break;
         }
-
-
-        for(uint16_t k = (*wavePoints)[kW][0]; k < 128; k++)
+        y                    = (*wavePoints)[xWave][0] - 1;
+        color                = (GET_RED(wave1LayerColor[y]) * (*wavePoints)[xWave][1]) / 10;
+        (*frame)[y][xFrame]  = SET_RED(color);
+        (*frame)[y][xFrame] |= SET_GREEN(color<<1);
+        (*frame)[y][xFrame] |= SET_BLUE(color);
+        for(uint16_t yFrame   = (*wavePoints)[xWave][0]; yFrame < 128; yFrame++)
         {
 /*
-            red2   = (uint8_t)calcLinePoint(wave1LayerDescription.kRB,
-                                                            wave1LayerDescription.bRB,
-                                                            k);
-            green2 = (uint8_t)calcLinePoint(wave1LayerDescription.kG,
-                                                            wave1LayerDescription.bG,
-                                                            k);
-            blue2  = (uint8_t)calcLinePoint(wave1LayerDescription.kRB,
-                                                            wave1LayerDescription.bRB,
-                                                          k);
-
-            (*frame)[k][kF]  = SET_RED(red2);
-            (*frame)[k][kF] |= SET_GREEN(green2);
-            (*frame)[k][kF] |= SET_BLUE(blue2);
-
             (*frame)[k][kF] = SET_RED((uint8_t)calcLinePoint(wave1LayerDescription.kRB,
                                                             wave1LayerDescription.bRB,
                                                             k));
@@ -333,7 +365,7 @@ static void updateWave1Layer(uint32_t cntMs, uint8_t *buff)
                                                             wave1LayerDescription.bRB,
                                                             k));
  */
-            (*frame)[k][kF] = wave1LayerColor[k];
+            (*frame)[yFrame][xFrame] = wave1LayerColor[yFrame];
         }
 
     }
@@ -345,22 +377,21 @@ static void initWave1Layer(void)
 {
     float   kRB, kG;
     float   bRB, bG;
-    uint8_t red, green, blue;
+    uint8_t colorRB;
+    uint8_t colorG;;
     calcLineKoef(&kRB, &bRB,
-                 40,   RED_TO_565(53),
-                 123,  RED_TO_565(27));
+                 34,   RED_TO_565(53),
+                 122,  RED_TO_565(27));
     calcLineKoef(&kG, &bG,
-                 40,   GREEN_TO_565(53),
-                 123,  GREEN_TO_565(27));
-
-
-    for(uint8_t k = 0; k < sizeof(wave1LayerColor)/sizeof(wave1LayerColor[0]); k++ )
+                 34,   GREEN_TO_565(53),
+                 122,  GREEN_TO_565(27));
+    for(uint8_t y = 0; y < sizeof(wave1LayerColor)/sizeof(wave1LayerColor[0]); y++ )
     {
-        red = blue = calcLinePoint(kRB, bRB, k);
-        green      = calcLinePoint(kG,  bG,  k);
-        wave1LayerColor[k]  = SET_RED(red);
-        wave1LayerColor[k] |= SET_GREEN(green);
-        wave1LayerColor[k] |= SET_BLUE(blue);
+        colorRB = calcLinePoint(kRB, bRB, y);
+        colorG  = calcLinePoint(kG, bG, y);
+        wave1LayerColor[y]  = SET_RED(colorRB);
+        wave1LayerColor[y] |= SET_GREEN(colorG);
+        wave1LayerColor[y] |= SET_BLUE(colorRB);
     }
 
 }

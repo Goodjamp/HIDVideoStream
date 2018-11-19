@@ -1,5 +1,5 @@
-cscope 15 C:\Private\Programing\LPC\CheddarFirmware-feature-gpio"               0001661971
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
+cscope 15 D:\Private\Programing\MCU\LPC\myWork"               0001668153
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\croutine.c
 
 28 
 	~"FªeRTOS.h
@@ -803,7 +803,7 @@ xRëu∫
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\event_groups.c
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\event_groups.c
 
 29 
 	~<°dlib.h
@@ -2613,7 +2613,7 @@ uxEvítGroupNumbî
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\FreeRTOS.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\FreeRTOS.h
 
 28 #i‚de‡
 INC_FREERTOS_H
@@ -5999,7 +5999,7 @@ SèticSåómBuf„r_t
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\StackMacros.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\StackMacros.h
 
 28 #i‚de‡
 STACK_MACROS_H
@@ -6279,7 +6279,7 @@ pcTaskName
 
 	)
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\croutine.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\croutine.h
 
 28 #i‚de‡
 CO_ROUTINE_H
@@ -6647,7 +6647,7 @@ pxEvítLi°
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\deprecated_definitions.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\deprecated_definitions.h
 
 28 #i‚de‡
 DEPRECATED_DEFINITIONS_H
@@ -7153,7 +7153,7 @@ __IAR_78K0R_Kx3L__
 	~"../../Sour˚/p‹èbÀ/IAR/78K0R/p‹tma¸o.h
 "
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\event_groups.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\event_groups.h
 
 28 #i‚de‡
 EVENT_GROUPS_H
@@ -7465,7 +7465,7 @@ PRIVILEGED_FUNCTION
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\list.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\list.h
 
 56 #i‚de‡
 INC_FREERTOS_H
@@ -8119,7 +8119,7 @@ pxIãmToRemove
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\message_buffer.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\message_buffer.h
 
 62 #i‚de‡
 FREERTOS_MESSAGE_BUFFER_H
@@ -8345,7 +8345,7 @@ deföed
 __˝lu•lus
  )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_prototypes.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\mpu_prototypes.h
 
 37 #i‚de‡
 MPU_PROTOTYPES_H
@@ -9581,7 +9581,7 @@ SèticSåómBuf„r_t
 pxSèticSåómBuf„r
  );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_wrappers.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\mpu_wrappers.h
 
 28 #i‚de‡
 MPU_WRAPPERS_H
@@ -10403,7 +10403,7 @@ MPU_xSåómBuf„rGíîicCª©eSètic
 
 	)
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\portable.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\portable.h
 
 32 #i‚de‡
 PORTABLE_H
@@ -10673,7 +10673,7 @@ __˝lu•lus
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\projdefs.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\projdefs.h
 
 28 #i‚de‡
 PROJDEFS_H
@@ -11065,7 +11065,7 @@ pdFREERTOS_BIG_ENDIAN
 
 	)
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\queue.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\queue.h
 
 29 #i‚de‡
 QUEUE_H
@@ -11973,7 +11973,7 @@ PRIVILEGED_FUNCTION
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\semphr.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\semphr.h
 
 28 #i‚de‡
 SEMAPHORE_H
@@ -12347,7 +12347,7 @@ QueueH™dÀ_t
 
 	)
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stack_macros.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\stack_macros.h
 
 28 #i‚de‡
 STACK_MACROS_H
@@ -12569,7 +12569,7 @@ pcTaskName
 
 	)
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stream_buffer.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\stream_buffer.h
 
 51 #i‚de‡
 STREAM_BUFFER_H
@@ -12957,7 +12957,7 @@ deföed
 __˝lu•lus
  )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\task.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\task.h
 
 29 #i‚de‡
 INC_TASK_H
@@ -14271,7 +14271,7 @@ PRIVILEGED_FUNCTION
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\timers.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\timers.h
 
 29 #i‚de‡
 TIMERS_H
@@ -14825,7 +14825,7 @@ PRIVILEGED_FUNCTION
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\list.c
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\list.c
 
 29 
 	~<°dlib.h
@@ -15239,7 +15239,7 @@ uxNumbîOfIãms
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
 
 33 
 	~"FªeRTOS.h
@@ -16543,7 +16543,7 @@ ulMaxPRIGROUPVÆue
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h
 
 29 #i‚de‡
 PORTMACRO_H
@@ -17155,7 +17155,7 @@ ulNewMaskVÆue
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\MemMang\heap_4.c
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\portable\MemMang\heap_4.c
 
 36 
 	~<°dlib.h
@@ -18137,7 +18137,7 @@ pxBlockToIn£π
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\queue.c
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\queue.c
 
 28 
 	~<°dlib.h
@@ -24631,7 +24631,7 @@ xRëu∫
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\stream_buffer.c
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\stream_buffer.c
 
 29 
 	~<°döt.h
@@ -27977,7 +27977,7 @@ sbFLAGS_IS_MESSAGE_BUFFER
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\tasks.c
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\tasks.c
 
 29 
 	~<°dlib.h
@@ -38419,7 +38419,7 @@ FREERTOS_TASKS_C_ADDITIONS_INIT
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\timers.c
+	@D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\timers.c
 
 29 
 	~<°dlib.h
@@ -41209,7 +41209,7 @@ uxTimîNumbî
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\AnalogMeasurementHal\AnalogMeasurementHal.c
 
 1 
 	~<°ddef.h
@@ -42337,7 +42337,7 @@ gAdcResu…InfoSåu˘
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\AnalogMeasurementHal\AnalogMeasurementHal.h
 
 1 #i‚de‡
 __ANALOG_MEASUREMENT_H__
@@ -42433,7 +42433,7 @@ A«logMósuªmítTy≥
 ™ÆogMósuªmít
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\FanControllerHal\FanController.c
 
 1 
 	~<°ddef.h
@@ -44017,7 +44017,7 @@ FAN_CONTROLLER_CHANNEL_NONE
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\FanControllerHal\FanController.h
 
 1 #i‚de‡
 __FAN_CONTROLLER_H__
@@ -44157,7 +44157,7 @@ uöt32_t
 ch™√lCou¡
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalAdc\HalAdc.c
 
 1 
 	~"HÆAdc.h
@@ -44677,7 +44677,7 @@ gAdcResu…InfoSåu˘
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalAdc\HalAdc.h
 
 1 #i‚de‡
 __HAL_ADC_H__
@@ -44757,7 +44757,7 @@ HÆAdcCh™√l
 ch™√l
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalCommon\HalCommon.c
 
 1 
 	~"HÆComm⁄.h
@@ -44843,7 +44843,7 @@ kCLOCK_Gpio5
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalCommon\HalCommon.h
 
 1 #i‚de‡
 __HAL_COMMON_H__
@@ -44859,7 +44859,7 @@ __HAL_COMMON_H__
 hÆComm⁄Inô
 ();
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalGpio\HalGpio.c
 
 1 
 	~"HÆGpio.h
@@ -46341,7 +46341,7 @@ p‹t
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalGpio\HalGpio.h
 
 1 #i‚de‡
 __HAL_GPIO_H__
@@ -46651,7 +46651,7 @@ HÆGpioPö
 pö
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalI2c\HalI2c.c
 
 1 
 	~"HÆI2c.h
@@ -47527,7 +47527,7 @@ I2C_MASTER_1
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalI2c\HalI2c.h
 
 1 #i‚de‡
 __HAL_I2C_H__
@@ -47635,7 +47635,7 @@ hÆI2cEvítCb
 	`hÆI2cDeöô
 ();
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalIFlash\HalIFlash.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalIFlash\HalIFlash.c
 
 1 
 	~"°döt.h
@@ -48927,7 +48927,7 @@ FLASH_OK
 	}
 }
 
-275 
+272 
 ÊashSètT
  
 	$ÊashWrôeBlock
@@ -48943,15 +48943,15 @@ d©aSize
 addªss
 )
 
-277 if(
+274 if(
 d©aSize
  == 0)
 
-279  
+276  
 FLASH_OK
 ;
 
-281 
+278 
 uöt16_t
  
 œ°BlockQu™tôy
@@ -48959,7 +48959,7 @@ uöt16_t
 d©aSize
  % 256;
 
-282 
+279 
 uöt16_t
  
 wrôeBlockQu™tôy
@@ -48969,11 +48969,11 @@ wrôeBlockQu™tôy
 d©aSize
 /256 - 1) : (dataSize/256 );
 
-283 
+280 
 œ°BlockQu™tôy
  = (lastBlockQuantity == 0) ? (256) : (lastBlockQuantity);
 
-286 
+283 
 uöt16_t
  
 ˙t
@@ -48981,23 +48981,23 @@ uöt16_t
 wrôeBlockQu™tôy
 ; cnt++)
 
-288 
+285 
 	`ÊashGëSèã
 (Ë=
 FLASH_BUSSY
 ) {};
 
-289 
+286 
 	`ÊashWrôeE«bÀ
 ();
 
-290 
+287 
 	`ÊashGëWrôe
 (Ë=
 FLASH_BUSSY
 ) {};
 
-292 
+289 
 	`hÆGpioSëPö
 (
 hÆGpio
@@ -49007,7 +49007,7 @@ hÆGpio
 Ál£
 );
 
-294 ((
+291 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -49017,7 +49017,7 @@ comm™d
 PROGRAM_PAGE
 ;
 
-295 ((
+292 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -49027,7 +49027,7 @@ comm™dBuffTx
 addªss
  & 0xFF;
 
-296 ((
+293 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -49037,7 +49037,7 @@ comm™dBuffTx
 addªss
  >> 8) & 0xFF;
 
-297 ((
+294 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -49047,11 +49047,11 @@ comm™dBuffTx
 addªss
  >> 16) & 0xFF;
 
-298 
+295 
 addªss
  += 256;
 
-300 
+297 
 ÊashPro˚ssög
 .
 csSë
@@ -49059,7 +49059,7 @@ csSë
 Ál£
 ;
 
-301 
+298 
 	`ÊashTxRxPro˚ssög
 (
 comm™dBuffTx
@@ -49067,13 +49067,13 @@ comm™dBuffTx
 NULL
 , 4);
 
-302 
+299 
 ÊashPro˚ssög
 .
 ÊashBussy
 ) {}
 
-304 
+301 
 ÊashPro˚ssög
 .
 csSë
@@ -49081,7 +49081,7 @@ csSë
 åue
 ;
 
-305 
+302 
 	`ÊashTxRxPro˚ssög
 (
 buff
@@ -49095,21 +49095,21 @@ wrôeBlockQu™tôy
 œ°BlockQu™tôy
 ) : (256));
 
-306 
+303 
 ÊashPro˚ssög
 .
 ÊashBussy
 ) {}
 
-309  
+306  
 FLASH_OK
 ;
 
-310 
+307 
 	}
 }
 
-313 
+310 
 ÊashSètT
  
 	$ÊashEø£Block32
@@ -49119,11 +49119,11 @@ uöt32_t
 blockNumbî
 )
 
-315 
+312 
 	`ÊashWrôeE«bÀ
 ();
 
-316 ((
+313 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -49133,7 +49133,7 @@ comm™d
 BLOCK_ERASE32
 ;
 
-317 ((
+314 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -49143,11 +49143,11 @@ comm™dBuffTx
 blockNumbî
  & 0xFF;
 
-318 
+315 
 blockNumbî
  >>= 8;
 
-319 ((
+316 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -49157,11 +49157,11 @@ comm™dBuffTx
 blockNumbî
  & 0xFF;
 
-320 
+317 
 blockNumbî
  >>= 8;
 
-321 ((
+318 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -49171,7 +49171,7 @@ comm™dBuffTx
 blockNumbî
  & 0xFF;
 
-323 
+320 
 ÊashPro˚ssög
 .
 csSë
@@ -49179,7 +49179,7 @@ csSë
 åue
 ;
 
-324 
+321 
 ÊashPro˚ssög
 .
 ÊashBussy
@@ -49187,7 +49187,7 @@ csSë
 åue
 ;
 
-325 
+322 
 	`hÆGpioSëPö
 (
 hÆGpio
@@ -49197,7 +49197,7 @@ hÆGpio
 Ál£
 );
 
-326 
+323 
 	`ÊashTxRxPro˚ssög
 (
 comm™dBuffTx
@@ -49205,33 +49205,33 @@ comm™dBuffTx
 NULL
 , 4);
 
-327 
+324 
 ÊashPro˚ssög
 .
 ÊashBussy
 ){}
 
-329 
+326 
 	`ÊashGëSèã
 (Ë=
 FLASH_BUSSY
 ){}
 
-330  
+327  
 FLASH_OK
 ;
 
-331 
+328 
 	}
 }
 
-334 
+331 
 ÊashSètT
  
 	$ÊashWrôeE«bÀ
 ()
 
-336 ((
+333 ((
 comm™Des¸ùti⁄T
 *)
 comm™dBuffTx
@@ -49241,7 +49241,7 @@ comm™d
 WRITE_ENABLE
 ;
 
-338 
+335 
 ÊashPro˚ssög
 .
 csSë
@@ -49249,7 +49249,7 @@ csSë
 åue
 ;
 
-339 
+336 
 ÊashPro˚ssög
 .
 ÊashBussy
@@ -49257,7 +49257,7 @@ csSë
 åue
 ;
 
-340 
+337 
 	`hÆGpioSëPö
 (
 hÆGpio
@@ -49267,7 +49267,7 @@ hÆGpio
 Ál£
 );
 
-341 
+338 
 	`ÊashTxRxPro˚ssög
 (
 comm™dBuffTx
@@ -49275,21 +49275,21 @@ comm™dBuffTx
 NULL
 , 1);
 
-342 
+339 
 ÊashPro˚ssög
 .
 ÊashBussy
 ){}
 
-344  
+341  
 FLASH_OK
 ;
 
-345 
+342 
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalIFlash\HalIFlash.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalIFlash\HalIFlash.h
 
 1 #i‚de‡
 HALFLASH_H_
@@ -49435,7 +49435,7 @@ d©aSize
 addªss
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalPwm\HalPwm.c
 
 1 
 	~"f¶_s˘imî.h
@@ -49885,7 +49885,7 @@ kSCTIMER_Cou¡î_L
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalPwm\HalPwm.h
 
 1 #i‚de‡
 __HAL_PWM_H__
@@ -49969,7 +49969,7 @@ uöt8_t
 dutyCy˛e
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalSpi\HalSpi.c
 
 1 
 	~"HÆ•i.h
@@ -50309,7 +50309,7 @@ ma°îX„r
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\HalSpi\HalSpi.h
 
 1 #i‚de‡
 __HAL_SPI_H__
@@ -50361,7 +50361,7 @@ HÆSpiTøns„rD⁄eCÆlback
 ˇŒback
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\Lcd\Lcd.c
 
 2 
 	~"f¶_gpio.h
@@ -51727,7 +51727,7 @@ Gøy_SˇÀ_TB1
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\Lcd\Lcd.h
 
 1 #i‚de‡
 __HAL_SPI_H__
@@ -51831,7 +51831,7 @@ HÆSpiTøns„rD⁄eCÆlback
 ˇŒback
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\LedContorllerHal\LedController.c
 
 1 
 	~<°ddef.h
@@ -52845,7 +52845,7 @@ DMA0_IRQn
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\LedContorllerHal\LedController.h
 
 1 #i‚de‡
 __LED_CONTROLLER_H__
@@ -52911,7 +52911,7 @@ rgbAºay
 rgbAºayÀngth
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.c
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\PmBusHal\PmBusHal.c
 
 1 
 	~"PmBusHÆ.h
@@ -53653,7 +53653,7 @@ d©aLígth
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.h
+	@D:\Private\Programing\MCU\LPC\myWork\Hal\PmBusHal\PmBusHal.h
 
 1 #i‚de‡
 __PM_BUS_HAL_H__
@@ -53721,7 +53721,7 @@ d©a
 d©aLígth
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\LinkerScript\LinkerScript.ld
+	@D:\Private\Programing\MCU\LPC\myWork\LinkerScript\LinkerScript.ld
 
 2 
 	gMEMORY
@@ -54219,7 +54219,7 @@ USB
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.c
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.c
 
 1 
 	~"A«logMósuªmítSy°em.h
@@ -54677,7 +54677,7 @@ Thîmi°‹_SCALE
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.h
 
 1 #i‚de‡
 __ANALOG_MEASUREMENT_SYTEM_H__
@@ -54745,7 +54745,7 @@ uöt32_t
 ªsT
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.c
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\FanSystem\FanSystem.c
 
 1 
 	~"F™Sy°em.h
@@ -56617,7 +56617,7 @@ isF™Dëe˘i⁄TaskRu¬ög
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\FanSystem\FanSystem.h
 
 1 #i‚de‡
 __FAN_SYSTEM_H__
@@ -56877,7 +56877,7 @@ ch™√lCou¡
 	`ÁnSy°emSèπF™Dëe˘i⁄
 ();
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.c
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\LightingSystem\led.c
 
 1 
 	~"Àd.h
@@ -61635,7 +61635,7 @@ LED_STRIP_2_MAX_LED_COUNT
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\LightingSystem\led.h
 
 1 #i‚de‡
 LED_H
@@ -62259,7 +62259,7 @@ LedGroup
 ÀdGroup
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\PidController\PidController.c
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\PidController\PidController.c
 
 1 
 	~"PidC⁄åﬁÀr.h
@@ -62553,7 +62553,7 @@ pidC⁄åﬁÀr
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\PidController\PidController.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\PidController\PidController.h
 
 1 #i‚de‡
 __PID_CONTROLLER_H__
@@ -62679,7 +62679,7 @@ PidC⁄åﬁÀr
 pidC⁄åﬁÀr
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.c
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\SpiFlash\SpiFlash.c
 
 1 
 	~"SpiFœsh.h
@@ -62831,7 +62831,7 @@ sfdpId
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\SpiFlash\SpiFlash.h
 
 1 #i‚de‡
 __SPI_FLASH_H__
@@ -62861,7 +62861,7 @@ boﬁ
 •iFœshIsDëe˘ed
 ();
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.c
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\UsbHidDevice.c
 
 35 
 	~"UsbHidDevi˚.h
@@ -64429,7 +64429,7 @@ devi˚H™dÀ
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\UsbHidDevice.h
 
 1 #i‚de‡
 __USB_HID_DEVICE_H__
@@ -64485,7 +64485,7 @@ uöt8_t
 ªp‹tD©a
 []);
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.c
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_ch9.c
 
 35 
 	~"usb_devi˚_c⁄fig.h
@@ -67767,7 +67767,7 @@ kSètus_USB_Suc˚ss
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_ch9.h
 
 35 #i‚de‡
 __USB_DEVICE_CH9_H__
@@ -67871,7 +67871,7 @@ deföed
 __˝lu•lus
 )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.c
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_class.c
 
 35 
 	~"usb_devi˚_c⁄fig.h
@@ -69419,7 +69419,7 @@ kUSB_Devi˚SètusS≥ed
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_class.h
 
 35 #i‚de‡
 __USB_DEVICE_CLASS_H__
@@ -70287,7 +70287,7 @@ __˝lu•lus
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_config.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_config.h
 
 35 #i‚de‡
 _USB_DEVICE_CONFIG_H_
@@ -70545,7 +70545,7 @@ USB_DEVICE_CONFIG_LOW_POWER_MODE
 
 	)
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.c
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_descriptor.c
 
 35 
 	~"usb_devi˚_c⁄fig.h
@@ -71949,7 +71949,7 @@ kSètus_USB_Suc˚ss
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_descriptor.h
 
 35 #i‚de‡
 __USB_DEVICE_DESCRIPTOR_H__
@@ -72307,7 +72307,7 @@ usb_devi˚_gë_hid_physiˇl_des¸ùt‹_°ru˘_t
 hidPhysiˇlDes¸ùt‹
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.c
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_hid.c
 
 35 
 	~"usb_devi˚_c⁄fig.h
@@ -74201,7 +74201,7 @@ hidH™dÀ
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_hid.h
 
 35 #i‚de‡
 __USB_DEVICE_HID_H__
@@ -74619,7 +74619,7 @@ deföed
 __˝lu•lus
 )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.c
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbProtocol\UsbProtocol.c
 
 1 
 	~"UsbPrŸocﬁ.h
@@ -77009,7 +77009,7 @@ STATUS_INVALID_COMMAND
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.h
+	@D:\Private\Programing\MCU\LPC\myWork\Modules\UsbProtocol\UsbProtocol.h
 
 1 #i‚de‡
 __USB_PROTOCOL_H__
@@ -77035,7 +77035,7 @@ outRï‹t
 öRï‹t
 []);
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\AnalogMeasurementTask.c
 
 1 
 	~"A«logMósuªmítSy°em.h
@@ -77123,7 +77123,7 @@ ANALOG_MEASUREMENT_TASK_PRIORITY
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.h
+	@D:\Private\Programing\MCU\LPC\myWork\app\AnalogMeasurementTask.h
 
 1 #i‚de‡
 __ANALOG_MEASUREMENT_TASK_H__
@@ -77143,7 +77143,7 @@ __ANALOG_MEASUREMENT_TASK_H__
 ™ÆogMósuªmítTaskCª©e
 ();
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\Anim.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\Anim.c
 
 1 
 	~"‰ame_00.c
@@ -77389,7 +77389,7 @@ __ANALOG_MEASUREMENT_TASK_H__
 	~"‰ame_60.c
 "
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_00.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_00.c
 
 27 
 	~<°döt.h
@@ -77401,7 +77401,7 @@ uöt8_t
 	gimage_d©a_imagesimage_d©a_images
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_01.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_01.c
 
 27 
 	~<°döt.h
@@ -77413,7 +77413,7 @@ uöt8_t
 	gimage_d©a_01_0015_Layî2
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_02.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_02.c
 
 27 
 	~<°döt.h
@@ -77425,7 +77425,7 @@ uöt8_t
 	gimage_d©a_01_0014_Layî3
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_03.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_03.c
 
 27 
 	~<°döt.h
@@ -77437,7 +77437,7 @@ uöt8_t
 	gimage_d©a_01_0013_Layî4
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_04.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_04.c
 
 27 
 	~<°döt.h
@@ -77449,7 +77449,7 @@ uöt8_t
 	gimage_d©a_01_0012_Layî5
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_05.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_05.c
 
 27 
 	~<°döt.h
@@ -77461,7 +77461,7 @@ uöt8_t
 	gimage_d©a_01_0011_Layî6
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_06.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_06.c
 
 27 
 	~<°döt.h
@@ -77473,7 +77473,7 @@ uöt8_t
 	gimage_d©a_01_0010_Layî7
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_07.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_07.c
 
 27 
 	~<°döt.h
@@ -77485,7 +77485,7 @@ uöt8_t
 	gimage_d©a_01_0009_Layî8
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_08.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_08.c
 
 27 
 	~<°döt.h
@@ -77497,7 +77497,7 @@ uöt8_t
 	gimage_d©a_01_0008_Layî9
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_09.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_09.c
 
 27 
 	~<°döt.h
@@ -77509,7 +77509,7 @@ uöt8_t
 	gimage_d©a_01_0007_Layî10
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_10.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_10.c
 
 27 
 	~<°döt.h
@@ -77521,7 +77521,7 @@ uöt8_t
 	gimage_d©a_01_0006_Layî11
 [32768] = {
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FanTask.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\FanTask.c
 
 1 
 	~"F™Task.h
@@ -77695,7 +77695,7 @@ FAN_TASK_PRIORITY
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FanTask.h
+	@D:\Private\Programing\MCU\LPC\myWork\app\FanTask.h
 
 1 #i‚de‡
 __FAN_TASK_H__
@@ -77715,7 +77715,7 @@ __FAN_TASK_H__
 ÁnTaskCª©e
 ();
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FreeRTOSConfig.h
+	@D:\Private\Programing\MCU\LPC\myWork\app\FreeRTOSConfig.h
 
 30 #i‚de‡
 FREERTOS_CONFIG_H
@@ -78123,7 +78123,7 @@ SysTick_H™dÀr
 
 	)
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdInterface.h
+	@D:\Private\Programing\MCU\LPC\myWork\app\LcdInterface.h
 
 5 #i‚de‡
 LCDINTERFACE_H_
@@ -78139,7 +78139,7 @@ LCDINTERFACE_H_
 	$lcdSídFøme
 ()
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdTask.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\LcdTask.c
 
 1 
 	~"FªeRTOS.h
@@ -78157,93 +78157,107 @@ LCDINTERFACE_H_
 	~"timîs.h
 "
 
-6 
-	~"Lcd.h
+5 
+	~"f¶_˘imî.h
 "
 
 7 
+	~"Lcd.h
+"
+
+8 
 	~"HÆIFœsh.h
 "
 
-9 
+10 
 	~<°döt.h
 >
 
-10 
+11 
 	~<°rög.h
 >
 
-12 
+13 
 	~"Anim/Anim.c
 "
 
-14 
+14 
+	~"s¸ìnSavîPro˚ssög.h
+"
+
+16 
 	#LCD_TASK_PRIORITY
  2
 
 	)
 
-15 
+17 
 	#LCD_TASK_STACK_SIZE
  200
 
 	)
 
-16 
+18 
 	#PROTECT_STR
  "VIDEO_IS_PRESSENT"
 
 	)
 
-18 
+21 
+	#SCRREN_SAVER_UPDATE_PER_MS
+ 50
+
+	)
+
+25 
 	#SUB_BUFF_SIZE
  1024
 
 	)
 
-19 
+26 
 	#SUB_BUFF_QUANTITY
  2
 
 	)
 
-20 
+27 
 	#SUB_FRAME_QUANTITY
  32
 
 	)
 
-21 
+28 
 	#INFORM_BLOCK_ADDRESS
  4
 
 	)
 
-22 
+29 
 	#VIDEO_BLOCK_ADDRESS
  5
 
 	)
 
-23 
+30 
 	#FLASH_BLOCK_SIZE
  32768
 
 	)
 
-24 
+31 
 	#FRAME_SIZE
  32768
 
 	)
 
-25 
+32 
 	#FLASH_VIDEO_FPS
- 33
+ 50
 
 	)
 
-27 
+34 
 	#FRAME_ADDRESS
 (
 X
@@ -78253,7 +78267,7 @@ VIDEO_BLOCK_ADDRESS
 
 	)
 
-28 
+35 
 	#INFO_ADDRESS
  (
 INFORM_BLOCK_ADDRESS
@@ -78261,7 +78275,7 @@ INFORM_BLOCK_ADDRESS
 
 	)
 
-31 
+38 
 ÊashVideoPœyPro˚ssögCB
 (
 boﬁ
@@ -78269,103 +78283,103 @@ boﬁ
 °©e
 );
 
-36 
+43 
 	mDIRECT
  = (
 uöt8_t
 )0,
 
-37 
+44 
 	mFLASH
  = (
 uöt8_t
 )1,
 
-38 } 
+45 } 
 	tfõldT¨gëT
 ;
 
-42 
+49 
 	mFLASH_WRITE
  = (
 uöt8_t
 )0,
 
-43 
+50 
 	mFLASH_PLAY
  = (
 uöt8_t
 )1,
 
-44 
+51 
 	mFLASH_STOP
  = (
 uöt8_t
 )2,
 
-45 } 
+52 } 
 	tfõldSubT¨gëT
 ;
 
-47 #¥agm®
+54 #¥agm®
 ∑ck
 (
 push
 ,1)
 
-50 
+57 
 uöt8_t
  
 	mèrgë
 ;
 
-51 
+58 
 uöt8_t
  
 	msubT¨gë
 ;
 
-52 
+59 
 uöt16_t
  
 	m‰ameNumbî
 ;
 
-53 
+60 
 uöt16_t
  
 	m‰ameQu™tôy
 ;
 
-54 
+61 
 uöt32_t
  
 	msize
 ;
 
-55 
+62 
 uöt8_t
  
 	m∑ylﬂd
 [];
 
-56 } 
+63 } 
 	tcomm™dDes¸ùti⁄T
 ;
 
-57 #¥agm®
+64 #¥agm®
 ∑ck
 (
 p›
 )
 
-61 #¥agm®
+68 #¥agm®
 ∑ck
 (
 push
 , 1)
 
-64 
+71 
 uöt8_t
  
 	m¥Ÿe˘Så
@@ -78373,23 +78387,29 @@ uöt8_t
 PROTECT_STR
 )];
 
-65 
+72 
 uöt16_t
  
 	m‰ameQu™tôy
 ;
 
-66 }
+73 }
 	gvideoD©a
 ;
 
-67 #¥agm®
+74 #¥agm®
 ∑ck
 (
 p›
 )
 
-70 
+76 
+uöt8_t
+ 
+rxComm™dBuf„r
+[34816];
+
+78 
 Sem≠h‹eH™dÀ_t
  
 	glcdSem≠h‹e
@@ -78397,19 +78417,19 @@ Sem≠h‹eH™dÀ_t
 NULL
 ;
 
-71 
+79 
 TimîH™dÀ_t
  
 	gÊashVideoTimî
 ;
 
-72 
+80 
 comm™dDes¸ùti⁄T
  *
 	grxComm™d
 ;
 
-73 
+81 
 uöt8_t
  
 	g∂ayFœshSubBuff
@@ -78419,127 +78439,259 @@ SUB_BUFF_QUANTITY
 SUB_BUFF_SIZE
  + 4];
 
-76 
+84 
 	mPLAY_FLASH
 ,
 
-77 
+85 
 	mPLAY_DIRECT
 ,
 
-78 }
+86 
+	mPLAY_SCREEN_SAVER
+,
+
+87 }
 	t∂aySour˚T
 ;
 
-81 
+91 
 	mPLAYER_PLAY
 ,
 
-82 
+92 
 	mPLAYER_STOP
 ,
 
-83 }
+93 }
 	t∂ayîSèãT
 ;
 
-84 
+95 
 	s∂ayFœshSèãT
 
 
-86 
+97 
 uöt16_t
  
 	m‰ameNumbî
 ;
 
-87 
+98 
 uöt16_t
  
 	mtŸÆFømeNumbî
 ;
 
-88 
+99 
 uöt16_t
  
 	msubFømeNumbî
 ;
 
-89 
+100 
 uöt16_t
  
 	msubBuffNumbî
 ;
 
-91 
+103 
 	s∂ayDúe˘SèãT
 
 
-93 
+105 
 uöt16_t
  
 	mª£rved
 ;
 
-97 
+108 
+	s∂ayS¸ìnSavîSèãT
+
+
+110 
+uöt32_t
+ 
+	mœ°TimeSèã
+;
+
+115 
 ∂aySour˚T
  
 	m∂aySour˚
 ;
 
-98 
+116 
 ∂ayîSèãT
  
 	m∂ayîSèã
 ;
 
-99 
+117 
 ∂ayFœshSèãT
  
 	m∂ayFœshSèã
 ;
 
-100 
+118 
 ∂ayDúe˘SèãT
  
 	m∂ayDúe˘Sèã
 ;
 
-101 }
+119 
+∂ayS¸ìnSavîSèãT
+ 
+	m∂ayS¸ìnSavîSèã
+;
+
+120 }
 	g∂ayîH
  =
 
-103 .
+122 .
 ∂aySour˚
  = 
-PLAY_DIRECT
+PLAY_SCREEN_SAVER
 ,
 
-104 .
+123 .
 	g∂ayîSèã
  = 
-PLAYER_STOP
+PLAYER_PLAY
 ,
 
-105 .
+124 .
 	g∂ayFœshSèã
 .
 	gsubFømeNumbî
  = 0,
 
-106 .
+125 .
 	g∂ayFœshSèã
 .
 	g‰ameNumbî
  = 0,
 
-107 .
+126 .
 	g∂ayFœshSèã
 .
 	gsubBuffNumbî
  = 0,
 
-111 
+133 
+CTIMER_Ty≥
+ *
+	gTIMER_CNT
+ = 
+CTIMER4
+;
+
+137 
+uöt32_t
+ 
+	mrxTime_
+[320];
+
+138 
+uöt16_t
+ 
+	mˇlcC¡
+;
+
+139 }
+	gˇlcFømeTe°
+;
+
+141 
+ölöe
+ 
+uöt32_t
+ 
+	$gëTimîCNT
+()
+
+143  (
+uöt32_t
+)
+TIMER_CNT
+->
+TC
+;
+
+144 
+	}
+}
+
+146 
+ölöe
+ 
+	$ª£tTimîCNT
+()
+
+148 
+TIMER_CNT
+->
+TC
+ = 0;
+
+149 
+	}
+}
+
+151 
+	$öôTimîF‹MeTime
+()
+
+153 
+˘imî_c⁄fig_t
+ 
+öôSåu˘
+;
+
+155 
+öôSåu˘
+.
+mode
+ = 
+kCTIMER_TimîMode
+;
+
+156 
+SYSCON
+->
+ASYNCAPBCTRL
+ = 
+	`SYSCON_ASYNCAPBCTRL_ENABLE
+(1);
+
+157 
+öôSåu˘
+.
+¥esˇÀ
+ = 
+	`CLOCK_GëAsyncApbClkFªq
+()/100000;
+
+158 
+	`CTIMER_Inô
+(
+TIMER_CNT
+, &
+öôSåu˘
+);
+
+159 
+	`CTIMER_SèπTimî
+(
+TIMER_CNT
+);
+
+160 
+	}
+}
+
+164 
 	$ÊashVideoUpd©eInfo
 (
 uöt16_t
@@ -78547,7 +78699,7 @@ uöt16_t
 tŸÆQu™tôy
 )
 
-113 
+166 
 	`mem˝y
 (
 videoD©a
@@ -78557,7 +78709,7 @@ videoD©a
 PROTECT_STR
 , (videoData.protectStr));
 
-114 
+167 
 videoD©a
 .
 ‰ameQu™tôy
@@ -78565,13 +78717,13 @@ videoD©a
 tŸÆQu™tôy
 ;
 
-115 
+168 
 	`ÊashEø£Block32
 (
 INFO_ADDRESS
 );
 
-116 
+169 
 	`ÊashWrôeBlock
 ((
 uöt8_t
@@ -78581,11 +78733,11 @@ videoD©a
 INFO_ADDRESS
 );
 
-117 
+170 
 	}
 }
 
-120 
+173 
 boﬁ
  
 	$ÊashVideoRódInfo
@@ -78595,7 +78747,7 @@ uöt16_t
 tŸÆQu™tôy
 )
 
-122 
+175 
 	`mem£t
 ((
 uöt8_t
@@ -78603,7 +78755,7 @@ uöt8_t
 videoD©a
 , (uint8_t)0, (videoData));
 
-123 
+176 
 	`ÊashRódD©a
 ((
 uöt8_t
@@ -78613,7 +78765,7 @@ videoD©a
 INFO_ADDRESS
 );
 
-124 if(
+177 if(
 	`memcmp
 (
 videoD©a
@@ -78623,7 +78775,7 @@ videoD©a
 PROTECT_STR
 , (PROTECT_STR)) == 0)
 
-126 *
+179 *
 tŸÆQu™tôy
  = 
 videoD©a
@@ -78631,19 +78783,19 @@ videoD©a
 ‰ameQu™tôy
 ;
 
-127  
+180  
 åue
 ;
 
-129  
+182  
 Ál£
 ;
 
-130 
+183 
 	}
 }
 
-133 
+186 
 	$ÊashVideoWrôeFøme
 (
 uöt8_t
@@ -78657,17 +78809,17 @@ numbî
 tŸÆQu™tôy
 )
 
-135 if(
+188 if(
 numbî
  == 0)
 
-137 
+190 
 	`ÊashVideoUpd©eInfo
 (
 tŸÆQu™tôy
 );
 
-139 
+192 
 	`ÊashEø£Block32
 (
 	`FRAME_ADDRESS
@@ -78675,7 +78827,7 @@ tŸÆQu™tôy
 numbî
 ));
 
-140 
+193 
 	`ÊashWrôeBlock
 (
 ‰ame
@@ -78687,11 +78839,11 @@ FRAME_SIZE
 numbî
 ));
 
-141 
+194 
 	}
 }
 
-143 
+196 
 	$ÊashVideoPœyPro˚ssögCB
 (
 boﬁ
@@ -78699,7 +78851,7 @@ boﬁ
 °©e
 )
 
-146 if(
+199 if(
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78709,7 +78861,7 @@ subFømeNumbî
 SUB_FRAME_QUANTITY
  )
 
-148 
+201 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78717,7 +78869,7 @@ SUB_FRAME_QUANTITY
 ‰ameNumbî
 ++;
 
-151 
+204 
 	`putSubFømeNext
 (&
 ∂ayFœshSubBuff
@@ -78733,7 +78885,7 @@ SUB_BUFF_SIZE
 ÊashVideoPœyPro˚ssögCB
 );
 
-152 if(
+205 if(
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78743,7 +78895,7 @@ subFømeNumbî
 SUB_FRAME_QUANTITY
  - 1) )
 
-154 
+207 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78751,7 +78903,7 @@ SUB_FRAME_QUANTITY
 subFømeNumbî
 ++;
 
-158 
+211 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78759,7 +78911,7 @@ subFømeNumbî
 subBuffNumbî
 ++;
 
-159 
+212 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78769,7 +78921,7 @@ subBuffNumbî
 SUB_BUFF_QUANTITY
  - 1);
 
-161 if(
+214 if(
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78779,7 +78931,7 @@ subFømeNumbî
 SUB_FRAME_QUANTITY
  - 2))
 
-163 
+216 
 	`ÊashRódSubFømeLa°
 (
 ∂ayFœshSubBuff
@@ -78791,11 +78943,11 @@ SUB_FRAME_QUANTITY
 subBuffNumbî
 ],
 
-164 
+217 
 SUB_BUFF_SIZE
 ,
 
-165 
+218 
 	`FRAME_ADDRESS
 (
 ∂ayîH
@@ -78809,7 +78961,7 @@ subBuffNumbî
 SUB_BUFF_SIZE
 );
 
-169 
+222 
 	`ÊashRódSubFømeNext
 (
 ∂ayFœshSubBuff
@@ -78821,11 +78973,11 @@ SUB_BUFF_SIZE
 subBuffNumbî
 ],
 
-170 
+223 
 SUB_BUFF_SIZE
 ,
 
-171 
+224 
 	`FRAME_ADDRESS
 (
 ∂ayîH
@@ -78839,7 +78991,7 @@ subBuffNumbî
 SUB_BUFF_SIZE
 );
 
-173 
+226 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78847,15 +78999,15 @@ SUB_BUFF_SIZE
 subFømeNumbî
 ++;
 
-174 
+227 
 	}
 }
 
-177 
-	$ÊashVideoPœyPro˚ssög
+230 
+	$ÊashVideoPœyFøme
 ()
 
-179 
+232 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78863,7 +79015,7 @@ subFømeNumbî
 subBuffNumbî
  = 0;
 
-180 
+233 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78871,7 +79023,7 @@ subBuffNumbî
 subFømeNumbî
  = 0;
 
-182 
+235 
 	`ÊashRódSubFømeSèπ
 (
 ∂ayFœshSubBuff
@@ -78883,11 +79035,11 @@ subFømeNumbî
 subBuffNumbî
 ],
 
-183 
+236 
 SUB_BUFF_SIZE
 ,
 
-184 
+237 
 	`FRAME_ADDRESS
 (
 ∂ayîH
@@ -78901,7 +79053,7 @@ subBuffNumbî
 SUB_BUFF_SIZE
 );
 
-186 
+239 
 	`putSubFømeSèπ
 (
 ∂ayFœshSubBuff
@@ -78917,7 +79069,7 @@ SUB_BUFF_SIZE
 ÊashVideoPœyPro˚ssögCB
 );
 
-188 
+241 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78925,7 +79077,7 @@ SUB_BUFF_SIZE
 subBuffNumbî
 ++;
 
-189 
+242 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78935,7 +79087,7 @@ subBuffNumbî
 SUB_BUFF_QUANTITY
  - 1);
 
-191 
+244 
 	`ÊashRódSubFømeNext
 (
 ∂ayFœshSubBuff
@@ -78947,11 +79099,11 @@ SUB_BUFF_QUANTITY
 subBuffNumbî
 ],
 
-192 
+245 
 SUB_BUFF_SIZE
 ,
 
-193 
+246 
 	`FRAME_ADDRESS
 (
 ∂ayîH
@@ -78965,7 +79117,7 @@ subBuffNumbî
 SUB_BUFF_SIZE
 );
 
-194 
+247 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78973,19 +79125,139 @@ SUB_BUFF_SIZE
 subFømeNumbî
 ++;
 
-195 
+248 
 	}
 }
 
-198 
-	$ÊashVideoTimîCB
+251 
+boﬁ
+ 
+	$ÊashVideoSt›
+()
+
+253 
+	`xTimîSt›
+(
+ÊashVideoTimî
+, 2);
+
+254  
+åue
+;
+
+255 
+	}
+}
+
+258 
+	$dúe˘VideoPœyFøme
+()
+
+260 
+	`putPi˘uª
+(
+rxComm™d
+->
+∑ylﬂd
+);
+
+261 
+	}
+}
+
+263 
+	$videoComm™dPro˚ssög
+(
+uöt8_t
+ 
+‰ameBuff
+[])
+
+265 
+Ba£Ty≥_t
+ 
+xHighîPri‹ôyTaskWokí
+;
+
+267 
+rxComm™d
+ = (
+comm™dDes¸ùti⁄T
+*)
+‰ameBuff
+;
+
+268 
+xHighîPri‹ôyTaskWokí
+ = 
+pdFALSE
+;
+
+269 
+∂ayîH
+.
+∂ayîSèã
+ = 
+PLAYER_PLAY
+;
+
+270 
+	`xSem≠h‹eGiveFromISR
+(
+lcdSem≠h‹e
+, &
+xHighîPri‹ôyTaskWokí
+);
+
+272 
+	}
+}
+
+275 
+	$s¸ìnSavîPœyFøme
+()
+
+277 
+∂ayîH
+.
+∂ayS¸ìnSavîSèã
+.
+œ°TimeSèã
+ = 
+	`xTaskGëTickCou¡
+(Ë+ 
+SCRREN_SAVER_UPDATE_PER_MS
+;
+
+278 
+	`xSem≠h‹eGive
+(
+lcdSem≠h‹e
+);
+
+279 
+	}
+}
+
+282 
+	$videoTimîCB
 –
 TimîH™dÀ_t
  
 xTimî
  )
 
-200 if(
+284 
+∂ayîH
+.
+∂aySour˚
+)
+
+286 
+PLAY_FLASH
+:
+
+287 if(
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -78995,27 +79267,53 @@ xTimî
 tŸÆFømeNumbî
 )
 
-202 
+289 
 	`xTimîSt›
 (
 ÊashVideoTimî
 , 2);
 
-205 
-	`ÊashVideoPœyPro˚ssög
+292 
+	`ÊashVideoPœyFøme
 ();
 
-206 
+294 
+PLAY_DIRECT
+:
+
+296 
+PLAY_SCREEN_SAVER
+:
+
+297 
+	`s¸ìnSavîPœyFøme
+();
+
+300 
 	}
 }
 
-209 
+303 
 boﬁ
  
-	$ÊashVideoPœy
-()
+	$videoPœy
+(
+∂aySour˚T
+ 
+∂aySour˚
+)
 
-211 if(!
+305 
+∂ayîH
+.
+∂aySour˚
+)
+
+307 
+PLAY_FLASH
+:
+
+308 if(!
 	`ÊashVideoRódInfo
 (&
 ∂ayîH
@@ -79025,11 +79323,11 @@ boﬁ
 tŸÆFømeNumbî
 ))
 
-213  
+310  
 Ál£
 ;
 
-215 
+312 
 ∂ayîH
 .
 ∂ayFœshSèã
@@ -79037,1623 +79335,113 @@ tŸÆFømeNumbî
 ‰ameNumbî
  = 0;
 
-216 
-	`ÊashVideoPœyPro˚ssög
+313 
+	`ÊashVideoPœyFøme
 ();
 
-217 
+314 
 	`xTimîSèπ
 (
 ÊashVideoTimî
 , 2);
 
-218  
-åue
-;
+316 
+PLAY_DIRECT
+:
 
-219 
-	}
-}
+318 
+PLAY_SCREEN_SAVER
+:
 
-222 
-boﬁ
- 
-	$ÊashVideoSt›
-()
-
-224 
-	`xTimîSt›
+319 
+	`xTimîSèπ
 (
 ÊashVideoTimî
 , 2);
 
-225  
-åue
-;
-
-226 
-	}
-}
-
-229 
-	$dúe˘VideoPœyFøme
-()
-
-231 
-	`putPi˘uª
-(
-rxComm™d
-->
-∑ylﬂd
-);
-
-232 
-	}
-}
-
-234 
-	$videoComm™dPro˚ssög
-(
-uöt8_t
- 
-‰ameBuff
-[])
-
-236 
-Ba£Ty≥_t
- 
-xHighîPri‹ôyTaskWokí
-;
-
-238 
-rxComm™d
- = (
-comm™dDes¸ùti⁄T
-*)
-‰ameBuff
-;
-
-239 
-xHighîPri‹ôyTaskWokí
- = 
-pdFALSE
-;
-
-240 
+323 
 ∂ayîH
 .
-∂ayîSèã
- = 
-PLAYER_PLAY
-;
+∂aySour˚
+ =ÖlaySource;
 
-241 
-	`xSem≠h‹eGiveFromISR
-(
-lcdSem≠h‹e
-, &
-xHighîPri‹ôyTaskWokí
-);
-
-243 
-	}
-}
-
-247 
-	~"m©h.h
-"
-
-249 c⁄° 
-uöt8_t
- 
-image_d©a_logo_smÆl
-[4050];
-
-250 
-uöt8_t
- 
-rxComm™dBuf„r
-[34816];
-
-253 
-	#R_0
- 18.0F
-
-	)
-
-254 
-	#R_1
- 17.0F
-
-	)
-
-255 
-	#R_2
- 15.0F
-
-	)
-
-256 
-	#R_3
- 14.0F
-
-	)
-
-258 
-	#MAX_ALFA
- 255.0F
-
-	)
-
-259 
-	#K1
- (
-MAX_ALFA
-/(
-R_1
- - 
-R_0
-))
-
-	)
-
-260 
-	#B1
- (-
-K1
-*
-R_0
-)
-
-	)
-
-261 
-	#K2
- (
-MAX_ALFA
-/(
-R_2
- - 
-R_3
-))
-
-	)
-
-262 
-	#B2
- (-
-K2
-*
-R_3
-)
-
-	)
-
-266 
-	#SCRREN_SAVER_DURATION_MS
- 7000
-
-	)
-
-268 
-	#COLOR_QYANTITY
- 7
-
-	)
-
-269 
-	#COLOR_1
- {0, 255, 0}
-
-	)
-
-270 
-	#COLOR_2
- {0, 255, 0}
-
-	)
-
-271 
-	#COLOR_3
- {200, 38, 43}
-
-	)
-
-272 
-	#COLOR_4
- {198, 18, 132}
-
-	)
-
-273 
-	#COLOR_5
- {67, 67, 146}
-
-	)
-
-274 
-	#COLOR_6
- {95, 167, 229}
-
-	)
-
-275 
-	#COLOR_7
- {95, 167, 229}
-
-	)
-
-279 
-	mRED
-,
-
-280 
-	mGREEN
-,
-
-281 
-	mBLUE
-
-
-282 }
-	tcﬁ‹T
-;
-
-284 c⁄° 
-uöt8_t
- 
-	gb‹dîCﬁ‹
-[][3] =
-
-286 
-COLOR_1
-,
-
-287 
-COLOR_2
-,
-
-288 
-COLOR_3
-,
-
-289 
-COLOR_4
-,
-
-290 
-COLOR_5
-,
-
-291 
-COLOR_6
-,
-
-292 
-COLOR_7
-,
-
-297 
-	mlöeK€f
-[3][2];
-
-298 
-uöt32_t
- 
-	m°›Time
-;
-
-299 }
-	gb‹dîLayîDes¸ùti⁄
-[
-COLOR_QYANTITY
-];
-
-303 
-	#RED_TO_565
-(
-X
-Ë((XË>> 3)
-
-	)
-
-304 
-	#GREEN_TO_565
-(
-X
-Ë((XË>> 2)
-
-	)
-
-305 
-	#BLUE_TO_565
-(
-X
-Ë((XË>> 3)
-
-	)
-
-307 
-	#GET_BLUE
-(
-X
-Ë((X & 0b1111100000000Ë>> 8)
-
-	)
-
-308 
-	#GET_GREEN
-(
-X
-Ë(((X & 0b111)>>10Ë| (X & 0b111))
-
-	)
-
-309 
-	#GET_RED
-(
-X
-Ë((X & 0b11111000Ë>> 3)
-
-	)
-
-311 
-	#SET_BLUE
-(
-X
-Ë–X << 8)
-
-	)
-
-312 
-	#SET_GREEN
-(
-X
-Ë(((X & 0b111)<<13Ë| (X >> 3))
-
-	)
-
-313 
-	#SET_RED
-(
-X
-Ë(X << 3)
-
-	)
-
-317 
-	#COLOR
- 0b11111000
-
-	)
-
-318 
-	#COLOR_B
- 0X1b
-
-	)
-
-322 
-uöt8_t
- 
-	mx
-;
-
-323 
-uöt8_t
- 
-	my
-;
-
-324 
-uöt16_t
- 
-	mÆÁ
-;
-
-325 }
-	tpixñDes¸T
-;
-
-328 
-uöt16_t
- 
-	msize
-;
-
-329 
-pixñDes¸T
- 
-	mpixñ
-[100*100];
-
-330 }
-	gb‹dî
-;
-
-333 
-	$ˇlcLöeK€f
-(*
-k
-, *
-b
-, 
-uöt16_t
- 
-x1
-, uöt16_à
-y1
-, uöt16_à
-x2
-, uöt16_à
-y2
-)
-
-335 *
-k
- = (
-y1
- - 
-y2
-)/(
-x1
- - 
-x2
-);
-
-336 *
-b
- = 
-y1
- - (*
-k
-Ë* 
-x1
-;
-
-337 
-	}
-}
-
-340 
-ölöe
- 
-	$ˇlcLöePoöt
-(
-k
-, 
-b
-, 
-x
-)
-
-342  
-k
- * 
-x
- + 
-b
-;
-
-343 
-	}
-}
-
-345 
-	$¸óãLöe
-(
-uöt16_t
- 
-x0
-, uöt16_à
-y0
-, uöt16_à
-xSèπ
-, uöt16_à
-xSt›
-, uöt16_à
-ySèπ
-, uöt16_à
-ySt›
-, 
-boﬁ
- 
-isH‹iz⁄èl
-)
-
-347 
-uöt16_t
- 
-x
-, 
-y
-;
-
-348 
-xF
-, 
-yF
-;
-
-349 
-d
-;
-
-350 
-x
- = 
-xSèπ
-;
-
-351 ; 
-x
- < 
-xSt›
-; x++)
-
-353 
-xF
- = 
-x
- + 0.5F;
-
-354 
-y
- = 
-ySèπ
-;
-
-355 ; 
-y
- < 
-ySt›
-; y++)
-
-357 
-yF
- = 
-y
- + 0.5F;
-
-358 
-d
- = (
-isH‹iz⁄èl
-Ë? (
-	`sqπ
-(
-	`pow
-(
-y0
- - 
-yF
-, 2))):(sqπ’ow(
-x0
- - 
-xF
-, 2)));
-
-360 if(
-d
- > 
-R_0
- || d < 
-R_3
-)
-
-364 if(
-d
- < 
-R_0
- && d > 
-R_1
-)
-
-366 
-b‹dî
-.
-pixñ
-[b‹dî.
-size
-].
-ÆÁ
- = 
-d
- * 
-K1
- + 
-B1
-;
-
-368 if(
-d
- < 
-R_1
- && d > 
-R_2
-)
-
-370 
-b‹dî
-.
-pixñ
-[b‹dî.
-size
-].
-ÆÁ
- = 
-MAX_ALFA
-;
-
-372 if(
-d
- < 
-R_2
- && d > 
-R_3
-)
-
-374 
-b‹dî
-.
-pixñ
-[b‹dî.
-size
-].
-ÆÁ
- = 
-d
- * 
-K2
- + 
-B2
-;;
-
-376 
-b‹dî
-.
-pixñ
-[b‹dî.
-size
-].
-x
- = x;
-
-377 
-b‹dî
-.
-pixñ
-[b‹dî.
-size
-].
-y
- = y;
-
-378 
-b‹dî
-.
-size
-++;
-
-381 
-	}
-}
-
-383 
-	$¸óãAngÀ
-(
-uöt16_t
- 
-x0In
-, uöt16_à
-y0In
-, uöt16_à
-xSèπ
-, uöt16_à
-xSt›
-, uöt16_à
-ySèπ
-, uöt16_à
-ySt›
-)
-
-385 
-uöt16_t
- 
-x
-, 
-y
-;
-
-386 
-xF
-, 
-yF
-;
-
-387 
-d
-;
-
-388 
-x
- = 
-xSèπ
-;
-
-389 ; 
-x
- < 
-xSt›
-; x++)
-
-391 
-xF
- = 
-x
- + 0.5F;
-
-392 
-y
- = 
-ySèπ
-;
-
-393 ; 
-y
- < 
-ySt›
-; y++)
-
-395 
-yF
- = 
-y
- + 0.5F;
-
-396 
-d
- = 
-	`sqπ
-(
-	`pow
-((
-xF
- - 
-x0In
-), 2Ë+Öow((
-yF
- - 
-y0In
-), 2));
-
-397 if(
-d
- > 
-R_0
- || d < 
-R_3
-)
-
-401 if(
-d
- < 
-R_0
- && d > 
-R_1
-)
-
-403 
-b‹dî
-.
-pixñ
-[b‹dî.
-size
-].
-ÆÁ
- = 
-d
- * 
-K1
- + 
-B1
-;
-
-405 if(
-d
- < 
-R_1
- && d > 
-R_2
-)
-
-407 
-b‹dî
-.
-pixñ
-[b‹dî.
-size
-].
-ÆÁ
- = 
-MAX_ALFA
-;
-
-409 if(
-d
- < 
-R_2
- && d > 
-R_3
-)
-
-411 
-b‹dî
-.
-pixñ
-[b‹dî.
-size
-].
-ÆÁ
- = 
-d
- * 
-K2
- + 
-B2
-;;
-
-413 
-b‹dî
-.
-pixñ
-[b‹dî.
-size
-].
-x
- = x;
-
-414 
-b‹dî
-.
-pixñ
-[b‹dî.
-size
-].
-y
- = y;
-
-415 
-b‹dî
-.
-size
-++;
-
-419 
-	}
-}
-
-421 
-	$¸óãB‹dî
-()
-
-423 
-	`¸óãAngÀ
-(
-R_0
-, R_0, 0, R_0, 0, R_0);
-
-424 
-	`¸óãAngÀ
-(128 - 
-R_0
-, R_0, 128 - R_0, 128, 0, R_0);
-
-425 
-	`¸óãAngÀ
-(128 - 
-R_0
-, 128 - R_0, 128 - R_0, 128, 128 - R_0, 128);
-
-426 
-	`¸óãAngÀ
-(
-R_0
-, 128 - R_0, 0, R_0, 128 - R_0, 128);
-
-427 
-	`¸óãLöe
-(
-R_0
-, R_0, R_0, 128 - R_0, 0, R_0, 
+324  
 åue
-);
+;
 
-428 
-	`¸óãLöe
-(
-R_0
-, 128 - R_0, R_0, 128 - R_0, 128 - R_0, 128, 
-åue
-);
-
-429 
-	`¸óãLöe
-(
-R_0
-, R_0, 0, R_0, R_0, 128 - R_0, 
-Ál£
-);
-
-430 
-	`¸óãLöe
-(128 - 
-R_0
-, R_0, 128 - R_0, 128, R_0, 128 - R_0, 
-Ál£
-);
-
-431 
+325 
 	}
 }
 
-434 
-	$upd©eB‹dîLayî
-(
-uöt32_t
- 
-˙tMs
-)
-
-436 
-uöt16_t
- 
-ªd1
-, 
-gªí1
-, 
-blue1
-;
-
-437 
-uöt16_t
- 
-˙t
- = 0;
-
-438 
-	`uöt16_t
- (*
-‰ame
-)[128][128] = 
-rxComm™dBuf„r
-;
-
-440 
-˙tMs
- = c¡M†% 
-SCRREN_SAVER_DURATION_MS
-;
-
-441 
-uöt8_t
- 
-˙t
- = 1; c¡ < 
-COLOR_QYANTITY
-; cnt++)
-
-443 if(
-˙tMs
- < 
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-°›Time
-)
-
-449 
-uöt8_t
- 
-ªd2
- = (uöt8_t)
-	`ˇlcLöePoöt
-(
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-RED
-][0],
-
-450 
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-RED
-][1],
-
-451 
-˙t
-);
-
-452 
-uöt8_t
- 
-gªí2
- = (uöt8_t)
-	`ˇlcLöePoöt
-(
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-GREEN
-][0],
-
-453 
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-GREEN
-][1],
-
-454 
-˙t
-);
-
-455 
-uöt8_t
- 
-blue2
- = (uöt8_t)
-	`ˇlcLöePoöt
-(
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-BLUE
-][0],
-
-456 
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-BLUE
-][1],
-
-457 
-˙t
-);
-
-459 ; 
-˙t
- < 
-b‹dî
-.
-size
-; cnt++)
-
-462 
-ªd1
- = 
-	`GET_RED
-–(*
-‰ame
-)[
-b‹dî
-.
-pixñ
-[
-˙t
-].
-y
-][b‹dî.pixñ[˙t].
-x
-]);
-
-463 
-gªí1
- = 
-	`GET_GREEN
-((*
-‰ame
-)[
-b‹dî
-.
-pixñ
-[
-˙t
-].
-y
-][b‹dî.pixñ[˙t].
-x
-]);
-
-464 
-blue1
- = 
-	`GET_BLUE
-–(*
-‰ame
-)[
-b‹dî
-.
-pixñ
-[
-˙t
-].
-y
-][b‹dî.pixñ[˙t].
-x
-]);
-
-466 (*
-‰ame
-)[
-b‹dî
-.
-pixñ
-[
-˙t
-].
-y
-][b‹dî.pixñ[˙t].
-x
-] = 
-	`SET_RED
-–((255 - b‹dî.pixñ[˙t].
-ÆÁ
-)*
-ªd1
- + (b‹dî.pixñ[˙t].ÆÁ)*
-ªd2
- )/255);
-
-467 (*
-‰ame
-)[
-b‹dî
-.
-pixñ
-[
-˙t
-].
-y
-][b‹dî.pixñ[˙t].
-x
-] |
-	`SET_GREEN
-(((255 - b‹dî.pixñ[˙t].
-ÆÁ
-)*
-gªí1
- + (b‹dî.pixñ[˙t].ÆÁ)*
-gªí2
-)/255);
-
-468 (*
-‰ame
-)[
-b‹dî
-.
-pixñ
-[
-˙t
-].
-y
-][b‹dî.pixñ[˙t].
-x
-] |
-	`SET_BLUE
-–((255 - b‹dî.pixñ[˙t].
-ÆÁ
-)*
-blue1
- + (b‹dî.pixñ[˙t].ÆÁ)*
-blue2
- )/255);
-
-470 
-	}
-}
-
-473 
-	$upd©eLogoLayî
-(
-uöt32_t
- 
-˙tMs
-)
-
-475 
-	`uöt16_t
- (*
-‰ame
-)[128][128] = 
-rxComm™dBuf„r
-;
-
-476 
-	`uöt16_t
- (*
-logo
-)[45][45] = 
-image_d©a_logo_smÆl
-;
-
-477 
-uöt16_t
- 
-imageShi·
- = 128/2 - 45/2;
-
-478 
-uöt16_t
- 
-x
- = 
-imageShi·
-, 
-xLogo
- = 0; xLogo < 45; x++, xLogo++ )
-
-480 
-uöt16_t
- 
-y
- = 
-imageShi·
-, 
-yLogo
- = 0; yLogo < 45; y++, yLogo++ )
-
-482 (*
-‰ame
-)[
-y
-][
-x
-] = (*
-logo
-)[
-yLogo
-][
-xLogo
-];
-
-485 
-	}
-}
-
-488 
-	$öôLogoLayî
-()
-
-490 
-uöt16_t
- 
-cﬁ‹TimeSãp
- = 
-SCRREN_SAVER_DURATION_MS
- / (
-COLOR_QYANTITY
- - 1);
-
-491 
-uöt16_t
- 
-cﬁl‹St›Time
- = 0;
-
-492 
-uöt8_t
- 
-˙t
- = 0; c¡ < (
-COLOR_QYANTITY
- - 1); cnt++ )
-
-494 
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-°›Time
- = 
-cﬁl‹St›Time
- + 
-cﬁ‹TimeSãp
-;
-
-496 
-	`ˇlcLöeK€f
-(&
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-RED
-][0],
-
-497 &
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-RED
-][1],
-
-498 
-cﬁl‹St›Time
-,
-
-499 
-	`RED_TO_565
-(
-b‹dîCﬁ‹
-[
-˙t
-][
-RED
-]),
-
-500 
-cﬁl‹St›Time
- + 
-cﬁ‹TimeSãp
-,
-
-501 
-	`RED_TO_565
-(
-b‹dîCﬁ‹
-[
-˙t
- + 1][
-RED
-]));
-
-503 
-	`ˇlcLöeK€f
-(&
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-GREEN
-][0],
-
-504 &
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-GREEN
-][1],
-
-505 
-cﬁl‹St›Time
-,
-
-506 
-	`GREEN_TO_565
-(
-b‹dîCﬁ‹
-[
-˙t
-][
-GREEN
-]),
-
-507 
-cﬁl‹St›Time
- + 
-cﬁ‹TimeSãp
-,
-
-508 
-	`GREEN_TO_565
-(
-b‹dîCﬁ‹
-[
-˙t
- + 1][
-GREEN
-]));
-
-510 
-	`ˇlcLöeK€f
-(&
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-BLUE
-][0],
-
-511 &
-b‹dîLayîDes¸ùti⁄
-[
-˙t
-].
-löeK€f
-[
-BLUE
-][1],
-
-512 
-cﬁl‹St›Time
-,
-
-513 
-	`BLUE_TO_565
-(
-b‹dîCﬁ‹
-[
-˙t
-][
-BLUE
-]),
-
-514 
-cﬁl‹St›Time
- + 
-cﬁ‹TimeSãp
-,
-
-515 
-	`BLUE_TO_565
-(
-b‹dîCﬁ‹
-[
-˙t
- + 1][
-BLUE
-]));
-
-516 
-cﬁl‹St›Time
- = cﬁl‹St›Timê+ 
-cﬁ‹TimeSãp
-;
-
-518 
-	}
-}
-
-522 
-	$öôS¸ìnSavî
-()
-
-524 
-	`öôLogoLayî
-();
-
-525 
-	}
-}
-
-527 
-	$upd©eS¸ìnSavî
-(
-uöt32_t
- 
-˙tMs
-)
-
-529 
-	`mem£t
-(
-rxComm™dBuf„r
-, 0x00, (rxCommandBuffer));
-
-530 
-	`upd©eLogoLayî
-(
-˙tMs
-);
-
-531 
-	`upd©eB‹dîLayî
-(
-˙tMs
-);
-
-532 
-	`putPi˘uª
-(
-rxComm™dBuf„r
-);
-
-533 
-	}
-}
-
-536 
+328 
 	$lcdTaskFun˘i⁄
 (*
 pvP¨amëîs
 )
 
-539 
+330 
+	`öôTimîF‹MeTime
+();
+
+331 
 	`lcdInô
 ();
 
-540 
+332 
 lcdSem≠h‹e
  = 
 	`xSem≠h‹eCª©eBö¨y
 ();
 
-541 
+333 
 ÊashVideoTimî
  = 
 	`xTimîCª©e
 ("flashVideoPlayTimer",
 
-542 
+334 
 FLASH_VIDEO_FPS
 ,
 
-543 
+335 
 pdTRUE
 ,
 
-544 
+336 
 NULL
 ,
 
-545 
-ÊashVideoTimîCB
+337 
+videoTimîCB
 );
 
-547 
-	`¸óãB‹dî
-();
+339 
+	`mem£t
+(
+rxComm™dBuf„r
+, 0,32768);
 
-549 
-	`öôS¸ìnSavî
-();
-
-550 
-	`upd©eS¸ìnSavî
-(0);
-
-551 
+340 
 	`putPi˘uª
 (
 rxComm™dBuf„r
 );
 
-556 i‡(
+341 
+	`vTaskDñay
+(500);
+
+343 
+	`öôS¸ìnSavî
+();
+
+344 
+	`videoPœy
+(
+PLAY_SCREEN_SAVER
+);
+
+348 i‡(
 	`xSem≠h‹eTake
 (
 lcdSem≠h‹e
@@ -80663,39 +79451,93 @@ p‹tMAX_DELAY
 pdTRUE
 )
 
-561 
+353 if(
+∂ayîH
+.
+∂aySour˚
+ = 
+PLAY_SCREEN_SAVER
+ )
+
+355 
+	`putPi˘uª
+(
+rxComm™dBuf„r
+);
+
+356 
+	`ª£tTimîCNT
+();
+
+358 
+	`ˇlcuœãS¸ìnSavîFøme
+(
+∂ayîH
+.
+∂ayS¸ìnSavîSèã
+.
+œ°TimeSèã
+, 
+rxComm™dBuf„r
+, 32768);
+
+360 
+ˇlcFømeTe°
+.
+rxTime_
+[ˇlcFømeTe°.
+ˇlcC¡
+++] = 
+	`gëTimîCNT
+();
+
+361 if(
+ˇlcFømeTe°
+.
+ˇlcC¡
+ >((ˇlcFømeTe°.
+rxTime_
+) / (calcFrameTest.rxTime_[0])))
+
+363 
+ˇlcFømeTe°
+.
+ˇlcC¡
+ = 0;
+
+368 
 rxComm™d
 ->
 èrgë
 )
 
-563 
+370 
 DIRECT
 :
 
-564 
+371 
 	`dúe˘VideoPœyFøme
 ();
 
-565 
+372 
 	`ÊashVideoSt›
 ();
 
-567 
+374 
 FLASH
 :
 
-568 
+375 
 rxComm™d
 ->
 subT¨gë
 )
 
-570 
+377 
 FLASH_WRITE
 :
 
-571 
+378 
 	`ÊashVideoWrôeFøme
 (
 rxComm™d
@@ -80707,31 +79549,33 @@ rxComm™d
 ‰ameQu™tôy
 );
 
-573 
+380 
 FLASH_PLAY
 :
 
-574 
-	`ÊashVideoPœy
-();
+381 
+	`videoPœy
+(
+PLAY_FLASH
+);
 
-576 
+383 
 FLASH_STOP
 :
 
-577 
+384 
 	`ÊashVideoSt›
 ();
 
-583 
+390 
 	}
 }
 
-586 
+393 
 	$lcdTaskCª©e
 ()
 
-588 
+395 
 	`xTaskCª©e
 (
 lcdTaskFun˘i⁄
@@ -80743,11 +79587,11 @@ NULL
 LCD_TASK_PRIORITY
 , NULL);
 
-589 
+396 
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdTask.h
+	@D:\Private\Programing\MCU\LPC\myWork\app\LcdTask.h
 
 1 #i‚de‡
 __LCD_TASK_H__
@@ -80775,7 +79619,7 @@ uöt8_t
 ‰ameBuff
 []);
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LightingTask.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\LightingTask.c
 
 1 
 	~"LightögTask.h
@@ -80925,7 +79769,7 @@ LIGHTING_TASK_PRIORITY
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LightingTask.h
+	@D:\Private\Programing\MCU\LPC\myWork\app\LightingTask.h
 
 1 #i‚de‡
 __LIGHTING_TASK_H__
@@ -80941,7 +79785,7 @@ __LIGHTING_TASK_H__
 lightögTaskCª©e
 ();
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\PmBusCommunicationTask.c
 
 1 
 	~"PmBusHÆ.h
@@ -81091,7 +79935,7 @@ PM_BUS_COMMUNICATION_TASK_PRIORITY
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.h
+	@D:\Private\Programing\MCU\LPC\myWork\app\PmBusCommunicationTask.h
 
 1 #i‚de‡
 __PM_BUS_COMMUNICATION_TASK_H__
@@ -81111,7 +79955,7 @@ __PM_BUS_COMMUNICATION_TASK_H__
 pmBusCommuniˇti⁄TaskCª©e
 ();
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Rtos.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\Rtos.c
 
 1 
 	~"Rtos.h
@@ -81195,7 +80039,7 @@ pxTask
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Rtos.h
+	@D:\Private\Programing\MCU\LPC\myWork\app\Rtos.h
 
 1 #i‚de‡
 __RTOS_H__
@@ -81211,7 +80055,7 @@ __RTOS_H__
 πosSèπScheduÀr
 ();
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\UsbDeviceTask.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\UsbDeviceTask.c
 
 1 
 	~"UsbDevi˚Task.h
@@ -81311,79 +80155,71 @@ NUMBER_OF_PACKET
 
 	)
 
-35 
-CTIMER_Ty≥
- *
-	gTIMER_CNT
- = 
-CTIMER4
-;
-
-37 #¥agm®
+35 #¥agm®
 ∑ck
 (
 push
 ,1)
 
-40 
+38 
 uöt16_t
  
 	mqu™tôyPackë
 ;
 
-41 
+39 
 uöt16_t
  
 	m∑ckëNumbî
 ;
 
-42 
+40 
 uöt16_t
  
 	mª°
 ;
 
-43 
+41 
 uöt8_t
  
 	m∑ylﬂd
 [];
 
-44 }
+42 }
 	t∑ckëT
 ;
 
-45 #¥agm®
+43 #¥agm®
 ∑ck
 (
 p›
 )
 
-50 
+48 
 uöt16_t
  
 	m√xtPackëNumbî
 ;
 
-51 
+49 
 uöt32_t
  
 	mrxTime
 ;
 
-52 }
+50 }
 	grxPackëSèã
  =
 
-54 .
+52 .
 √xtPackëNumbî
  = 0,
 
-55 .
+53 .
 	grxTime
  = 0,
 
-58 c⁄° 
+56 c⁄° 
 uöt16_t
  
 	g∑ckëPaylﬂdSize
@@ -81393,7 +80229,7 @@ SIZE_PACKET
 ∑ckëT
 );
 
-61 
+59 
 uöt8_t
  
 	grxComm™dBuf„r
@@ -81401,101 +80237,7 @@ uöt8_t
 SIZE_RX_BUFFER
 ] = {[0 ... (SIZE_RX_BUFFER - 1)] = 0};
 
-63 
-uöt16_t
- 
-	grxTime_
-[300];
-
-67 
-ölöe
- 
-uöt32_t
- 
-	$gëTimîCNT
-()
-
-69  (
-uöt32_t
-)
-TIMER_CNT
-->
-TC
-;
-
-70 
-	}
-}
-
-72 
-ölöe
- 
-	$ª£tTimîCNT
-()
-
-74 
-TIMER_CNT
-->
-TC
- = 0;
-
-75 
-	}
-}
-
-77 
-	$öôTimîF‹MeTime
-()
-
-79 
-˘imî_c⁄fig_t
- 
-öôSåu˘
-;
-
-81 
-öôSåu˘
-.
-mode
- = 
-kCTIMER_TimîMode
-;
-
-82 
-SYSCON
-->
-ASYNCAPBCTRL
- = 
-	`SYSCON_ASYNCAPBCTRL_ENABLE
-(1);
-
-83 
-öôSåu˘
-.
-¥esˇÀ
- = 
-	`CLOCK_GëAsyncApbClkFªq
-()/1000000;
-
-84 
-	`CTIMER_Inô
-(
-TIMER_CNT
-, &
-öôSåu˘
-);
-
-85 
-	`CTIMER_SèπTimî
-(
-TIMER_CNT
-);
-
-86 
-	}
-}
-
-89 
+62 
 ölöe
  
 	$rxPackëPro˚ssög
@@ -81509,13 +80251,13 @@ uöt16_t
 buf„rSize
 )
 
-91 
+64 
 Ba£Ty≥_t
  
 xHighîPri‹ôyTaskWokí
 ;
 
-92 
+65 
 ∑ckëT
  *
 rxPackë
@@ -81523,7 +80265,7 @@ rxPackë
 buf„r
 ;
 
-93 if(
+66 if(
 rxPackë
 ->
 ∑ckëNumbî
@@ -81533,47 +80275,13 @@ rxPackëSèã
 √xtPackëNumbî
 )
 
-95 
+68 
 rxPackëSèã
 .
 √xtPackëNumbî
  = 0;
 
-98 if(
-rxPackëSèã
-.
-√xtPackëNumbî
- == 0)
-
-100 
-rxPackëSèã
-.
-rxTime
- = 
-	`gëTimîCNT
-();
-
-102 
-rxTime_
-[
-rxPackëSèã
-.
-√xtPackëNumbî
-] = 
-	`gëTimîCNT
-(Ë-ÑxPackëSèã.
-rxTime
-;
-
-103 
-rxPackëSèã
-.
-rxTime
- = 
-	`gëTimîCNT
-();
-
-105 
+72 
 	`mem˝y
 (&
 rxComm™dBuf„r
@@ -81589,17 +80297,17 @@ rxPackë
 qu™tôyPackë
  - 1) ==ÑxPacket->packetNumber) ?
 
-106 (
+73 (
 rxPackë
 ->
 ª°
 ):
 
-107 (
+74 (
 ∑ckëPaylﬂdSize
 ));
 
-108 if(
+75 if(
 rxPackë
 ->
 ∑ckëNumbî
@@ -81607,27 +80315,19 @@ rxPackë
 qu™tôyPackë
  - 1))
 
-111 
-rxPackëSèã
-.
-rxTime
- = 
-	`gëTimîCNT
-() -ÑxPacketState.rxTime;
-
-112 
+78 
 rxPackëSèã
 .
 √xtPackëNumbî
  = 0;
 
-114 
+80 
 xHighîPri‹ôyTaskWokí
  = 
 pdFALSE
 ;
 
-115 
+81 
 	`xSem≠h‹eGiveFromISR
 (
 xSem≠h‹e
@@ -81635,29 +80335,29 @@ xSem≠h‹e
 xHighîPri‹ôyTaskWokí
 );
 
-116 i‡(
+82 i‡(
 xHighîPri‹ôyTaskWokí
  !
 pdFALSE
 )
 
-118 
+84 
 	`p‹tYIELD_FROM_ISR
 (
 xHighîPri‹ôyTaskWokí
 );
 
-122 
+88 
 rxPackëSèã
 .
 √xtPackëNumbî
 ++;
 
-123 
+89 
 	}
 }
 
-128 
+94 
 	$hidI¡OuçutRï‹t
 (c⁄° 
 uöt8_t
@@ -81669,7 +80369,7 @@ size_t
 ªp‹tSize
 )
 
-131 
+97 
 	`rxPackëPro˚ssög
 (
 ªp‹tD©a
@@ -81677,31 +80377,31 @@ size_t
 ªp‹tSize
 );
 
-162 
+128 
 	}
 }
 
-164 
+130 
 	$hidI¡I≈utRï‹t
 ()
 
-167 
+133 
 	}
 }
 
-169 
+135 
 	$usbDevi˚TaskFun˘i⁄
 (*
 pvP¨amëîs
 )
 
-171 
+137 
 xSem≠h‹e
  = 
 	`xSem≠h‹eCª©eBö¨y
 ();
 
-175 i‡(
+141 i‡(
 	`xSem≠h‹eTake
 (
 xSem≠h‹e
@@ -81711,33 +80411,29 @@ REASONABLE_LONG_TIME
 pdTRUE
 )
 
-177 
+143 
 	`videoComm™dPro˚ssög
 (
 rxComm™dBuf„r
 );
 
-186 
+152 
 	}
 }
 
-188 
+154 
 	~"HÆIFœsh.h
 "
 
-189 
+155 
 	$usbDevi˚TaskCª©e
 ()
 
-191 
+157 
 	`hÆSpiFœshInô
 ();
 
-192 
-	`öôTimîF‹MeTime
-();
-
-193 
+158 
 	`usbHidDevi˚SëCÆlbacks
 (
 hidI¡I≈utRï‹t
@@ -81745,7 +80441,7 @@ hidI¡I≈utRï‹t
 hidI¡OuçutRï‹t
 );
 
-194 
+159 
 	`xTaskCª©e
 (
 usbDevi˚TaskFun˘i⁄
@@ -81757,7 +80453,7 @@ NULL
 USB_DEVICE_TASK_PRIORITY
 , NULL);
 
-195 
+160 
 	`xTaskCª©e
 (
 usbHidDevi˚TaskFun˘i⁄
@@ -81769,11 +80465,11 @@ NULL
 USB_DEVICE_TASK_PRIORITY
 , NULL);
 
-196 
+161 
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\UsbDeviceTask.h
+	@D:\Private\Programing\MCU\LPC\myWork\app\UsbDeviceTask.h
 
 1 #i‚de‡
 __USB_DEVICE_TASK_H__
@@ -81789,7 +80485,7 @@ __USB_DEVICE_TASK_H__
 usbDevi˚TaskCª©e
 ();
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\clock_config.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\clock_config.c
 
 59 
 	~"f¶_powî.h
@@ -82079,7 +80775,7 @@ BOARD_BOOTCLOCKPLL180M_CORE_CLOCK
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\clock_config.h
+	@D:\Private\Programing\MCU\LPC\myWork\app\clock_config.h
 
 35 #i‚de‡
 _CLOCK_CONFIG_H_
@@ -82203,19 +80899,7 @@ deföed
 __˝lu•lus
 )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\logoImage\logo_smoll.c
-
-1 
-	~<°döt.h
->
-
-3 c⁄° 
-uöt8_t
- 
-	gimage_d©a_logo_smÆl
-[4050] = {
-
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\main.c
+	@D:\Private\Programing\MCU\LPC\myWork\app\main.c
 
 1 
 	~"Rtos.h
@@ -82427,7 +81111,2735 @@ asm
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\CMSIS\Include\core_cm4.h
+	@D:\Private\Programing\MCU\LPC\myWork\app\screenSaverProcessing\logoSmall.c
+
+1 
+	~<°döt.h
+>
+
+3 c⁄° 
+uöt8_t
+ 
+	gimage_d©a_logo_smÆl
+[4050] = {
+
+	@D:\Private\Programing\MCU\LPC\myWork\app\screenSaverProcessing\screenSaverProcessing.c
+
+1 
+	~<°döt.h
+>
+
+2 
+	~<°rög.h
+>
+
+3 
+	~<°dboﬁ.h
+>
+
+4 
+	~"m©h.h
+"
+
+6 
+	#cﬁ‹RBMax
+ 0b11111
+
+	)
+
+7 
+	#cﬁ‹GMax
+ 0b111111
+
+	)
+
+9 
+	#SCREEN_HEIGHT_PIXEL
+ 128
+
+	)
+
+10 
+	#SCREEN_WIDTH_PIXEL
+ 128
+
+	)
+
+13 
+	#R_0
+ 18.0F
+
+	)
+
+14 
+	#R_1
+ 17.0F
+
+	)
+
+15 
+	#R_2
+ 15.0F
+
+	)
+
+16 
+	#R_3
+ 14.0F
+
+	)
+
+18 
+	#MAX_ALFA
+ 255.0F
+
+	)
+
+19 
+	#K1
+ (
+MAX_ALFA
+/(
+R_1
+ - 
+R_0
+))
+
+	)
+
+20 
+	#B1
+ (-
+K1
+*
+R_0
+)
+
+	)
+
+21 
+	#K2
+ (
+MAX_ALFA
+/(
+R_2
+ - 
+R_3
+))
+
+	)
+
+22 
+	#B2
+ (-
+K2
+*
+R_3
+)
+
+	)
+
+26 
+	#timeSèπ
+ 0
+
+	)
+
+27 
+	#timeSt›
+ 1
+
+	)
+
+28 
+	#timeLígth
+ 2
+
+	)
+
+29 
+	#posSèπ
+ 3
+
+	)
+
+30 
+	#posLígth
+ 4
+
+	)
+
+33 
+	#SCRREN_SAVER_DURATION_MS
+ 7000
+
+	)
+
+35 
+	#COLOR_QYANTITY
+ 6
+
+	)
+
+36 
+	#COLOR_0
+ {91, 161, 87}
+
+	)
+
+37 
+	#COLOR_1
+ {249, 237, 56}
+
+	)
+
+38 
+	#COLOR_2
+ {200, 38, 43}
+
+	)
+
+39 
+	#COLOR_3
+ {198, 18, 132}
+
+	)
+
+40 
+	#COLOR_4
+ {67, 67, 146}
+
+	)
+
+41 
+	#COLOR_5
+ {95, 167, 229}
+
+	)
+
+43 
+	#COLOR_6
+ {91, 161, 87}
+
+	)
+
+47 
+	#waveLe·Fõld
+ 4
+
+	)
+
+48 
+	#waveRightFõld
+ 124
+
+	)
+
+49 
+	#waveT›tFõld
+ 4
+
+	)
+
+50 
+	#waveBuâ⁄Fõld
+ 124
+
+	)
+
+56 
+	#waveBezõr_p0x
+ 0.0F
+
+	)
+
+57 
+	#waveBezõr_p0y
+ 0.0F
+
+	)
+
+58 
+	#waveBezõr_p1x
+ 0.36F
+
+	)
+
+59 
+	#waveBezõr_p1y
+ 0.45F
+
+	)
+
+60 
+	#waveBezõr_p2x
+ 0.63F
+
+	)
+
+61 
+	#waveBezõr_p2y
+ 0.53F
+
+	)
+
+62 
+	#waveBezõr_p3x
+ 1.0F
+
+	)
+
+63 
+	#waveBezõr_p3y
+ 1.0F
+
+	)
+
+69 
+	#waveBezõrV_p1y
+ 0.1F
+
+	)
+
+70 
+	#waveBezõrV_p2y
+ 1.0F
+
+	)
+
+73 
+	#waveBezõrH_p1y
+ 0.45F
+
+	)
+
+74 
+	#waveBezõrH_p2y
+ 0.53F
+
+	)
+
+76 
+	#dñayVMs
+ 1250
+
+	)
+
+77 
+	#dñayHMs
+ 125
+
+	)
+
+79 
+	#timePosV_0_0
+ 0
+
+	)
+
+80 
+	#posV_0_0
+ -10
+
+	)
+
+81 
+	#timePosV_0_1
+ (
+SCRREN_SAVER_DURATION_MS
+ / 2)
+
+	)
+
+82 
+	#posV_0_1
+ 20
+
+	)
+
+84 
+	#timePosV_1_0
+ (
+SCRREN_SAVER_DURATION_MS
+ / 2)
+
+	)
+
+85 
+	#posV_1_0
+ 20
+
+	)
+
+86 
+	#timePosV_1_1
+ (
+SCRREN_SAVER_DURATION_MS
+)
+
+	)
+
+87 
+	#posV_1_1
+ -10
+
+	)
+
+89 
+	#timePosH_0_0
+ 0
+
+	)
+
+90 
+	#posH_0_0
+ 0
+
+	)
+
+91 
+	#timePosH_0_1
+ 
+SCRREN_SAVER_DURATION_MS
+
+
+	)
+
+92 
+	#posH_0_1
+ 1600
+
+	)
+
+97 
+	#logoBezõr_p1y
+ 0.45F
+
+	)
+
+98 
+	#logoBezõr_p2y
+ 0.53F
+
+	)
+
+100 
+	#logoTimeAlÁ_0_0
+ 0
+
+	)
+
+101 
+	#logoAlÁ_0_0
+ 0
+
+	)
+
+102 
+	#logoTimeAlÁ_0_1
+ (2400)
+
+	)
+
+103 
+	#logoAlÁ_0_1
+ 0
+
+	)
+
+105 
+	#logoTimeAlÁ_1_0
+ (2400)
+
+	)
+
+106 
+	#logoAlÁ_1_0
+ 0
+
+	)
+
+107 
+	#logoTimeAlÁ_1_1
+ (
+SCRREN_SAVER_DURATION_MS
+ / 2)
+
+	)
+
+108 
+	#logoAlÁ_1_1
+ 255
+
+	)
+
+110 
+	#logoTimeAlÁ_2_0
+ (
+SCRREN_SAVER_DURATION_MS
+ / 2)
+
+	)
+
+111 
+	#logoAlÁ_2_0
+ 255
+
+	)
+
+112 
+	#logoTimeAlÁ_2_1
+ (
+SCRREN_SAVER_DURATION_MS
+ )
+
+	)
+
+113 
+	#logoAlÁ_2_1
+ 0
+
+	)
+
+120 
+	#RED_TO_565
+(
+X
+Ë((XË>> 3)
+
+	)
+
+121 
+	#GREEN_TO_565
+(
+X
+Ë((XË>> 2)
+
+	)
+
+122 
+	#BLUE_TO_565
+(
+X
+Ë((XË>> 3)
+
+	)
+
+124 
+	#GET_BLUE
+(
+X
+Ë((X & 0b1111100000000Ë>> 8)
+
+	)
+
+125 
+	#GET_GREEN
+(
+X
+Ë((X >>13Ë| ((X & 0b111)<<3))
+
+	)
+
+126 
+	#GET_RED
+(
+X
+Ë((X & 0b11111000Ë>> 3)
+
+	)
+
+128 
+	#SET_BLUE
+(
+X
+Ë–X << 8)
+
+	)
+
+129 
+	#SET_GREEN
+(
+X
+Ë((X <<13Ë| (X >> 3))
+
+	)
+
+130 
+	#SET_RED
+(
+X
+Ë(X << 3)
+
+	)
+
+131 
+	#SET_GRAYSCALE
+(
+RB
+, 
+G
+Ë(–RB << 8Ë| (RB << 3Ë| (G <<13Ë| (G >> 3))
+
+	)
+
+134 
+uöt16_t
+ (*
+	t‰ameT
+)[
+SCREEN_WIDTH_PIXEL
+][
+SCREEN_HEIGHT_PIXEL
+];
+
+139 
+	mRED
+ = 0,
+
+140 
+	mGREEN
+ = 1,
+
+141 
+	mBLUE
+ = 2
+
+142 }
+	tcﬁ‹T
+;
+
+145 
+uöt8_t
+ 
+	mx
+;
+
+146 
+uöt8_t
+ 
+	my
+;
+
+147 
+uöt16_t
+ 
+	mÆÁ
+;
+
+148 }
+	tpixñDes¸T
+;
+
+150 c⁄° 
+uöt8_t
+ 
+	gb‹dîCﬁ‹
+[][3] =
+
+152 
+COLOR_0
+,
+
+153 
+COLOR_1
+,
+
+154 
+COLOR_2
+,
+
+155 
+COLOR_3
+,
+
+156 
+COLOR_4
+,
+
+157 
+COLOR_5
+,
+
+158 
+COLOR_6
+,
+
+163 
+	mlöeK€f
+[3][2];
+
+164 
+uöt32_t
+ 
+	m°›Time
+;
+
+165 }
+	gb‹dîLayîDes¸ùti⁄
+[
+COLOR_QYANTITY
+];
+
+169 
+	mkRB
+;
+
+170 
+	mkG
+;
+
+171 
+	mbRB
+;
+
+172 
+	mbG
+;
+
+173 }
+	gwave1LayîDes¸ùti⁄
+;
+
+177 
+uöt16_t
+ 
+	msize
+;
+
+178 
+pixñDes¸T
+ 
+	mpixñ
+[100*100];
+
+179 }
+	gb‹dî
+;
+
+184 c⁄° 
+uöt8_t
+ 
+	gwave
+[] = {
+
+185 
+	~"wavePoöts.h
+"
+
+188 
+uöt16_t
+ 
+	gwave1LayîCﬁ‹
+[128];
+
+191 
+uöt8_t
+ 
+	gwave2LayîAlÁ
+[128];
+
+194 c⁄° 
+öt32_t
+ 
+	gwave2TimeSe˘i⁄HDesc
+[][5] =
+
+196 {
+timePosH_0_0
+, 
+timePosH_0_1
+,ÅimePosH_0_1 -ÅimePosH_0_0, 
+posH_0_0
+, 
+posH_0_1
+ -ÖosH_0_0},
+
+200 c⁄° 
+öt32_t
+ 
+	gwave2TimeSe˘i⁄VDesc
+[][5] =
+
+202 {
+timePosV_0_0
+, 
+timePosV_0_1
+,ÅimePosV_0_1 -ÅimePosV_0_0, 
+posV_0_0
+, 
+posV_0_1
+ -ÖosV_0_0},
+
+203 {
+timePosV_1_0
+, 
+timePosV_1_1
+,ÅimePosV_1_1 -ÅimePosV_1_0, 
+posV_1_0
+, 
+posV_1_1
+ -ÖosV_1_0},
+
+206 c⁄° 
+	gwave2BizõrH
+[2] =
+
+208 
+waveBezõrH_p1y
+,
+
+209 
+waveBezõrH_p2y
+
+
+212 c⁄° 
+	gwave2BizõrV
+[2] =
+
+214 
+waveBezõrV_p1y
+,
+
+215 
+waveBezõrV_p2y
+
+
+221 c⁄° 
+uöt8_t
+ 
+image_d©a_logo_smÆl
+[4050];
+
+223 c⁄° 
+öt32_t
+ 
+	glogoTimeSe˘i⁄VDesc
+[][5] =
+
+225 {
+logoTimeAlÁ_0_0
+, 
+logoTimeAlÁ_0_1
+,ÜogoTimeAlÁ_0_1 -ÜogoTimeAlÁ_0_0, 
+logoAlÁ_0_0
+, 
+logoAlÁ_0_1
+ -ÜogoAlfa_0_0},
+
+226 {
+logoTimeAlÁ_1_0
+, 
+logoTimeAlÁ_1_1
+,ÜogoTimeAlÁ_1_1 -ÜogoTimeAlÁ_1_0, 
+logoAlÁ_1_0
+, 
+logoAlÁ_1_1
+ -ÜogoAlfa_1_0},
+
+227 {
+logoTimeAlÁ_2_0
+, 
+logoTimeAlÁ_2_1
+,ÜogoTimeAlÁ_2_1 -ÜogoTimeAlÁ_2_0, 
+logoAlÁ_2_0
+, 
+logoAlÁ_2_1
+ -ÜogoAlfa_2_0},
+
+230 c⁄° 
+	glogoBizõr
+[2] =
+
+232 
+logoBezõr_p1y
+,
+
+233 
+logoBezõr_p2y
+
+
+238 
+	$ˇlcLöeK€f
+(*
+k
+, *
+b
+, 
+uöt16_t
+ 
+x1
+, uöt16_à
+y1
+, uöt16_à
+x2
+, uöt16_à
+y2
+)
+
+240 *
+k
+ = (()
+y1
+ - ()
+y2
+)/(()
+x1
+ - ()
+x2
+);
+
+241 *
+b
+ = ()
+y1
+ - (*
+k
+Ë* ()
+x1
+;
+
+242 
+	}
+}
+
+245 
+ölöe
+ 
+	$ˇlcLöePoöt
+(
+k
+, 
+b
+, 
+x
+)
+
+247  
+k
+ * 
+x
+ + 
+b
+;
+
+248 
+	}
+}
+
+251 
+ölöe
+ 
+	$ˇlcCubicBezõr
+(
+t
+, 
+p0
+, 
+p1
+, 
+p2
+, 
+p3
+)
+
+253  
+	`pow
+((1.0F-
+t
+),3.0F)*
+p0
++3.0F*pow((1.0F-t),2.0F)*t*
+p1
++3.0F*(1.0F-t)*pow—,2.0F)*
+p2
++pow—,3.0F)*
+p3
+;
+
+254 
+	}
+}
+
+257 
+ölöe
+ 
+öt32_t
+ 
+	$ˇlcCubicBezõrPos
+(
+uöt32_t
+ 
+˙tTime
+, c⁄° 
+bezõrPoöts
+[], c⁄° 
+öt32_t
+ 
+timeSe˘i⁄
+[][5], c⁄° 
+uöt8_t
+ 
+qu™tôySe˘i⁄
+)
+
+259 
+uöt8_t
+ 
+k
+ = 0;
+
+260 ;
+k
+ < 
+qu™tôySe˘i⁄
+; k++)
+
+262 if(
+˙tTime
+ < 
+timeSe˘i⁄
+[
+k
+][
+timeSt›
+])
+
+267 
+t
+ = (()
+˙tTime
+ - ()
+timeSe˘i⁄
+[
+k
+][
+timeSèπ
+]Ë/ (ÈimeSe˘i⁄[k][
+timeLígth
+];
+
+268  (
+öt32_t
+)(
+timeSe˘i⁄
+[
+k
+][
+posSèπ
+] +ÅimeSe˘i⁄[k][
+posLígth
+] *(3.0F*
+	`pow
+((1.0F-
+t
+),2.0F)*t*
+bezõrPoöts
+[0]+3.0F*(1.0F-t)*pow(t,2.0F)*bezierPoints[1]+pow(t,3.0F)));
+
+269 
+	}
+}
+
+272 
+	$¸óãLöe
+(
+uöt16_t
+ 
+x0
+, uöt16_à
+y0
+, uöt16_à
+xSèπ
+, uöt16_à
+xSt›
+, uöt16_à
+ySèπ
+, uöt16_à
+ySt›
+, 
+boﬁ
+ 
+isH‹iz⁄èl
+)
+
+274 
+uöt16_t
+ 
+x
+, 
+y
+;
+
+275 
+xF
+, 
+yF
+;
+
+276 
+d
+;
+
+277 
+x
+ = 
+xSèπ
+;
+
+278 ; 
+x
+ < 
+xSt›
+; x++)
+
+280 
+xF
+ = 
+x
+ + 0.5F;
+
+281 
+y
+ = 
+ySèπ
+;
+
+282 ; 
+y
+ < 
+ySt›
+; y++)
+
+284 
+yF
+ = 
+y
+ + 0.5F;
+
+285 
+d
+ = (
+isH‹iz⁄èl
+Ë? (
+	`sqπ
+(
+	`pow
+(
+y0
+ - 
+yF
+, 2))):(sqπ’ow(
+x0
+ - 
+xF
+, 2)));
+
+287 if(
+d
+ > 
+R_0
+ || d < 
+R_3
+)
+
+291 if(
+d
+ < 
+R_0
+ && d > 
+R_1
+)
+
+293 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+d
+ * 
+K1
+ + 
+B1
+;
+
+295 if(
+d
+ < 
+R_1
+ && d > 
+R_2
+)
+
+297 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+MAX_ALFA
+;
+
+299 if(
+d
+ < 
+R_2
+ && d > 
+R_3
+)
+
+301 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+d
+ * 
+K2
+ + 
+B2
+;;
+
+303 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+x
+ = x;
+
+304 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+y
+ = y;
+
+305 
+b‹dî
+.
+size
+++;
+
+308 
+	}
+}
+
+310 
+	$¸óãAngÀ
+(
+uöt16_t
+ 
+x0In
+, uöt16_à
+y0In
+, uöt16_à
+xSèπ
+, uöt16_à
+xSt›
+, uöt16_à
+ySèπ
+, uöt16_à
+ySt›
+)
+
+312 
+uöt16_t
+ 
+x
+, 
+y
+;
+
+313 
+xF
+, 
+yF
+;
+
+314 
+d
+;
+
+315 
+x
+ = 
+xSèπ
+;
+
+316 ; 
+x
+ < 
+xSt›
+; x++)
+
+318 
+xF
+ = 
+x
+ + 0.5F;
+
+319 
+y
+ = 
+ySèπ
+;
+
+320 ; 
+y
+ < 
+ySt›
+; y++)
+
+322 
+yF
+ = 
+y
+ + 0.5F;
+
+323 
+d
+ = 
+	`sqπ
+(
+	`pow
+((
+xF
+ - 
+x0In
+), 2Ë+Öow((
+yF
+ - 
+y0In
+), 2));
+
+324 if(
+d
+ > 
+R_0
+ || d < 
+R_3
+)
+
+328 if(
+d
+ < 
+R_0
+ && d > 
+R_1
+)
+
+330 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+d
+ * 
+K1
+ + 
+B1
+;
+
+332 if(
+d
+ < 
+R_1
+ && d > 
+R_2
+)
+
+334 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+MAX_ALFA
+;
+
+336 if(
+d
+ < 
+R_2
+ && d > 
+R_3
+)
+
+338 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+ÆÁ
+ = 
+d
+ * 
+K2
+ + 
+B2
+;;
+
+340 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+x
+ = x;
+
+341 
+b‹dî
+.
+pixñ
+[b‹dî.
+size
+].
+y
+ = y;
+
+342 
+b‹dî
+.
+size
+++;
+
+345 
+	}
+}
+
+347 
+	$¸óãB‹dî
+()
+
+349 
+	`¸óãAngÀ
+(
+R_0
+, R_0, 0, R_0, 0, R_0);
+
+350 
+	`¸óãAngÀ
+(128 - 
+R_0
+, R_0, 128 - R_0, 128, 0, R_0);
+
+351 
+	`¸óãAngÀ
+(128 - 
+R_0
+, 128 - R_0, 128 - R_0, 128, 128 - R_0, 128);
+
+352 
+	`¸óãAngÀ
+(
+R_0
+, 128 - R_0, 0, R_0, 128 - R_0, 128);
+
+353 
+	`¸óãLöe
+(
+R_0
+, R_0, R_0, 128 - R_0, 0, R_0, 
+åue
+);
+
+354 
+	`¸óãLöe
+(
+R_0
+, 128 - R_0, R_0, 128 - R_0, 128 - R_0, 128, 
+åue
+);
+
+355 
+	`¸óãLöe
+(
+R_0
+, R_0, 0, R_0, R_0, 128 - R_0, 
+Ál£
+);
+
+356 
+	`¸óãLöe
+(128 - 
+R_0
+, R_0, 128 - R_0, 128, R_0, 128 - R_0, 
+Ál£
+);
+
+357 
+	}
+}
+
+360 
+	$upd©eB‹dîLayî
+(
+uöt32_t
+ 
+˙tMs
+, 
+uöt8_t
+ *
+buff
+)
+
+362 
+˙tMs
+ = c¡M†% 
+SCRREN_SAVER_DURATION_MS
+;
+
+363 
+uöt16_t
+ 
+ªd1
+, 
+gªí1
+, 
+blue1
+;
+
+364 
+uöt16_t
+ 
+ödex
+;
+
+365 
+‰ameT
+ 
+‰ame
+ = (‰ameT)
+buff
+;
+
+367 
+ödex
+ = 0; index < 
+COLOR_QYANTITY
+ ; index++)
+
+369 if(
+˙tMs
+ < 
+b‹dîLayîDes¸ùti⁄
+[
+ödex
+].
+°›Time
+)
+
+375 
+uöt8_t
+ 
+ªd2
+ = (uöt8_t)
+	`ˇlcLöePoöt
+(
+b‹dîLayîDes¸ùti⁄
+[
+ödex
+].
+löeK€f
+[
+RED
+][0],
+
+376 
+b‹dîLayîDes¸ùti⁄
+[
+ödex
+].
+löeK€f
+[
+RED
+][1],
+
+377 
+˙tMs
+);
+
+378 
+uöt8_t
+ 
+gªí2
+ = (uöt8_t)
+	`ˇlcLöePoöt
+(
+b‹dîLayîDes¸ùti⁄
+[
+ödex
+].
+löeK€f
+[
+GREEN
+][0],
+
+379 
+b‹dîLayîDes¸ùti⁄
+[
+ödex
+].
+löeK€f
+[
+GREEN
+][1],
+
+380 
+˙tMs
+);
+
+381 
+uöt8_t
+ 
+blue2
+ = (uöt8_t)
+	`ˇlcLöePoöt
+(
+b‹dîLayîDes¸ùti⁄
+[
+ödex
+].
+löeK€f
+[
+BLUE
+][0],
+
+382 
+b‹dîLayîDes¸ùti⁄
+[
+ödex
+].
+löeK€f
+[
+BLUE
+][1],
+
+383 
+˙tMs
+);
+
+385 
+uöt16_t
+ 
+˙t
+ = 0; c¡ < 
+b‹dî
+.
+size
+; cnt++)
+
+388 
+ªd1
+ = 
+	`GET_RED
+–(*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+]);
+
+389 
+gªí1
+ = 
+	`GET_GREEN
+((*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+]);
+
+390 
+blue1
+ = 
+	`GET_BLUE
+–(*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+]);
+
+392 (*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+] = 
+	`SET_RED
+–((255 - b‹dî.pixñ[˙t].
+ÆÁ
+)*
+ªd1
+ + (b‹dî.pixñ[˙t].ÆÁ)*
+ªd2
+ )/255);
+
+393 (*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+] |
+	`SET_GREEN
+(((255 - b‹dî.pixñ[˙t].
+ÆÁ
+)*
+gªí1
+ + (b‹dî.pixñ[˙t].ÆÁ)*
+gªí2
+)/255);
+
+394 (*
+‰ame
+)[
+b‹dî
+.
+pixñ
+[
+˙t
+].
+y
+][b‹dî.pixñ[˙t].
+x
+] |
+	`SET_BLUE
+–((255 - b‹dî.pixñ[˙t].
+ÆÁ
+)*
+blue1
+ + (b‹dî.pixñ[˙t].ÆÁ)*
+blue2
+ )/255);
+
+398 
+	}
+}
+
+401 
+	$upd©eLogoLayî
+(
+uöt32_t
+ 
+˙tMs
+, 
+uöt8_t
+ *
+buff
+)
+
+403 
+˙tMs
+ = c¡M†% 
+SCRREN_SAVER_DURATION_MS
+;
+
+404 
+uöt8_t
+ 
+cﬁ‹RB
+;
+
+405 
+uöt8_t
+ 
+cﬁ‹G
+;
+
+406 
+uöt16_t
+ 
+imageShi·
+ = 128/2 - 45/2;
+
+407 
+	`uöt16_t
+ (*
+logo
+)[45][45] = (uöt16_à(*)[45][45])
+image_d©a_logo_smÆl
+;
+
+408 
+‰ameT
+ 
+‰ame
+ = (‰ameT)
+buff
+;
+
+409 
+öt32_t
+ 
+ÆÁ
+ = 
+	`ˇlcCubicBezõrPos
+(
+˙tMs
+, 
+logoBizõr
+, 
+logoTimeSe˘i⁄VDesc
+, (logoTimeSectionVDesc) / (logoTimeSectionVDesc[0]) );
+
+410 
+uöt16_t
+ 
+x
+ = 
+imageShi·
+, 
+xLogo
+ = 0; xLogo < 45; x++, xLogo++ )
+
+412 
+uöt16_t
+ 
+y
+ = 
+imageShi·
+, 
+yLogo
+ = 0; yLogo < 45; y++, yLogo++ )
+
+414 
+cﬁ‹RB
+ = 
+	`GET_RED
+((*
+logo
+)[
+yLogo
+][
+xLogo
+]);
+
+415 
+cﬁ‹G
+ = 
+	`GET_GREEN
+((*
+logo
+)[
+yLogo
+][
+xLogo
+]);
+
+416 if(
+cﬁ‹G
+ != 0)
+
+418 
+cﬁ‹G
+++;
+
+419 
+cﬁ‹G
+--;
+
+421 
+cﬁ‹RB
+ = (
+ÆÁ
+ * colorRB)/255;
+
+422 
+cﬁ‹G
+ = (
+ÆÁ
+ * colorG)/255;
+
+425 (*
+‰ame
+)[
+y
+][
+x
+] = 
+	`SET_RED
+(
+cﬁ‹RB
+);
+
+426 (*
+‰ame
+)[
+y
+][
+x
+] |
+	`SET_GREEN
+(
+cﬁ‹G
+);
+
+427 (*
+‰ame
+)[
+y
+][
+x
+] |
+	`SET_BLUE
+(
+cﬁ‹RB
+);
+
+432 
+	}
+}
+
+434 
+	$upd©eWave1Layî
+(
+uöt32_t
+ 
+˙tMs
+, 
+uöt8_t
+ *
+buff
+)
+
+436 
+˙tMs
+ = c¡M†% 
+SCRREN_SAVER_DURATION_MS
+;
+
+437 c⁄° 
+	`uöt8_t
+ (*
+wavePoöts
+)[(
+wave
+)/2][2] = (const uint8_t (*)[(wave)/2][2])wave;
+
+438 
+‰ameT
+ 
+‰ame
+ = (‰ameT)
+buff
+;
+
+439 
+uöt16_t
+ 
+xWave
+ = 1600 * 
+	`ˇlcCubicBezõr
+(()
+˙tMs
+/()
+SCRREN_SAVER_DURATION_MS
+,
+
+440 
+waveBezõr_p0y
+,
+
+441 
+waveBezõr_p1y
+,
+
+442 
+waveBezõr_p2y
+,
+
+443 
+waveBezõr_p3y
+);
+
+444 
+uöt16_t
+ 
+xFøme
+ = 
+waveLe·Fõld
+; xFømê< 
+waveRightFõld
+; xFøme++, 
+xWave
+++)
+
+446 if((*
+wavePoöts
+)[
+xWave
+][0] > 
+waveBuâ⁄Fõld
+)
+
+450 if(
+xWave
+ >(
+wave
+)/2)
+
+454 
+uöt16_t
+ 
+yFøme
+ = (*
+wavePoöts
+)[
+xWave
+][0]; yFømê< 
+waveBuâ⁄Fõld
+; yFrame++)
+
+456 (*
+‰ame
+)[
+yFøme
+][
+xFøme
+] = 
+wave1LayîCﬁ‹
+[yFrame];
+
+460 
+	}
+}
+
+463 
+	$upd©eWave2Layî
+(
+uöt32_t
+ 
+˙tMs
+, 
+uöt8_t
+ *
+buff
+)
+
+465 c⁄° 
+	`uöt8_t
+ (*
+wavePoöts
+)[(
+wave
+)/2][2] = (const uint8_t (*)[(wave)/2][2])wave;
+
+466 
+‰ameT
+ 
+‰ame
+ = (‰ameT)
+buff
+;
+
+467 
+uöt8_t
+ 
+cﬁ‹RB
+;
+
+468 
+uöt8_t
+ 
+cﬁ‹G
+;
+
+469 
+uöt32_t
+ 
+˙tRñ
+ = (
+˙tMs
+ + 
+dñayVMs
+Ë% 
+SCRREN_SAVER_DURATION_MS
+;
+
+470 
+öt32_t
+ 
+shi·Y
+ = 
+	`ˇlcCubicBezõrPos
+(
+˙tRñ
+, 
+wave2BizõrV
+, 
+wave2TimeSe˘i⁄VDesc
+, (wave2TimeSectionVDesc) / (wave2TimeSectionVDesc[0]) );
+
+471 
+˙tRñ
+ = (
+˙tMs
+ + 
+dñayHMs
+Ë% 
+SCRREN_SAVER_DURATION_MS
+;
+
+472 
+öt32_t
+ 
+shi·X
+ = 
+	`ˇlcCubicBezõrPos
+(
+˙tRñ
+, 
+wave2BizõrH
+, 
+wave2TimeSe˘i⁄HDesc
+, (wave2TimeSectionHDesc) / (wave2TimeSectionHDesc[0]) );
+
+473 
+öt32_t
+ 
+yFøme
+;
+
+474 
+öt32_t
+ 
+xFøme
+ = 
+waveLe·Fõld
+; xFømê< 
+waveRightFõld
+; xFøme++, 
+shi·X
+++ )
+
+476 
+yFøme
+ = (*
+wavePoöts
+)[
+shi·X
+][0] + 
+shi·Y
+;
+
+477 if(
+waveBuâ⁄Fõld
+ > waveButtonField )
+
+481 if(
+shi·X
+ >(
+wave
+)/2)
+
+485 ; 
+yFøme
+ < 
+waveBuâ⁄Fõld
+; yFrame++)
+
+487 
+cﬁ‹RB
+ = 
+	`GET_RED
+–(*
+‰ame
+)[
+yFøme
+][
+xFøme
+]);
+
+489 
+cﬁ‹RB
+ = ((255 - 
+wave2LayîAlÁ
+[
+yFøme
+]Ë* cﬁ‹RB + wave2LayîAlÁ[yFøme] * 
+cﬁ‹RBMax
+)/255;
+
+492 (*
+‰ame
+)[
+yFøme
+][
+xFøme
+] = 
+	`SET_GRAYSCALE
+(
+cﬁ‹RB
+, colorRB << 1);
+
+496 
+	}
+}
+
+499 
+	$öôWave1Layî
+()
+
+501 
+kRB
+, 
+kG
+;
+
+502 
+bRB
+, 
+bG
+;
+
+503 
+uöt8_t
+ 
+cﬁ‹RB
+;
+
+504 
+uöt8_t
+ 
+cﬁ‹G
+;;
+
+505 
+	`ˇlcLöeK€f
+(&
+kRB
+, &
+bRB
+,
+
+506 34, 
+	`RED_TO_565
+(53),
+
+507 122, 
+	`RED_TO_565
+(27));
+
+508 
+	`ˇlcLöeK€f
+(&
+kG
+, &
+bG
+,
+
+509 34, 
+	`GREEN_TO_565
+(53),
+
+510 122, 
+	`GREEN_TO_565
+(27));
+
+511 
+uöt8_t
+ 
+y
+ = 0; y < (
+wave1LayîCﬁ‹
+)/(wave1LayerColor[0]); y++ )
+
+513 
+cﬁ‹RB
+ = 
+	`ˇlcLöePoöt
+(
+kRB
+, 
+bRB
+, 
+y
+);
+
+514 
+cﬁ‹G
+ = 
+	`ˇlcLöePoöt
+(
+kG
+, 
+bG
+, 
+y
+);
+
+515 
+wave1LayîCﬁ‹
+[
+y
+] = 
+	`SET_RED
+(
+cﬁ‹RB
+);
+
+516 
+wave1LayîCﬁ‹
+[
+y
+] |
+	`SET_GREEN
+(
+cﬁ‹G
+);
+
+517 
+wave1LayîCﬁ‹
+[
+y
+] |
+	`SET_BLUE
+(
+cﬁ‹RB
+);
+
+520 
+	}
+}
+
+522 
+	$öôWave2Layî
+()
+
+524 
+k
+;
+
+525 
+b
+;
+
+526 
+	`ˇlcLöeK€f
+(&
+k
+, &
+b
+,
+
+529 
+uöt8_t
+ 
+y
+ = 0; y < (
+wave2LayîAlÁ
+)/(wave2LayerAlfa[0]); y++ )
+
+531 
+wave2LayîAlÁ
+[
+y
+] = 
+	`ˇlcLöePoöt
+(
+k
+, 
+b
+, y);
+
+533 
+	}
+}
+
+535 
+	$öôB‹dîLayî
+()
+
+537 
+uöt16_t
+ 
+cﬁ‹TimeSãp
+ = 
+SCRREN_SAVER_DURATION_MS
+ / 
+COLOR_QYANTITY
+;
+
+538 
+uöt16_t
+ 
+cﬁ‹St›Time
+ = 0;
+
+539 
+uöt8_t
+ 
+˙t
+ = 0; c¡ < 
+COLOR_QYANTITY
+ ; cnt++ )
+
+541 
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+°›Time
+ = (˙à=(
+COLOR_QYANTITY
+ - 1)Ë? (
+SCRREN_SAVER_DURATION_MS
+Ë: (
+cﬁ‹St›Time
+ + 
+cﬁ‹TimeSãp
+);
+
+543 
+	`ˇlcLöeK€f
+(&
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+RED
+][0],
+
+544 &
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+RED
+][1],
+
+545 
+cﬁ‹St›Time
+,
+
+546 
+	`RED_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+][
+RED
+]),
+
+547 
+cﬁ‹St›Time
+ + 
+cﬁ‹TimeSãp
+,
+
+548 
+	`RED_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+ + 1][
+RED
+]));
+
+550 
+	`ˇlcLöeK€f
+(&
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+GREEN
+][0],
+
+551 &
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+GREEN
+][1],
+
+552 
+cﬁ‹St›Time
+,
+
+553 
+	`GREEN_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+][
+GREEN
+]),
+
+554 
+cﬁ‹St›Time
+ + 
+cﬁ‹TimeSãp
+,
+
+555 
+	`GREEN_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+ + 1][
+GREEN
+]));
+
+557 
+	`ˇlcLöeK€f
+(&
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+BLUE
+][0],
+
+558 &
+b‹dîLayîDes¸ùti⁄
+[
+˙t
+].
+löeK€f
+[
+BLUE
+][1],
+
+559 
+cﬁ‹St›Time
+,
+
+560 
+	`BLUE_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+][
+BLUE
+]),
+
+561 
+cﬁ‹St›Time
+ + 
+cﬁ‹TimeSãp
+,
+
+562 
+	`BLUE_TO_565
+(
+b‹dîCﬁ‹
+[
+˙t
+ + 1][
+BLUE
+]));
+
+563 
+cﬁ‹St›Time
+ = cﬁ‹St›Timê+ 
+cﬁ‹TimeSãp
+;
+
+565 
+	}
+}
+
+569 
+	$ˇlcuœãS¸ìnSavîFøme
+(
+uöt32_t
+ 
+˙tMs
+, 
+uöt8_t
+ *
+buff
+, uöt32_à
+buffSize
+)
+
+571 
+	`mem£t
+(
+buff
+, 0x00, 
+buffSize
+);
+
+572 
+	`upd©eLogoLayî
+(
+˙tMs
+, 
+buff
+);
+
+573 
+	`upd©eWave1Layî
+(
+˙tMs
+, 
+buff
+);
+
+574 
+	`upd©eWave2Layî
+(
+˙tMs
+, 
+buff
+);
+
+575 
+	`upd©eB‹dîLayî
+(
+˙tMs
+, 
+buff
+);
+
+576 
+	}
+}
+
+579 
+	$öôS¸ìnSavî
+()
+
+582 
+	`¸óãB‹dî
+();
+
+584 
+	`öôB‹dîLayî
+();
+
+585 
+	`öôWave1Layî
+();
+
+586 
+	`öôWave2Layî
+();
+
+587 
+	}
+}
+
+	@D:\Private\Programing\MCU\LPC\myWork\app\screenSaverProcessing\screenSaverProcessing.h
+
+1 
+	~"°döt.h
+"
+
+3 #i‚de‡
+SCREENSAVERPROCESSING_H_
+
+
+4 
+	#SCREENSAVERPROCESSING_H_
+
+
+	)
+
+6 
+ˇlcuœãS¸ìnSavîFøme
+(
+uöt32_t
+ 
+˙tMs
+, 
+uöt8_t
+ *
+buff
+, uöt32_à
+buffSize
+);
+
+7 
+öôS¸ìnSavî
+();
+
+	@D:\Private\Programing\MCU\LPC\myWork\app\screenSaverProcessing\wavePoints.h
+
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\CMSIS\Include\core_cm4.h
 
 25 #i‡ 
 deföed
@@ -89127,7 +90539,7 @@ ITM_RXBUFFER_EMPTY
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\LPC54608.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\LPC54608.h
 
 67 #i‚de‡
 _LPC54608_H_
@@ -165557,7 +166969,7 @@ ROM_API
 
 	)
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_adc.c
 
 35 
 	~"f¶_adc.h
@@ -166547,7 +167959,7 @@ ADC_DAT_OVERRUN_MASK
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_adc.h
 
 35 #i‚de‡
 __FSL_ADC_H__
@@ -167625,7 +169037,7 @@ deföed
 __˝lu•lus
 )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_clock.c
 
 36 
 	~"f¶_comm⁄.h
@@ -174875,7 +176287,7 @@ kPDRUNCFG_PD_USB1_PHY
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_clock.h
 
 36 #i‚de‡
 _FSL_CLOCK_H_
@@ -179193,7 +180605,7 @@ deföed
 __˝lu•lus
 )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_ctimer.c
 
 35 
 	~"f¶_˘imî.h
@@ -180403,7 +181815,7 @@ __CORTEX_M
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_ctimer.h
 
 34 #i‚de‡
 _FSL_CTIMER_H_
@@ -181195,7 +182607,7 @@ __˝lu•lus
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_dma.c
 
 35 
 	~"f¶_dma.h
@@ -182811,7 +184223,7 @@ __CORTEX_M
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_dma.h
 
 35 #i‚de‡
 _FSL_DMA_H_
@@ -183901,7 +185313,7 @@ __˝lu•lus
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_flexcomm.c
 
 35 
 	~"f¶_comm⁄.h
@@ -184647,7 +186059,7 @@ __CORTEX_M
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_flexcomm.h
 
 34 #i‚de‡
 _FSL_FLEXCOMM_H_
@@ -184745,7 +186157,7 @@ h™dÀr
 h™dÀ
 );
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_gpio.c
 
 35 
 	~"f¶_gpio.h
@@ -184881,7 +186293,7 @@ pö
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_gpio.h
 
 35 #i‚de‡
 _LPC_GPIO_H_
@@ -185475,7 +186887,7 @@ deföed
 __˝lu•lus
 )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_inputmux.c
 
 35 
 	~"f¶_öputmux.h
@@ -185591,7 +187003,7 @@ kCLOCK_I≈utMux
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_inputmux.h
 
 35 #i‚de‡
 _FSL_INPUTMUX_H_
@@ -185659,7 +187071,7 @@ ba£
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux_connections.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_inputmux_connections.h
 
 36 #i‚de‡
 _FSL_INPUTMUX_CONNECTIONS_
@@ -186875,7 +188287,7 @@ PMUX_SHIFT
 	töputmux_c⁄√˘i⁄_t
 ;
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_iocon.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_iocon.h
 
 35 #i‚de‡
 _FSL_IOCON_H_
@@ -187433,7 +188845,7 @@ deföed
 __˝lu•lus
 )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_power.c
 
 35 
 	~"f¶_comm⁄.h
@@ -187443,7 +188855,7 @@ __˝lu•lus
 	~"f¶_powî.h
 "
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_power.h
 
 35 #i‚de‡
 _FSL_POWER_H_
@@ -187917,7 +189329,7 @@ POWER_GëLibVîsi⁄
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_reset.c
 
 36 
 	~"f¶_comm⁄.h
@@ -188133,7 +189545,7 @@ PRESETCTRL
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_reset.h
 
 36 #i‚de‡
 _FSL_RESET_H_
@@ -188861,7 +190273,7 @@ deföed
 __˝lu•lus
 )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_sctimer.c
 
 35 
 	~"f¶_s˘imî.h
@@ -190587,7 +191999,7 @@ __CORTEX_M
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_sctimer.h
 
 34 #i‚de‡
 _FSL_SCTIMER_H_
@@ -192205,7 +193617,7 @@ __˝lu•lus
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_spi.c
 
 35 
 	~"f¶_•i.h
@@ -195553,7 +196965,7 @@ u£rD©a
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_spi.h
 
 34 #i‚de‡
 _FSL_SPI_H_
@@ -197075,7 +198487,7 @@ __˝lu•lus
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_spi_dma.c
 
 35 
 	~"f¶_•i_dma.h
@@ -199277,7 +200689,7 @@ kSètus_Suc˚ss
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_spi_dma.h
 
 34 #i‚de‡
 _FSL_SPI_DMA_H_
@@ -199635,7 +201047,7 @@ __˝lu•lus
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\fsl_device_registers.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\fsl_device_registers.h
 
 36 #i‚de‡
 __FSL_DEVICE_REGISTERS_H__
@@ -199669,7 +201081,7 @@ CPU_LPC54608J512ET180
 	~"LPC54608_„©uªs.h
 "
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\libpower_hardabi.a
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\mcuxpresso\libpower_hardabi.a
 
 1 !<
 	g¨ch
@@ -199681,7 +201093,7 @@ CPU_LPC54608J512ET180
 	gELF
           (                 4     ( & % -È˜CÔÛÜr∂VJÄBOÙõ~“¯6“¯‹ ø@ÄPƒC$"*ÍÄB¬¯ ÕCØ=C¬¯≈¯@‡OÄ¬¯ ·0øÙx4€CÙx3¬¯@·¬¯¬¯
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\startup_LPC54608.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\mcuxpresso\startup_LPC54608.c
 
 35 
 	~<°döt.h
@@ -201699,7 +203111,7 @@ ulCuºítI¡îru±
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\system_LPC54608.c
 
 71 
 	~<°döt.h
@@ -202499,7 +203911,7 @@ AHBCLKDIV
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\system_LPC54608.h
 
 71 #i‚de‡
 _SYSTEM_LPC54608_H_
@@ -202573,7 +203985,7 @@ Sy°emC‹eClockUpd©e
 __˝lu•lus
 
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\device\usb_device.h
 
 35 #i‚de‡
 __USB_DEVICE_H__
@@ -203525,7 +204937,7 @@ __˝lu•lus
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_dci.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\device\usb_device_dci.c
 
 35 
 	~"usb_devi˚_c⁄fig.h
@@ -207513,7 +208925,7 @@ tick
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_lpcip3511.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\device\usb_device_lpcip3511.c
 
 35 
 	~"usb_devi˚_c⁄fig.h
@@ -214123,7 +215535,7 @@ USB_INTSTAT_FRAME_INT_MASK
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\include\usb.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\include\usb.h
 
 35 #i‚de‡
 __USB_H__
@@ -214367,7 +215779,7 @@ uöt8_t
 	tusb_vîsi⁄_t
 ;
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\osa\usb_osa.h
 
 35 #i‚de‡
 __USB_OSA_H__
@@ -214837,7 +216249,7 @@ deföed
 __˝lu•lus
 )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\osa\usb_osa_bm.c
 
 34 
 	~"°döt.h
@@ -216635,7 +218047,7 @@ kSètus_USB_OSA_Eº‹
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\osa\usb_osa_bm.h
 
 35 #i‚de‡
 __USB_OSA_BM_H__
@@ -216705,7 +218117,7 @@ deföed
 __˝lu•lus
 )
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.c
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\osa\usb_osa_freertos.c
 
 35 
 	~"°döt.h
@@ -219287,7 +220699,7 @@ kSètus_USB_OSA_Eº‹
 	}
 }
 
-	@C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.h
+	@D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\osa\usb_osa_freertos.h
 
 35 #i‚de‡
 __USB_OSA_FREERTOS_H__
@@ -219453,154 +220865,157 @@ __˝lu•lus
 1
 .
 0
-149
-12986
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\croutine.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\event_groups.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\FreeRTOS.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\StackMacros.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\croutine.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\deprecated_definitions.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\event_groups.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\list.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\message_buffer.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_prototypes.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\mpu_wrappers.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\portable.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\projdefs.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\queue.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\semphr.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stack_macros.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\stream_buffer.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\task.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\include\timers.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\list.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\portable\MemMang\heap_4.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\queue.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\stream_buffer.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\tasks.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\FreeRTOS\Source\timers.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\AnalogMeasurementHal\AnalogMeasurementHal.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\FanControllerHal\FanController.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalAdc\HalAdc.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalCommon\HalCommon.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalGpio\HalGpio.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalI2c\HalI2c.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalIFlash\HalIFlash.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalIFlash\HalIFlash.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalPwm\HalPwm.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\HalSpi\HalSpi.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\Lcd\Lcd.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\LedContorllerHal\LedController.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Hal\PmBusHal\PmBusHal.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\LinkerScript\LinkerScript.ld
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\FanSystem\FanSystem.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\LightingSystem\led.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\PidController\PidController.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\PidController\PidController.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\SpiFlash\SpiFlash.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\UsbHidDevice.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_ch9.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_class.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_config.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_descriptor.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbDevice\usb_device_hid.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\Modules\UsbProtocol\UsbProtocol.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\AnalogMeasurementTask.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\Anim.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_00.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_01.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_02.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_03.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_04.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_05.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_06.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_07.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_08.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_09.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Anim\frame_10.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FanTask.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FanTask.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\FreeRTOSConfig.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdInterface.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdTask.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LcdTask.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LightingTask.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\LightingTask.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\PmBusCommunicationTask.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Rtos.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\Rtos.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\UsbDeviceTask.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\UsbDeviceTask.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\clock_config.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\clock_config.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\logoImage\logo_smoll.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\app\main.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\CMSIS\Include\core_cm4.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\LPC54608.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_adc.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_clock.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_ctimer.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_dma.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_flexcomm.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_gpio.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_inputmux_connections.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_iocon.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_power.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_reset.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_sctimer.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\drivers\fsl_spi_dma.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\fsl_device_registers.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\libpower_hardabi.a
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\mcuxpresso\startup_LPC54608.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\devices\LPC54608\system_LPC54608.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_dci.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\device\usb_device_lpcip3511.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\include\usb.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_bm.h
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.c
-C:\Private\Programing\LPC\CheddarFirmware-feature-gpio\sdk\middleware\usb\osa\usb_osa_freertos.h
+152
+10565
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\croutine.c
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\event_groups.c
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\FreeRTOS.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\StackMacros.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\croutine.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\deprecated_definitions.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\event_groups.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\list.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\message_buffer.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\mpu_prototypes.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\mpu_wrappers.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\portable.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\projdefs.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\queue.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\semphr.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\stack_macros.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\stream_buffer.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\task.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\include\timers.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\list.c
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\portable\MemMang\heap_4.c
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\queue.c
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\stream_buffer.c
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\tasks.c
+D:\Private\Programing\MCU\LPC\myWork\FreeRTOS\Source\timers.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\AnalogMeasurementHal\AnalogMeasurementHal.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\AnalogMeasurementHal\AnalogMeasurementHal.h
+D:\Private\Programing\MCU\LPC\myWork\Hal\FanControllerHal\FanController.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\FanControllerHal\FanController.h
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalAdc\HalAdc.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalAdc\HalAdc.h
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalCommon\HalCommon.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalCommon\HalCommon.h
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalGpio\HalGpio.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalGpio\HalGpio.h
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalI2c\HalI2c.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalI2c\HalI2c.h
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalIFlash\HalIFlash.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalIFlash\HalIFlash.h
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalPwm\HalPwm.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalPwm\HalPwm.h
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalSpi\HalSpi.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\HalSpi\HalSpi.h
+D:\Private\Programing\MCU\LPC\myWork\Hal\Lcd\Lcd.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\Lcd\Lcd.h
+D:\Private\Programing\MCU\LPC\myWork\Hal\LedContorllerHal\LedController.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\LedContorllerHal\LedController.h
+D:\Private\Programing\MCU\LPC\myWork\Hal\PmBusHal\PmBusHal.c
+D:\Private\Programing\MCU\LPC\myWork\Hal\PmBusHal\PmBusHal.h
+D:\Private\Programing\MCU\LPC\myWork\LinkerScript\LinkerScript.ld
+D:\Private\Programing\MCU\LPC\myWork\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.c
+D:\Private\Programing\MCU\LPC\myWork\Modules\AnalogMeasurementSystem\AnalogMeasurementSystem.h
+D:\Private\Programing\MCU\LPC\myWork\Modules\FanSystem\FanSystem.c
+D:\Private\Programing\MCU\LPC\myWork\Modules\FanSystem\FanSystem.h
+D:\Private\Programing\MCU\LPC\myWork\Modules\LightingSystem\led.c
+D:\Private\Programing\MCU\LPC\myWork\Modules\LightingSystem\led.h
+D:\Private\Programing\MCU\LPC\myWork\Modules\PidController\PidController.c
+D:\Private\Programing\MCU\LPC\myWork\Modules\PidController\PidController.h
+D:\Private\Programing\MCU\LPC\myWork\Modules\SpiFlash\SpiFlash.c
+D:\Private\Programing\MCU\LPC\myWork\Modules\SpiFlash\SpiFlash.h
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\UsbHidDevice.c
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\UsbHidDevice.h
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_ch9.c
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_ch9.h
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_class.c
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_class.h
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_config.h
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_descriptor.c
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_descriptor.h
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_hid.c
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbDevice\usb_device_hid.h
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbProtocol\UsbProtocol.c
+D:\Private\Programing\MCU\LPC\myWork\Modules\UsbProtocol\UsbProtocol.h
+D:\Private\Programing\MCU\LPC\myWork\app\AnalogMeasurementTask.c
+D:\Private\Programing\MCU\LPC\myWork\app\AnalogMeasurementTask.h
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\Anim.c
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_00.c
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_01.c
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_02.c
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_03.c
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_04.c
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_05.c
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_06.c
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_07.c
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_08.c
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_09.c
+D:\Private\Programing\MCU\LPC\myWork\app\Anim\frame_10.c
+D:\Private\Programing\MCU\LPC\myWork\app\FanTask.c
+D:\Private\Programing\MCU\LPC\myWork\app\FanTask.h
+D:\Private\Programing\MCU\LPC\myWork\app\FreeRTOSConfig.h
+D:\Private\Programing\MCU\LPC\myWork\app\LcdInterface.h
+D:\Private\Programing\MCU\LPC\myWork\app\LcdTask.c
+D:\Private\Programing\MCU\LPC\myWork\app\LcdTask.h
+D:\Private\Programing\MCU\LPC\myWork\app\LightingTask.c
+D:\Private\Programing\MCU\LPC\myWork\app\LightingTask.h
+D:\Private\Programing\MCU\LPC\myWork\app\PmBusCommunicationTask.c
+D:\Private\Programing\MCU\LPC\myWork\app\PmBusCommunicationTask.h
+D:\Private\Programing\MCU\LPC\myWork\app\Rtos.c
+D:\Private\Programing\MCU\LPC\myWork\app\Rtos.h
+D:\Private\Programing\MCU\LPC\myWork\app\UsbDeviceTask.c
+D:\Private\Programing\MCU\LPC\myWork\app\UsbDeviceTask.h
+D:\Private\Programing\MCU\LPC\myWork\app\clock_config.c
+D:\Private\Programing\MCU\LPC\myWork\app\clock_config.h
+D:\Private\Programing\MCU\LPC\myWork\app\main.c
+D:\Private\Programing\MCU\LPC\myWork\app\screenSaverProcessing\logoSmall.c
+D:\Private\Programing\MCU\LPC\myWork\app\screenSaverProcessing\screenSaverProcessing.c
+D:\Private\Programing\MCU\LPC\myWork\app\screenSaverProcessing\screenSaverProcessing.h
+D:\Private\Programing\MCU\LPC\myWork\app\screenSaverProcessing\wavePoints.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\CMSIS\Include\core_cm4.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\LPC54608.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_adc.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_adc.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_clock.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_clock.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_ctimer.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_ctimer.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_dma.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_dma.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_flexcomm.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_flexcomm.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_gpio.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_gpio.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_inputmux.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_inputmux.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_inputmux_connections.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_iocon.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_power.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_power.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_reset.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_reset.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_sctimer.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_sctimer.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_spi.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_spi.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_spi_dma.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\drivers\fsl_spi_dma.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\fsl_device_registers.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\mcuxpresso\libpower_hardabi.a
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\mcuxpresso\startup_LPC54608.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\system_LPC54608.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\devices\LPC54608\system_LPC54608.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\device\usb_device.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\device\usb_device_dci.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\device\usb_device_lpcip3511.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\include\usb.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\osa\usb_osa.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\osa\usb_osa_bm.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\osa\usb_osa_bm.h
+D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\osa\usb_osa_freertos.c
+D:\Private\Programing\MCU\LPC\myWork\sdk\middleware\usb\osa\usb_osa_freertos.h

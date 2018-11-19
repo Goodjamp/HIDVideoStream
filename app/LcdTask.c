@@ -2,6 +2,7 @@
 #include "task.h"
 #include "semphr.h"
 #include "timers.h"
+#include "fsl_ctimer.h"
 
 #include "Lcd.h"
 #include "HalIFlash.h"
@@ -124,6 +125,40 @@ struct
     .playFlashState.frameNumber    = 0,
     .playFlashState.subBuffNumber  = 0,
 };
+
+
+
+/************************************************************/
+/* user timer variable*/
+static CTIMER_Type *TIMER_CNT = CTIMER4;
+
+struct
+{
+    uint32_t rxTime_[320];
+    uint16_t calcCnt;
+}calcFrameTest;
+
+static inline uint32_t getTimerCNT(void)
+{
+    return (uint32_t)TIMER_CNT->TC;
+}
+
+static inline void resetTimerCNT(void)
+{
+    TIMER_CNT->TC = 0;
+}
+
+void initTimerForMeTime(void)
+{
+    ctimer_config_t initStruct;
+
+    initStruct.mode      = kCTIMER_TimerMode;
+    SYSCON->ASYNCAPBCTRL = SYSCON_ASYNCAPBCTRL_ENABLE(1);
+    initStruct.prescale  = CLOCK_GetAsyncApbClkFreq()/100000; // 10 us
+    CTIMER_Init(TIMER_CNT, &initStruct);
+    CTIMER_StartTimer(TIMER_CNT);
+}
+/************************************************************/
 
 
 static void flashVideoUpdateInfo(uint16_t totalQuantity)
@@ -292,7 +327,7 @@ bool videoPlay(playSourceT playSource)
 
 static void lcdTaskFunction(void *pvParameters)
 {
-
+    initTimerForMeTime();
     lcdInit();
     lcdSemaphore = xSemaphoreCreateBinary();
     flashVideoTimer = xTimerCreate("flashVideoPlayTimer",
@@ -318,7 +353,15 @@ static void lcdTaskFunction(void *pvParameters)
         if(playerH.playSource = PLAY_SCREEN_SAVER )
         {
             putPicture(rxCommandBuffer);
+            resetTimerCNT();
+
             calculateScreenSaverFrame(playerH.playScreenSaverState.lastTimeState, rxCommandBuffer, 32768);
+
+            calcFrameTest.rxTime_[calcFrameTest.calcCnt++] = getTimerCNT();
+            if(calcFrameTest.calcCnt >= (sizeof(calcFrameTest.rxTime_) / sizeof(calcFrameTest.rxTime_[0])))
+            {
+                calcFrameTest.calcCnt = 0;
+            }
             continue;
         }
 
@@ -351,3 +394,11 @@ void lcdTaskCreate(void)
 {
     xTaskCreate(lcdTaskFunction, "Lcd", LCD_TASK_STACK_SIZE, NULL, LCD_TASK_PRIORITY, NULL);
 }
+
+
+
+
+
+
+
+

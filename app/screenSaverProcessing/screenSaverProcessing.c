@@ -3,13 +3,13 @@
 #include <stdbool.h>
 #include "math.h"
 
+#define colorRBMax             0b11111
+#define colorGMax              0b111111
+
 #define SCREEN_HEIGHT_PIXEL    128
 #define SCREEN_WIDTH_PIXEL     128
 
-#define RB_RANGE               0b11111
-#define G_RANGE                0b111111
-
-/***********************************BORDER CREATION CONFIGURATION*****/
+/**********BORDER POINTS GENERATION CONFIGURATION******************/
 #define R_0        18.0F
 #define R_1        17.0F
 #define R_2        15.0F
@@ -21,6 +21,13 @@
 #define K2         (MAX_ALFA/(R_2 - R_3))
 #define B2         (-K2*R_3)
 /********************************************************************/
+
+/*Animation section description position**/
+#define timeStart   0
+#define timeStop    1
+#define timeLength  2
+#define posStart    3
+#define posLength   4
 
 /*************************TOTAL PLAY CONFIGURATION***************/
 #define SCRREN_SAVER_DURATION_MS   7000
@@ -34,7 +41,16 @@
 #define COLOR_5                   {95,  167, 229}
 // last color should be the same as first
 #define COLOR_6                   {91,  161, 87}
-/********************************************************************/
+/******************************************************************/
+
+/*************************WAVE LAYER TOTAL CONFIGURATION***********/
+#define waveLeftField    4
+#define waveRightField   124
+#define waveToptField    4
+#define waveButtonField  124
+
+/*****************************************************************/
+
 
 /*************************WAVE_1 LAYER CONFIGURATION**************/
 #define waveBezier_p0x   0.0F
@@ -49,43 +65,52 @@
 /********************************************************************/
 
 /*************************WAVE_2 LAYER CONFIGURATION**************/
-#define waveBezierVertical_p0x   0.0F
-#define waveBezierVertical_p0y   0.0F
-#define waveBezierVertical_p1x   0.36F
-#define waveBezierVertical_p1y   0.45F
-#define waveBezierVertical_p2x   0.63F
-#define waveBezierVertical_p2y   0.53F
-#define waveBezierVertical_p3x   1.0F
-#define waveBezierVertical_p3y   1.0F
+//points for vertical shift of bezier curve
+#define waveBezierV_p1y   0.1F
+#define waveBezierV_p2y   1.0F
 
-#define waveBezierHorizontal_p0x  0.0F
-#define waveBezierHorizontal_p0y  0.0F
-#define waveBezierHorizontal_p1x  0.25F
-#define waveBezierHorizontal_p1y  0.1F
-#define waveBezierHorizontal_p2x  0.24F
-#define waveBezierHorizontal_p2y  1.0F
-#define waveBezierHorizontal_p3x  1.0F
-#define waveBezierHorizontal_p3y  1.0F
+//points for horizontal shift of bizier curve
+#define waveBezierH_p1y  0.45F
+#define waveBezierH_p2y  0.53F
 
-#define verticalDelayMs           -125
-#define horizontalDelayMs         -1250
+#define delayVMs         1250
+#define delayHMs         125
 
-#define verticalShift_faze_1
+#define timePosV_0_0     0
+#define posV_0_0         -10
+#define timePosV_0_1     (SCRREN_SAVER_DURATION_MS / 2)
+#define posV_0_1         20
 
-#define verticalShift             125
-#define horizontalShift           1250
+#define timePosV_1_0     (SCRREN_SAVER_DURATION_MS / 2)
+#define posV_1_0         20
+#define timePosV_1_1     (SCRREN_SAVER_DURATION_MS)
+#define posV_1_1         -10
+
+#define timePosH_0_0     0
+#define posH_0_0         0
+#define timePosH_0_1     SCRREN_SAVER_DURATION_MS
+#define posH_0_1         1600
 
 /********************************************************************/
 
 /*************************LOGO LAYER CONFIGURATION**************/
-#define logoBezier_p0x   0.0F
-#define logoBezier_p0y   0.0F
-#define logoBezier_p1x   0.75F
 #define logoBezier_p1y   0.45F
-#define logoBezier_p2x   0.63F
 #define logoBezier_p2y   0.53F
-#define logoBezier_p3x   1.0F
-#define logoBezier_p3y   1.0F
+
+#define logoTimeAlfa_0_0  0
+#define logoAlfa_0_0      0
+#define logoTimeAlfa_0_1  (2400)
+#define logoAlfa_0_1      0
+
+#define logoTimeAlfa_1_0  (2400)
+#define logoAlfa_1_0      0
+#define logoTimeAlfa_1_1  (SCRREN_SAVER_DURATION_MS / 2)
+#define logoAlfa_1_1      255
+
+#define logoTimeAlfa_2_0  (SCRREN_SAVER_DURATION_MS / 2)
+#define logoAlfa_2_0      255
+#define logoTimeAlfa_2_1  (SCRREN_SAVER_DURATION_MS )
+#define logoAlfa_2_1      0
 
 /********************************************************************/
 
@@ -97,12 +122,13 @@
 #define BLUE_TO_565(X)  ((X) >> 3)
 
 #define GET_BLUE(X)   ((X & 0b1111100000000) >> 8)
-#define GET_GREEN(X)  (((X & 0b111)>>10) | (X & 0b111))
+#define GET_GREEN(X)  ((X >>13) | ((X & 0b111)<<3))
 #define GET_RED(X)    ((X & 0b11111000) >> 3)
 
-#define SET_BLUE(X)   ( X << 8)
-#define SET_GREEN(X)  ((X <<13) | (X >> 3))
-#define SET_RED(X)    (X << 3)
+#define SET_BLUE(X)          ( X << 8)
+#define SET_GREEN(X)         ((X <<13) | (X >> 3))
+#define SET_RED(X)           (X << 3)
+#define SET_GRAYSCALE(RB, G) (( RB << 8) | (RB << 3) | (G <<13) | (G >> 3))
 
 
 typedef uint16_t (*frameT)[SCREEN_WIDTH_PIXEL][SCREEN_HEIGHT_PIXEL];
@@ -153,15 +179,60 @@ struct{
 }border;
 /*******************************************/
 
+
 /********Wave layer variables***************/
 const uint8_t wave[] = {
     #include "wavePoints.h"
     };
+/********Wave layer 1 variables***************/
 uint16_t wave1LayerColor[128];
+/*******************************************/
+/********Wave layer 2 variables***************/
+uint8_t wave2LayerAlfa[128];
+
+// time section start, time section length,  position section start, section length
+const int32_t wave2TimeSectionHDesc[][5] =
+{
+    {timePosH_0_0, timePosH_0_1, timePosH_0_1 - timePosH_0_0, posH_0_0, posH_0_1 - posH_0_0},
+};
+
+
+const int32_t wave2TimeSectionVDesc[][5] =
+{
+    {timePosV_0_0, timePosV_0_1, timePosV_0_1 - timePosV_0_0, posV_0_0, posV_0_1 - posV_0_0},
+    {timePosV_1_0, timePosV_1_1, timePosV_1_1 - timePosV_1_0, posV_1_0, posV_1_1 - posV_1_0},
+};
+
+const float wave2BizierH[2] =
+{
+    waveBezierH_p1y,
+    waveBezierH_p2y
+};
+
+const float wave2BizierV[2] =
+{
+    waveBezierV_p1y,
+    waveBezierV_p2y
+};
+/*******************************************/
 /*******************************************/
 
 /********Logo layer variables***************/
 extern const uint8_t image_data_logo_small[4050];
+
+const int32_t logoTimeSectionVDesc[][5] =
+{
+    {logoTimeAlfa_0_0, logoTimeAlfa_0_1, logoTimeAlfa_0_1 - logoTimeAlfa_0_0, logoAlfa_0_0, logoAlfa_0_1 - logoAlfa_0_0},
+    {logoTimeAlfa_1_0, logoTimeAlfa_1_1, logoTimeAlfa_1_1 - logoTimeAlfa_1_0, logoAlfa_1_0, logoAlfa_1_1 - logoAlfa_1_0},
+    {logoTimeAlfa_2_0, logoTimeAlfa_2_1, logoTimeAlfa_2_1 - logoTimeAlfa_2_0, logoAlfa_2_0, logoAlfa_2_1 - logoAlfa_2_0},
+};
+
+const float logoBizier[2] =
+{
+    logoBezier_p1y,
+    logoBezier_p2y
+};
+
 /*******************************************/
 
 void calcLineKoef(float *k, float *b, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2)
@@ -177,9 +248,24 @@ static inline float calcLinePoint(float k, float b, float x)
 }
 
 
-static inline float cubicBezier(float t, float p0, float p1, float p2, float p3)
+static inline float calcCubicBezier(float t, float p0, float p1, float p2, float p3)
 {
     return pow((1.0F-t),3.0F)*p0+3.0F*pow((1.0F-t),2.0F)*t*p1+3.0F*(1.0F-t)*pow(t,2.0F)*p2+pow(t,3.0F)*p3;
+}
+
+
+static inline int32_t calcCubicBezierPos(uint32_t cntTime, const float bezierPoints[], const int32_t timeSection[][5], const uint8_t quantitySection)
+{
+    uint8_t k = 0;
+    for(;k < quantitySection; k++)
+    {
+        if(cntTime < timeSection[k][timeStop])
+        {
+            break;
+        }
+    }
+    float t = ((float)cntTime - (float)timeSection[k][timeStart]) / (float)timeSection[k][timeLength]; // relation time inside "k" section
+    return (int32_t)(timeSection[k][posStart] + timeSection[k][posLength] *(3.0F*pow((1.0F-t),2.0F)*t*bezierPoints[0]+3.0F*(1.0F-t)*pow(t,2.0F)*bezierPoints[1]+pow(t,3.0F)));
 }
 
 
@@ -273,6 +359,7 @@ static void createBorder(void)
 
 static void updateBorderLayer(uint32_t cntMs, uint8_t *buff)
 {
+    cntMs = cntMs % SCRREN_SAVER_DURATION_MS;
     uint16_t red1, green1, blue1;
     uint16_t index;
     frameT   frame = (frameT)buff;
@@ -313,33 +400,50 @@ static void updateBorderLayer(uint32_t cntMs, uint8_t *buff)
 
 static void updateLogoLayer(uint32_t cntMs, uint8_t *buff)
 {
+    cntMs = cntMs % SCRREN_SAVER_DURATION_MS;
+    uint8_t colorRB;
+    uint8_t colorG;
     uint16_t imageShift      = 128/2 - 45/2;
-    uint16_t (*logo)[45][45] =  image_data_logo_small;
+    uint16_t (*logo)[45][45] =  (uint16_t (*)[45][45])image_data_logo_small;
     frameT   frame           = (frameT)buff;
-
+    int32_t  alfa = calcCubicBezierPos(cntMs, logoBizier, logoTimeSectionVDesc, sizeof(logoTimeSectionVDesc) / sizeof(logoTimeSectionVDesc[0]) );
     for(uint16_t x = imageShift, xLogo = 0; xLogo < 45; x++, xLogo++ )
     {
         for(uint16_t y = imageShift, yLogo = 0; yLogo < 45; y++, yLogo++ )
         {
-            (*frame)[y][x] = (*logo)[yLogo][xLogo];
+             colorRB = GET_RED((*logo)[yLogo][xLogo]);
+             colorG  = GET_GREEN((*logo)[yLogo][xLogo]);
+             if(colorG != 0)
+             {
+                 colorG++;
+                 colorG--;
+             }
+             colorRB = (alfa * colorRB)/255;
+             colorG  = (alfa * colorG)/255;
+
+
+            (*frame)[y][x]  = SET_RED(colorRB);
+            (*frame)[y][x] |= SET_GREEN(colorG);
+            (*frame)[y][x] |= SET_BLUE(colorRB);
+
+            //(*frame)[y][x] = (*logo)[yLogo][xLogo];
         }
     }
 }
 
 static void updateWave1Layer(uint32_t cntMs, uint8_t *buff)
 {
+    cntMs = cntMs % SCRREN_SAVER_DURATION_MS;
     const uint8_t (*wavePoints)[sizeof(wave)/2][2] =  (const uint8_t (*)[sizeof(wave)/2][2])wave;
-    frameT   frame                = (frameT)buff;
-    uint16_t xWave =  1600 * cubicBezier((float)cntMs/(float)SCRREN_SAVER_DURATION_MS,
-                                      waveBezier_p0x,
-                                      waveBezier_p1x,
-                                      waveBezier_p2x,
-                                      waveBezier_p3x);
-    uint8_t color;
-    uint8_t y;
-    for(uint16_t xFrame = 0; xFrame < 128; xFrame++, xWave++)
+    frameT   frame = (frameT)buff;
+    uint16_t xWave =  1600 * calcCubicBezier((float)cntMs/(float)SCRREN_SAVER_DURATION_MS,
+                                      waveBezier_p0y,
+                                      waveBezier_p1y,
+                                      waveBezier_p2y,
+                                      waveBezier_p3y);
+    for(uint16_t xFrame = waveLeftField; xFrame < waveRightField; xFrame++, xWave++)
     {
-        if((*wavePoints)[xWave][0] > 127 )
+        if((*wavePoints)[xWave][0] > waveButtonField)
         {
             continue;
         }
@@ -347,29 +451,48 @@ static void updateWave1Layer(uint32_t cntMs, uint8_t *buff)
         {
             break;
         }
-        y                    = (*wavePoints)[xWave][0] - 1;
-        color                = (GET_RED(wave1LayerColor[y]) * (*wavePoints)[xWave][1]) / 10;
-        (*frame)[y][xFrame]  = SET_RED(color);
-        (*frame)[y][xFrame] |= SET_GREEN(color<<1);
-        (*frame)[y][xFrame] |= SET_BLUE(color);
-        for(uint16_t yFrame   = (*wavePoints)[xWave][0]; yFrame < 128; yFrame++)
+        for(uint16_t yFrame   = (*wavePoints)[xWave][0]; yFrame < waveButtonField; yFrame++)
         {
-/*
-            (*frame)[k][kF] = SET_RED((uint8_t)calcLinePoint(wave1LayerDescription.kRB,
-                                                            wave1LayerDescription.bRB,
-                                                            k));
-            (*frame)[k][kF] |= SET_GREEN((uint8_t)calcLinePoint(wave1LayerDescription.kG,
-                                                            wave1LayerDescription.bG,
-                                                            k));
-            (*frame)[k][kF] |= SET_BLUE((uint8_t)calcLinePoint(wave1LayerDescription.kRB,
-                                                            wave1LayerDescription.bRB,
-                                                            k));
- */
             (*frame)[yFrame][xFrame] = wave1LayerColor[yFrame];
         }
 
     }
+}
 
+
+static void updateWave2Layer(uint32_t cntMs, uint8_t *buff)
+{
+    const uint8_t (*wavePoints)[sizeof(wave)/2][2] =  (const uint8_t (*)[sizeof(wave)/2][2])wave;
+    frameT   frame  = (frameT)buff;
+    uint8_t colorRB;
+    uint8_t colorG;
+    uint32_t cntRel = (cntMs  + delayVMs) % SCRREN_SAVER_DURATION_MS;
+    int32_t  shiftY = calcCubicBezierPos(cntRel, wave2BizierV, wave2TimeSectionVDesc, sizeof(wave2TimeSectionVDesc) / sizeof(wave2TimeSectionVDesc[0]) );
+    cntRel = (cntMs  + delayHMs) % SCRREN_SAVER_DURATION_MS;
+    int32_t  shiftX = calcCubicBezierPos(cntRel, wave2BizierH, wave2TimeSectionHDesc, sizeof(wave2TimeSectionHDesc) / sizeof(wave2TimeSectionHDesc[0]) );
+    int32_t yFrame;
+    for(int32_t xFrame = waveLeftField; xFrame < waveRightField; xFrame++, shiftX++ )
+    {
+        yFrame  = (*wavePoints)[shiftX][0] + shiftY;
+        if(waveButtonField > waveButtonField )
+        {
+            continue;
+        }
+        if(shiftX >= sizeof(wave)/2)
+        {
+            break;
+        }
+        for(; yFrame < waveButtonField; yFrame++)
+        {
+             colorRB = GET_RED( (*frame)[yFrame][xFrame]);
+             //colorG  = GET_GREEN((*frame)[yFrame][xFrame]);
+             colorRB = ((255 - wave2LayerAlfa[yFrame]) * colorRB + wave2LayerAlfa[yFrame] * colorRBMax)/255;
+             //colorG  = ((255 - wave2LayerAlfa[yFrame]) * colorG  + wave2LayerAlfa[yFrame] * colorGMax)/255;
+
+            (*frame)[yFrame][xFrame] = SET_GRAYSCALE(colorRB, colorRB << 1);//colorG);
+        }
+
+    }
 }
 
 
@@ -396,36 +519,48 @@ static void initWave1Layer(void)
 
 }
 
+static void initWave2Layer(void)
+{
+    float   k;
+    float   b;
+    calcLineKoef(&k, &b,
+                 0,   150,
+                 127, 20);
+    for(uint8_t y = 0; y < sizeof(wave2LayerAlfa)/sizeof(wave2LayerAlfa[0]); y++ )
+    {
+        wave2LayerAlfa[y] = calcLinePoint(k, b, y);
+    }
+}
 
 static void initBorderLayer(void)
 {
     uint16_t colorTimeStep = SCRREN_SAVER_DURATION_MS / COLOR_QYANTITY;
-    uint16_t collorStopTime = 0;
+    uint16_t colorStopTime = 0;
     for(uint8_t cnt = 0; cnt < COLOR_QYANTITY ; cnt++ )
     {
-        borderLayerDescription[cnt].stopTime = (cnt == (COLOR_QYANTITY - 1)) ? (SCRREN_SAVER_DURATION_MS) : (collorStopTime + colorTimeStep);
+        borderLayerDescription[cnt].stopTime = (cnt == (COLOR_QYANTITY - 1)) ? (SCRREN_SAVER_DURATION_MS) : (colorStopTime + colorTimeStep);
         // calculation line coefficient for interpolation red color
         calcLineKoef(&borderLayerDescription[cnt].lineKoef[RED][0],
                      &borderLayerDescription[cnt].lineKoef[RED][1],
-                     collorStopTime,
+                     colorStopTime,
                      RED_TO_565(borderColor[cnt][RED]),
-                     collorStopTime + colorTimeStep,
+                     colorStopTime + colorTimeStep,
                      RED_TO_565(borderColor[cnt + 1][RED]));
         // calculation line coefficient for interpolation green color
         calcLineKoef(&borderLayerDescription[cnt].lineKoef[GREEN][0],
                      &borderLayerDescription[cnt].lineKoef[GREEN][1],
-                     collorStopTime,
+                     colorStopTime,
                      GREEN_TO_565(borderColor[cnt][GREEN]),
-                     collorStopTime + colorTimeStep,
+                     colorStopTime + colorTimeStep,
                      GREEN_TO_565(borderColor[cnt + 1][GREEN]));
         // calculation line coefficient for interpolation blue color
         calcLineKoef(&borderLayerDescription[cnt].lineKoef[BLUE][0],
                      &borderLayerDescription[cnt].lineKoef[BLUE][1],
-                     collorStopTime,
+                     colorStopTime,
                      BLUE_TO_565(borderColor[cnt][BLUE]),
-                     collorStopTime + colorTimeStep,
+                     colorStopTime + colorTimeStep,
                      BLUE_TO_565(borderColor[cnt + 1][BLUE]));
-        collorStopTime = collorStopTime + colorTimeStep;
+        colorStopTime = colorStopTime + colorTimeStep;
     }
 }
 
@@ -433,10 +568,10 @@ static void initBorderLayer(void)
 
 void calculateScreenSaverFrame(uint32_t cntMs, uint8_t *buff, uint32_t buffSize)
 {
-    cntMs = cntMs % SCRREN_SAVER_DURATION_MS;
     memset(buff, 0x00, buffSize);
-    updateWave1Layer(cntMs, buff);
     updateLogoLayer(cntMs, buff);
+    updateWave1Layer(cntMs, buff);
+    updateWave2Layer(cntMs, buff);
     updateBorderLayer(cntMs, buff);
 }
 
@@ -448,4 +583,5 @@ void initScreenSaver(void)
     /*******************************************************************/
     initBorderLayer();
     initWave1Layer();
+    initWave2Layer();
 }

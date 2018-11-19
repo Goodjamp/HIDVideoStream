@@ -31,8 +31,6 @@ SemaphoreHandle_t xSemaphore = NULL;
 #define NUMBER_OF_PACKET ((32768 + SIZE_PACKET)/SIZE_PACKET + 1)
 #define SIZE_RX_BUFFER   (SIZE_PACKET * NUMBER_OF_PACKET)
 
-/* user timer variable*/
-static CTIMER_Type *TIMER_CNT = CTIMER4;
 
 #pragma pack(push,1)
 typedef struct
@@ -60,31 +58,6 @@ const uint16_t packetPayloadSize = SIZE_PACKET - sizeof(packetT);
 //static uint8_t  rxCommandBuffer[SIZE_RX_BUFFER] = {[0 ... (SIZE_RX_BUFFER - 1)] = 0};
 uint8_t  rxCommandBuffer[SIZE_RX_BUFFER] = {[0 ... (SIZE_RX_BUFFER - 1)] = 0};
 
-uint16_t rxTime_[300];
-
-
-
-static inline uint32_t getTimerCNT(void)
-{
-    return (uint32_t)TIMER_CNT->TC;
-}
-
-static inline void resetTimerCNT(void)
-{
-    TIMER_CNT->TC = 0;
-}
-
-void initTimerForMeTime(void)
-{
-    ctimer_config_t initStruct;
-
-    initStruct.mode      = kCTIMER_TimerMode;
-    SYSCON->ASYNCAPBCTRL = SYSCON_ASYNCAPBCTRL_ENABLE(1);
-    initStruct.prescale  = CLOCK_GetAsyncApbClkFreq()/1000000; // 1 us
-    CTIMER_Init(TIMER_CNT, &initStruct);
-    CTIMER_StartTimer(TIMER_CNT);
-}
-
 
 static inline void rxPacketProcessing(const uint8_t buffer[], uint16_t bufferSize)
 {
@@ -95,12 +68,6 @@ static inline void rxPacketProcessing(const uint8_t buffer[], uint16_t bufferSiz
         rxPacketState.nextPacketNumber = 0;
         return;
     }
-    if(rxPacketState.nextPacketNumber == 0)
-    {
-        rxPacketState.rxTime = getTimerCNT();
-    }
-    rxTime_[rxPacketState.nextPacketNumber] =  getTimerCNT() - rxPacketState.rxTime;
-    rxPacketState.rxTime = getTimerCNT();
 
     memcpy(&rxCommandBuffer[rxPacket->packetNumber * packetPayloadSize], rxPacket->payload, ((rxPacket->quantityPacket - 1) == rxPacket->packetNumber) ?
                                                  (rxPacket->rest):
@@ -108,7 +75,6 @@ static inline void rxPacketProcessing(const uint8_t buffer[], uint16_t bufferSiz
     if(rxPacket->packetNumber == (rxPacket->quantityPacket - 1))
     {
         //rxComplite, start processing command layer
-        rxPacketState.rxTime = getTimerCNT() - rxPacketState.rxTime;
         rxPacketState.nextPacketNumber = 0;
         // unblock USB task
         xHigherPriorityTaskWoken = pdFALSE;
@@ -189,7 +155,6 @@ static void usbDeviceTaskFunction(void *pvParameters)
 void usbDeviceTaskCreate(void)
 {
     halSpiFlashInit();
-    initTimerForMeTime();
     usbHidDeviceSetCallbacks(hidIntInputReport, hidIntOutputReport);
     xTaskCreate(usbDeviceTaskFunction,   "UsbComm", USB_DEVICE_TASK_STACK_SIZE, NULL, USB_DEVICE_TASK_PRIORITY, NULL);
     xTaskCreate(usbHidDeviceTaskFunction, "UsbDrv", USB_DEVICE_TASK_STACK_SIZE, NULL, USB_DEVICE_TASK_PRIORITY, NULL);

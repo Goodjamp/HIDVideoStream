@@ -310,7 +310,7 @@ const pFunc __Vectors[] __attribute__ ((section(".vectors"))) = {
 /*----------------------------------------------------------------------------
   Reset Handler called on controller reset
  *----------------------------------------------------------------------------*/
-    void Reset_Handler(void) {
+   void Reset_Handler(void) {
   uint32_t *pSrc, *pDest;
   uint32_t *pTable __attribute__((unused));
 

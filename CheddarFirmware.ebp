@@ -17,7 +17,7 @@
 					<Add option="-mfloat-abi=hard" />
 					<Add option="-fdata-sections" />
 					<Add option="-ffunction-sections" />
-					<Add option="-O0" />
+					<Add option="-O3" />
 					<Add option="-g2" />
 				</Compiler>
 				<Linker>

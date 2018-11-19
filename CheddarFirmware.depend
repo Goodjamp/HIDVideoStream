@@ -1657,7 +1657,7 @@
 1538310526 source:d:\private\programing\mcu\lpc\mywork\app\anim\frame_10.c
 	<stdint.h>
 
-1538310526 source:d:\private\programing\mcu\lpc\mywork\app\clock_config.c
+1542625523 source:d:\private\programing\mcu\lpc\mywork\app\clock_config.c
 	"fsl_power.h"
 	"fsl_clock.h"
 	"clock_config.h"
@@ -1694,7 +1694,7 @@
 	<string.h>
 	"fsl_device_registers.h"
 
-1538310526 d:\private\programing\mcu\lpc\mywork\app\clock_config.h
+1542574576 d:\private\programing\mcu\lpc\mywork\app\clock_config.h
 	"fsl_common.h"
 
 1538310526 source:d:\private\programing\mcu\lpc\mywork\app\fantask.c
@@ -1774,7 +1774,7 @@
 	"task.h"
 	<string.h>
 
-1542048123 source:d:\private\programing\mcu\lpc\mywork\app\usbdevicetask.c
+1542571895 source:d:\private\programing\mcu\lpc\mywork\app\usbdevicetask.c
 	"UsbDeviceTask.h"
 	"LcdTask.h"
 	"FreeRTOS.h"
@@ -1916,7 +1916,7 @@
 1538310527 d:\private\programing\mcu\lpc\mywork\sdk\devices\lpc54608\drivers\fsl_adc.h
 	"fsl_common.h"
 
-1538310526 source:d:\private\programing\mcu\lpc\mywork\hal\halcommon\halcommon.c
+1542625543 source:d:\private\programing\mcu\lpc\mywork\hal\halcommon\halcommon.c
 	"HalCommon.h"
 	"clock_config.h"
 	"fsl_iocon.h"
@@ -2166,7 +2166,7 @@
 	"fsl_dma.h"
 	"fsl_spi.h"
 
-1538310527 source:d:\private\programing\mcu\lpc\mywork\sdk\devices\lpc54608\mcuxpresso\startup_lpc54608.c
+1542495423 source:d:\private\programing\mcu\lpc\mywork\sdk\devices\lpc54608\mcuxpresso\startup_lpc54608.c
 	<stdint.h>
 	"fsl_device_registers.h"
 
@@ -2224,11 +2224,12 @@
 	<stdint.h>
 	<stdbool.h>
 
-1542274549 source:d:\private\programing\mcu\lpc\mywork\app\lcdtask.c
+1542576753 source:d:\private\programing\mcu\lpc\mywork\app\lcdtask.c
 	"FreeRTOS.h"
 	"task.h"
 	"semphr.h"
 	"timers.h"
+	"fsl_ctimer.h"
 	"Lcd.h"
 	"HalIFlash.h"
 	<stdint.h>
@@ -2325,4 +2326,13 @@
 	<stdint.h>
 
 1542370945 c:\private\programing\lpc\cheddarfirmware-feature-gpio\app\screensaverprocessing\wavepoints.h
+
+1542567721 source:d:\private\programing\mcu\lpc\mywork\app\screensaverprocessing\screensaverprocessing.c
+	<stdint.h>
+	<string.h>
+	<stdbool.h>
+	"math.h"
+	"wavePoints.h"
+
+1542493872 d:\private\programing\mcu\lpc\mywork\app\screensaverprocessing\wavepoints.h
 

@@ -42,7 +42,7 @@
  ******************************************************************************/
 #define BOARD_XTAL0_CLK_HZ                         12000000U  /*!< Board xtal0 frequency in Hz */
 #define BOARD_XTAL32K_CLK_HZ                          32768U  /*!< Board xtal32K frequency in Hz */
-#define BOARD_BootClockRUN BOARD_BootClockFROHF48M
+//#define BOARD_BootClockRUN BOARD_BootClockFROHF48M
 
 
 /*******************************************************************************
@@ -140,6 +140,8 @@ extern "C" {
  *
  */
 void BOARD_BootClockPLL180M(void);
+
+void BOARD_BootClockRUN(void);
 
 #if defined(__cplusplus)
 }

@@ -412,19 +412,14 @@ static void updateLogoLayer(uint32_t cntMs, uint8_t *buff)
         for(uint16_t y = imageShift, yLogo = 0; yLogo < 45; y++, yLogo++ )
         {
              colorRB = GET_RED((*logo)[yLogo][xLogo]);
-             colorG  = GET_GREEN((*logo)[yLogo][xLogo]);
-             if(colorG != 0)
-             {
-                 colorG++;
-                 colorG--;
-             }
+             //colorG  = GET_GREEN((*logo)[yLogo][xLogo]);
              colorRB = (alfa * colorRB)/255;
-             colorG  = (alfa * colorG)/255;
+             //colorG  = (alfa * colorG)/255;
 
 
-            (*frame)[y][x]  = SET_RED(colorRB);
-            (*frame)[y][x] |= SET_GREEN(colorG);
-            (*frame)[y][x] |= SET_BLUE(colorRB);
+            (*frame)[y][x]  = SET_GRAYSCALE(colorRB, colorRB << 1);//SET_RED(colorRB);
+            //(*frame)[y][x] |= SET_GREEN(colorG);
+            //(*frame)[y][x] |= SET_BLUE(colorRB);
 
             //(*frame)[y][x] = (*logo)[yLogo][xLogo];
         }
@@ -441,6 +436,7 @@ static void updateWave1Layer(uint32_t cntMs, uint8_t *buff)
                                       waveBezier_p1y,
                                       waveBezier_p2y,
                                       waveBezier_p3y);
+    uint16_t xWaveSmooth = xWave;
     for(uint16_t xFrame = waveLeftField; xFrame < waveRightField; xFrame++, xWave++)
     {
         if((*wavePoints)[xWave][0] > waveButtonField)
@@ -449,13 +445,73 @@ static void updateWave1Layer(uint32_t cntMs, uint8_t *buff)
         }
         if(xWave >= sizeof(wave)/2)
         {
-            break;
+            return;
         }
         for(uint16_t yFrame   = (*wavePoints)[xWave][0]; yFrame < waveButtonField; yFrame++)
         {
             (*frame)[yFrame][xFrame] = wave1LayerColor[yFrame];
         }
+    }
+    //smoothing up of wave
+    uint8_t rightBord = waveRightField - 1;
+    uint8_t yTemp, xTemp;
+    uint32_t summRB;
+    uint32_t summG;
+    for(uint16_t xFrame = waveLeftField ; xFrame < waveRightField; xFrame++, xWaveSmooth++)
+    {
 
+        if((yTemp =  (*wavePoints)[xWaveSmooth][0] ) > waveButtonField)
+        {
+            continue;
+        }
+        summRB = GET_RED(wave1LayerColor[yTemp]);
+        summG  = GET_GREEN(wave1LayerColor[yTemp]);
+        summRB *= (*wavePoints)[xWaveSmooth][1];
+        summRB /= 10;
+
+        summG *= (*wavePoints)[xWaveSmooth][1];
+        summG /= 10;
+        /*
+        summRB = 0;
+        summG = 0;
+
+        //column 0
+        xTemp = xFrame - 1;
+        summRB += GET_RED((*frame)[yTemp][xTemp]);
+        summG  += GET_GREEN((*frame)[yTemp][xTemp]);
+        yTemp++;
+        summRB += GET_RED((*frame)[yTemp][xTemp]);
+        summG  += GET_GREEN((*frame)[yTemp][xTemp]);
+        yTemp++;
+        summRB += GET_RED((*frame)[yTemp][xTemp]);
+        summG  += GET_GREEN((*frame)[yTemp][xTemp]);
+        //column 1
+        xTemp++;
+        yTemp -= 2;
+        summRB += GET_RED((*frame)[yTemp][xTemp]);
+        summG  += GET_GREEN((*frame)[yTemp][xTemp]);
+        yTemp++;
+        summRB += GET_RED((*frame)[yTemp][xTemp]);
+        summG  += GET_GREEN((*frame)[yTemp][xTemp]);
+        yTemp++;
+        summRB += GET_RED((*frame)[yTemp][xTemp]);
+        summG  += GET_GREEN((*frame)[yTemp][xTemp]);
+        //column 2
+        xTemp++;
+        yTemp -= 2;
+        summRB += GET_RED((*frame)[yTemp][xTemp]);
+        summG  += GET_GREEN((*frame)[yTemp][xTemp]);
+        yTemp++;
+        summRB += GET_RED((*frame)[yTemp][xTemp]);
+        summG  += GET_GREEN((*frame)[yTemp][xTemp]);
+        yTemp++;
+        summRB += GET_RED((*frame)[yTemp][xTemp]);
+        summG  += GET_GREEN((*frame)[yTemp][xTemp]);
+        summRB /= 9;
+        summG  /= 9;
+        */
+
+        (*frame)[ (*wavePoints)[xWaveSmooth][0] - 1][xFrame] = SET_GRAYSCALE(summRB, summG);
     }
 }
 
@@ -464,8 +520,8 @@ static void updateWave2Layer(uint32_t cntMs, uint8_t *buff)
 {
     const uint8_t (*wavePoints)[sizeof(wave)/2][2] =  (const uint8_t (*)[sizeof(wave)/2][2])wave;
     frameT   frame  = (frameT)buff;
-    uint8_t colorRB;
-    uint8_t colorG;
+    uint16_t colorRB;
+    uint16_t colorG;
     uint32_t cntRel = (cntMs  + delayVMs) % SCRREN_SAVER_DURATION_MS;
     int32_t  shiftY = calcCubicBezierPos(cntRel, wave2BizierV, wave2TimeSectionVDesc, sizeof(wave2TimeSectionVDesc) / sizeof(wave2TimeSectionVDesc[0]) );
     cntRel = (cntMs  + delayHMs) % SCRREN_SAVER_DURATION_MS;
@@ -473,7 +529,7 @@ static void updateWave2Layer(uint32_t cntMs, uint8_t *buff)
     int32_t yFrame;
     for(int32_t xFrame = waveLeftField; xFrame < waveRightField; xFrame++, shiftX++ )
     {
-        yFrame  = (*wavePoints)[shiftX][0] + shiftY;
+        yFrame = (*wavePoints)[shiftX][0] + shiftY;
         if(waveButtonField > waveButtonField )
         {
             continue;
@@ -485,13 +541,12 @@ static void updateWave2Layer(uint32_t cntMs, uint8_t *buff)
         for(; yFrame < waveButtonField; yFrame++)
         {
              colorRB = GET_RED( (*frame)[yFrame][xFrame]);
-             //colorG  = GET_GREEN((*frame)[yFrame][xFrame]);
+             colorG  = GET_GREEN((*frame)[yFrame][xFrame]);
              colorRB = ((255 - wave2LayerAlfa[yFrame]) * colorRB + wave2LayerAlfa[yFrame] * colorRBMax)/255;
-             //colorG  = ((255 - wave2LayerAlfa[yFrame]) * colorG  + wave2LayerAlfa[yFrame] * colorGMax)/255;
+             colorG  = ((255 - wave2LayerAlfa[yFrame]) * colorG  + wave2LayerAlfa[yFrame] * colorGMax)/255;
 
-            (*frame)[yFrame][xFrame] = SET_GRAYSCALE(colorRB, colorRB << 1);//colorG);
+            (*frame)[yFrame][xFrame] = SET_GRAYSCALE(colorRB, colorG);
         }
-
     }
 }
 

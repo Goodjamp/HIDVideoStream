@@ -11,13 +11,14 @@
 				<Option output="bin\Debug\CheddarFirmware.elf" />
 				<Option object_output="obj\Debug\" />
 				<Option type="0" />
+				<Option create_hex="1" />
 				<Option compiler="armgcc_eb" />
 				<Option projectDeviceOptionsRelation="0" />
 				<Compiler>
 					<Add option="-mfloat-abi=hard" />
 					<Add option="-fdata-sections" />
 					<Add option="-ffunction-sections" />
-					<Add option="-O3" />
+					<Add option="-O0" />
 					<Add option="-g2" />
 				</Compiler>
 				<Linker>

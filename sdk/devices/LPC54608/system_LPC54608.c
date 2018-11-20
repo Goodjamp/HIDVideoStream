@@ -357,5 +357,5 @@ uint32_t clkRate = 0;
         default:
             break;
     }
-    SystemCoreClock = clkRate / ((SYSCON->AHBCLKDIV & 0xFF) + 1);
+    //SystemCoreClock = clkRate / ((SYSCON->AHBCLKDIV & 0xFF) + 1);
 }

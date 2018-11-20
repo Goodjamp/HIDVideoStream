@@ -18,7 +18,7 @@
 #define PROTECT_STR           "VIDEO_IS_PRESSENT"
 
 /****Screen Saver paramiters***************************************/
-#define SCRREN_SAVER_UPDATE_PER_MS   33
+#define SCRREN_SAVER_UPDATE_PER_MS   60
 /******************************************************************/
 
 /***Play Flash buffer description*********************************/
@@ -29,7 +29,7 @@
 #define VIDEO_BLOCK_ADDRESS    5
 #define FLASH_BLOCK_SIZE       32768
 #define FRAME_SIZE             32768
-#define FLASH_VIDEO_FPS        33
+#define FLASH_VIDEO_FPS        60
 
 #define FRAME_ADDRESS(X)       ((VIDEO_BLOCK_ADDRESS + X) * 32768)
 #define INFO_ADDRESS           (INFORM_BLOCK_ADDRESS * 32768)
@@ -81,6 +81,7 @@ static commandDescriptionT *rxCommand;
 uint8_t playFlashSubBuff[SUB_BUFF_QUANTITY][SUB_BUFF_SIZE + 4];
 typedef enum
 {
+    PLAY_STOP,
     PLAY_FLASH,
     PLAY_DIRECT,
     PLAY_SCREEN_SAVER,
@@ -154,7 +155,7 @@ void initTimerForMeTime(void)
 
     initStruct.mode      = kCTIMER_TimerMode;
     SYSCON->ASYNCAPBCTRL = SYSCON_ASYNCAPBCTRL_ENABLE(1);
-    initStruct.prescale  = CLOCK_GetAsyncApbClkFreq()/100000; // 10 us
+    initStruct.prescale  = CLOCK_GetAsyncApbClkFreq()/1000000; // 10 us
     CTIMER_Init(TIMER_CNT, &initStruct);
     CTIMER_StartTimer(TIMER_CNT);
 }
@@ -304,6 +305,8 @@ bool videoPlay(playSourceT playSource)
 {
     switch(playerH.playSource)
     {
+    case PLAY_STOP:
+        break;
     case PLAY_FLASH:
         if(!flashVideoReadInfo(&playerH.playFlashState.totalFrameNumber))
         {
@@ -338,7 +341,9 @@ static void lcdTaskFunction(void *pvParameters)
 
     memset(rxCommandBuffer, 0,32768);
     putPicture(rxCommandBuffer);
-    vTaskDelay(500);
+    vTaskDelay(100);
+
+    videoPlay(PLAY_STOP);
 
     initScreenSaver();
     videoPlay(PLAY_SCREEN_SAVER);
@@ -350,14 +355,15 @@ static void lcdTaskFunction(void *pvParameters)
             continue;
         }
 
-        if(playerH.playSource = PLAY_SCREEN_SAVER )
+        if(playerH.playSource == PLAY_SCREEN_SAVER )
         {
             putPicture(rxCommandBuffer);
+            vTaskSuspendAll();
             resetTimerCNT();
-
             calculateScreenSaverFrame(playerH.playScreenSaverState.lastTimeState, rxCommandBuffer, 32768);
-
             calcFrameTest.rxTime_[calcFrameTest.calcCnt++] = getTimerCNT();
+            xTaskResumeAll();
+
             if(calcFrameTest.calcCnt >= (sizeof(calcFrameTest.rxTime_) / sizeof(calcFrameTest.rxTime_[0])))
             {
                 calcFrameTest.calcCnt = 0;

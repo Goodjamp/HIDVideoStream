@@ -141,8 +141,6 @@ extern "C" {
  */
 void BOARD_BootClockPLL180M(void);
 
-void BOARD_BootClockRUN(void);
-
 #if defined(__cplusplus)
 }
 #endif /* __cplusplus*/

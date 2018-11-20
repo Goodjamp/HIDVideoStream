@@ -7,7 +7,7 @@
 
 void halCommonInit(void)
 {
-    BOARD_BootClockFROHF96M();
+    BOARD_BootClockPLL180M();
     CLOCK_EnableClock(kCLOCK_Iocon);
     INPUTMUX_Init(INPUTMUX);
     CLOCK_EnableClock(kCLOCK_Gpio0);
@@ -17,5 +17,5 @@ void halCommonInit(void)
     CLOCK_EnableClock(kCLOCK_Gpio4);
     CLOCK_EnableClock(kCLOCK_Gpio5);
 
-    SystemCoreClockUpdate();
+    //SystemCoreClockUpdate();
 }

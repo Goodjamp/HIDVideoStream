@@ -18,6 +18,7 @@ int main(void)
     lcdTaskCreate();
     rtosStartScheduler();
 
+
     for (;;) {
 
     }

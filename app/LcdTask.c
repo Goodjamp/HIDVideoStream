@@ -18,7 +18,7 @@
 #define PROTECT_STR           "VIDEO_IS_PRESSENT"
 
 /****Screen Saver paramiters***************************************/
-#define SCRREN_SAVER_UPDATE_PER_MS   60
+#define SCRREN_SAVER_UPDATE_PER_MS   33
 /******************************************************************/
 
 /***Play Flash buffer description*********************************/
@@ -29,7 +29,7 @@
 #define VIDEO_BLOCK_ADDRESS    5
 #define FLASH_BLOCK_SIZE       32768
 #define FRAME_SIZE             32768
-#define FLASH_VIDEO_FPS        60
+#define FLASH_VIDEO_FPS        33
 
 #define FRAME_ADDRESS(X)       ((VIDEO_BLOCK_ADDRESS + X) * 32768)
 #define INFO_ADDRESS           (INFORM_BLOCK_ADDRESS * 32768)

@@ -224,26 +224,21 @@ const float logoBizier[2] = {
     logoBezier_p2y
 };
 
-/*******************************************/
-
 void calcLineKoef(float *k, float *b, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2)
 {
     *k = ((float)y1 - (float)y2)/((float)x1 - (float)x2);
     *b = (float)y1 - (*k) * (float)x1;
 }
 
-
 static inline float calcLinePoint(float k, float b, float x)
 {
     return k * x + b;
 }
 
-
 static inline float calcCubicBezier(float t, float p0, float p1, float p2, float p3)
 {
     return pow((1.0F-t),3.0F)*p0+3.0F*pow((1.0F-t),2.0F)*t*p1+3.0F*(1.0F-t)*pow(t,2.0F)*p2+pow(t,3.0F)*p3;
 }
-
 
 static inline int32_t calcCubicBezierPos(uint32_t cntTime, const float bezierPoints[], const int32_t timeSection[][5], const uint8_t quantitySection)
 {
@@ -260,7 +255,6 @@ static inline int32_t calcCubicBezierPos(uint32_t cntTime, const float bezierPoi
     return (int32_t)(timeSection[k][posStart] + timeSection[k][posLength] *(3.0F*pow((1.0F-t),2.0F)*t*bezierPoints[0]+3.0F*(1.0F-t)*pow(t,2.0F)*bezierPoints[1]+pow(t,3.0F)));
 }
 
-
 static void createLine(uint16_t x0, uint16_t y0, uint16_t xStart, uint16_t xStop, uint16_t yStart, uint16_t yStop, bool isHorizontal)
 {
     uint16_t x, y;
@@ -275,7 +269,6 @@ static void createLine(uint16_t x0, uint16_t y0, uint16_t xStart, uint16_t xStop
         {
             yF = y + 0.5F;
             d = (isHorizontal) ? (sqrt(pow(y0 - yF, 2))):(sqrt(pow(x0 - xF, 2)));
-            //d = sqrt(pow((xF - x), 2) + pow((yF - Y0_1), 2));
             if(d > R_0 || d < R_3)
             {
                 continue;
@@ -342,6 +335,7 @@ static void createBorder(void)
     createAngle(128 - R_0, R_0, 128 - R_0, 128, 0, R_0);
     createAngle(128 - R_0, 128 - R_0, 128 - R_0, 128, 128 - R_0, 128);
     createAngle(R_0, 128 - R_0, 0, R_0, 128 - R_0, 128);
+
     createLine(R_0, R_0, R_0, 128 - R_0, 0, R_0, true);
     createLine(R_0, 128 - R_0, R_0, 128 - R_0, 128 - R_0, 128, true);
     createLine(R_0, R_0, 0, R_0, R_0, 128 - R_0, false);
@@ -610,7 +604,7 @@ void calculateScreenSaverFrame(uint32_t cntMs, uint8_t *buff, uint32_t buffSize)
 void initScreenSaver(void)
 {
     /***Temporal function. Border should be calculate before !!!!!! ****/
-    createBorder();
+    //createBorder();
     /*******************************************************************/
     initBorderLayer();
     initWave1Layer();

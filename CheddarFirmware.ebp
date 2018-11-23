@@ -144,6 +144,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="app\Rtos.h" />
+		<Unit filename="app\screenSaverProcessing\border.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="app\screenSaverProcessing\logoSmall.c">
 			<Option compilerVar="CC" />
 		</Unit>

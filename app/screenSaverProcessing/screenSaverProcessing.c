@@ -3,24 +3,15 @@
 #include <stdbool.h>
 #include "math.h"
 
+#include "border.h"
+
 #define colorRBMax             0b11111
 #define colorGMax              0b111111
 
 #define SCREEN_HEIGHT_PIXEL    128
 #define SCREEN_WIDTH_PIXEL     128
 
-/**********BORDER POINTS GENERATION CONFIGURATION******************/
-#define R_0        18.0F
-#define R_1        17.0F
-#define R_2        15.0F
-#define R_3        14.0F
-
-#define MAX_ALFA   255.0F
-#define K1         (MAX_ALFA/(R_1 - R_0))
-#define B1         (-K1*R_0)
-#define K2         (MAX_ALFA/(R_2 - R_3))
-#define B2         (-K2*R_3)
-/********************************************************************/
+#define MAX_ALFA               255
 
 /*Animation section description position**/
 #define timeStart   0
@@ -62,6 +53,11 @@
 #define waveBezier_p3x   1.0F
 #define waveBezier_p3y   1.0F
 
+#define timePosV_0_0     0
+#define posV_0_0         -10
+#define timePosV_0_1     (SCRREN_SAVER_DURATION_MS / 2)
+#define posV_0_1         20
+
 /********************************************************************/
 
 /*************************WAVE_2 LAYER CONFIGURATION**************/
@@ -72,9 +68,6 @@
 //points for horizontal shift of bizier curve
 #define waveBezierH_p1y  0.45F
 #define waveBezierH_p2y  0.53F
-
-#define delayVMs         1250
-#define delayHMs         125
 
 #define timePosV_0_0     0
 #define posV_0_0         -10
@@ -91,6 +84,9 @@
 #define timePosH_0_1     SCRREN_SAVER_DURATION_MS
 #define posH_0_1         1600
 
+#define delayVMs         1250
+#define delayHMs         125
+
 /********************************************************************/
 
 /*************************LOGO LAYER CONFIGURATION**************/
@@ -105,10 +101,10 @@
 #define logoTimeAlfa_1_0  (2400)
 #define logoAlfa_1_0      0
 #define logoTimeAlfa_1_1  (SCRREN_SAVER_DURATION_MS / 2)
-#define logoAlfa_1_1      255
+#define logoAlfa_1_1      MAX_ALFA
 
 #define logoTimeAlfa_2_0  (SCRREN_SAVER_DURATION_MS / 2)
-#define logoAlfa_2_0      255
+#define logoAlfa_2_0      MAX_ALFA
 #define logoTimeAlfa_2_1  (SCRREN_SAVER_DURATION_MS )
 #define logoAlfa_2_1      0
 
@@ -125,10 +121,8 @@
 #define GET_GREEN(X)  ((X >>13) | ((X & 0b111)<<3))
 #define GET_RED(X)    ((X & 0b11111000) >> 3)
 
-#define SET_BLUE(X)          ( X << 8)
-#define SET_GREEN(X)         ((X <<13) | (X >> 3))
-#define SET_RED(X)           (X << 3)
 #define SET_GRAYSCALE(RB, G) (( RB << 8) | (RB << 3) | (G <<13) | (G >> 3))
+#define SET_COLOR(R, G, B)   (( B << 8)  | (R << 3)  | (G <<13) | (G >> 3))
 
 
 typedef uint16_t (*FrameBuff)[SCREEN_WIDTH_PIXEL];
@@ -168,13 +162,6 @@ struct {
     float bRB;
     float bG;
 } wave1LayerDescription;
-
-//this variable should be calculate outside in future
-struct {
-    uint16_t size;
-    PixelDescription pixel[100*100];
-} border;
-/*******************************************/
 
 
 /********Wave layer variables***************/
@@ -224,6 +211,10 @@ const float logoBizier[2] = {
     logoBezier_p2y
 };
 
+
+
+
+
 void calcLineKoef(float *k, float *b, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2)
 {
     *k = ((float)y1 - (float)y2)/((float)x1 - (float)x2);
@@ -255,101 +246,28 @@ static inline int32_t calcCubicBezierPos(uint32_t cntTime, const float bezierPoi
     return (int32_t)(timeSection[k][posStart] + timeSection[k][posLength] *(3.0F*pow((1.0F-t),2.0F)*t*bezierPoints[0]+3.0F*(1.0F-t)*pow(t,2.0F)*bezierPoints[1]+pow(t,3.0F)));
 }
 
-static void createLine(uint16_t x0, uint16_t y0, uint16_t xStart, uint16_t xStop, uint16_t yStart, uint16_t yStop, bool isHorizontal)
-{
-    uint16_t x, y;
-    float   xF, yF;
-    float d;
-    x = xStart;
-    for(; x < xStop; x++)
-    {
-        xF = x + 0.5F;
-        y = yStart;
-        for(; y < yStop; y++)
-        {
-            yF = y + 0.5F;
-            d = (isHorizontal) ? (sqrt(pow(y0 - yF, 2))):(sqrt(pow(x0 - xF, 2)));
-            if(d > R_0 || d < R_3)
-            {
-                continue;
-            }
-            else if(d < R_0 && d > R_1)
-            {
-                border.pixel[border.size].alfa = d * K1 + B1;
-            }
-            else if(d < R_1 && d > R_2)
-            {
-                border.pixel[border.size].alfa = MAX_ALFA;
-            }
-            else if(d < R_2 && d > R_3)
-            {
-                border.pixel[border.size].alfa = d * K2 + B2;;
-            }
-            border.pixel[border.size].x = x;
-            border.pixel[border.size].y = y;
-            border.size++;
-        }
-    }
-}
-
-static void createAngle(uint16_t x0In, uint16_t y0In, uint16_t xStart, uint16_t xStop, uint16_t yStart, uint16_t yStop)
-{
-    uint16_t x, y;
-    float   xF, yF;
-    float d;
-    x = xStart;
-    for(; x < xStop; x++)
-    {
-        xF = x + 0.5F;
-        y = yStart;
-        for(; y < yStop; y++)
-        {
-            yF = y + 0.5F;
-            d = sqrt(pow((xF - x0In), 2) + pow((yF - y0In), 2));
-            if(d > R_0 || d < R_3)
-            {
-                continue;
-            }
-            else if(d < R_0 && d > R_1)
-            {
-                border.pixel[border.size].alfa = d * K1 + B1;
-            }
-            else if(d < R_1 && d > R_2)
-            {
-                border.pixel[border.size].alfa = MAX_ALFA;
-            }
-            else if(d < R_2 && d > R_3)
-            {
-                border.pixel[border.size].alfa = d * K2 + B2;;
-            }
-            border.pixel[border.size].x = x;
-            border.pixel[border.size].y = y;
-            border.size++;
-        }
-    }
-}
-
-static void createBorder(void)
-{
-    createAngle(R_0, R_0, 0, R_0, 0, R_0);
-    createAngle(128 - R_0, R_0, 128 - R_0, 128, 0, R_0);
-    createAngle(128 - R_0, 128 - R_0, 128 - R_0, 128, 128 - R_0, 128);
-    createAngle(R_0, 128 - R_0, 0, R_0, 128 - R_0, 128);
-
-    createLine(R_0, R_0, R_0, 128 - R_0, 0, R_0, true);
-    createLine(R_0, 128 - R_0, R_0, 128 - R_0, 128 - R_0, 128, true);
-    createLine(R_0, R_0, 0, R_0, R_0, 128 - R_0, false);
-    createLine(128 - R_0, R_0, 128 - R_0, 128, R_0, 128 - R_0, false);
-}
-
-
-
-
 
 static void updateBorderLayer(uint32_t cntMs, uint8_t buff[])
 {
-    uint16_t red1, green1, blue1;
+    #define POS_X      0
+    #define POS_Y      1
+    #define RADIUS_ALFA   2
+    uint8_t (*borderRadius)[3] = (uint8_t(*)[3])borderRadiusDesc;
+    uint16_t borderRadiusSize  = sizeof(borderRadiusDesc) / 3;
+
+    uint8_t (*borderAngle)[2] = (uint8_t(*)[2])borderAngleDesc;
+    uint16_t borderAngleSize  = sizeof(borderAngleDesc) / 2;
+
+    uint8_t (*borderLine)[2] = (uint8_t(*)[2])borderLineDesc;
+    uint16_t borderLineSize  = sizeof(borderLineDesc) / 2;
+
+    uint8_t red, green, blue;
+    uint8_t redA, greenA, blueA;
+    uint8_t redB, greenB, blueB;
     uint16_t index;
+    uint16_t k;
+    uint16_t currentColor;
+
     FrameBuff   frame = (FrameBuff)buff;
     cntMs = cntMs % SCRREN_SAVER_DURATION_MS;
 
@@ -359,32 +277,47 @@ static void updateBorderLayer(uint32_t cntMs, uint8_t buff[])
         }
     }
 
-    uint8_t red2   = (uint8_t)calcLinePoint(borderLayerDescription[index].lineKoef[RED][0],
-                                            borderLayerDescription[index].lineKoef[RED][1],
-                                            cntMs);
-    uint8_t green2 = (uint8_t)calcLinePoint(borderLayerDescription[index].lineKoef[GREEN][0],
-                                            borderLayerDescription[index].lineKoef[GREEN][1],
-                                            cntMs);
-    uint8_t blue2  = (uint8_t)calcLinePoint(borderLayerDescription[index].lineKoef[BLUE][0],
-                                            borderLayerDescription[index].lineKoef[BLUE][1],
-                                            cntMs);
+    red   = (uint8_t)calcLinePoint(borderLayerDescription[index].lineKoef[RED][0],
+                                   borderLayerDescription[index].lineKoef[RED][1],
+                                   cntMs);
+    green = (uint8_t)calcLinePoint(borderLayerDescription[index].lineKoef[GREEN][0],
+                                   borderLayerDescription[index].lineKoef[GREEN][1],
+                                   cntMs);
+    blue  = (uint8_t)calcLinePoint(borderLayerDescription[index].lineKoef[BLUE][0],
+                                   borderLayerDescription[index].lineKoef[BLUE][1],
+                                   cntMs);
 
-    for(uint16_t cnt = 0; cnt < border.size; cnt++) {
-        red1   = GET_RED(   frame[border.pixel[cnt].y][border.pixel[cnt].x]);
-        green1 = GET_GREEN( frame[border.pixel[cnt].y][border.pixel[cnt].x]);
-        blue1  = GET_BLUE(  frame[border.pixel[cnt].y][border.pixel[cnt].x]);
+    currentColor = SET_COLOR(red, green, blue);
 
-        frame[border.pixel[cnt].y][border.pixel[cnt].x] =  SET_RED(  ((255 - border.pixel[cnt].alfa)*red1   + (border.pixel[cnt].alfa)*red2  )/255);
-        frame[border.pixel[cnt].y][border.pixel[cnt].x] |= SET_GREEN(((255 - border.pixel[cnt].alfa)*green1 + (border.pixel[cnt].alfa)*green2)/255);
-        frame[border.pixel[cnt].y][border.pixel[cnt].x] |= SET_BLUE( ((255 - border.pixel[cnt].alfa)*blue1  + (border.pixel[cnt].alfa)*blue2 )/255);
+    for(k = 0; k < borderRadiusSize; k++) {
+        if(borderRadius[k][RADIUS_ALFA] == MAX_ALFA) {
+            frame[borderRadius[k][POS_Y]][borderRadius[k][POS_X]] = currentColor;
+            continue;
+        }
 
-        //frame[border.pixel[cnt].y][border.pixel[cnt].x] = rezColor;
+        redB   = GET_RED(   frame[borderRadius[k][POS_Y]][borderRadius[k][POS_X]]);
+        greenB = GET_GREEN( frame[borderRadius[k][POS_Y]][borderRadius[k][POS_X]]);
+        blueB  = GET_BLUE(  frame[borderRadius[k][POS_Y]][borderRadius[k][POS_X]]);
+
+        redA   = ((MAX_ALFA - borderRadius[k][RADIUS_ALFA]) * redB + borderRadius[k][RADIUS_ALFA] * red)   / MAX_ALFA;
+        greenA = ((MAX_ALFA - borderRadius[k][RADIUS_ALFA]) * greenB + borderRadius[k][RADIUS_ALFA] * green) / MAX_ALFA;
+        blueA  = ((MAX_ALFA - borderRadius[k][RADIUS_ALFA]) * blueB + borderRadius[k][RADIUS_ALFA] * blue)  / MAX_ALFA;
+        frame[borderRadius[k][POS_Y]][borderRadius[k][POS_X]] = SET_COLOR(redA, greenA, blueA);
     }
+
+    for(k = 0; k < borderAngleSize; k++) {
+        frame[borderAngle[k][POS_Y]][borderAngle[k][POS_X]] = 0x0000;
+    }
+
+    for(k = 0; k < borderLineSize; k++) {
+        frame[borderLine[k][POS_Y]][borderLine[k][POS_X]] = currentColor;
+    }
+
 }
 
 static void updateLogoLayer(uint32_t cntMs, uint8_t buff[])
 {
-    uint8_t colorRB, colorG;
+    uint8_t colorRB;
     uint16_t imageShift  = 128/2 - 45/2;
     uint16_t (*logo)[45] = (uint16_t (*)[45])image_data_logo_small;
     FrameBuff   frame    = (FrameBuff)buff;
@@ -393,18 +326,16 @@ static void updateLogoLayer(uint32_t cntMs, uint8_t buff[])
     cntMs = cntMs % SCRREN_SAVER_DURATION_MS;
     alfa  = calcCubicBezierPos(cntMs, logoBizier, logoTimeSectionVDesc, sizeof(logoTimeSectionVDesc) / sizeof(logoTimeSectionVDesc[0]));
 
+    if(alfa == 0) {
+        return;
+    }
+
     for(uint16_t x = imageShift, xLogo = 0; xLogo < 45; x++, xLogo++) {
         for(uint16_t y = imageShift, yLogo = 0; yLogo < 45; y++, yLogo++) {
-             colorRB = GET_RED(logo[yLogo][xLogo]);
-             //colorG  = GET_GREEN((*logo)[yLogo][xLogo]);
-             colorRB = (alfa * colorRB)/255;
-             //colorG  = (alfa * colorG)/255;
+            colorRB = GET_RED(logo[yLogo][xLogo]);
+            colorRB = (alfa * colorRB)/MAX_ALFA;
 
-            frame[y][x]  = SET_GRAYSCALE(colorRB, colorRB << 1);//SET_RED(colorRB);
-            //frame[y][x] |= SET_GREEN(colorG);
-            //frame)[y][x] |= SET_BLUE(colorRB);
-
-            //frame[y][x] = (*logo)[yLogo][xLogo];
+            frame[y][x]  = SET_GRAYSCALE(colorRB, colorRB << 1);
         }
     }
 }
@@ -436,9 +367,10 @@ static void updateWave1Layer(uint32_t cntMs, uint8_t buff[])
             frame[yFrame][xFrame] = wave1LayerColor[yFrame];
         }
     }
+
     //smoothing up of wave
     uint8_t rightBord = waveRightField - 1;
-    uint8_t yTemp, xTemp;
+    uint8_t yTemp;
     uint32_t summRB;
     uint32_t summG;
 
@@ -518,8 +450,8 @@ static void updateWave2Layer(uint32_t cntMs, uint8_t buff[])
         for(; yFrame < waveButtonField; yFrame++) {
              colorRB = GET_RED(  frame[yFrame][xFrame]);
              colorG  = GET_GREEN(frame[yFrame][xFrame]);
-             colorRB = ((255 - wave2LayerAlfa[yFrame]) * colorRB + wave2LayerAlfa[yFrame] * colorRBMax)/255;
-             colorG  = ((255 - wave2LayerAlfa[yFrame]) * colorG  + wave2LayerAlfa[yFrame] * colorGMax) /255;
+             colorRB = ((MAX_ALFA - wave2LayerAlfa[yFrame]) * colorRB + wave2LayerAlfa[yFrame] * colorRBMax)/MAX_ALFA;
+             colorG  = ((MAX_ALFA - wave2LayerAlfa[yFrame]) * colorG  + wave2LayerAlfa[yFrame] * colorGMax) /MAX_ALFA;
              frame[yFrame][xFrame] = SET_GRAYSCALE(colorRB, colorG);
         }
     }
@@ -540,9 +472,8 @@ static void initWave1Layer(void)
     for(uint8_t y = 0; y < sizeof(wave1LayerColor)/sizeof(wave1LayerColor[0]); y++) {
         colorRB = calcLinePoint(kRB, bRB, y);
         colorG  = calcLinePoint(kG, bG, y);
-        wave1LayerColor[y]  = SET_RED(colorRB);
-        wave1LayerColor[y] |= SET_GREEN(colorG);
-        wave1LayerColor[y] |= SET_BLUE(colorRB);
+
+        wave1LayerColor[y] = SET_COLOR(colorRB, colorG, colorRB);
     }
 }
 
@@ -589,8 +520,6 @@ static void initBorderLayer(void)
     }
 }
 
-
-
 void calculateScreenSaverFrame(uint32_t cntMs, uint8_t *buff, uint32_t buffSize)
 {
     memset(buff, 0x00, buffSize);
@@ -600,12 +529,8 @@ void calculateScreenSaverFrame(uint32_t cntMs, uint8_t *buff, uint32_t buffSize)
     updateBorderLayer(cntMs, buff);
 }
 
-
 void initScreenSaver(void)
 {
-    /***Temporal function. Border should be calculate before !!!!!! ****/
-    //createBorder();
-    /*******************************************************************/
     initBorderLayer();
     initWave1Layer();
     initWave2Layer();

@@ -18,7 +18,7 @@
 					<Add option="-mfloat-abi=hard" />
 					<Add option="-fdata-sections" />
 					<Add option="-ffunction-sections" />
-					<Add option="-O0" />
+					<Add option="-O3" />
 					<Add option="-g2" />
 				</Compiler>
 				<Linker>
@@ -144,9 +144,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="app\Rtos.h" />
-		<Unit filename="app\screenSaverProcessing\border.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="app\screenSaverProcessing\logoSmall.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -306,6 +303,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Modules\UsbProtocol\UsbProtocol.h" />
+		<Unit filename="python\imageSource\border.h" />
 		<Unit filename="sdk\CMSIS\Include\core_cm4.h" />
 		<Unit filename="sdk\devices\LPC54608\drivers\fsl_adc.c">
 			<Option compilerVar="CC" />

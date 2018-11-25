@@ -6,14 +6,22 @@ import math
 import shutil
 
 borderImageHeader = "#include <stdint.h>"
-borderImageName = "const uint8_t borderImageDesc[] = {"
+borderRadiusName = "const uint8_t borderRadiusDesc["
+borderAngleName  = "const uint8_t borderAngleDesc["
+borderLineName   = "const uint8_t borderLineDesc["
 
 lcdSideLen = 128
 MAX_ALFA = 255.0
-R_0 = 18.0
-R_1 = 17.0
-R_2 = 15.0
-R_3 = 14.0
+Rl_0 = 18.0
+Rl_3 = 14.0
+
+R_0 = 18.8
+R_1 = 18.0
+R_2 = 14.5
+R_3 = 13.5
+
+R0x = 18
+R0y = 18
 
 K1 = (MAX_ALFA/(R_1 - R_0))
 B1 = (-K1*R_0)
@@ -25,28 +33,24 @@ angle  = []
 line   = []
 
 
-def createLine(x0, y0, xStart, xStop, yStart, yStop, isHorizontal):
+def createLine(xStart, xStop, yStart, yStop, isHorizontal):
+    print("xStart = ", xStart,", ")
+    print("xStop = ", xStop, ", ")
+    print("yStart = ", yStart, ", ")
+    print("yStop = ", yStop, ", ")
     x  = xStart
     y  = 0 
-    xF = 0.0
-    yF = 0.0
-    d  = 0.0
     while x < xStop:
-        xF = x + 0.5
         y = yStart
-        
         while y < yStop:
-            yF = y + 0.5
-            d = math.sqrt((float(y0) - float(yF))**2) if bool(isHorizontal) else math.sqrt((float(x0) - float(xF))**2)
-          
-            #if bool(isHorizontal):
-            #    d = math.sqrt((float(y0) - float(yF))**2)
-            #else:
-            #    d = math.sqrt((float(x0) - float(xF))**2)
-                
-            if (d < R_0) and (d > R_3):
-                line.append(x)
-                line.append(y)
+            yF = y
+            #d = math.sqrt((float(y0) - float(yF))**2) if bool(isHorizontal) else math.sqrt((float(x0) - float(xF))**2)
+            #print("d = ", d)    
+            #if (d <= Rl_0) and (d > Rl_3):
+            #    line.append(x)
+            #    line.append(y)
+            line.append(x)
+            line.append(y)    
             y = y + 1
             
         x = x + 1
@@ -60,12 +64,11 @@ def createAngle(x0In, y0In, xStart, xStop, yStart, yStop):
     d = 0.0
     x = xStart
     while x < xStop:
-        xF = x + 0.5
+        xF = float(x) + float(0.5)
         y = yStart
         while y < yStop:
-            yF = y + 0.5
+            yF = float(y) + float(0.5)
             d = math.sqrt((float(xF) - float(x0In))**2 + (float(yF) - float(y0In))**2);
-
             if d > R_0:
                 angle.append(x)
                 angle.append(y)
@@ -86,9 +89,7 @@ def createAngle(x0In, y0In, xStart, xStop, yStart, yStop):
             y = y + 1       
         x = x + 1
 
-
-
-        
+     
 try:
     if not os.path.exists('imageSource'):
         os.makedirs('imageSource')
@@ -100,60 +101,68 @@ except OSError:
     print ('Error: Creating directory imageSource')
 
 # save  border data
-createLine(1,2,3,4,5,6, 1)
-f = open('./imageSource/border' + '.c', 'w')
+f = open('./imageSource/border' + '.h', 'w')
 #file format:
 #- file consist from 3 part: radius, angle, line
 #- radius format:
 #- - first 2 bytes: Lr = size of radius part (2 bytes int little endians)
 #- - next fields: Lr fields, format of fields (real order): x, y, alfa (little endian, all numbers on byte)
 
-f.write( borderImageHeader + "\n\n" + borderImageName)
+f.write(borderImageHeader + "\n\n")
 
 #calculation coordinates of line part of border
-createAngle(R_0, R_0, 0, R_0, 0, R_0)
-createAngle(lcdSideLen - R_0, R_0, lcdSideLen - R_0, lcdSideLen, 0, R_0)
-createAngle(lcdSideLen - R_0, lcdSideLen - R_0, lcdSideLen - R_0, lcdSideLen, lcdSideLen - R_0, lcdSideLen)
-createAngle(R_0, lcdSideLen - R_0, 0, R_0, lcdSideLen - R_0, lcdSideLen)
+createAngle(R0x, R0y, 0, R_0, 0, R_0)
+createAngle(lcdSideLen - R0x, R0y, lcdSideLen - R_0, lcdSideLen, 0, R_0)
+createAngle(lcdSideLen - R0x, lcdSideLen - R0y, lcdSideLen - R_0, lcdSideLen, lcdSideLen - R_0, lcdSideLen)
+createAngle(R_0 - 0.5, lcdSideLen - R_0 + 0.5, 0, R_0, lcdSideLen - R_0, lcdSideLen)
 #write radius part o border
 index = 0
-print("radius len = ", len(radius))
-f.write( str(len(radius) & 255) + ", " + str((len(radius) >>8) & 255) + ", " + " // start radius description" + "\n" )
+radiusPoints = len(radius)/3
+print("radius points = ", radiusPoints)
+f.write(borderRadiusName)
+#f.write( str(int(radiusPoints) & 255) + ", " + str((int(radiusPoints) >>8) & 255) + ", " + " // start radius description" + "\n" )
+f.write( str(int(len(radius)))  + "] = { // radius description \n" )
 for i in radius:
     f.write( str(int(i)) + ", " )
     index = index + 1
     if index >= 3:
         f.write( "\n" )
         index = 0
-
+f.write( "};" + "\n\n")
 #write angle part o border
 index = 0
-print("angle len = ", len(angle))
-f.write( str(len(angle) & 255) + ", " + str((len(angle) >>8) & 255) + ", " + " // start angle description" + "\n"  )
+anglePoints = len(angle)/2
+print("angle points = ", anglePoints)
+f.write(borderAngleName)
+#f.write( str(int(anglePoints) & 255) + ", " + str((int(anglePoints) >>8) & 255) + ", " + " // start angle description" + "\n"  )
+f.write( str(int(len(angle)))  + "] = { // angle description \n" )
 for i in angle:
     f.write( str(int(i)) + ", " )
     index = index + 1
     if index >= 2:
         f.write( "\n" )
         index = 0
-
+f.write( "};" + "\n\n")
 #calculation coordinates of line part of border
-createLine(R_0, R_0, R_0, lcdSideLen - R_0, 0, R_0, 1)
-createLine(R_0, lcdSideLen - R_0, R_0, lcdSideLen - R_0, lcdSideLen - R_0, lcdSideLen, 1)
-createLine(R_0, R_0, 0, R_0, R_0, lcdSideLen - R_0, 0)
-createLine(lcdSideLen - R_0, R_0, lcdSideLen - R_0, lcdSideLen, R_0, lcdSideLen - R_0, 0)
+createLine( Rl_0, lcdSideLen - Rl_0, 0, 4, 1)
+createLine(Rl_0, lcdSideLen - Rl_0, lcdSideLen - 4, lcdSideLen, 1)
+createLine(0, 4, Rl_0, lcdSideLen - Rl_0, 0)
+createLine(lcdSideLen - 4, lcdSideLen, Rl_0, lcdSideLen - Rl_0, 0)
 #write line part o border
 index = 0
-print("line len = ", len(line))
-f.write( str(len(line) & 255) + ", " + str((len(line) >>8) & 255) + ", "+ " // start line description" + "\n"  )
+linePoints = len(line)/2
+print("line points = ", linePoints)
+f.write(borderLineName)
+#f.write( str(int(linePoints) & 255) + ", " + str((int(linePoints) >>8) & 255) + ", "+ " // start line description" + "\n"  )
+f.write( str(int(len(line)))  + "] = { // line description \n" )
 for i in line:
     f.write( str(int(i)) + ", " )
     index = index + 1
     if index >= 8:
         f.write( "\n" )
         index = 0
+f.write( "};" + "\n")        
 print("Total size board image = ", len(line) + len(angle) + len(radius))        
     
-f.write( "};" )
 f.close()
 sys.exit()
